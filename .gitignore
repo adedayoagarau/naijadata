@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+
+# PDFs (large files - download separately)
+raw_pdfs/**/*.pdf
+
+# Keep directory structure
+!raw_pdfs/.gitkeep
+!raw_pdfs/federal/.gitkeep
+!raw_pdfs/states/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp

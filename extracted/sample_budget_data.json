@@ -1,0 +1,150 @@
+{
+  "source": "osun",
+  "year": 2025,
+  "document_type": "appropriation_act",
+  "total_budget": 578900000000,
+  "recurrent": 321000000000,
+  "capital": 257900000000,
+  "currency": "NGN",
+  "population": 4500000,
+  "legislators_count": 26,
+  "mdas": [
+    {
+      "code": "011100100100",
+      "name": "Osun State House of Assembly",
+      "category": "legislature",
+      "total": 4200000000,
+      "personnel": 1200000000,
+      "overhead": 2100000000,
+      "capital": 900000000,
+      "line_items": [
+        {
+          "code": "22020801",
+          "description": "International Travel & Transport - Training",
+          "amount": 700000000,
+          "flag": "high"
+        },
+        {
+          "code": "22020802",
+          "description": "Sitting Allowances",
+          "amount": 600000000
+        },
+        {
+          "code": "22020803",
+          "description": "Local Travel & Transport - Training",
+          "amount": 150000000
+        },
+        {
+          "code": "23010105",
+          "description": "Purchase of Motor Vehicles",
+          "amount": 450000000,
+          "flag": "high"
+        }
+      ]
+    },
+    {
+      "code": "052100100100",
+      "name": "Ministry of Health",
+      "category": "health",
+      "total": 42300000000,
+      "personnel": 18500000000,
+      "overhead": 8800000000,
+      "capital": 15000000000,
+      "line_items": [
+        {
+          "code": "22020901",
+          "description": "Drugs & Medical Supplies",
+          "amount": 180000000,
+          "per_capita": 40
+        },
+        {
+          "code": "22020902",
+          "description": "Medical Equipment",
+          "amount": 350000000
+        },
+        {
+          "code": "23020101",
+          "description": "Construction of Primary Health Centers",
+          "amount": 2500000000
+        }
+      ]
+    },
+    {
+      "code": "051100100100",
+      "name": "Ministry of Education",
+      "category": "education",
+      "total": 67800000000,
+      "personnel": 42000000000,
+      "overhead": 12800000000,
+      "capital": 13000000000,
+      "line_items": [
+        {
+          "code": "22020401",
+          "description": "Teaching Materials & Supplies",
+          "amount": 850000000
+        },
+        {
+          "code": "23020102",
+          "description": "Construction of Schools",
+          "amount": 5500000000
+        }
+      ]
+    },
+    {
+      "code": "011200100100",
+      "name": "Office of the Governor",
+      "category": "executive",
+      "total": 8500000000,
+      "personnel": 2100000000,
+      "overhead": 4400000000,
+      "capital": 2000000000,
+      "line_items": [
+        {
+          "code": "22020801",
+          "description": "International Travel",
+          "amount": 890000000
+        },
+        {
+          "code": "22020803",
+          "description": "Local Travel",
+          "amount": 450000000
+        }
+      ]
+    }
+  ],
+  "red_flags": [
+    {
+      "type": "ratio_alert",
+      "description": "Legislature travel exceeds Health drug budget by 3.9x",
+      "legislature_travel": 700000000,
+      "health_drugs": 180000000,
+      "ratio": 3.89,
+      "severity": "high"
+    },
+    {
+      "type": "per_capita_alert",
+      "description": "Health drugs allocation is only ₦40 per citizen per year",
+      "amount_per_capita": 40,
+      "severity": "medium"
+    }
+  ],
+  "comparisons": {
+    "legislature_per_member": 161538462,
+    "health_per_capita": 9400,
+    "education_per_capita": 15067,
+    "education_percent_of_budget": 11.7,
+    "health_percent_of_budget": 7.3
+  },
+  "sources": [
+    {
+      "name": "Osun State 2025 Appropriation Law",
+      "url": "https://budgetpedia.ng/osun/2025",
+      "accessed": "2026-01-30"
+    }
+  ],
+  "metadata": {
+    "extracted_at": "2026-01-30T12:00:00Z",
+    "extraction_method": "pdfplumber",
+    "confidence": "high"
+  }
+}
