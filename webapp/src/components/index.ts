@@ -6,3 +6,4 @@ export { TrendingLogs } from "./TrendingLogs";
 export { RedFlags } from "./RedFlags";
 export { ChatButton } from "./ChatButton";
 export { ChatModal } from "./ChatModal";
+export { DiscoveryFeed } from "./DiscoveryFeed";

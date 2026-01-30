@@ -9,6 +9,7 @@ import { TrendingLogs } from "@/components/TrendingLogs";
 import { RedFlags } from "@/components/RedFlags";
 import { ChatButton } from "@/components/ChatButton";
 import { ChatModal } from "@/components/ChatModal";
+import { DiscoveryFeed } from "@/components/DiscoveryFeed";
 
 export default function Home() {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -50,6 +51,7 @@ export default function Home() {
           />
         </section>
 
+        <DiscoveryFeed />
         <TrendingLogs />
         <RedFlags />
 
