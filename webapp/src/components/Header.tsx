@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 export function Header() {
-  const [time, setTime] = useState("00:00");
+  const [time, setTime] = useState("");
 
   useEffect(() => {
     const updateClock = () => {
@@ -19,22 +19,21 @@ export function Header() {
   }, []);
 
   return (
-    <header className="p-4 border-b-4 border-white bg-black sticky top-0 z-40">
-      <div className="flex justify-between items-end">
-        <h1 className="font-pixel text-5xl md:text-7xl leading-[0.7] tracking-tighter text-white">
-          DECIDE<br />
-          <span className="text-[#25D366]">9JA</span>
-        </h1>
-        <div className="flex flex-col items-end">
-          <span className="font-mono text-xs mb-1">BUDGET_OS_V1.0</span>
-          <div className="w-16 h-8 border border-white flex items-center justify-center bg-white text-black font-bold font-mono">
-            {time}
+    <header className="p-4 border-b border-gray-800 bg-[#050505] sticky top-0 z-40">
+      <div className="flex justify-between items-center">
+        <div className="flex items-baseline gap-1">
+          <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+            Decide<span className="text-[#25D366]">9ja</span>
+          </h1>
+          <span className="text-[10px] text-gray-600 hidden md:inline">Budget Transparency</span>
+        </div>
+        <div className="flex items-center gap-3">
+          <span className="text-xs text-gray-600 hidden sm:inline">Federal Republic of Nigeria</span>
+          <div className="flex items-center gap-2 text-xs text-gray-500">
+            <span className="w-2 h-2 bg-[#25D366] rounded-full animate-pulse" />
+            <span className="font-mono">{time || "--:--"}</span>
           </div>
         </div>
-      </div>
-      <div className="flex justify-between mt-2 font-mono text-[10px] uppercase tracking-widest">
-        <span>Fed. Republic of Nigeria</span>
-        <span>Transparency_Protocol</span>
       </div>
     </header>
   );

@@ -188,13 +188,14 @@ export async function POST(request: NextRequest) {
 function parseAmount(amount: string): number {
   const cleaned = amount.replace(/[₦,\s]/g, "").toUpperCase();
 
-  if (cleaned.includes("TRILLION")) {
+  // Handle both full words and abbreviations
+  if (cleaned.includes("TRILLION") || cleaned.endsWith("T")) {
     return parseFloat(cleaned) * 1_000_000_000_000;
   }
-  if (cleaned.includes("BILLION")) {
+  if (cleaned.includes("BILLION") || cleaned.endsWith("B")) {
     return parseFloat(cleaned) * 1_000_000_000;
   }
-  if (cleaned.includes("MILLION")) {
+  if (cleaned.includes("MILLION") || cleaned.endsWith("M")) {
     return parseFloat(cleaned) * 1_000_000;
   }
 

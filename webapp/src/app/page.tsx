@@ -1,76 +1,86 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Header } from "@/components/Header";
-import { Marquee } from "@/components/Marquee";
-import { QueryCard } from "@/components/QueryCard";
+import { Hero } from "@/components/Hero";
 import { ChatInput } from "@/components/ChatInput";
-import { TrendingLogs } from "@/components/TrendingLogs";
-import { RedFlags } from "@/components/RedFlags";
+import { DiscoveryFeed } from "@/components/DiscoveryFeed";
 import { ChatButton } from "@/components/ChatButton";
 import { ChatModal } from "@/components/ChatModal";
-import { DiscoveryFeed } from "@/components/DiscoveryFeed";
 
 export default function Home() {
   const [isChatOpen, setIsChatOpen] = useState(false);
-  const [currentQuery, setCurrentQuery] = useState<{
-    question: string;
-    answer: string;
-    amount: string;
-    comparison: string;
-  } | null>({
-    question: 'NIA HOSPITAL SPEND',
-    answer: 'NIA is spending 31.1 billion naira on hospital repairs. That is 46 TIMES MORE than the Health Ministry spends on the same line item.',
-    amount: '₦31.1 BILLION',
-    comparison: '46 TIMES MORE'
-  });
+  const [initialQuestion, setInitialQuestion] = useState("");
+
+  const handleAskQuestion = (question: string) => {
+    setInitialQuestion(question);
+    setIsChatOpen(true);
+  };
 
   return (
-    <div className="min-h-screen flex flex-col relative pb-20">
-      {/* Scanline overlay */}
-      <div className="scanline" />
-
+    <div className="min-h-screen flex flex-col relative pb-20 bg-[#050505]">
       <Header />
-      <Marquee />
 
       <main className="flex-1 flex flex-col">
-        {/* Query Section */}
-        <section className="p-4 border-b border-white">
-          {currentQuery && (
-            <QueryCard
-              question={currentQuery.question}
-              answer={currentQuery.answer}
-              amount={currentQuery.amount}
-              comparison={currentQuery.comparison}
-            />
-          )}
+        {/* Hero / Onboarding */}
+        <Hero />
+
+        {/* Search Input */}
+        <section className="p-4 border-b border-gray-800">
           <ChatInput
-            onSubmit={(question) => {
-              setIsChatOpen(true);
-            }}
+            onSubmit={handleAskQuestion}
+            placeholder="Ask anything about the budget..."
           />
+          <div className="mt-3 flex flex-wrap gap-2">
+            <span className="text-xs text-gray-600">Try:</span>
+            {[
+              "Why is NIA building hospitals?",
+              "How much do legislators earn?",
+              "Show me education spending",
+            ].map((suggestion) => (
+              <button
+                key={suggestion}
+                onClick={() => handleAskQuestion(suggestion)}
+                className="text-xs text-gray-500 hover:text-white border border-gray-800
+                  px-2 py-1 hover:border-gray-600 transition-colors"
+              >
+                {suggestion}
+              </button>
+            ))}
+          </div>
         </section>
 
+        {/* Main Content */}
         <DiscoveryFeed />
-        <TrendingLogs />
-        <RedFlags />
 
-        {/* System Status */}
-        <div className="mx-4 mt-8 border border-white p-2 flex justify-between items-center opacity-50">
-          <div className="flex flex-col gap-1">
-            <div className="w-20 h-[2px] bg-white" />
-            <div className="w-10 h-[2px] bg-white" />
-            <div className="w-5 h-[2px] bg-white" />
+        {/* Footer */}
+        <footer className="p-4 border-t border-gray-800 mt-auto">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+              <p className="text-xs text-gray-600">
+                Data source: 2026 Federal Appropriation Bill
+              </p>
+              <p className="text-xs text-gray-700 mt-1">
+                Built for budget transparency by Nigerians, for Nigerians
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-[#25D366] rounded-full animate-pulse" />
+              <span className="text-xs text-gray-500">Live analysis</span>
+            </div>
           </div>
-          <div className="text-[8px] font-mono text-right">
-            SYSTEM_READY<br />
-            DECIDE9JA_CORE
-          </div>
-        </div>
+        </footer>
       </main>
 
       <ChatButton onClick={() => setIsChatOpen(true)} />
-      <ChatModal isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
+      <ChatModal
+        isOpen={isChatOpen}
+        onClose={() => {
+          setIsChatOpen(false);
+          setInitialQuestion("");
+        }}
+        initialQuestion={initialQuestion}
+      />
     </div>
   );
 }
