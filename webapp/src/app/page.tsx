@@ -1,154 +1,524 @@
 "use client";
 
-import { useState } from "react";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { ChatInput } from "@/components/ChatInput";
-import { DiscoveryFeed } from "@/components/DiscoveryFeed";
-import { ChatButton } from "@/components/ChatButton";
-import { ChatModal } from "@/components/ChatModal";
-import { BarChart3, FileText, AlertTriangle } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
 
-export default function Home() {
-  const [isChatOpen, setIsChatOpen] = useState(false);
-  const [initialQuestion, setInitialQuestion] = useState("");
+// Nigerian Budget Findings - will be fetched from API
+interface Finding {
+  id: string;
+  type: string;
+  entity: string;
+  description: string;
+  amount: number;
+  severity: "CRITICAL" | "HIGH" | "MEDIUM" | "LOW";
+  year: number;
+  state?: string;
+  recommendation?: string;
+}
 
-  const handleAskQuestion = (question: string) => {
-    setInitialQuestion(question);
-    setIsChatOpen(true);
+const Texture = () => (
+  <div
+    className="fixed inset-0 opacity-[0.08] pointer-events-none z-[9999]"
+    style={{
+      backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+    }}
+  />
+);
+
+const Header = ({ findingsCount }: { findingsCount: number }) => (
+  <header className="bg-c-black text-gray-500 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 font-display text-xs tracking-wide border-b border-c-border flex-shrink-0">
+    <h1 className="text-white font-normal text-xs tracking-[0.2em] uppercase">
+      Decide9ja // Budget Transparency DB
+    </h1>
+    <nav className="flex gap-4 md:gap-16 text-[10px] md:text-xs">
+      <a href="#" className="text-gray-500 hover:text-white transition-colors">
+        ARCHIVE ({findingsCount})
+      </a>
+      <a href="#" className="text-gray-500 hover:text-white transition-colors">
+        ALERTS
+      </a>
+      <a href="#" className="text-gray-500 hover:text-white transition-colors">
+        ABOUT
+      </a>
+      <span className="text-gray-600">01.30.26</span>
+    </nav>
+  </header>
+);
+
+type BlockColor = "red" | "blue" | "green" | "yellow" | "beige" | "brown";
+
+interface BudgetBlockProps {
+  label: string;
+  value: string;
+  meta: string | { left: string; right: string };
+  bgColor: BlockColor;
+  span?: number;
+  row?: number;
+  hasAlert?: boolean;
+  onClick?: () => void;
+}
+
+const BudgetBlock = ({
+  label,
+  value,
+  meta,
+  bgColor,
+  span = 1,
+  row = 1,
+  hasAlert,
+  onClick,
+}: BudgetBlockProps) => {
+  const colorClasses: Record<BlockColor, string> = {
+    red: "bg-c-red text-black",
+    blue: "bg-c-blue text-white",
+    green: "bg-c-green text-black",
+    yellow: "bg-c-yellow text-black",
+    beige: "bg-c-beige text-black",
+    brown: "bg-c-brown text-black",
+  };
+
+  const spanClass = span === 2 ? "col-span-2" : span === 3 ? "col-span-3" : "";
+  const rowClass = row === 2 ? "row-span-2" : "";
+
+  return (
+    <div
+      onClick={onClick}
+      className={`${colorClasses[bgColor]} ${spanClass} ${rowClass} p-3 md:p-5 relative flex flex-col justify-between transition-all duration-200 cursor-pointer hover:brightness-110 overflow-hidden min-h-[120px] md:min-h-[140px]`}
+    >
+      <span className="text-[10px] md:text-xs uppercase tracking-wider opacity-70 mb-2">
+        {label}
+      </span>
+      <div
+        className="text-lg md:text-2xl lg:text-3xl font-medium tracking-tight leading-tight break-words"
+        dangerouslySetInnerHTML={{ __html: value }}
+      />
+
+      {hasAlert && (
+        <div className="absolute top-2 right-2 md:top-3 md:right-3 border border-current rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center text-[10px] md:text-xs -rotate-12">
+          !
+        </div>
+      )}
+
+      <div
+        className={`mt-auto pt-3 md:pt-4 font-mono text-[10px] md:text-xs flex justify-between items-end border-t ${
+          bgColor === "blue"
+            ? "border-white/20"
+            : "border-black/10"
+        }`}
+      >
+        {typeof meta === "string" ? (
+          <span>{meta}</span>
+        ) : (
+          <>
+            <span>{meta.left}</span>
+            <span>{meta.right}</span>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
+interface ChatMessage {
+  type: "system" | "user";
+  content: string;
+}
+
+const AnalystPanel = () => {
+  const [messages, setMessages] = useState<ChatMessage[]>([
+    {
+      type: "system",
+      content:
+        "&gt; Connected to Decide9ja Database v2.4<br />&gt; Analyzing Nigerian federal & state budgets...<br />&gt; Ready for query.",
+    },
+  ]);
+  const [inputValue, setInputValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const historyRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (historyRef.current) {
+      historyRef.current.scrollTop = historyRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  const handleSend = async () => {
+    if (!inputValue.trim() || isLoading) return;
+
+    const userMessage = inputValue;
+    setMessages((prev) => [...prev, { type: "user", content: userMessage }]);
+    setInputValue("");
+    setIsLoading(true);
+
+    // Simulate API call - replace with actual chat API
+    setTimeout(() => {
+      setMessages((prev) => [
+        ...prev,
+        {
+          type: "system",
+          content: `&gt; Processing query against budget records...<br /><br />Searching for: "${userMessage}"<br /><br /><strong style="background:var(--c-yellow); padding: 0 4px; color: black;">ANALYSIS IN PROGRESS</strong>`,
+        },
+      ]);
+      setIsLoading(false);
+    }, 1000);
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a]">
-      <Header />
-
-      {/* Desktop Layout */}
-      <div className="max-w-7xl mx-auto">
-        {/* Hero Section */}
-        <Hero />
-
-        {/* Search Section */}
-        <section className="px-4 lg:px-8 py-6 border-b border-gray-800">
-          <div className="max-w-2xl">
-            <ChatInput
-              onSubmit={handleAskQuestion}
-              placeholder="Ask anything about the 2026 budget..."
-            />
-            <div className="mt-3 flex flex-wrap gap-2">
-              <span className="text-xs text-gray-500">Popular:</span>
-              {[
-                "Why is NIA building hospitals?",
-                "Compare NASS to Health spending",
-                "Education budget breakdown",
-              ].map((suggestion) => (
-                <button
-                  key={suggestion}
-                  onClick={() => handleAskQuestion(suggestion)}
-                  className="text-xs text-gray-400 hover:text-white bg-gray-900 hover:bg-gray-800
-                    px-3 py-1.5 rounded-full transition-colors"
-                >
-                  {suggestion}
-                </button>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Main Content - Responsive Grid */}
-        <div className="lg:grid lg:grid-cols-4 lg:gap-6 px-4 lg:px-8 py-6">
-          {/* Sidebar - Desktop Only */}
-          <aside className="hidden lg:block lg:col-span-1">
-            <div className="sticky top-20 space-y-4">
-              <h3 className="text-sm font-semibold text-gray-400 mb-3">Quick Stats</h3>
-
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <BarChart3 className="w-5 h-5 text-[#25D366]" />
-                  <span className="text-sm text-gray-400">Total Budget</span>
-                </div>
-                <div className="text-2xl font-bold">₦28.7T</div>
-                <div className="text-xs text-gray-500 mt-1">2026 Federal Budget</div>
-              </div>
-
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <AlertTriangle className="w-5 h-5 text-red-500" />
-                  <span className="text-sm text-gray-400">Red Flags</span>
-                </div>
-                <div className="text-2xl font-bold text-red-500">177</div>
-                <div className="text-xs text-gray-500 mt-1">Anomalies detected</div>
-              </div>
-
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <FileText className="w-5 h-5 text-blue-500" />
-                  <span className="text-sm text-gray-400">Suspicious</span>
-                </div>
-                <div className="text-2xl font-bold">₦86B</div>
-                <div className="text-xs text-gray-500 mt-1">In questionable spending</div>
-              </div>
-
-              <div className="mt-6 p-4 bg-[#25D366]/10 border border-[#25D366]/30 rounded-lg">
-                <h4 className="text-sm font-semibold text-[#25D366] mb-2">About This Data</h4>
-                <p className="text-xs text-gray-400 leading-relaxed">
-                  Analysis of the 2026 Federal Appropriation Bill (2,790 pages).
-                  Data extracted and verified against official government sources.
-                </p>
-              </div>
-            </div>
-          </aside>
-
-          {/* Main Content */}
-          <main className="lg:col-span-3">
-            {/* Mobile Stats - Only on mobile */}
-            <div className="lg:hidden grid grid-cols-3 gap-3 mb-6">
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-3 text-center">
-                <div className="text-lg font-bold">₦28.7T</div>
-                <div className="text-[10px] text-gray-500">Budget</div>
-              </div>
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-3 text-center">
-                <div className="text-lg font-bold text-red-500">177</div>
-                <div className="text-[10px] text-gray-500">Red Flags</div>
-              </div>
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-3 text-center">
-                <div className="text-lg font-bold">₦86B</div>
-                <div className="text-[10px] text-gray-500">Suspicious</div>
-              </div>
-            </div>
-
-            <DiscoveryFeed />
-          </main>
-        </div>
-
-        {/* Footer */}
-        <footer className="px-4 lg:px-8 py-6 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div>
-              <p className="text-sm text-gray-400">
-                Built for budget transparency
-              </p>
-              <p className="text-xs text-gray-600 mt-1">
-                Data source: 2026 Federal Appropriation Bill
-              </p>
-            </div>
-            <div className="flex items-center gap-2 text-xs text-gray-500">
-              <span className="w-2 h-2 bg-[#25D366] rounded-full" />
-              Live analysis
-            </div>
-          </div>
-        </footer>
+    <aside className="bg-c-beige flex flex-col border-l border-c-border h-full">
+      <div className="p-4 md:p-5 border-b border-c-border bg-c-yellow flex justify-between items-center">
+        <span className="text-base md:text-lg font-medium tracking-tight">
+          AI DATA ANALYST
+        </span>
+        <div className="w-2.5 h-2.5 bg-c-red rounded-full border border-black animate-pulse" />
       </div>
 
-      {/* Chat FAB and Modal */}
-      <ChatButton onClick={() => setIsChatOpen(true)} />
-      <ChatModal
-        isOpen={isChatOpen}
-        onClose={() => {
-          setIsChatOpen(false);
-          setInitialQuestion("");
-        }}
-        initialQuestion={initialQuestion}
-      />
+      <div
+        ref={historyRef}
+        className="flex-grow p-4 md:p-6 overflow-y-auto flex flex-col gap-4 md:gap-6"
+      >
+        {messages.map((msg, idx) => (
+          <div
+            key={idx}
+            className={`text-sm leading-relaxed max-w-[90%] ${
+              msg.type === "user"
+                ? "self-end bg-c-black text-white px-3 py-2 md:px-4 md:py-3 rounded-sm font-display"
+                : "self-start font-mono text-c-black"
+            }`}
+            dangerouslySetInnerHTML={{ __html: msg.content }}
+          />
+        ))}
+        {isLoading && (
+          <div className="self-start font-mono text-c-black animate-pulse">
+            &gt; Processing...
+          </div>
+        )}
+      </div>
+
+      <div className="border-t border-c-border bg-white flex">
+        <input
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && handleSend()}
+          placeholder="Ask about budget anomalies..."
+          className="flex-grow border-none p-4 md:p-6 font-display text-sm md:text-base bg-transparent outline-none text-c-black placeholder:text-gray-400"
+        />
+        <button
+          onClick={handleSend}
+          disabled={isLoading}
+          className="bg-c-red text-black border-l border-c-border px-4 md:px-6 font-mono font-bold cursor-pointer uppercase transition-colors hover:brightness-90 disabled:opacity-50 text-sm"
+        >
+          Run
+        </button>
+      </div>
+    </aside>
+  );
+};
+
+// Format amount in Naira
+const formatAmount = (amount: number): string => {
+  if (amount >= 1_000_000_000_000) {
+    return `₦${(amount / 1_000_000_000_000).toFixed(1)}T`;
+  } else if (amount >= 1_000_000_000) {
+    return `₦${(amount / 1_000_000_000).toFixed(1)}B`;
+  } else if (amount >= 1_000_000) {
+    return `₦${(amount / 1_000_000).toFixed(1)}M`;
+  }
+  return `₦${amount.toLocaleString()}`;
+};
+
+// Map severity to color
+const severityToColor = (severity: string): BlockColor => {
+  switch (severity) {
+    case "CRITICAL":
+      return "red";
+    case "HIGH":
+      return "blue";
+    case "MEDIUM":
+      return "yellow";
+    default:
+      return "beige";
+  }
+};
+
+export default function Home() {
+  const [findings, setFindings] = useState<Finding[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedFinding, setSelectedFinding] = useState<Finding | null>(null);
+
+  useEffect(() => {
+    // Load findings from API or local data
+    const loadFindings = async () => {
+      try {
+        const res = await fetch("/api/findings");
+        if (res.ok) {
+          const data = await res.json();
+          setFindings(data.findings || []);
+        }
+      } catch (err) {
+        console.error("Failed to load findings:", err);
+        // Use demo data if API fails
+        setFindings(DEMO_FINDINGS);
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadFindings();
+  }, []);
+
+  const criticalFindings = findings.filter((f) => f.severity === "CRITICAL");
+  const highFindings = findings.filter((f) => f.severity === "HIGH");
+  const totalFlagged = findings.reduce((sum, f) => sum + (f.amount || 0), 0);
+
+  return (
+    <div
+      className="min-h-screen"
+      style={
+        {
+          "--c-red": "#D6453A",
+          "--c-blue": "#164678",
+          "--c-green": "#487A3A",
+          "--c-yellow": "#EBC346",
+          "--c-beige": "#D9D9CD",
+          "--c-brown": "#9E7D45",
+          "--c-black": "#050505",
+          "--c-border": "#111111",
+        } as React.CSSProperties
+      }
+    >
+      <Texture />
+      <div className="bg-c-beige text-c-black font-display overflow-x-hidden h-screen flex flex-col">
+        <Header findingsCount={findings.length} />
+
+        <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px] overflow-hidden">
+          {/* Main Budget Grid */}
+          <main className="grid grid-cols-2 md:grid-cols-4 auto-rows-[minmax(120px,auto)] md:auto-rows-[minmax(140px,auto)] overflow-y-auto border-r border-c-border bg-c-black gap-[1.5px]">
+            {/* Hero Block - Priority Investigation */}
+            <BudgetBlock
+              label="Priority Investigation"
+              value={criticalFindings[0]?.entity || "Federal Budget<br />2026"}
+              meta={{
+                left: `${criticalFindings.length} CRITICAL`,
+                right: formatAmount(totalFlagged) + " FLAGGED",
+              }}
+              bgColor="red"
+              span={2}
+              row={2}
+              onClick={() => setSelectedFinding(criticalFindings[0])}
+            />
+
+            {/* Dynamic blocks from findings */}
+            {findings.slice(0, 12).map((finding, idx) => {
+              const colors: BlockColor[] = [
+                "beige",
+                "blue",
+                "yellow",
+                "green",
+                "brown",
+              ];
+              const spans = [1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 3];
+
+              return (
+                <BudgetBlock
+                  key={finding.id || idx}
+                  label={finding.type?.replace(/_/g, " ") || "Finding"}
+                  value={
+                    finding.entity?.length > 30
+                      ? finding.entity.substring(0, 30) + "..."
+                      : finding.entity || "Unknown"
+                  }
+                  meta={
+                    finding.amount
+                      ? formatAmount(finding.amount)
+                      : finding.severity
+                  }
+                  bgColor={severityToColor(finding.severity)}
+                  span={spans[idx % spans.length]}
+                  hasAlert={finding.severity === "CRITICAL"}
+                  onClick={() => setSelectedFinding(finding)}
+                />
+              );
+            })}
+
+            {/* Summary blocks */}
+            <BudgetBlock
+              label="Total Anomalies"
+              value={findings.length.toString()}
+              meta={{ left: "ALL YEARS", right: "FEDERAL + STATES" }}
+              bgColor="brown"
+              span={2}
+            />
+
+            <BudgetBlock
+              label="High Risk MDAs"
+              value={
+                highFindings.length > 0
+                  ? highFindings[0]?.entity?.split(" ").slice(0, 3).join(" ") ||
+                    "Various"
+                  : "Under Review"
+              }
+              meta={`${highFindings.length} FLAGGED`}
+              bgColor="blue"
+            />
+
+            <BudgetBlock
+              label="Data Coverage"
+              value="36 States<br />+ Federal"
+              meta="2025-2026"
+              bgColor="green"
+            />
+
+            {loading && (
+              <BudgetBlock
+                label="Status"
+                value="Loading..."
+                meta="PLEASE WAIT"
+                bgColor="beige"
+                span={2}
+              />
+            )}
+          </main>
+
+          {/* AI Analyst Panel */}
+          <AnalystPanel />
+        </div>
+      </div>
+
+      {/* Finding Detail Modal */}
+      {selectedFinding && (
+        <div
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedFinding(null)}
+        >
+          <div
+            className="bg-c-beige max-w-2xl w-full max-h-[80vh] overflow-y-auto p-6 md:p-8"
+            onClick={(e) => e.stopPropagation()}
+            style={{ "--c-beige": "#D9D9CD" } as React.CSSProperties}
+          >
+            <div className="flex justify-between items-start mb-4">
+              <span
+                className={`px-3 py-1 text-xs font-mono uppercase ${
+                  selectedFinding.severity === "CRITICAL"
+                    ? "bg-[#D6453A] text-black"
+                    : selectedFinding.severity === "HIGH"
+                    ? "bg-[#164678] text-white"
+                    : "bg-[#EBC346] text-black"
+                }`}
+              >
+                {selectedFinding.severity}
+              </span>
+              <button
+                onClick={() => setSelectedFinding(null)}
+                className="text-2xl leading-none hover:opacity-70"
+              >
+                ×
+              </button>
+            </div>
+
+            <h2 className="text-2xl md:text-3xl font-medium mb-2">
+              {selectedFinding.entity}
+            </h2>
+            <p className="text-sm text-gray-600 mb-4">
+              {selectedFinding.type?.replace(/_/g, " ")} • {selectedFinding.year}
+              {selectedFinding.state && ` • ${selectedFinding.state}`}
+            </p>
+
+            {selectedFinding.amount > 0 && (
+              <div className="text-4xl font-bold mb-4">
+                {formatAmount(selectedFinding.amount)}
+              </div>
+            )}
+
+            <p className="text-base leading-relaxed mb-6">
+              {selectedFinding.description}
+            </p>
+
+            {selectedFinding.recommendation && (
+              <div className="bg-[#EBC346]/30 p-4 border-l-4 border-[#EBC346]">
+                <h4 className="font-bold text-sm mb-2">RECOMMENDATION</h4>
+                <p className="text-sm">{selectedFinding.recommendation}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
+
+// Demo data for when API is unavailable
+const DEMO_FINDINGS: Finding[] = [
+  {
+    id: "1",
+    type: "MANDATE_VIOLATION",
+    entity: "National Intelligence Agency",
+    description: "Security agency allocated ₦5.2B for hospital construction - outside core mandate",
+    amount: 5_200_000_000,
+    severity: "CRITICAL",
+    year: 2026,
+  },
+  {
+    id: "2",
+    type: "YOY_VARIANCE",
+    entity: "National Assembly",
+    description: "320% increase in travel allowances compared to 2025",
+    amount: 12_400_000_000,
+    severity: "HIGH",
+    year: 2026,
+  },
+  {
+    id: "3",
+    type: "ROUND_NUMBER",
+    entity: "Ministry of Works",
+    description: "Exact ₦10B allocation suggests estimation rather than actual costing",
+    amount: 10_000_000_000,
+    severity: "MEDIUM",
+    year: 2026,
+  },
+  {
+    id: "4",
+    type: "CROSS_MDA_OUTLIER",
+    entity: "Office of the NSA",
+    description: "Spending 8.5x median for budget code 2305 (Security Equipment)",
+    amount: 45_000_000_000,
+    severity: "CRITICAL",
+    year: 2026,
+  },
+  {
+    id: "5",
+    type: "BENFORD_VIOLATION",
+    entity: "Ministry of Education",
+    description: "First digit distribution deviates significantly from Benford's Law",
+    amount: 1_800_000_000_000,
+    severity: "HIGH",
+    year: 2026,
+  },
+  {
+    id: "6",
+    type: "PADDING_INDICATOR",
+    entity: "Federal Road Maintenance Agency",
+    description: "Vehicle costs 450% above market benchmark",
+    amount: 8_500_000_000,
+    severity: "HIGH",
+    year: 2026,
+  },
+  {
+    id: "7",
+    type: "STATE_COMPARISON",
+    entity: "Lagos State",
+    description: "Budget 3.2x higher than median state budget",
+    amount: 4_445_000_000_000,
+    severity: "MEDIUM",
+    year: 2026,
+    state: "Lagos",
+  },
+  {
+    id: "8",
+    type: "EDUCATION_ALLOCATION",
+    entity: "Akwa Ibom State",
+    description: "Only 2.27% allocated to education - lowest in nation",
+    amount: 31_600_000_000,
+    severity: "HIGH",
+    year: 2026,
+    state: "Akwa Ibom",
+  },
+];

@@ -3,15 +3,32 @@
 @tailwind utilities;
 
 :root {
+  /* Legacy colors */
   --bg-color: #050505;
   --text-main: #EAEAEA;
   --text-secondary: #9CA3AF;
   --accent-green: #25D366;
   --border-color: #1f1f1f;
+
+  /* Tile Dashboard Colors */
+  --c-red: #D6453A;
+  --c-blue: #164678;
+  --c-green: #487A3A;
+  --c-yellow: #EBC346;
+  --c-beige: #D9D9CD;
+  --c-brown: #9E7D45;
+  --c-black: #050505;
+  --c-border: #111111;
+
+  /* Typography */
+  --font-display: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -20,15 +37,46 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-main);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
+  font-family: var(--font-display);
+  line-height: 1.4;
 }
 
-/* Better contrast for text */
-p, span, div {
-  color: inherit;
+/* Custom color utilities for Tailwind */
+.bg-c-red { background-color: var(--c-red); }
+.bg-c-blue { background-color: var(--c-blue); }
+.bg-c-green { background-color: var(--c-green); }
+.bg-c-yellow { background-color: var(--c-yellow); }
+.bg-c-beige { background-color: var(--c-beige); }
+.bg-c-brown { background-color: var(--c-brown); }
+.bg-c-black { background-color: var(--c-black); }
+
+.text-c-red { color: var(--c-red); }
+.text-c-blue { color: var(--c-blue); }
+.text-c-green { color: var(--c-green); }
+.text-c-yellow { color: var(--c-yellow); }
+.text-c-beige { color: var(--c-beige); }
+.text-c-brown { color: var(--c-brown); }
+.text-c-black { color: var(--c-black); }
+
+.border-c-border { border-color: var(--c-border); }
+.border-c-black { border-color: var(--c-black); }
+
+/* Font utilities */
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--c-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-beige);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5c5b9;
 }
 
 /* Screen reader only utility */
@@ -58,7 +106,7 @@ p, span, div {
 button:focus-visible,
 a:focus-visible,
 input:focus-visible {
-  outline: 2px solid var(--accent-green);
+  outline: 2px solid var(--c-yellow);
   outline-offset: 2px;
 }
 
@@ -78,15 +126,24 @@ input:focus-visible {
   animation: slide-up 0.2s ease-out;
 }
 
-/* Smooth transitions */
-* {
-  transition-property: background-color, border-color, color;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
+/* Pulse animation for status dot */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
 }
 
-/* Remove transition from animations */
-.animate-spin,
-.animate-pulse {
-  transition: none;
+/* Block hover effect */
+.block-hover:hover {
+  filter: brightness(1.1);
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 640px) {
+  .col-span-2 {
+    grid-column: span 2;
+  }
+  .col-span-3 {
+    grid-column: span 2; /* Reduce span on mobile */
+  }
 }
