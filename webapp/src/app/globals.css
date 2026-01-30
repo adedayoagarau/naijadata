@@ -5,105 +5,43 @@
 :root {
   --bg-color: #050505;
   --text-main: #EAEAEA;
+  --text-secondary: #9CA3AF;
   --accent-green: #25D366;
-  --grid-line: #333;
+  --border-color: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-main);
-  font-family: var(--font-space-mono), monospace;
-  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
 }
 
-.font-pixel {
-  font-family: var(--font-vt323), monospace;
+/* Better contrast for text */
+p, span, div {
+  color: inherit;
 }
 
-.font-mono {
-  font-family: var(--font-space-mono), monospace;
-}
-
-/* Grid background */
-.grid-bg {
-  background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 20px 20px;
-  background-position: center top;
-}
-
-/* Dither effect for images */
-.img-dither {
-  filter: grayscale(100%) contrast(150%) brightness(0.9);
-  position: relative;
-}
-
-/* Barcode pattern */
-.barcode {
-  height: 40px;
-  width: 100%;
-  background: repeating-linear-gradient(
-    90deg,
-    #fff 0px,
-    #fff 2px,
-    transparent 2px,
-    transparent 4px,
-    #fff 4px,
-    #fff 5px,
-    transparent 5px,
-    transparent 8px
-  );
-}
-
-/* Brutalist borders */
-.brut-border {
-  border: 2px solid #fff;
-}
-
-.brut-border-thin {
-  border: 1px solid #333;
-}
-
-/* Scanline overlay */
-.scanline {
-  width: 100%;
-  background: linear-gradient(to bottom, transparent 50%, rgba(0, 255, 65, 0.05) 50%);
-  background-size: 100% 4px;
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 50;
-  height: 100vh;
-}
-
-/* Blinking cursor */
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-.cursor-blink {
-  animation: blink 1s step-end infinite;
-}
-
-/* Marquee animation */
-.marquee-container {
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
   overflow: hidden;
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-}
-
-.marquee-content {
-  display: inline-block;
-  animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  border: 0;
 }
 
 /* Hide scrollbar but keep functionality */
@@ -116,33 +54,39 @@ body {
   scrollbar-width: none;
 }
 
-/* Button shadow effect */
-.brut-shadow {
-  box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 1);
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent-green);
+  outline-offset: 2px;
 }
 
-.brut-shadow-green {
-  box-shadow: 4px 4px 0px 0px #25D366;
+/* Animation for slide up (toast) */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Typing animation for chat */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.animate-slide-up {
+  animation: slide-up 0.2s ease-out;
 }
 
-.typing-effect {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 2s steps(40, end);
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
 }
 
-/* Pulse animation for live data */
-@keyframes pulse-green {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-.pulse-green {
-  animation: pulse-green 2s ease-in-out infinite;
+/* Remove transition from animations */
+.animate-spin,
+.animate-pulse {
+  transition: none;
 }
