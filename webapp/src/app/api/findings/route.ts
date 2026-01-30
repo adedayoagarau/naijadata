@@ -1,0 +1,207 @@
+import { NextResponse } from "next/server";
+import fs from "fs";
+import path from "path";
+
+interface Finding {
+  id: string;
+  type: string;
+  entity: string;
+  description: string;
+  amount: number;
+  severity: "CRITICAL" | "HIGH" | "MEDIUM" | "LOW";
+  year: number;
+  state?: string;
+  budget_code?: string;
+  recommendation?: string;
+  confidence?: number;
+  analyzer?: string;
+}
+
+// Path to findings database from forensic auditor
+const FINDINGS_PATHS = [
+  path.join(process.cwd(), "..", "findings", "webapp_findings.json"),
+  path.join(process.cwd(), "data", "findings.json"),
+  path.join(process.cwd(), "..", "skills", "budget-forensic-auditor", "findings", "webapp_findings.json"),
+];
+
+// Demo findings for when no data file exists
+const DEMO_FINDINGS: Finding[] = [
+  {
+    id: "demo-1",
+    type: "MANDATE_VIOLATION",
+    entity: "National Intelligence Agency",
+    description: "Security agency allocated ₦5.2B for hospital construction - outside core mandate. NIA's mandate is intelligence gathering, not healthcare infrastructure.",
+    amount: 5_200_000_000,
+    severity: "CRITICAL",
+    year: 2026,
+    recommendation: "Review allocation against NIA's statutory mandate. Consider reallocation to Ministry of Health.",
+  },
+  {
+    id: "demo-2",
+    type: "YOY_VARIANCE",
+    entity: "National Assembly",
+    description: "320% increase in travel allowances compared to 2025, far exceeding inflation rate of 24%",
+    amount: 12_400_000_000,
+    severity: "HIGH",
+    year: 2026,
+    recommendation: "Request detailed justification for increase. Compare with international parliamentary benchmarks.",
+  },
+  {
+    id: "demo-3",
+    type: "ROUND_NUMBER",
+    entity: "Ministry of Works",
+    description: "Exact ₦10B allocation for road construction suggests estimation rather than actual engineering costing",
+    amount: 10_000_000_000,
+    severity: "MEDIUM",
+    year: 2026,
+    recommendation: "Request itemized breakdown with unit costs and quantities.",
+  },
+  {
+    id: "demo-4",
+    type: "CROSS_MDA_OUTLIER",
+    entity: "Office of the NSA",
+    description: "Spending 8.5x the median for budget code 2305 (Security Equipment) compared to similar agencies",
+    amount: 45_000_000_000,
+    severity: "CRITICAL",
+    year: 2026,
+    recommendation: "Compare with Defence HQ and Police equipment budgets. Request procurement breakdown.",
+  },
+  {
+    id: "demo-5",
+    type: "BENFORD_VIOLATION",
+    entity: "Ministry of Education",
+    description: "First digit distribution of budget line items deviates significantly from Benford's Law (p < 0.001), suggesting possible manipulation",
+    amount: 1_800_000_000_000,
+    severity: "HIGH",
+    year: 2026,
+    confidence: 94,
+    recommendation: "Conduct detailed forensic audit of individual line items.",
+  },
+  {
+    id: "demo-6",
+    type: "PADDING_INDICATOR",
+    entity: "Federal Road Maintenance Agency",
+    description: "Vehicle procurement costs 450% above market benchmark. Toyota Land Cruiser budgeted at ₦180M vs market price of ₦40M",
+    amount: 8_500_000_000,
+    severity: "HIGH",
+    year: 2026,
+    recommendation: "Review procurement process. Consider open competitive bidding.",
+  },
+  {
+    id: "demo-7",
+    type: "STATE_COMPARISON",
+    entity: "Lagos State",
+    description: "State budget 3.2x higher than median of all 36 states. While Lagos has highest IGR, the gap warrants review.",
+    amount: 4_445_000_000_000,
+    severity: "MEDIUM",
+    year: 2026,
+    state: "Lagos",
+    recommendation: "Benchmark against population and economic output metrics.",
+  },
+  {
+    id: "demo-8",
+    type: "EDUCATION_ALLOCATION",
+    entity: "Akwa Ibom State",
+    description: "Only 2.27% of budget allocated to education - lowest percentage in the nation. UNESCO recommends 15-20%.",
+    amount: 31_600_000_000,
+    severity: "HIGH",
+    year: 2026,
+    state: "Akwa Ibom",
+    recommendation: "Review against national education policy commitments.",
+  },
+  {
+    id: "demo-9",
+    type: "DUPLICATE_ALLOCATION",
+    entity: "Ministry of Communications",
+    description: "Same ₦2.5B fiber optic project appears in both Federal and Lagos State budgets",
+    amount: 2_500_000_000,
+    severity: "CRITICAL",
+    year: 2026,
+    recommendation: "Clarify funding responsibility to prevent double allocation.",
+  },
+  {
+    id: "demo-10",
+    type: "ELECTION_YEAR_SPIKE",
+    entity: "Federal Capital Territory",
+    description: "Infrastructure spending increased 180% vs 2025 - typical election year pattern observed",
+    amount: 890_000_000_000,
+    severity: "MEDIUM",
+    year: 2026,
+    recommendation: "Review project timelines and completion likelihood before election.",
+  },
+];
+
+export async function GET() {
+  try {
+    // Try to load findings from file
+    let findings: Finding[] = [];
+    let source = "demo";
+
+    for (const findingsPath of FINDINGS_PATHS) {
+      try {
+        if (fs.existsSync(findingsPath)) {
+          const data = JSON.parse(fs.readFileSync(findingsPath, "utf-8"));
+          findings = data.findings || data.items || data;
+          source = findingsPath;
+          break;
+        }
+      } catch (err) {
+        console.error(`Failed to read ${findingsPath}:`, err);
+      }
+    }
+
+    // Fall back to demo data
+    if (findings.length === 0) {
+      findings = DEMO_FINDINGS;
+      source = "demo";
+    }
+
+    // Add IDs if missing
+    findings = findings.map((f, idx) => ({
+      ...f,
+      id: f.id || `finding-${idx}`,
+    }));
+
+    // Sort by severity (CRITICAL first)
+    const severityOrder = { CRITICAL: 0, HIGH: 1, MEDIUM: 2, LOW: 3 };
+    findings.sort((a, b) => {
+      return (severityOrder[a.severity] || 4) - (severityOrder[b.severity] || 4);
+    });
+
+    // Calculate summary stats
+    const summary = {
+      total: findings.length,
+      critical: findings.filter((f) => f.severity === "CRITICAL").length,
+      high: findings.filter((f) => f.severity === "HIGH").length,
+      medium: findings.filter((f) => f.severity === "MEDIUM").length,
+      low: findings.filter((f) => f.severity === "LOW").length,
+      totalAmount: findings.reduce((sum, f) => sum + (f.amount || 0), 0),
+      years: [...new Set(findings.map((f) => f.year))].sort(),
+      states: [...new Set(findings.filter((f) => f.state).map((f) => f.state))],
+    };
+
+    return NextResponse.json({
+      findings,
+      summary,
+      source,
+      generated: new Date().toISOString(),
+    });
+  } catch (error) {
+    console.error("Error loading findings:", error);
+    return NextResponse.json(
+      {
+        findings: DEMO_FINDINGS,
+        summary: {
+          total: DEMO_FINDINGS.length,
+          critical: DEMO_FINDINGS.filter((f) => f.severity === "CRITICAL").length,
+          high: DEMO_FINDINGS.filter((f) => f.severity === "HIGH").length,
+          medium: DEMO_FINDINGS.filter((f) => f.severity === "MEDIUM").length,
+          low: DEMO_FINDINGS.filter((f) => f.severity === "LOW").length,
+        },
+        source: "demo",
+        error: "Failed to load findings file",
+      },
+      { status: 200 }
+    );
+  }
+}
