@@ -128,12 +128,21 @@ const AnalystPanel = () => {
     {
       type: "system",
       content:
-        "&gt; Connected to Decide9ja Database v2.4<br />&gt; Analyzing Nigerian federal & state budgets...<br />&gt; Ready for query.",
+        "&gt; Connected to Decide9ja Database v2.4<br />&gt; Analyzing Nigerian federal &amp; state budgets...<br />&gt; Ready for query.",
     },
   ]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [chatHistory, setChatHistory] = useState<Array<{role: string; content: string}>>([]);
   const historyRef = useRef<HTMLDivElement>(null);
+
+  // Suggested prompts for users
+  const suggestedPrompts = [
+    "What is the NIA hospital scandal?",
+    "Compare NASS travel budget to health spending",
+    "Show me critical findings over ₦10B",
+    "What are the highest risk MDAs?",
+  ];
 
   useEffect(() => {
     if (historyRef.current) {
@@ -141,25 +150,64 @@ const AnalystPanel = () => {
     }
   }, [messages]);
 
-  const handleSend = async () => {
-    if (!inputValue.trim() || isLoading) return;
+  const handleSend = async (customMessage?: string) => {
+    const messageToSend = customMessage || inputValue;
+    if (!messageToSend.trim() || isLoading) return;
 
-    const userMessage = inputValue;
-    setMessages((prev) => [...prev, { type: "user", content: userMessage }]);
+    setMessages((prev) => [...prev, { type: "user", content: messageToSend }]);
     setInputValue("");
     setIsLoading(true);
 
-    // Simulate API call - replace with actual chat API
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: messageToSend,
+          history: chatHistory,
+          useTools: true,
+        }),
+      });
+
+      const data = await response.json();
+
+      // Update chat history
+      setChatHistory(prev => [
+        ...prev,
+        { role: "user", content: messageToSend },
+        { role: "assistant", content: data.response || data.error || "No response" }
+      ]);
+
+      // Format response for display (convert markdown-like to HTML)
+      let formattedResponse = (data.response || data.error || "No response")
+        .replace(/\n/g, "<br />")
+        .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+        .replace(/₦/g, "<span style='color: var(--c-green);'>₦</span>");
+
+      // Add tools indicator if tools were used
+      if (data.toolsUsed) {
+        formattedResponse = `<span style="color: var(--c-blue); font-size: 10px;">[QUERIED DATABASE]</span><br /><br />` + formattedResponse;
+      }
+
       setMessages((prev) => [
         ...prev,
         {
           type: "system",
-          content: `&gt; Processing query against budget records...<br /><br />Searching for: "${userMessage}"<br /><br /><strong style="background:var(--c-yellow); padding: 0 4px; color: black;">ANALYSIS IN PROGRESS</strong>`,
+          content: formattedResponse,
         },
       ]);
+    } catch (error) {
+      console.error("Chat error:", error);
+      setMessages((prev) => [
+        ...prev,
+        {
+          type: "system",
+          content: "&gt; <span style='color: var(--c-red);'>ERROR:</span> Failed to connect to analyst. Please try again.",
+        },
+      ]);
+    } finally {
       setIsLoading(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -168,7 +216,10 @@ const AnalystPanel = () => {
         <span className="text-base md:text-lg font-medium tracking-tight">
           AI DATA ANALYST
         </span>
-        <div className="w-2.5 h-2.5 bg-c-red rounded-full border border-black animate-pulse" />
+        <div className="flex items-center gap-2">
+          {isLoading && <span className="text-xs font-mono">QUERYING...</span>}
+          <div className={`w-2.5 h-2.5 ${isLoading ? 'bg-c-yellow' : 'bg-c-green'} rounded-full border border-black ${isLoading ? 'animate-pulse' : ''}`} />
+        </div>
       </div>
 
       <div
@@ -188,7 +239,25 @@ const AnalystPanel = () => {
         ))}
         {isLoading && (
           <div className="self-start font-mono text-c-black animate-pulse">
-            &gt; Processing...
+            &gt; Analyzing budget data...
+          </div>
+        )}
+
+        {/* Suggested prompts - show only at start */}
+        {messages.length <= 1 && !isLoading && (
+          <div className="mt-2">
+            <span className="text-xs text-gray-500 font-mono block mb-2">&gt; TRY ASKING:</span>
+            <div className="flex flex-wrap gap-2">
+              {suggestedPrompts.map((prompt, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => handleSend(prompt)}
+                  className="text-xs bg-white/50 border border-c-border px-2 py-1 rounded hover:bg-white transition-colors text-left"
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
           </div>
         )}
       </div>
@@ -203,7 +272,7 @@ const AnalystPanel = () => {
           className="flex-grow border-none p-4 md:p-6 font-display text-sm md:text-base bg-transparent outline-none text-c-black placeholder:text-gray-400"
         />
         <button
-          onClick={handleSend}
+          onClick={() => handleSend()}
           disabled={isLoading}
           className="bg-c-red text-black border-l border-c-border px-4 md:px-6 font-mono font-bold cursor-pointer uppercase transition-colors hover:brightness-90 disabled:opacity-50 text-sm"
         >
@@ -433,11 +502,36 @@ export default function Home() {
             </p>
 
             {selectedFinding.recommendation && (
-              <div className="bg-[#EBC346]/30 p-4 border-l-4 border-[#EBC346]">
+              <div className="bg-[#EBC346]/30 p-4 border-l-4 border-[#EBC346] mb-6">
                 <h4 className="font-bold text-sm mb-2">RECOMMENDATION</h4>
                 <p className="text-sm">{selectedFinding.recommendation}</p>
               </div>
             )}
+
+            {/* Share Button */}
+            <div className="flex gap-3 pt-4 border-t border-gray-300">
+              <button
+                onClick={() => {
+                  const text = `${selectedFinding.entity}: ${formatAmount(selectedFinding.amount)}\n\n${selectedFinding.description}\n\n#Decide9ja #BudgetTransparency`;
+                  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+                  window.open(url, '_blank');
+                }}
+                className="flex-1 bg-c-black text-white py-3 font-mono text-sm uppercase hover:bg-gray-800 transition-colors"
+              >
+                Share on X
+              </button>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText(
+                    `${selectedFinding.entity}: ${formatAmount(selectedFinding.amount)}\n${selectedFinding.description}\n\n#Decide9ja`
+                  );
+                  alert('Copied to clipboard!');
+                }}
+                className="px-4 bg-white border border-c-border text-c-black font-mono text-sm uppercase hover:bg-gray-100 transition-colors"
+              >
+                Copy
+              </button>
+            </div>
           </div>
         </div>
       )}

@@ -1,0 +1,170 @@
+{
+  "federal_mdas": {
+    "Office of the Secretary to the Government of the Federation": {
+      "acronym": "OSGF",
+      "mandate": ["Government coordination", "Federal Executive Council support", "Inter-governmental relations"],
+      "risk_level": "high",
+      "typical_codes": ["2101", "2102", "2207", "2209"]
+    },
+    "Ministry of Finance": {
+      "acronym": "MOF",
+      "mandate": ["Fiscal policy", "Revenue management", "Budget preparation", "Debt management"],
+      "risk_level": "medium",
+      "typical_codes": ["2101", "2102", "2205", "2301"]
+    },
+    "Ministry of Health": {
+      "acronym": "FMOH",
+      "mandate": ["Healthcare policy", "Disease control", "Medical facilities", "Drug regulation"],
+      "risk_level": "medium",
+      "typical_codes": ["2101", "2203", "2302", "2303"]
+    },
+    "Ministry of Education": {
+      "acronym": "FME",
+      "mandate": ["Education policy", "Schools supervision", "Curriculum development", "Teacher training"],
+      "risk_level": "medium",
+      "typical_codes": ["2101", "2201", "2302", "2305"]
+    },
+    "Ministry of Works": {
+      "acronym": "FMW",
+      "mandate": ["Road construction", "Federal highways", "Infrastructure maintenance"],
+      "risk_level": "very_high",
+      "typical_codes": ["2302", "2303", "2301", "2205"]
+    },
+    "Ministry of Defence": {
+      "acronym": "MOD",
+      "mandate": ["National defence", "Military operations", "Defence equipment"],
+      "risk_level": "high",
+      "typical_codes": ["2101", "2301", "2302", "2204"]
+    },
+    "Ministry of Interior": {
+      "acronym": "MOI",
+      "mandate": ["Internal security", "Immigration", "Prisons", "Fire service"],
+      "risk_level": "high",
+      "typical_codes": ["2101", "2301", "2206", "2207"]
+    },
+    "Ministry of Agriculture": {
+      "acronym": "FMARD",
+      "mandate": ["Agricultural policy", "Food security", "Farming support", "Livestock development"],
+      "risk_level": "medium",
+      "typical_codes": ["2101", "2208", "2301", "2305"]
+    },
+    "Ministry of Power": {
+      "acronym": "FMP",
+      "mandate": ["Electricity generation", "Power transmission", "Rural electrification"],
+      "risk_level": "high",
+      "typical_codes": ["2302", "2303", "2205", "2301"]
+    },
+    "Ministry of Petroleum Resources": {
+      "acronym": "MPR",
+      "mandate": ["Oil and gas policy", "Petroleum regulation", "NNPC oversight"],
+      "risk_level": "very_high",
+      "typical_codes": ["2205", "2301", "2302", "2209"]
+    },
+    "Ministry of Transportation": {
+      "acronym": "FMT",
+      "mandate": ["Transport policy", "Railways", "Ports", "Aviation"],
+      "risk_level": "high",
+      "typical_codes": ["2302", "2303", "2301", "2205"]
+    },
+    "Ministry of Communications and Digital Economy": {
+      "acronym": "FMCDE",
+      "mandate": ["Telecommunications policy", "Digital infrastructure", "Postal services"],
+      "risk_level": "medium",
+      "typical_codes": ["2301", "2302", "2205", "2201"]
+    },
+    "Ministry of Water Resources": {
+      "acronym": "FMWR",
+      "mandate": ["Water supply", "Irrigation", "Dam construction", "Water sanitation"],
+      "risk_level": "high",
+      "typical_codes": ["2302", "2303", "2301", "2205"]
+    },
+    "Ministry of Housing and Urban Development": {
+      "acronym": "FMHUD",
+      "mandate": ["Housing policy", "Urban planning", "Building standards"],
+      "risk_level": "high",
+      "typical_codes": ["2302", "2304", "2301", "2205"]
+    },
+    "National Assembly": {
+      "acronym": "NASS",
+      "mandate": ["Legislation", "Oversight", "Representation"],
+      "risk_level": "very_high",
+      "typical_codes": ["2101", "2102", "2207", "2209"]
+    },
+    "Judiciary": {
+      "acronym": "NJC",
+      "mandate": ["Justice administration", "Court operations", "Legal services"],
+      "risk_level": "medium",
+      "typical_codes": ["2101", "2102", "2302", "2204"]
+    },
+    "National Intelligence Agency": {
+      "acronym": "NIA",
+      "mandate": ["External intelligence", "Counter-intelligence", "National security"],
+      "risk_level": "very_high",
+      "typical_codes": ["2101", "2209", "2301"],
+      "red_flags": ["Hospital construction", "School building", "Road projects"]
+    },
+    "State Security Service": {
+      "acronym": "SSS/DSS",
+      "mandate": ["Internal security", "Counter-terrorism", "VIP protection"],
+      "risk_level": "very_high",
+      "typical_codes": ["2101", "2209", "2301"],
+      "red_flags": ["Healthcare projects", "Agricultural programs"]
+    },
+    "Office of the National Security Adviser": {
+      "acronym": "ONSA",
+      "mandate": ["Security coordination", "Intelligence synthesis", "Security policy"],
+      "risk_level": "very_high",
+      "typical_codes": ["2101", "2209", "2301", "2205"]
+    },
+    "Federal Road Maintenance Agency": {
+      "acronym": "FERMA",
+      "mandate": ["Road maintenance", "Emergency repairs", "Road safety"],
+      "risk_level": "high",
+      "typical_codes": ["2303", "2204", "2206", "2301"]
+    },
+    "Niger Delta Development Commission": {
+      "acronym": "NDDC",
+      "mandate": ["Niger Delta development", "Environmental remediation", "Infrastructure"],
+      "risk_level": "very_high",
+      "typical_codes": ["2302", "2303", "2305", "2209"]
+    },
+    "Universal Basic Education Commission": {
+      "acronym": "UBEC",
+      "mandate": ["Basic education funding", "School construction", "Teacher training"],
+      "risk_level": "high",
+      "typical_codes": ["2302", "2305", "2201", "2203"]
+    },
+    "National Primary Health Care Development Agency": {
+      "acronym": "NPHCDA",
+      "mandate": ["Primary healthcare", "Immunization", "PHC facilities"],
+      "risk_level": "medium",
+      "typical_codes": ["2302", "2303", "2203", "2201"]
+    },
+    "Federal Capital Territory Administration": {
+      "acronym": "FCTA",
+      "mandate": ["Abuja administration", "FCT infrastructure", "Land management"],
+      "risk_level": "high",
+      "typical_codes": ["2302", "2303", "2304", "2301"]
+    }
+  },
+  "mandate_violations": {
+    "description": "Activities outside an MDA's statutory mandate are red flags",
+    "common_violations": [
+      {
+        "mda_type": "Security agencies",
+        "violation": "Healthcare/education infrastructure",
+        "risk_increase": 30
+      },
+      {
+        "mda_type": "Legislative bodies",
+        "violation": "Capital construction projects",
+        "risk_increase": 25
+      },
+      {
+        "mda_type": "Regulatory agencies",
+        "violation": "Direct service delivery",
+        "risk_increase": 20
+      }
+    ]
+  }
+}

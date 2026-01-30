@@ -1,0 +1,173 @@
+{
+  "known_patterns": {
+    "budget_padding": {
+      "description": "Inflating budget figures beyond actual needs",
+      "indicators": [
+        "Round numbers (exact millions/billions)",
+        "Prices significantly above market rates",
+        "Vague descriptions without specifications",
+        "Unusual YoY increases without justification"
+      ],
+      "risk_score_contribution": 20
+    },
+    "ghost_projects": {
+      "description": "Projects that exist only on paper",
+      "indicators": [
+        "Projects in inaccessible locations",
+        "Repeated 'rehabilitation' of same asset",
+        "No verifiable deliverables",
+        "Contractor address unverifiable"
+      ],
+      "risk_score_contribution": 25
+    },
+    "duplicate_projects": {
+      "description": "Same project appearing multiple times",
+      "indicators": [
+        "Identical descriptions in different MDAs",
+        "Same project in federal and state budgets",
+        "Similar amounts with slight variations"
+      ],
+      "risk_score_contribution": 30
+    },
+    "mandate_creep": {
+      "description": "Spending outside statutory mandate",
+      "indicators": [
+        "Security agency doing construction",
+        "Regulatory body doing service delivery",
+        "Administrative office doing capital projects"
+      ],
+      "risk_score_contribution": 25
+    },
+    "phantom_training": {
+      "description": "Training programs that never happen",
+      "indicators": [
+        "Excessive training budget relative to staff size",
+        "International training for routine tasks",
+        "No training reports or certificates"
+      ],
+      "risk_score_contribution": 20
+    },
+    "consultancy_abuse": {
+      "description": "Excessive or unnecessary consultancy",
+      "indicators": [
+        "Consultancy for routine government functions",
+        "No competitive bidding",
+        "Repeated engagement of same consultant",
+        "Deliverables not defined"
+      ],
+      "risk_score_contribution": 25
+    },
+    "procurement_splitting": {
+      "description": "Splitting contracts to avoid thresholds",
+      "indicators": [
+        "Multiple contracts just below threshold",
+        "Same vendor, multiple small contracts",
+        "Sequential dates, similar amounts"
+      ],
+      "risk_score_contribution": 20
+    },
+    "election_year_spending": {
+      "description": "Unusual spending patterns before elections",
+      "indicators": [
+        "Sharp increase in capital projects",
+        "Rush contracts before election",
+        "Projects in swing constituencies"
+      ],
+      "risk_score_contribution": 15
+    }
+  },
+  "high_risk_keywords": {
+    "very_high_risk": [
+      "consultancy",
+      "professional services",
+      "miscellaneous",
+      "sundry",
+      "contingency",
+      "emergency",
+      "special intervention",
+      "rehabilitation"
+    ],
+    "high_risk": [
+      "training",
+      "capacity building",
+      "workshop",
+      "seminar",
+      "conference",
+      "study tour",
+      "international travel",
+      "foreign trip"
+    ],
+    "medium_risk": [
+      "maintenance",
+      "repairs",
+      "renovation",
+      "upgrading",
+      "procurement",
+      "purchase"
+    ]
+  },
+  "red_flag_mdas": {
+    "description": "MDAs historically associated with high corruption risk",
+    "list": [
+      "National Assembly",
+      "Niger Delta Development Commission",
+      "National Intelligence Agency",
+      "Office of the NSA",
+      "Ministry of Petroleum Resources",
+      "Ministry of Works",
+      "Federal Road Maintenance Agency",
+      "Universal Basic Education Commission",
+      "Federal Capital Territory Administration"
+    ],
+    "risk_score_contribution": 15
+  },
+  "statistical_anomalies": {
+    "benford_law_violation": {
+      "description": "First digit distribution deviates from expected pattern",
+      "threshold_p_value": 0.05,
+      "risk_score_contribution": 20
+    },
+    "clustering": {
+      "description": "Values cluster around thresholds or round numbers",
+      "risk_score_contribution": 15
+    },
+    "outlier_detection": {
+      "description": "Values significantly different from peers",
+      "std_dev_threshold": 2.5,
+      "risk_score_contribution": 15
+    }
+  },
+  "seasonal_patterns": {
+    "fiscal_year_end_rush": {
+      "description": "Unusual spending in December (federal) or March (states)",
+      "risk_score_contribution": 10
+    },
+    "pre_election_surge": {
+      "description": "Spike in capital expenditure 6-12 months before election",
+      "risk_score_contribution": 15
+    }
+  },
+  "historical_scandals": {
+    "description": "Reference cases for pattern recognition",
+    "cases": [
+      {
+        "name": "Budget Padding Scandal 2016",
+        "amount_ngn": 481000000000,
+        "pattern": "Insertion of unauthorized projects",
+        "mdas_involved": ["National Assembly", "Ministry of Budget"]
+      },
+      {
+        "name": "NDDC Forensic Audit Findings",
+        "amount_ngn": 6000000000000,
+        "pattern": "Ghost projects, inflated contracts",
+        "mdas_involved": ["NDDC"]
+      },
+      {
+        "name": "Pension Fund Fraud",
+        "amount_ngn": 32800000000,
+        "pattern": "Phantom pensioners, ghost workers",
+        "mdas_involved": ["Office of Head of Service"]
+      }
+    ]
+  }
+}
