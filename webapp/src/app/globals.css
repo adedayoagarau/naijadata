@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #050505;
+  --text-main: #EAEAEA;
+  --accent-green: #25D366;
+  --grid-line: #333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-space-mono), monospace;
+  overflow-x: hidden;
+}
+
+.font-pixel {
+  font-family: var(--font-vt323), monospace;
+}
+
+.font-mono {
+  font-family: var(--font-space-mono), monospace;
+}
+
+/* Grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center top;
+}
+
+/* Dither effect for images */
+.img-dither {
+  filter: grayscale(100%) contrast(150%) brightness(0.9);
+  position: relative;
+}
+
+/* Barcode pattern */
+.barcode {
+  height: 40px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    #fff 0px,
+    #fff 2px,
+    transparent 2px,
+    transparent 4px,
+    #fff 4px,
+    #fff 5px,
+    transparent 5px,
+    transparent 8px
+  );
+}
+
+/* Brutalist borders */
+.brut-border {
+  border: 2px solid #fff;
+}
+
+.brut-border-thin {
+  border: 1px solid #333;
+}
+
+/* Scanline overlay */
+.scanline {
+  width: 100%;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 255, 65, 0.05) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  height: 100vh;
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Marquee animation */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Button shadow effect */
+.brut-shadow {
+  box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.brut-shadow-green {
+  box-shadow: 4px 4px 0px 0px #25D366;
+}
+
+/* Typing animation for chat */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(40, end);
+}
+
+/* Pulse animation for live data */
+@keyframes pulse-green {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.pulse-green {
+  animation: pulse-green 2s ease-in-out infinite;
+}
