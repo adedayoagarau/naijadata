@@ -1,0 +1,241 @@
+{
+  "source": "National Population Commission projections 2024",
+  "total_population_2024": 223000000,
+  "states": {
+    "Abia": {
+      "population_2024": 4112230,
+      "capital": "Umuahia",
+      "zone": "South East",
+      "area_km2": 6320
+    },
+    "Adamawa": {
+      "population_2024": 4653066,
+      "capital": "Yola",
+      "zone": "North East",
+      "area_km2": 36917
+    },
+    "Akwa Ibom": {
+      "population_2024": 5867545,
+      "capital": "Uyo",
+      "zone": "South South",
+      "area_km2": 7081
+    },
+    "Anambra": {
+      "population_2024": 5527809,
+      "capital": "Awka",
+      "zone": "South East",
+      "area_km2": 4844
+    },
+    "Bauchi": {
+      "population_2024": 7031327,
+      "capital": "Bauchi",
+      "zone": "North East",
+      "area_km2": 49119
+    },
+    "Bayelsa": {
+      "population_2024": 2277961,
+      "capital": "Yenagoa",
+      "zone": "South South",
+      "area_km2": 10773
+    },
+    "Benue": {
+      "population_2024": 5741815,
+      "capital": "Makurdi",
+      "zone": "North Central",
+      "area_km2": 34059
+    },
+    "Borno": {
+      "population_2024": 5860183,
+      "capital": "Maiduguri",
+      "zone": "North East",
+      "area_km2": 70898
+    },
+    "Cross River": {
+      "population_2024": 3866269,
+      "capital": "Calabar",
+      "zone": "South South",
+      "area_km2": 20156
+    },
+    "Delta": {
+      "population_2024": 5663362,
+      "capital": "Asaba",
+      "zone": "South South",
+      "area_km2": 17698
+    },
+    "Ebonyi": {
+      "population_2024": 2880383,
+      "capital": "Abakaliki",
+      "zone": "South East",
+      "area_km2": 5670
+    },
+    "Edo": {
+      "population_2024": 4235595,
+      "capital": "Benin City",
+      "zone": "South South",
+      "area_km2": 17802
+    },
+    "Ekiti": {
+      "population_2024": 3270798,
+      "capital": "Ado-Ekiti",
+      "zone": "South West",
+      "area_km2": 6353
+    },
+    "Enugu": {
+      "population_2024": 4411119,
+      "capital": "Enugu",
+      "zone": "South East",
+      "area_km2": 7161
+    },
+    "FCT": {
+      "population_2024": 4291000,
+      "capital": "Abuja",
+      "zone": "North Central",
+      "area_km2": 7315
+    },
+    "Gombe": {
+      "population_2024": 3256962,
+      "capital": "Gombe",
+      "zone": "North East",
+      "area_km2": 18768
+    },
+    "Imo": {
+      "population_2024": 5408756,
+      "capital": "Owerri",
+      "zone": "South East",
+      "area_km2": 5530
+    },
+    "Jigawa": {
+      "population_2024": 5828163,
+      "capital": "Dutse",
+      "zone": "North West",
+      "area_km2": 23154
+    },
+    "Kaduna": {
+      "population_2024": 8252366,
+      "capital": "Kaduna",
+      "zone": "North West",
+      "area_km2": 46053
+    },
+    "Kano": {
+      "population_2024": 13076892,
+      "capital": "Kano",
+      "zone": "North West",
+      "area_km2": 20131
+    },
+    "Katsina": {
+      "population_2024": 7831319,
+      "capital": "Katsina",
+      "zone": "North West",
+      "area_km2": 24192
+    },
+    "Kebbi": {
+      "population_2024": 4440050,
+      "capital": "Birnin Kebbi",
+      "zone": "North West",
+      "area_km2": 36800
+    },
+    "Kogi": {
+      "population_2024": 4473490,
+      "capital": "Lokoja",
+      "zone": "North Central",
+      "area_km2": 29833
+    },
+    "Kwara": {
+      "population_2024": 3192893,
+      "capital": "Ilorin",
+      "zone": "North Central",
+      "area_km2": 36825
+    },
+    "Lagos": {
+      "population_2024": 15388000,
+      "capital": "Ikeja",
+      "zone": "South West",
+      "area_km2": 3577
+    },
+    "Nasarawa": {
+      "population_2024": 2523395,
+      "capital": "Lafia",
+      "zone": "North Central",
+      "area_km2": 27117
+    },
+    "Niger": {
+      "population_2024": 5556247,
+      "capital": "Minna",
+      "zone": "North Central",
+      "area_km2": 76363
+    },
+    "Ogun": {
+      "population_2024": 5217716,
+      "capital": "Abeokuta",
+      "zone": "South West",
+      "area_km2": 16762
+    },
+    "Ondo": {
+      "population_2024": 4671695,
+      "capital": "Akure",
+      "zone": "South West",
+      "area_km2": 15500
+    },
+    "Osun": {
+      "population_2024": 4705589,
+      "capital": "Osogbo",
+      "zone": "South West",
+      "area_km2": 9251
+    },
+    "Oyo": {
+      "population_2024": 7840864,
+      "capital": "Ibadan",
+      "zone": "South West",
+      "area_km2": 28454
+    },
+    "Plateau": {
+      "population_2024": 4200442,
+      "capital": "Jos",
+      "zone": "North Central",
+      "area_km2": 30913
+    },
+    "Rivers": {
+      "population_2024": 7303924,
+      "capital": "Port Harcourt",
+      "zone": "South South",
+      "area_km2": 11077
+    },
+    "Sokoto": {
+      "population_2024": 5093363,
+      "capital": "Sokoto",
+      "zone": "North West",
+      "area_km2": 25973
+    },
+    "Taraba": {
+      "population_2024": 3066834,
+      "capital": "Jalingo",
+      "zone": "North East",
+      "area_km2": 54473
+    },
+    "Yobe": {
+      "population_2024": 3294137,
+      "capital": "Damaturu",
+      "zone": "North East",
+      "area_km2": 45502
+    },
+    "Zamfara": {
+      "population_2024": 4515261,
+      "capital": "Gusau",
+      "zone": "North West",
+      "area_km2": 39762
+    }
+  },
+  "geopolitical_zones": {
+    "North Central": ["Benue", "FCT", "Kogi", "Kwara", "Nasarawa", "Niger", "Plateau"],
+    "North East": ["Adamawa", "Bauchi", "Borno", "Gombe", "Taraba", "Yobe"],
+    "North West": ["Jigawa", "Kaduna", "Kano", "Katsina", "Kebbi", "Sokoto", "Zamfara"],
+    "South East": ["Abia", "Anambra", "Ebonyi", "Enugu", "Imo"],
+    "South South": ["Akwa Ibom", "Bayelsa", "Cross River", "Delta", "Edo", "Rivers"],
+    "South West": ["Ekiti", "Lagos", "Ogun", "Ondo", "Osun", "Oyo"]
+  },
+  "per_capita_benchmarks": {
+    "minimum_health_spend_per_capita_ngn": 15000,
+    "minimum_education_spend_per_capita_ngn": 20000,
+    "minimum_total_budget_per_capita_ngn": 150000
+  }
+}

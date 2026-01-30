@@ -1,0 +1,129 @@
+{
+  "budget_code_prefixes": {
+    "2101": {
+      "name": "Salaries and Wages",
+      "category": "Personnel",
+      "risk_level": "low",
+      "description": "Basic salaries and allowances for staff"
+    },
+    "2102": {
+      "name": "Allowances",
+      "category": "Personnel",
+      "risk_level": "medium",
+      "description": "Various allowances - often inflated"
+    },
+    "2201": {
+      "name": "Training",
+      "category": "Overhead",
+      "risk_level": "high",
+      "description": "Training and capacity building - frequently phantom"
+    },
+    "2202": {
+      "name": "Utilities",
+      "category": "Overhead",
+      "risk_level": "low",
+      "description": "Electricity, water, gas"
+    },
+    "2203": {
+      "name": "Materials and Supplies",
+      "category": "Overhead",
+      "risk_level": "medium",
+      "description": "Office materials, consumables"
+    },
+    "2204": {
+      "name": "Maintenance",
+      "category": "Overhead",
+      "risk_level": "medium",
+      "description": "Repairs and maintenance of assets"
+    },
+    "2205": {
+      "name": "Consulting and Professional Services",
+      "category": "Overhead",
+      "risk_level": "very_high",
+      "description": "Consultancy fees - MAJOR fraud area"
+    },
+    "2206": {
+      "name": "Fuel and Lubricants",
+      "category": "Overhead",
+      "risk_level": "medium",
+      "description": "Vehicle running costs"
+    },
+    "2207": {
+      "name": "Travel and Transport",
+      "category": "Overhead",
+      "risk_level": "high",
+      "description": "Local and international travel - often abused"
+    },
+    "2208": {
+      "name": "Grants and Contributions",
+      "category": "Overhead",
+      "risk_level": "medium",
+      "description": "Transfers to other entities"
+    },
+    "2209": {
+      "name": "Miscellaneous",
+      "category": "Overhead",
+      "risk_level": "very_high",
+      "description": "Catch-all category - high abuse potential"
+    },
+    "2210": {
+      "name": "Welfare Packages",
+      "category": "Overhead",
+      "risk_level": "medium",
+      "description": "Staff welfare and entertainment"
+    },
+    "2211": {
+      "name": "Consulting Services",
+      "category": "Overhead",
+      "risk_level": "very_high",
+      "description": "Technical consultancy - major fraud vector"
+    },
+    "2301": {
+      "name": "Capital Purchases",
+      "category": "Capital",
+      "risk_level": "high",
+      "description": "Purchase of assets - frequently inflated"
+    },
+    "2302": {
+      "name": "Construction and Provision",
+      "category": "Capital",
+      "risk_level": "very_high",
+      "description": "Building construction - highest padding risk"
+    },
+    "2303": {
+      "name": "Rehabilitation and Repairs",
+      "category": "Capital",
+      "risk_level": "very_high",
+      "description": "Renovation projects - often ghost/duplicate"
+    },
+    "2304": {
+      "name": "Acquisition of Land",
+      "category": "Capital",
+      "risk_level": "high",
+      "description": "Land purchases - valuation fraud common"
+    },
+    "2305": {
+      "name": "Grants to MDAs",
+      "category": "Capital",
+      "risk_level": "medium",
+      "description": "Capital grants to other agencies"
+    }
+  },
+  "economic_codes": {
+    "21": "Personnel Costs",
+    "22": "Overhead Costs",
+    "23": "Capital Expenditure"
+  },
+  "functional_codes": {
+    "701": "General Public Services",
+    "702": "Defence",
+    "703": "Public Order and Safety",
+    "704": "Economic Affairs",
+    "705": "Environment",
+    "706": "Housing and Community",
+    "707": "Health",
+    "708": "Recreation and Culture",
+    "709": "Education",
+    "710": "Social Protection"
+  }
+}

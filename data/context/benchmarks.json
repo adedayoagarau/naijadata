@@ -1,0 +1,169 @@
+{
+  "procurement_benchmarks": {
+    "vehicles": {
+      "Toyota Land Cruiser V8": {
+        "market_price_ngn": 85000000,
+        "max_acceptable_ngn": 120000000,
+        "red_flag_threshold_ngn": 150000000
+      },
+      "Toyota Hilux": {
+        "market_price_ngn": 45000000,
+        "max_acceptable_ngn": 65000000,
+        "red_flag_threshold_ngn": 80000000
+      },
+      "Toyota Prado": {
+        "market_price_ngn": 65000000,
+        "max_acceptable_ngn": 90000000,
+        "red_flag_threshold_ngn": 120000000
+      },
+      "Toyota Camry": {
+        "market_price_ngn": 35000000,
+        "max_acceptable_ngn": 50000000,
+        "red_flag_threshold_ngn": 70000000
+      },
+      "Toyota Hiace Bus": {
+        "market_price_ngn": 40000000,
+        "max_acceptable_ngn": 55000000,
+        "red_flag_threshold_ngn": 75000000
+      },
+      "Coaster Bus": {
+        "market_price_ngn": 55000000,
+        "max_acceptable_ngn": 75000000,
+        "red_flag_threshold_ngn": 100000000
+      },
+      "Mercedes Benz S-Class": {
+        "market_price_ngn": 150000000,
+        "max_acceptable_ngn": 200000000,
+        "red_flag_threshold_ngn": 280000000
+      }
+    },
+    "construction": {
+      "road_per_km": {
+        "description": "Asphalt road construction per kilometer",
+        "rural_ngn": 250000000,
+        "urban_ngn": 500000000,
+        "highway_ngn": 800000000,
+        "red_flag_multiplier": 2.5
+      },
+      "borehole": {
+        "description": "Standard borehole with hand pump",
+        "market_price_ngn": 3500000,
+        "max_acceptable_ngn": 5000000,
+        "red_flag_threshold_ngn": 10000000
+      },
+      "classroom_block": {
+        "description": "3-classroom block with furniture",
+        "market_price_ngn": 25000000,
+        "max_acceptable_ngn": 35000000,
+        "red_flag_threshold_ngn": 60000000
+      },
+      "health_center": {
+        "description": "Primary health center",
+        "market_price_ngn": 80000000,
+        "max_acceptable_ngn": 120000000,
+        "red_flag_threshold_ngn": 200000000
+      },
+      "office_building_per_sqm": {
+        "description": "Office building construction per square meter",
+        "standard_ngn": 350000,
+        "premium_ngn": 600000,
+        "red_flag_threshold_ngn": 1000000
+      }
+    },
+    "equipment": {
+      "laptop": {
+        "market_price_ngn": 800000,
+        "max_acceptable_ngn": 1500000,
+        "red_flag_threshold_ngn": 3000000
+      },
+      "desktop_computer": {
+        "market_price_ngn": 600000,
+        "max_acceptable_ngn": 1000000,
+        "red_flag_threshold_ngn": 2000000
+      },
+      "printer_standard": {
+        "market_price_ngn": 150000,
+        "max_acceptable_ngn": 300000,
+        "red_flag_threshold_ngn": 600000
+      },
+      "air_conditioner_split": {
+        "market_price_ngn": 400000,
+        "max_acceptable_ngn": 700000,
+        "red_flag_threshold_ngn": 1500000
+      },
+      "generator_20kva": {
+        "market_price_ngn": 4000000,
+        "max_acceptable_ngn": 6000000,
+        "red_flag_threshold_ngn": 12000000
+      },
+      "generator_100kva": {
+        "market_price_ngn": 15000000,
+        "max_acceptable_ngn": 22000000,
+        "red_flag_threshold_ngn": 40000000
+      }
+    },
+    "services": {
+      "training_per_person_per_day": {
+        "local_ngn": 50000,
+        "max_acceptable_ngn": 100000,
+        "red_flag_threshold_ngn": 250000
+      },
+      "consultancy_per_day": {
+        "local_ngn": 500000,
+        "international_ngn": 2000000,
+        "red_flag_threshold_ngn": 5000000
+      }
+    }
+  },
+  "international_benchmarks": {
+    "education_percentage_of_budget": {
+      "unesco_minimum": 15,
+      "unesco_recommended": 20,
+      "african_average": 16.5,
+      "nigeria_federal_typical": 7
+    },
+    "health_percentage_of_budget": {
+      "abuja_declaration_target": 15,
+      "who_recommended": 10,
+      "african_average": 9.8,
+      "nigeria_federal_typical": 4.5
+    },
+    "recurrent_vs_capital_ratio": {
+      "ideal_maximum_recurrent": 60,
+      "nigeria_typical_recurrent": 75,
+      "red_flag_recurrent_above": 80
+    },
+    "personnel_cost_percentage": {
+      "ideal_maximum": 35,
+      "warning_threshold": 50,
+      "red_flag_above": 60
+    }
+  },
+  "inflation_rates": {
+    "2019": 11.4,
+    "2020": 13.2,
+    "2021": 15.6,
+    "2022": 18.8,
+    "2023": 24.1,
+    "2024": 28.9,
+    "2025": 32.5,
+    "2026_projected": 25.0
+  },
+  "exchange_rates": {
+    "description": "NGN to USD official rate",
+    "2019": 362,
+    "2020": 380,
+    "2021": 411,
+    "2022": 435,
+    "2023": 755,
+    "2024": 1200,
+    "2025": 1550,
+    "2026_current": 1650
+  },
+  "yoy_variance_thresholds": {
+    "normal_max_percentage": 35,
+    "warning_percentage": 50,
+    "red_flag_percentage": 100,
+    "extreme_percentage": 200
+  }
+}
