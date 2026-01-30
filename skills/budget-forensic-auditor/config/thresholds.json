@@ -1,0 +1,46 @@
+{
+  "benford": {
+    "chi_square_critical": 15.507,
+    "max_deviation_percent": 20,
+    "min_sample_size": 50
+  },
+  "variance": {
+    "yoy_critical_percent": 200,
+    "yoy_high_percent": 100,
+    "yoy_medium_percent": 50,
+    "cross_mda_ratio_critical": 10,
+    "cross_mda_ratio_high": 5,
+    "inflation_rate_2024": 28.92,
+    "inflation_rate_2025": 24.5,
+    "inflation_rate_2026": 15.0
+  },
+  "amounts": {
+    "critical_threshold_naira": 10000000000,
+    "high_threshold_naira": 1000000000,
+    "medium_threshold_naira": 100000000,
+    "round_number_tolerance": 0.001
+  },
+  "patterns": {
+    "miscellaneous_keywords": [
+      "miscellaneous",
+      "sundry",
+      "others",
+      "general",
+      "various",
+      "unspecified"
+    ],
+    "suspicious_descriptions": [
+      "contingency",
+      "emergency",
+      "special",
+      "confidential",
+      "security vote"
+    ]
+  },
+  "severity_weights": {
+    "amount_weight": 0.3,
+    "pattern_weight": 0.25,
+    "context_weight": 0.25,
+    "confidence_weight": 0.2
+  }
+}

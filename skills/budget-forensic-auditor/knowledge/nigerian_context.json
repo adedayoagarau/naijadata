@@ -1,0 +1,146 @@
+{
+  "high_risk_mdas": {
+    "national_assembly": {
+      "risk_level": "CRITICAL",
+      "known_issues": ["excessive_overhead", "travel_abuse", "constituency_project_padding"],
+      "typical_red_flags": ["per_diem_inflation", "furniture_replacement", "vehicle_procurement"]
+    },
+    "nia": {
+      "risk_level": "HIGH",
+      "known_issues": ["opacity", "mandate_creep", "classified_spending"],
+      "typical_red_flags": ["non_intelligence_spending", "hospital_construction", "housing"]
+    },
+    "dia": {
+      "risk_level": "HIGH",
+      "known_issues": ["opacity", "classified_abuse"],
+      "typical_red_flags": ["infrastructure_outside_mandate"]
+    },
+    "nass_service_commission": {
+      "risk_level": "HIGH",
+      "known_issues": ["administrative_bloat"],
+      "typical_red_flags": ["consultant_fees", "training_overseas"]
+    },
+    "presidency": {
+      "risk_level": "HIGH",
+      "known_issues": ["security_vote_opacity", "special_services"],
+      "typical_red_flags": ["unspecified_expenditure", "protocol_spending"]
+    }
+  },
+
+  "mandate_violations": {
+    "description": "Agencies spending on items outside their core mandate",
+    "rules": [
+      {
+        "if_mda_type": "security",
+        "flags_if_spending_on": ["education", "health_facilities", "road_construction", "agriculture"],
+        "severity": "HIGH"
+      },
+      {
+        "if_mda_type": "education",
+        "flags_if_spending_on": ["security_equipment", "weapons", "ammunition"],
+        "severity": "CRITICAL"
+      },
+      {
+        "if_mda_type": "health",
+        "flags_if_spending_on": ["military_equipment", "intelligence"],
+        "severity": "CRITICAL"
+      }
+    ]
+  },
+
+  "security_agencies": [
+    "nigerian army", "army", "naval", "navy", "air force",
+    "police", "nscdc", "civil defence", "immigration",
+    "customs", "nia", "dia", "dss", "efcc", "icpc",
+    "naptip", "ndlea", "correctional service", "fire service"
+  ],
+
+  "education_keywords": [
+    "school", "education", "university", "polytechnic",
+    "college", "student", "teacher", "lecture", "academic",
+    "scholarship", "bursary", "classroom", "laboratory"
+  ],
+
+  "health_keywords": [
+    "hospital", "clinic", "medical", "health", "drug",
+    "pharmaceutical", "doctor", "nurse", "patient",
+    "ambulance", "surgery", "treatment"
+  ],
+
+  "infrastructure_keywords": [
+    "road", "bridge", "highway", "construction", "building",
+    "renovation", "rehabilitation", "maintenance"
+  ],
+
+  "padding_indicators": {
+    "round_numbers": {
+      "description": "Exact round amounts suggest estimation rather than actual costing",
+      "examples": ["1000000000", "500000000", "100000000"],
+      "risk_multiplier": 1.5
+    },
+    "uniform_line_items": {
+      "description": "Multiple identical amounts across different items",
+      "risk_multiplier": 2.0
+    },
+    "excessive_unit_costs": {
+      "benchmarks": {
+        "laptop_computer": {"max_reasonable": 500000, "currency": "NGN"},
+        "desktop_computer": {"max_reasonable": 400000, "currency": "NGN"},
+        "office_chair": {"max_reasonable": 150000, "currency": "NGN"},
+        "office_table": {"max_reasonable": 200000, "currency": "NGN"},
+        "vehicle_sedan": {"max_reasonable": 25000000, "currency": "NGN"},
+        "vehicle_suv": {"max_reasonable": 50000000, "currency": "NGN"},
+        "generator_small": {"max_reasonable": 500000, "currency": "NGN"},
+        "generator_industrial": {"max_reasonable": 15000000, "currency": "NGN"},
+        "air_conditioner": {"max_reasonable": 350000, "currency": "NGN"},
+        "borehole": {"max_reasonable": 8000000, "currency": "NGN"},
+        "primary_school": {"max_reasonable": 150000000, "currency": "NGN"},
+        "health_center": {"max_reasonable": 150000000, "currency": "NGN"}
+      }
+    }
+  },
+
+  "ghost_worker_indicators": [
+    "personnel_cost_increase_without_headcount",
+    "overtime_exceeds_base_salary",
+    "training_cost_per_staff_excessive",
+    "uniform_salaries_across_grades"
+  ],
+
+  "election_year_flags": {
+    "years": [2023, 2027],
+    "pre_election_months": [10, 11, 12],
+    "election_months": [1, 2, 3],
+    "suspicious_patterns": [
+      "constituency_project_spike",
+      "empowerment_program_surge",
+      "vehicle_procurement_increase",
+      "furniture_replacement_wave"
+    ]
+  },
+
+  "known_problematic_budget_codes": {
+    "22020801": {"name": "Local Travel", "risk": "HIGH", "reason": "Frequently inflated"},
+    "22020803": {"name": "International Travel", "risk": "CRITICAL", "reason": "Excessive per diem claims"},
+    "22020901": {"name": "Training Domestic", "risk": "MEDIUM", "reason": "Ghost training programs"},
+    "22020902": {"name": "Training International", "risk": "HIGH", "reason": "Training tourism"},
+    "22020501": {"name": "Motor Vehicle Maintenance", "risk": "HIGH", "reason": "Inflated costs"},
+    "22020401": {"name": "Office Stationery", "risk": "MEDIUM", "reason": "Padding vehicle"},
+    "22021003": {"name": "Refreshments", "risk": "HIGH", "reason": "Meeting padding"},
+    "22020301": {"name": "Telephone Charges", "risk": "MEDIUM", "reason": "Personal use"},
+    "22021007": {"name": "Welfare Packages", "risk": "HIGH", "reason": "Undefined beneficiaries"}
+  },
+
+  "state_federal_duplication": {
+    "description": "Items that should only appear at one level of government",
+    "federal_only": [
+      "foreign_affairs", "defence", "immigration", "customs"
+    ],
+    "state_only": [
+      "local_government_affairs", "chieftaincy_matters"
+    ],
+    "shared_but_watch": [
+      "primary_education", "primary_healthcare", "rural_roads"
+    ]
+  }
+}
