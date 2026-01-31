@@ -23,8 +23,6 @@ export default function RootLayout({
       <body className="antialiased">
         {children}
         <MobileNav />
-        {/* Spacer for mobile nav */}
-        <div className="h-16 md:hidden" />
       </body>
     </html>
   );

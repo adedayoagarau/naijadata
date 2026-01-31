@@ -233,7 +233,7 @@ const AnalystPanel = () => {
   };
 
   return (
-    <aside className="bg-c-beige flex flex-col border-l border-c-border h-full">
+    <aside className="bg-c-beige flex flex-col border-l border-c-border h-[50vh] lg:h-full overflow-hidden">
       <div className="p-4 md:p-5 border-b border-c-border bg-c-yellow flex justify-between items-center">
         <span className="text-base md:text-lg font-medium tracking-tight">
           AI DATA ANALYST
@@ -505,10 +505,10 @@ export default function Home() {
       }
     >
       <Texture />
-      <div className="bg-c-beige text-c-black font-display overflow-x-hidden h-screen flex flex-col">
+      <div className="bg-c-beige text-c-black font-display overflow-x-hidden min-h-screen md:h-screen flex flex-col">
         <Header findingsCount={findings.length} />
 
-        <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px] overflow-hidden">
+        <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px] overflow-hidden lg:overflow-hidden">
           {/* Main Content Area */}
           <div className="flex flex-col overflow-hidden border-r border-c-border">
             {/* Stats Bar */}
