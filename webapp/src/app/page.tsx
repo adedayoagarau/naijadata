@@ -105,8 +105,8 @@ const BudgetBlock = ({
             : "border-black/10"
         }`}
       >
-        {typeof meta === "string" ? (
-          <span>{meta}</span>
+        {typeof meta === "string" || !meta ? (
+          <span>{meta || ""}</span>
         ) : (
           <>
             <span>{meta.left}</span>
