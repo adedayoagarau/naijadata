@@ -43,3 +43,4 @@ yarn-error.log*
 
 # Next.js
 next-env.d.ts
+webapp/tsconfig.tsbuildinfo
