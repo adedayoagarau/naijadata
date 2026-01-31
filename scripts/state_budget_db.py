@@ -141,13 +141,19 @@ STATES = {
             "status": "SIGNED",
             "name": "Budget of Recovery",
             "capital": "₦433.62 billion (62%)",
-            "recurrent": "₦265.04 billion (38%)"
+            "recurrent": "₦265.04 billion (38%)",
+            "docs": {
+                "download_page": "https://www.ondobudget.org/download_budget.php"
+            }
         },
         "2026": {
             "total": "₦524.41 billion",
             "status": "SIGNED",
             "capital": "₦303.58 billion (57.9%)",
-            "education": "₦77.02 billion (15%)"
+            "education": "₦77.02 billion (15%)",
+            "docs": {
+                "download_page": "https://www.ondobudget.org/download_budget.php"
+            }
         }
     },
 
@@ -233,7 +239,10 @@ STATES = {
             "total": "₦1.729 trillion",
             "status": "SIGNED",
             "name": "Budget of Accelerating the MORE Agenda",
-            "signed_date": "December 16, 2025"
+            "signed_date": "December 16, 2025",
+            "docs": {
+                "portal": "https://deltastate.gov.ng/"
+            }
         }
     },
 
@@ -264,13 +273,20 @@ STATES = {
         "website": "https://bayelsastate.gov.ng/",
         "2025": {
             "total": "₦582.7 billion",
-            "status": "SIGNED"
+            "status": "SIGNED",
+            "docs": {
+                "approved": "https://www.mof.by.gov.ng/uploads/BAYELSA%20State%20FY%202025%20Budget%20Publication%20pdf.pdf",
+                "budget_uploads": "https://www.mof.by.gov.ng/budget_uploads"
+            }
         },
         "2026": {
             "total": "₦1.01 trillion",
             "status": "SIGNED",
             "name": "Budget of Assured Prosperity II",
-            "signed_date": "December 23, 2025"
+            "signed_date": "December 23, 2025",
+            "docs": {
+                "budget_uploads": "https://www.mof.by.gov.ng/budget_uploads"
+            }
         }
     },
 
@@ -326,13 +342,20 @@ STATES = {
         "2025": {
             "total": "₦607 billion",
             "status": "SIGNED",
-            "name": "Changing Gears 2.0"
+            "name": "Changing Gears 2.0",
+            "docs": {
+                "mtef": "https://anambrastate.gov.ng/wp-content/uploads/Approved-MTEF_-2024-2026.pdf",
+                "documents_page": "https://anambrastate.gov.ng/documents/"
+            }
         },
         "2026": {
             "total": "₦766.37 billion",
-            "status": "PASSED",
+            "status": "SIGNED",
             "note": "Increased from ₦757 billion proposal",
-            "education": "30%+ (leads nation)"
+            "education": "30%+ (leads nation)",
+            "docs": {
+                "documents_page": "https://anambrastate.gov.ng/documents/"
+            }
         }
     },
 
@@ -389,14 +412,21 @@ STATES = {
         "2025": {
             "total": "₦807 billion",
             "status": "SIGNED",
-            "note": "Increased from ₦756 billion proposed"
+            "note": "Increased from ₦756 billion proposed",
+            "docs": {
+                "approved": "https://s3.eu-west-2.amazonaws.com/openstates.ng.storage/documents/dataset_IMSG_2024_Budget_ver-Approved.pdf",
+                "budget_portal": "https://imostate.gov.ng/IMSG/Services/EGov/Budget"
+            }
         },
         "2026": {
             "total": "₦1.4 trillion",
             "status": "SIGNED",
             "name": "Budget of Economic Breakthrough",
             "education": "₦60.62 billion (4.24% - second lowest)",
-            "signed_date": "December 24, 2025"
+            "signed_date": "December 24, 2025",
+            "docs": {
+                "budget_portal": "https://imostate.gov.ng/IMSG/Services/EGov/Budget"
+            }
         }
     },
 
@@ -430,13 +460,20 @@ STATES = {
         "website": "https://kdsg.gov.ng/",
         "2025": {
             "total": "₦790 billion",
-            "status": "SIGNED"
+            "status": "SIGNED",
+            "docs": {
+                "approved": "https://s3.eu-west-2.amazonaws.com/openstates.ng.storage/documents/dataset_Kaduna-State-Government-2023-Approved-Budget.pdf",
+                "budget_documents": "http://pbc.kdsg.gov.ng/?page_id=669"
+            }
         },
         "2026": {
             "total": "₦985.9 billion",
             "status": "SIGNED",
             "capital": "₦698.9 billion (70.9%)",
-            "education": "₦246.25 billion (25%)"
+            "education": "₦246.25 billion (25%)",
+            "docs": {
+                "budget_documents": "http://pbc.kdsg.gov.ng/?page_id=669"
+            }
         }
     },
 
@@ -568,12 +605,19 @@ STATES = {
         "website": "https://bauchistate.gov.ng/",
         "2025": {
             "total": "₦397.5 billion",
-            "status": "SIGNED"
+            "status": "SIGNED",
+            "docs": {
+                "approved": "https://www.bauchistate.gov.ng/wp-content/uploads/2025/01/Bauchi-State-2025-Approved-Budget.pdf",
+                "financial_reports": "https://www.bauchistate.gov.ng/financial-reports-2/"
+            }
         },
         "2026": {
             "total": "₦878 billion",
             "status": "SIGNED",
-            "education": "₦131.71 billion (15%)"
+            "education": "₦131.71 billion (15%)",
+            "docs": {
+                "financial_reports": "https://www.bauchistate.gov.ng/financial-reports-2/"
+            }
         }
     },
 
@@ -587,9 +631,10 @@ STATES = {
             "status": "SIGNED"
         },
         "2026": {
-            "total": "PENDING",
-            "status": "NOT YET PRESENTED",
-            "note": "Governor Zulum has not yet presented 2026 budget"
+            "total": "₦892.45 billion",
+            "status": "SIGNED",
+            "name": "Budget of Sustained Recovery and Growth",
+            "education": "₦135.43 billion (highest allocation)"
         }
     },
 
@@ -663,8 +708,11 @@ STATES = {
             "note": "153.7% increase from 2024"
         },
         "2026": {
-            "total": "TBD",
-            "status": "SIGNED"
+            "total": "₦1.073 trillion",
+            "status": "SIGNED",
+            "docs": {
+                "budgetpedia": "https://budgetpedia.ng/approved-budget/"
+            }
         }
     },
 
@@ -733,13 +781,20 @@ STATES = {
         "website": "https://plateaustate.gov.ng/",
         "2025": {
             "total": "₦433.3 billion",
-            "status": "SIGNED"
+            "status": "SIGNED",
+            "docs": {
+                "approved_2023": "https://www.plateaustate.gov.ng/uploads/plateau-state-2023-approved-budget.pdf",
+                "mtef": "https://www.plateaustate.gov.ng/uploads/Plateau_State_2024-2026_Medium_Term_Expenditure_Framework.docx"
+            }
         },
         "2026": {
-            "total": "₦817.51 billion",
+            "total": "₦914.86 billion",
             "status": "SIGNED",
-            "capital": "₦501.09 billion (61.3%)",
-            "social_services": "₦119 billion"
+            "capital": "₦573.4 billion (62.93%)",
+            "social_services": "₦119 billion",
+            "docs": {
+                "portal": "https://www.plateaustate.gov.ng/"
+            }
         }
     },
 
@@ -770,12 +825,20 @@ STATES = {
         "2025": {
             "total": "₦1.78 trillion",
             "status": "SIGNED",
-            "note": "Part of Federal Budget"
+            "note": "Part of Federal Budget",
+            "docs": {
+                "fct_budget": "https://www.fcta.gov.ng/cat_doc/fct-budget/",
+                "budget_office": "https://budgetoffice.gov.ng/index.php/resources/internal-resources/budget-documents"
+            }
         },
         "2026": {
-            "total": "Part of Federal ₦58.18T",
-            "status": "PENDING",
-            "note": "Included in Federal Budget"
+            "total": "₦460.73 billion",
+            "status": "SIGNED",
+            "note": "Included in Federal Budget",
+            "docs": {
+                "fct_budget": "https://www.fcta.gov.ng/cat_doc/fct-budget/",
+                "budget_office": "https://budgetoffice.gov.ng/index.php/resources/internal-resources/budget-documents"
+            }
         }
     }
 }
