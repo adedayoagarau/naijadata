@@ -452,7 +452,10 @@ STATES = {
         "2026": {
             "total": "₦897 billion",
             "status": "SIGNED",
-            "education": "₦156.3 billion (17.4%)"
+            "education": "₦156.3 billion (17.4%)",
+            "docs": {
+                "appropriation_law": "https://katsinastate.gov.ng/ova_doc/katsina-state-government-2026-approved-appropriation-law/"
+            }
         }
     },
 
@@ -492,7 +495,10 @@ STATES = {
         },
         "2026": {
             "total": "TBD",
-            "status": "PENDING"
+            "status": "SIGNED",
+            "docs": {
+                "approved": "https://zamfara.gov.ng/wp-content/uploads/2026/01/ZAMFARA-STATE-2026-APPROVED-BUDGET-ESTIMATES_compressed-1.pdf"
+            }
         }
     },
 
@@ -508,7 +514,10 @@ STATES = {
         "2026": {
             "total": "₦642.93 billion",
             "status": "SIGNED",
-            "education": "₦105 billion (16%)"
+            "education": "₦105 billion (16%)",
+            "docs": {
+                "approved": "https://www.kebbistate.gov.ng/sites/default/files/2026%20APPROVED%20BUDGET_Final.pdf"
+            }
         }
     },
 
@@ -524,7 +533,10 @@ STATES = {
         "2026": {
             "total": "₦901.84 billion",
             "status": "SIGNED",
-            "education": "₦234.48 billion (26%)"
+            "education": "₦234.48 billion (26%)",
+            "docs": {
+                "approved": "https://jsbepd.org/images/jsbepd_pics/2026/Budget%202026/Jigawa%20State%20Government_%20Fiscal%20Year%202026%20Approved%20Estimates_.pdf"
+            }
         }
     },
 
@@ -542,7 +554,10 @@ STATES = {
         },
         "2026": {
             "total": "TBD",
-            "status": "PENDING"
+            "status": "SIGNED",
+            "docs": {
+                "approved": "https://adamawastate.gov.ng/ova_doc/adamawa-state-fy-2026-approved-budget/"
+            }
         }
     },
 
@@ -589,7 +604,10 @@ STATES = {
         },
         "2026": {
             "total": "TBD",
-            "status": "SIGNED"
+            "status": "SIGNED",
+            "docs": {
+                "approved": "https://www.mof.gm.gov.ng/wp-content/uploads/2026/01/Gombe-State-2026-Budget.pdf"
+            }
         }
     },
 
@@ -605,7 +623,10 @@ STATES = {
         "2026": {
             "total": "₦650 billion",
             "status": "SIGNED",
-            "education": "₦131.6 billion (20%)"
+            "education": "₦131.6 billion (20%)",
+            "docs": {
+                "mda_template": "https://mfbep.tr.gov.ng/2026-mda-budget-template/"
+            }
         }
     },
 
@@ -616,7 +637,10 @@ STATES = {
         "website": "https://yobestate.gov.ng/",
         "2025": {
             "total": "₦268.7 billion",
-            "status": "SIGNED"
+            "status": "SIGNED",
+            "docs": {
+                "approved": "https://budget.pfm.yb.gov.ng/wp-content/uploads/2025/01/Yobe-State-FY-2025-Budget-Publication-Printout-2.pdf"
+            }
         },
         "2026": {
             "total": "₦515 billion",
@@ -676,7 +700,10 @@ STATES = {
         "2026": {
             "total": "₦820.49 billion",
             "status": "SIGNED",
-            "education": "₦145.26 billion (18%)"
+            "education": "₦145.26 billion (18%)",
+            "docs": {
+                "call_circular": "https://kogistate.gov.ng/wp-content/uploads/2026-Budget-Call-Circular.pdf"
+            }
         }
     },
 
