@@ -65,12 +65,23 @@ function loadContext(filename: string): unknown {
 // Load budget data from multiple sources
 function loadBudgetData(): BudgetData[] {
   const paths = [
-    path.join(process.cwd(), "..", "extracted", "sample_budget_data.json"),
-    path.join(process.cwd(), "..", "data", "master_budget_data.json"),
+    // Primary: master budget data (all years consolidated)
     path.join(process.cwd(), "..", "extracted", "master_budget_data.json"),
+    path.join(process.cwd(), "..", "data", "master", "all_items.json"),
+    // Fallback: sample data
+    path.join(process.cwd(), "..", "extracted", "sample_budget_data.json"),
+    // Individual year files
+    path.join(process.cwd(), "..", "extracted", "budget_2026.json"),
+    path.join(process.cwd(), "..", "extracted", "budget_2025.json"),
+    path.join(process.cwd(), "..", "extracted", "budget_2024.json"),
+    // Federal data by year
+    path.join(process.cwd(), "..", "data", "federal", "2026", "budget_items.json"),
+    path.join(process.cwd(), "..", "data", "federal", "2025", "budget_items.json"),
+    path.join(process.cwd(), "..", "data", "federal", "2024", "budget_items.json"),
   ];
 
   const allData: BudgetData[] = [];
+  const loadedPaths: string[] = [];
 
   for (const p of paths) {
     try {
@@ -78,22 +89,35 @@ function loadBudgetData(): BudgetData[] {
         const data = JSON.parse(fs.readFileSync(p, "utf-8"));
         if (Array.isArray(data)) {
           allData.push(...data);
+        } else if (data.items) {
+          allData.push(...data.items);
+        } else if (data.mdas) {
+          allData.push(data);
         } else {
           allData.push(data);
         }
+        loadedPaths.push(p);
+        console.log(`Loaded budget data from: ${p}`);
       }
     } catch (e) {
       console.error(`Failed to load ${p}:`, e);
     }
   }
 
+  console.log(`Total budget data sources loaded: ${loadedPaths.length}, items: ${allData.length}`);
   return allData;
 }
 
-// Load findings
+// Load findings from multiple sources
 function loadFindings(): Finding[] {
   const paths = [
+    // Primary: risk-scored findings
+    path.join(process.cwd(), "..", "data", "risk_scored", "all_items_scored.json"),
+    path.join(process.cwd(), "..", "findings", "all_findings.json"),
+    // Webapp curated findings
     path.join(process.cwd(), "..", "findings", "webapp_findings.json"),
+    path.join(process.cwd(), "..", "findings", "all_scored.json"),
+    // Fallback
     path.join(process.cwd(), "data", "findings.json"),
   ];
 
@@ -101,7 +125,11 @@ function loadFindings(): Finding[] {
     try {
       if (fs.existsSync(p)) {
         const data = JSON.parse(fs.readFileSync(p, "utf-8"));
-        return data.findings || data.items || data;
+        const items = data.findings || data.items || data;
+        if (Array.isArray(items) && items.length > 0) {
+          console.log(`Loaded ${items.length} findings from: ${p}`);
+          return items;
+        }
       }
     } catch (e) {
       console.error(`Failed to load ${p}:`, e);
