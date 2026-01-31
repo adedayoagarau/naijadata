@@ -13,7 +13,24 @@ interface Finding {
   year: number;
   state?: string;
   recommendation?: string;
+  risk_factors?: string[];
+  risk_score?: number;
 }
+
+// Toast notification component
+const Toast = ({ message, onClose }: { message: string; onClose: () => void }) => {
+  useEffect(() => {
+    const timer = setTimeout(onClose, 3000);
+    return () => clearTimeout(timer);
+  }, [onClose]);
+
+  return (
+    <div className="fixed bottom-4 right-4 bg-c-black text-white px-4 py-3 rounded shadow-lg z-[60] flex items-center gap-3 animate-slide-up">
+      <span className="text-sm">{message}</span>
+      <button onClick={onClose} className="text-gray-400 hover:text-white">×</button>
+    </div>
+  );
+};
 
 const Texture = () => (
   <div
@@ -24,25 +41,30 @@ const Texture = () => (
   />
 );
 
-const Header = ({ findingsCount }: { findingsCount: number }) => (
-  <header className="bg-c-black text-gray-500 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 font-display text-xs tracking-wide border-b border-c-border flex-shrink-0">
-    <h1 className="text-white font-normal text-xs tracking-[0.2em] uppercase">
-      Decide9ja // Budget Transparency DB
-    </h1>
-    <nav className="flex gap-4 md:gap-16 text-[10px] md:text-xs">
-      <a href="#" className="text-gray-500 hover:text-white transition-colors">
-        ARCHIVE ({findingsCount})
+const Header = ({ findingsCount }: { findingsCount: number }) => {
+  const today = new Date();
+  const dateStr = `${String(today.getMonth() + 1).padStart(2, '0')}.${String(today.getDate()).padStart(2, '0')}.${String(today.getFullYear()).slice(-2)}`;
+
+  return (
+    <header className="bg-c-black text-gray-500 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 font-display text-xs tracking-wide border-b border-c-border flex-shrink-0">
+      <a href="/" className="text-white font-normal text-xs tracking-[0.2em] uppercase hover:text-gray-300 transition-colors">
+        Decide9ja // Budget Transparency DB
       </a>
-      <a href="#" className="text-gray-500 hover:text-white transition-colors">
-        ALERTS
-      </a>
-      <a href="#" className="text-gray-500 hover:text-white transition-colors">
-        ABOUT
-      </a>
-      <span className="text-gray-600">01.30.26</span>
-    </nav>
-  </header>
-);
+      <nav className="flex gap-4 md:gap-16 text-[10px] md:text-xs">
+        <a href="/red-flags" className="text-gray-500 hover:text-white transition-colors">
+          RED FLAGS ({findingsCount})
+        </a>
+        <a href="/explore" className="text-gray-500 hover:text-white transition-colors">
+          EXPLORE
+        </a>
+        <a href="/about" className="text-gray-500 hover:text-white transition-colors">
+          ABOUT
+        </a>
+        <span className="text-gray-600">{dateStr}</span>
+      </nav>
+    </header>
+  );
+};
 
 type BlockColor = "red" | "blue" | "green" | "yellow" | "beige" | "brown";
 
@@ -320,8 +342,10 @@ const FindingsFilter = ({
   const [severity, setSeverity] = useState<string>("ALL");
   const [search, setSearch] = useState("");
   const [year, setYear] = useState<string>("ALL");
+  const [state, setState] = useState<string>("ALL");
 
   const years = [...new Set(findings.map((f) => f.year))].sort((a, b) => b - a);
+  const states = [...new Set(findings.map((f) => f.state).filter(Boolean))].sort() as string[];
 
   useEffect(() => {
     let filtered = findings;
@@ -331,6 +355,9 @@ const FindingsFilter = ({
     }
     if (year !== "ALL") {
       filtered = filtered.filter((f) => f.year === parseInt(year));
+    }
+    if (state !== "ALL") {
+      filtered = filtered.filter((f) => f.state === state);
     }
     if (search) {
       const q = search.toLowerCase();
@@ -343,7 +370,7 @@ const FindingsFilter = ({
     }
 
     onFilterChange(filtered);
-  }, [severity, search, year, findings, onFilterChange]);
+  }, [severity, search, year, state, findings, onFilterChange]);
 
   return (
     <div className="bg-c-black border-b border-c-border p-3 flex flex-wrap gap-2 items-center">
@@ -370,6 +397,21 @@ const FindingsFilter = ({
           </option>
         ))}
       </select>
+      {states.length > 0 && (
+        <select
+          value={state}
+          onChange={(e) => setState(e.target.value)}
+          className="bg-transparent border border-gray-600 text-white text-xs px-2 py-1 rounded"
+        >
+          <option value="ALL">All States</option>
+          <option value="">Federal</option>
+          {states.map((s) => (
+            <option key={s} value={s}>
+              {s}
+            </option>
+          ))}
+        </select>
+      )}
       <input
         type="text"
         placeholder="Search entities..."
@@ -413,6 +455,7 @@ export default function Home() {
   const [filteredFindings, setFilteredFindings] = useState<Finding[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedFinding, setSelectedFinding] = useState<Finding | null>(null);
+  const [toast, setToast] = useState<string | null>(null);
 
   useEffect(() => {
     // Load findings from API or local data
@@ -634,6 +677,25 @@ export default function Home() {
               </div>
             )}
 
+            {selectedFinding.risk_factors && selectedFinding.risk_factors.length > 0 && (
+              <div className="bg-[#D6453A]/10 p-4 border-l-4 border-[#D6453A] mb-6">
+                <h4 className="font-bold text-sm mb-2">RISK FACTORS</h4>
+                <ul className="text-sm space-y-1">
+                  {selectedFinding.risk_factors.map((factor, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-[#D6453A]">•</span>
+                      <span>{factor}</span>
+                    </li>
+                  ))}
+                </ul>
+                {selectedFinding.risk_score && (
+                  <p className="mt-2 text-xs text-gray-600">
+                    Risk Score: <span className="font-bold text-[#D6453A]">{selectedFinding.risk_score}/100</span>
+                  </p>
+                )}
+              </div>
+            )}
+
             {/* Share Buttons */}
             <div className="flex flex-col gap-3 pt-4 border-t border-gray-300">
               <div className="flex gap-2">
@@ -663,24 +725,33 @@ export default function Home() {
                   onClick={() => {
                     const shareUrl = `${window.location.origin}/finding/${selectedFinding.id}`;
                     navigator.clipboard.writeText(shareUrl);
-                    alert('Link copied!');
+                    setToast('Link copied to clipboard!');
                   }}
                   className="flex-1 bg-white border border-c-border text-c-black py-3 font-mono text-sm uppercase hover:bg-gray-100 transition-colors"
                 >
                   Copy Link
                 </button>
                 <a
-                  href={`/finding/${selectedFinding.id}`}
-                  target="_blank"
-                  className="flex-1 bg-[#164678] text-white py-3 font-mono text-sm uppercase hover:brightness-90 transition-colors text-center"
+                  href={`/card/${selectedFinding.id}`}
+                  className="flex-1 bg-[#487A3A] text-white py-3 font-mono text-sm uppercase hover:brightness-90 transition-colors text-center"
                 >
-                  View Full Page
+                  Generate Card
                 </a>
               </div>
+              <a
+                href={`/finding/${selectedFinding.id}`}
+                target="_blank"
+                className="bg-[#164678] text-white py-3 font-mono text-sm uppercase hover:brightness-90 transition-colors text-center"
+              >
+                View Full Page
+              </a>
             </div>
           </div>
         </div>
       )}
+
+      {/* Toast notification */}
+      {toast && <Toast message={toast} onClose={() => setToast(null)} />}
     </div>
   );
 }

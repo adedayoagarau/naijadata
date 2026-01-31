@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MobileNav from "@/components/MobileNav";
 
 export const metadata: Metadata = {
   title: "Decide9ja - Budget Transparency",
@@ -21,6 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         {children}
+        <MobileNav />
+        {/* Spacer for mobile nav */}
+        <div className="h-16 md:hidden" />
       </body>
     </html>
   );
