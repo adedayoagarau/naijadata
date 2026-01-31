@@ -1,13 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 import OpenAI from "openai";
+import Anthropic from "@anthropic-ai/sdk";
 import fs from "fs";
 import path from "path";
 
 // Initialize Kimi client (OpenAI-compatible API)
-const kimi = new OpenAI({
-  apiKey: process.env.MOONSHOT_API_KEY,
-  baseURL: "https://api.moonshot.cn/v1",
-});
+const kimi = process.env.MOONSHOT_API_KEY
+  ? new OpenAI({
+      apiKey: process.env.MOONSHOT_API_KEY,
+      baseURL: "https://api.moonshot.cn/v1",
+    })
+  : null;
+
+// Initialize Claude client as fallback
+const claude = process.env.ANTHROPIC_API_KEY
+  ? new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+  : null;
 
 // Load findings for context
 function loadFindings() {
@@ -68,11 +76,11 @@ Use Naira (₦) formatting: ₦M for millions, ₦B for billions, ₦T for trill
 
 export async function POST(request: NextRequest) {
   try {
-    const { task, findings, query, format = "report" } = await request.json();
+    const { task, findings, query, format = "report", provider = "auto" } = await request.json();
 
-    if (!process.env.MOONSHOT_API_KEY) {
+    if (!kimi && !claude) {
       return NextResponse.json(
-        { error: "MOONSHOT_API_KEY not configured" },
+        { error: "No API keys configured (MOONSHOT_API_KEY or ANTHROPIC_API_KEY)" },
         { status: 500 }
       );
     }
@@ -149,28 +157,69 @@ The brief should:
         );
     }
 
-    // Call Kimi API
-    const completion = await kimi.chat.completions.create({
-      model: "kimi-2.5-latest",
-      messages: [
-        { role: "system", content: SYSTEM_PROMPT },
-        { role: "user", content: prompt },
-      ],
-      temperature: 0.7,
-      max_tokens: 4000,
-    });
+    // Try Kimi first, fall back to Claude
+    let response = "";
+    let model = "";
+    let usage: Record<string, unknown> | undefined;
 
-    const response = completion.choices[0]?.message?.content || "";
+    const useKimi = provider === "kimi" || (provider === "auto" && kimi);
+    const useClaude = provider === "claude" || (provider === "auto" && !kimi);
+
+    if (useKimi && kimi) {
+      try {
+        const completion = await kimi.chat.completions.create({
+          model: "kimi-2.5-latest",
+          messages: [
+            { role: "system", content: SYSTEM_PROMPT },
+            { role: "user", content: prompt },
+          ],
+          temperature: 0.7,
+          max_tokens: 4000,
+        });
+        response = completion.choices[0]?.message?.content || "";
+        model = "kimi-2.5";
+        usage = completion.usage as Record<string, unknown>;
+      } catch (kimiError) {
+        console.error("Kimi API error, falling back to Claude:", kimiError);
+        // Fall through to Claude
+      }
+    }
+
+    // Use Claude if Kimi failed or wasn't used
+    if (!response && claude) {
+      const completion = await claude.messages.create({
+        model: "claude-sonnet-4-20250514",
+        max_tokens: 4000,
+        system: SYSTEM_PROMPT,
+        messages: [{ role: "user", content: prompt }],
+      });
+      response =
+        completion.content[0].type === "text"
+          ? completion.content[0].text
+          : "";
+      model = "claude-sonnet";
+      usage = {
+        input_tokens: completion.usage.input_tokens,
+        output_tokens: completion.usage.output_tokens,
+      };
+    }
+
+    if (!response) {
+      return NextResponse.json(
+        { error: "All synthesis providers failed" },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({
       success: true,
       task,
       response,
-      model: "kimi-2.5",
-      usage: completion.usage,
+      model,
+      usage,
     });
   } catch (error) {
-    console.error("Kimi API error:", error);
+    console.error("Synthesis API error:", error);
     return NextResponse.json(
       {
         error: "Failed to synthesize data",
