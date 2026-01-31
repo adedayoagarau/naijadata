@@ -178,7 +178,7 @@ The brief should:
         });
         response = completion.choices[0]?.message?.content || "";
         model = "kimi-2.5";
-        usage = completion.usage as Record<string, unknown>;
+        usage = completion.usage as unknown as Record<string, unknown>;
       } catch (kimiError) {
         console.error("Kimi API error, falling back to Claude:", kimiError);
         // Fall through to Claude

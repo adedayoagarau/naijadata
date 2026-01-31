@@ -65,12 +65,23 @@ function loadContext(filename: string): unknown {
 // Load budget data from multiple sources
 function loadBudgetData(): BudgetData[] {
   const paths = [
-    path.join(process.cwd(), "..", "extracted", "sample_budget_data.json"),
-    path.join(process.cwd(), "..", "data", "master_budget_data.json"),
+    // Primary: master budget data (all years consolidated)
     path.join(process.cwd(), "..", "extracted", "master_budget_data.json"),
+    path.join(process.cwd(), "..", "data", "master", "all_items.json"),
+    // Fallback: sample data
+    path.join(process.cwd(), "..", "extracted", "sample_budget_data.json"),
+    // Individual year files
+    path.join(process.cwd(), "..", "extracted", "budget_2026.json"),
+    path.join(process.cwd(), "..", "extracted", "budget_2025.json"),
+    path.join(process.cwd(), "..", "extracted", "budget_2024.json"),
+    // Federal data by year
+    path.join(process.cwd(), "..", "data", "federal", "2026", "budget_items.json"),
+    path.join(process.cwd(), "..", "data", "federal", "2025", "budget_items.json"),
+    path.join(process.cwd(), "..", "data", "federal", "2024", "budget_items.json"),
   ];
 
   const allData: BudgetData[] = [];
+  const loadedPaths: string[] = [];
 
   for (const p of paths) {
     try {
@@ -78,22 +89,35 @@ function loadBudgetData(): BudgetData[] {
         const data = JSON.parse(fs.readFileSync(p, "utf-8"));
         if (Array.isArray(data)) {
           allData.push(...data);
+        } else if (data.items) {
+          allData.push(...data.items);
+        } else if (data.mdas) {
+          allData.push(data);
         } else {
           allData.push(data);
         }
+        loadedPaths.push(p);
+        console.log(`Loaded budget data from: ${p}`);
       }
     } catch (e) {
       console.error(`Failed to load ${p}:`, e);
     }
   }
 
+  console.log(`Total budget data sources loaded: ${loadedPaths.length}, items: ${allData.length}`);
   return allData;
 }
 
-// Load findings
+// Load findings from multiple sources
 function loadFindings(): Finding[] {
   const paths = [
+    // Primary: risk-scored findings
+    path.join(process.cwd(), "..", "data", "risk_scored", "all_items_scored.json"),
+    path.join(process.cwd(), "..", "findings", "all_findings.json"),
+    // Webapp curated findings
     path.join(process.cwd(), "..", "findings", "webapp_findings.json"),
+    path.join(process.cwd(), "..", "findings", "all_scored.json"),
+    // Fallback
     path.join(process.cwd(), "data", "findings.json"),
   ];
 
@@ -101,7 +125,11 @@ function loadFindings(): Finding[] {
     try {
       if (fs.existsSync(p)) {
         const data = JSON.parse(fs.readFileSync(p, "utf-8"));
-        return data.findings || data.items || data;
+        const items = data.findings || data.items || data;
+        if (Array.isArray(items) && items.length > 0) {
+          console.log(`Loaded ${items.length} findings from: ${p}`);
+          return items;
+        }
       }
     } catch (e) {
       console.error(`Failed to load ${p}:`, e);
@@ -415,52 +443,37 @@ function buildBudgetContext(): string {
   // Build dynamic summary from loaded data
   let dataSummary = "";
 
-  if (budgetData.length > 0) {
-    const totalBudget = budgetData.reduce((sum, b) => sum + (b.total_budget || 0), 0);
-    const sources = [...new Set(budgetData.map(b => b.source))];
-    const years = [...new Set(budgetData.map(b => b.year))].sort();
-
-    dataSummary += `\n=== LOADED BUDGET DATA ===\n`;
-    dataSummary += `Sources: ${sources.join(", ")}\n`;
-    dataSummary += `Years: ${years.join(", ")}\n`;
-    dataSummary += `Total records: ${budgetData.length}\n`;
-    dataSummary += `Combined budget: ${formatNaira(totalBudget)}\n`;
-
-    // Top MDAs by allocation
-    const mdaAllocations: Record<string, number> = {};
-    for (const budget of budgetData) {
-      for (const mda of budget.mdas || []) {
-        const key = mda.name || "Unknown";
-        mdaAllocations[key] = (mdaAllocations[key] || 0) + (mda.total || 0);
-      }
-    }
-    const topMDAs = Object.entries(mdaAllocations)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 15);
-
-    if (topMDAs.length > 0) {
-      dataSummary += `\n## TOP MDAs BY ALLOCATION:\n`;
-      topMDAs.forEach(([name, amount], i) => {
-        dataSummary += `${i + 1}. ${name}: ${formatNaira(amount)}\n`;
-      });
-    }
-  }
-
-  // Add findings summary
+  // PRIMARY DATA: 2026 Budget Findings (anomalies detected)
   if (findings.length > 0) {
     const criticalFindings = findings.filter(f => f.severity === "CRITICAL");
     const highFindings = findings.filter(f => f.severity === "HIGH");
     const totalFlagged = findings.reduce((sum, f) => sum + (f.amount || 0), 0);
+    const findingYears = [...new Set(findings.map(f => f.year))].sort();
+    const states = [...new Set(findings.map(f => f.state).filter(Boolean))];
 
-    dataSummary += `\n=== FLAGGED FINDINGS ===\n`;
-    dataSummary += `Total findings: ${findings.length}\n`;
-    dataSummary += `Critical: ${criticalFindings.length}, High: ${highFindings.length}\n`;
-    dataSummary += `Total amount flagged: ${formatNaira(totalFlagged)}\n`;
+    dataSummary += `\n=== 2026 FEDERAL BUDGET ANALYSIS (PRIMARY DATA) ===\n`;
+    dataSummary += `We have analyzed the 2026 Federal Budget and detected ${findings.length} anomalies.\n`;
+    dataSummary += `Years covered: ${findingYears.join(", ")}\n`;
+    dataSummary += `Jurisdictions: Federal + ${states.length} states (${states.slice(0,5).join(", ")}${states.length > 5 ? '...' : ''})\n`;
+    dataSummary += `Critical findings: ${criticalFindings.length}, High: ${highFindings.length}\n`;
+    dataSummary += `Total flagged amount: ${formatNaira(totalFlagged)}\n`;
+    dataSummary += `\nIMPORTANT: Use search_findings tool to query 2026 data!\n`;
 
-    dataSummary += `\n## TOP FINDINGS:\n`;
-    findings.slice(0, 10).forEach((f, i) => {
-      dataSummary += `${i + 1}. [${f.severity}] ${f.entity}: ${f.description} - ${formatNaira(f.amount || 0)}\n`;
+    dataSummary += `\n## TOP 2026 FINDINGS:\n`;
+    findings.slice(0, 12).forEach((f, i) => {
+      dataSummary += `${i + 1}. [${f.severity}] ${f.entity}: ${f.description?.substring(0, 80)}... - ${formatNaira(f.amount || 0)}\n`;
     });
+  }
+
+  // SECONDARY DATA: Detailed line items (currently only Osun 2025)
+  if (budgetData.length > 0) {
+    const sources = [...new Set(budgetData.map(b => b.source))];
+    const years = [...new Set(budgetData.map(b => b.year))].sort();
+
+    dataSummary += `\n=== DETAILED LINE-ITEM DATA (SECONDARY) ===\n`;
+    dataSummary += `Available: ${sources.join(", ")} - Years: ${years.join(", ")}\n`;
+    dataSummary += `Use query_budget for detailed line-item queries on these sources.\n`;
+    dataSummary += `Note: 2026 Federal data is in findings, not line items yet.\n`;
   }
 
   return `You are Decide9ja, an AI assistant that helps Nigerians understand government budgets. You analyze federal and state budgets to expose accountability issues.
