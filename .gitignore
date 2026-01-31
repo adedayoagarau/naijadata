@@ -44,3 +44,9 @@ yarn-error.log*
 # Next.js
 next-env.d.ts
 webapp/tsconfig.tsbuildinfo
+
+# Large data files (>100MB - load locally only)
+data/master/all_items.json
+data/risk_scored/all_items_scored.json
+extracted/master_budget_data.json
+findings/all_findings.json
