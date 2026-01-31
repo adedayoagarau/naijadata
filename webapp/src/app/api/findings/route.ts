@@ -19,7 +19,13 @@ interface Finding {
 
 // Path to findings database from forensic auditor
 const FINDINGS_PATHS = [
+  // Primary: risk-scored findings (largest dataset)
+  path.join(process.cwd(), "..", "data", "risk_scored", "all_items_scored.json"),
+  path.join(process.cwd(), "..", "findings", "all_findings.json"),
+  // Webapp curated findings
   path.join(process.cwd(), "..", "findings", "webapp_findings.json"),
+  path.join(process.cwd(), "..", "findings", "all_scored.json"),
+  // Fallbacks
   path.join(process.cwd(), "data", "findings.json"),
   path.join(process.cwd(), "..", "skills", "budget-forensic-auditor", "findings", "webapp_findings.json"),
 ];
