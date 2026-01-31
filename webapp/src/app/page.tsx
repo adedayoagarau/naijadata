@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 
 // Nigerian Budget Findings - will be fetched from API
 interface Finding {
@@ -309,8 +309,108 @@ const severityToColor = (severity: string): BlockColor => {
   }
 };
 
+// Filter component
+const FindingsFilter = ({
+  onFilterChange,
+  findings,
+}: {
+  onFilterChange: (filtered: Finding[]) => void;
+  findings: Finding[];
+}) => {
+  const [severity, setSeverity] = useState<string>("ALL");
+  const [search, setSearch] = useState("");
+  const [year, setYear] = useState<string>("ALL");
+
+  const years = [...new Set(findings.map((f) => f.year))].sort((a, b) => b - a);
+
+  useEffect(() => {
+    let filtered = findings;
+
+    if (severity !== "ALL") {
+      filtered = filtered.filter((f) => f.severity === severity);
+    }
+    if (year !== "ALL") {
+      filtered = filtered.filter((f) => f.year === parseInt(year));
+    }
+    if (search) {
+      const q = search.toLowerCase();
+      filtered = filtered.filter(
+        (f) =>
+          f.entity?.toLowerCase().includes(q) ||
+          f.description?.toLowerCase().includes(q) ||
+          f.type?.toLowerCase().includes(q)
+      );
+    }
+
+    onFilterChange(filtered);
+  }, [severity, search, year, findings, onFilterChange]);
+
+  return (
+    <div className="bg-c-black border-b border-c-border p-3 flex flex-wrap gap-2 items-center">
+      <select
+        value={severity}
+        onChange={(e) => setSeverity(e.target.value)}
+        className="bg-transparent border border-gray-600 text-white text-xs px-2 py-1 rounded"
+      >
+        <option value="ALL">All Severity</option>
+        <option value="CRITICAL">Critical</option>
+        <option value="HIGH">High</option>
+        <option value="MEDIUM">Medium</option>
+        <option value="LOW">Low</option>
+      </select>
+      <select
+        value={year}
+        onChange={(e) => setYear(e.target.value)}
+        className="bg-transparent border border-gray-600 text-white text-xs px-2 py-1 rounded"
+      >
+        <option value="ALL">All Years</option>
+        {years.map((y) => (
+          <option key={y} value={y}>
+            {y}
+          </option>
+        ))}
+      </select>
+      <input
+        type="text"
+        placeholder="Search entities..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="bg-transparent border border-gray-600 text-white text-xs px-2 py-1 rounded flex-1 min-w-[120px] placeholder:text-gray-500"
+      />
+      <span className="text-gray-500 text-xs font-mono ml-auto">
+        {findings.length} TOTAL
+      </span>
+    </div>
+  );
+};
+
+// Stats bar component
+const StatsBar = ({ findings }: { findings: Finding[] }) => {
+  const critical = findings.filter((f) => f.severity === "CRITICAL").length;
+  const high = findings.filter((f) => f.severity === "HIGH").length;
+  const totalAmount = findings.reduce((sum, f) => sum + (f.amount || 0), 0);
+
+  return (
+    <div className="bg-c-black border-b border-c-border px-4 py-2 flex gap-4 text-xs font-mono overflow-x-auto">
+      <span className="text-white">
+        <span className="text-gray-500">FLAGGED:</span> {formatAmount(totalAmount)}
+      </span>
+      <span className="text-[#D6453A]">
+        <span className="text-gray-500">CRITICAL:</span> {critical}
+      </span>
+      <span className="text-[#164678]">
+        <span className="text-gray-500">HIGH:</span> {high}
+      </span>
+      <span className="text-gray-400">
+        <span className="text-gray-500">ITEMS:</span> {findings.length}
+      </span>
+    </div>
+  );
+};
+
 export default function Home() {
   const [findings, setFindings] = useState<Finding[]>([]);
+  const [filteredFindings, setFilteredFindings] = useState<Finding[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedFinding, setSelectedFinding] = useState<Finding | null>(null);
 
@@ -322,16 +422,23 @@ export default function Home() {
         if (res.ok) {
           const data = await res.json();
           setFindings(data.findings || []);
+          setFilteredFindings(data.findings || []);
         }
       } catch (err) {
         console.error("Failed to load findings:", err);
         // Use demo data if API fails
         setFindings(DEMO_FINDINGS);
+        setFilteredFindings(DEMO_FINDINGS);
       } finally {
         setLoading(false);
       }
     };
     loadFindings();
+  }, []);
+
+  // Callback for filter changes
+  const handleFilterChange = useCallback((filtered: Finding[]) => {
+    setFilteredFindings(filtered);
   }, []);
 
   const criticalFindings = findings.filter((f) => f.severity === "CRITICAL");
@@ -359,24 +466,34 @@ export default function Home() {
         <Header findingsCount={findings.length} />
 
         <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px] overflow-hidden">
-          {/* Main Budget Grid */}
-          <main className="grid grid-cols-2 md:grid-cols-4 auto-rows-[minmax(120px,auto)] md:auto-rows-[minmax(140px,auto)] overflow-y-auto border-r border-c-border bg-c-black gap-[1.5px]">
-            {/* Hero Block - Priority Investigation */}
-            <BudgetBlock
-              label="Priority Investigation"
-              value={criticalFindings[0]?.entity || "Federal Budget<br />2026"}
-              meta={{
-                left: `${criticalFindings.length} CRITICAL`,
-                right: formatAmount(totalFlagged) + " FLAGGED",
-              }}
-              bgColor="red"
-              span={2}
-              row={2}
-              onClick={() => setSelectedFinding(criticalFindings[0])}
-            />
+          {/* Main Content Area */}
+          <div className="flex flex-col overflow-hidden border-r border-c-border">
+            {/* Stats Bar */}
+            <StatsBar findings={findings} />
 
-            {/* Dynamic blocks from findings */}
-            {findings.slice(0, 12).map((finding, idx) => {
+            {/* Filter Bar */}
+            <FindingsFilter findings={findings} onFilterChange={handleFilterChange} />
+
+            {/* Budget Grid */}
+            <main className="grid grid-cols-2 md:grid-cols-4 auto-rows-[minmax(120px,auto)] md:auto-rows-[minmax(140px,auto)] overflow-y-auto bg-c-black gap-[1.5px] flex-1">
+            {/* Hero Block - Priority Investigation */}
+            {criticalFindings.length > 0 && (
+              <BudgetBlock
+                label="Priority Investigation"
+                value={criticalFindings[0]?.entity || "Federal Budget<br />2026"}
+                meta={{
+                  left: `${criticalFindings.length} CRITICAL`,
+                  right: formatAmount(totalFlagged) + " FLAGGED",
+                }}
+                bgColor="red"
+                span={2}
+                row={2}
+                onClick={() => setSelectedFinding(criticalFindings[0])}
+              />
+            )}
+
+            {/* Dynamic blocks from filtered findings */}
+            {filteredFindings.slice(0, 20).map((finding, idx) => {
               const colors: BlockColor[] = [
                 "beige",
                 "blue",
@@ -445,7 +562,16 @@ export default function Home() {
                 span={2}
               />
             )}
+
+            {/* No results message */}
+            {!loading && filteredFindings.length === 0 && (
+              <div className="col-span-full p-8 text-center text-gray-500">
+                <p className="text-lg">No findings match your filters</p>
+                <p className="text-sm mt-2">Try adjusting severity or search terms</p>
+              </div>
+            )}
           </main>
+          </div>
 
           {/* AI Analyst Panel */}
           <AnalystPanel />
@@ -508,29 +634,49 @@ export default function Home() {
               </div>
             )}
 
-            {/* Share Button */}
-            <div className="flex gap-3 pt-4 border-t border-gray-300">
-              <button
-                onClick={() => {
-                  const text = `${selectedFinding.entity}: ${formatAmount(selectedFinding.amount)}\n\n${selectedFinding.description}\n\n#Decide9ja #BudgetTransparency`;
-                  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
-                  window.open(url, '_blank');
-                }}
-                className="flex-1 bg-c-black text-white py-3 font-mono text-sm uppercase hover:bg-gray-800 transition-colors"
-              >
-                Share on X
-              </button>
-              <button
-                onClick={() => {
-                  navigator.clipboard.writeText(
-                    `${selectedFinding.entity}: ${formatAmount(selectedFinding.amount)}\n${selectedFinding.description}\n\n#Decide9ja`
-                  );
-                  alert('Copied to clipboard!');
-                }}
-                className="px-4 bg-white border border-c-border text-c-black font-mono text-sm uppercase hover:bg-gray-100 transition-colors"
-              >
-                Copy
-              </button>
+            {/* Share Buttons */}
+            <div className="flex flex-col gap-3 pt-4 border-t border-gray-300">
+              <div className="flex gap-2">
+                <button
+                  onClick={() => {
+                    const text = `🚨 ${selectedFinding.entity}: ${formatAmount(selectedFinding.amount)}\n\n${selectedFinding.description}\n\n#Decide9ja #BudgetTransparency`;
+                    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+                    window.open(url, '_blank');
+                  }}
+                  className="flex-1 bg-c-black text-white py-3 font-mono text-sm uppercase hover:bg-gray-800 transition-colors"
+                >
+                  Share on X
+                </button>
+                <button
+                  onClick={() => {
+                    const text = `🚨 *BUDGET ALERT*\n\n*${selectedFinding.entity}*\n${formatAmount(selectedFinding.amount)}\n\n${selectedFinding.description}\n\n_Source: Decide9ja Budget Transparency_\n#Decide9ja`;
+                    const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
+                    window.open(url, '_blank');
+                  }}
+                  className="flex-1 bg-[#25D366] text-white py-3 font-mono text-sm uppercase hover:brightness-90 transition-colors"
+                >
+                  WhatsApp
+                </button>
+              </div>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => {
+                    const shareUrl = `${window.location.origin}/finding/${selectedFinding.id}`;
+                    navigator.clipboard.writeText(shareUrl);
+                    alert('Link copied!');
+                  }}
+                  className="flex-1 bg-white border border-c-border text-c-black py-3 font-mono text-sm uppercase hover:bg-gray-100 transition-colors"
+                >
+                  Copy Link
+                </button>
+                <a
+                  href={`/finding/${selectedFinding.id}`}
+                  target="_blank"
+                  className="flex-1 bg-[#164678] text-white py-3 font-mono text-sm uppercase hover:brightness-90 transition-colors text-center"
+                >
+                  View Full Page
+                </a>
+              </div>
             </div>
           </div>
         </div>
