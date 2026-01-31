@@ -1,0 +1,2203 @@
+{
+  "generated_at": "2026-01-31T09:50:40.229439",
+  "total_analyzed": 364399,
+  "critical_count": 367,
+  "high_count": 9443,
+  "findings": [
+    {
+      "id": "f454b054dbd0",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 88,
+      "mda": "SALARIES AND WAGES",
+      "description": "CONTINGENCY",
+      "amount": 36000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "VAGUE_DESCRIPTION",
+          "points": 15,
+          "detail": "Contains vague term: \"contingency\""
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "135010% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a636 billion for 'contingency' under the Salaries and Wages category raises significant red flags due to its vague description and substantial increase from the previous year. In the Nigerian context, such large contingency funds are often misappropriated or used to cover up financial irregularities, as seen in numerous EFCC investigations where funds were diverted from intended purposes.",
+      "investigation_leads": [
+        "Review previous years' contingency allocations for discrepancies",
+        "Investigate the decision-making process behind this allocation",
+        "Interview financial officers involved in budget preparation"
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of how contingency funds have been utilized in the past",
+        "Ask for documentation on the approval process for this budget item"
+      ]
+    },
+    {
+      "id": "f454b054dbd0",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 88,
+      "mda": "SALARIES AND WAGES",
+      "description": "CONTINGENCY",
+      "amount": 36000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "VAGUE_DESCRIPTION",
+          "points": 15,
+          "detail": "Contains vague term: \"contingency\""
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "135010% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a636 billion for 'contingency' under salaries and wages raises significant red flags due to its vague nature and the extreme year-over-year increase of over 135,000%. This suggests potential misappropriation of funds, as such large sums are often used to cover up fraudulent activities or to facilitate kickbacks, which is a known pattern in Nigerian government corruption cases.",
+      "investigation_leads": [
+        "Investigate the previous year's budget for salaries and wages to understand the basis for the extreme increase.",
+        "Examine the approval process for this budget item to identify any irregularities or lack of oversight.",
+        "Interview financial officers within the MDA to uncover the rationale behind the contingency allocation."
+      ],
+      "foia_requests": [
+        "Request detailed breakdowns of the salaries and wages budget for the previous three years.",
+        "Ask for documentation on the decision-making process for the contingency fund allocation."
+      ]
+    },
+    {
+      "id": "f454b054dbd0",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 88,
+      "mda": "SALARIES AND WAGES",
+      "description": "CONTINGENCY",
+      "amount": 36000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "VAGUE_DESCRIPTION",
+          "points": 15,
+          "detail": "Contains vague term: \"contingency\""
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "135010% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a636 billion for 'contingency' under salaries and wages raises significant red flags due to its vague description and the extreme year-on-year increase of over 135,000%. In the Nigerian context, such large, round amounts often indicate potential misappropriation or diversion of funds, especially when lacking detailed justification, which aligns with patterns observed in previous EFCC investigations into budgetary fraud.",
+      "investigation_leads": [
+        "Review previous years' budget allocations for contingencies in similar MDAs",
+        "Investigate the approval process for this budget item and any associated documentation",
+        "Interview financial officers within the Salaries and Wages MDA for insights on the rationale behind this allocation"
+      ],
+      "foia_requests": [
+        "Request the detailed breakdown of how the \u20a636 billion contingency amount was calculated",
+        "Ask for any reports or audits conducted on the Salaries and Wages MDA's budget for the year 2026"
+      ]
+    },
+    {
+      "id": "2fa581257161",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 88,
+      "mda": "SALARIES AND WAGES",
+      "description": "CONTINGENCY",
+      "amount": 30000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "VAGUE_DESCRIPTION",
+          "points": 15,
+          "detail": "Contains vague term: \"contingency\""
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "2999900% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a630 billion for 'contingency' under salaries and wages is highly suspicious due to its vague description and the extreme year-on-year increase of nearly 3 million percent, suggesting potential misappropriation or misuse of funds. In Nigeria, large contingency budgets often serve as a cover for corrupt practices, as seen in various EFCC investigations.",
+      "investigation_leads": [
+        "Review previous years' budget allocations for contingency funds in the same MDA",
+        "Investigate the approval process for this budget item and any related contracts",
+        "Interview financial officers within the MDA to understand the rationale behind this allocation"
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of how the \u20a630 billion contingency was planned to be utilized",
+        "Ask for any audit reports or reviews conducted on the salaries and wages budget for 2022"
+      ]
+    },
+    {
+      "id": "2fa581257161",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 88,
+      "mda": "SALARIES AND WAGES",
+      "description": "CONTINGENCY",
+      "amount": 30000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "VAGUE_DESCRIPTION",
+          "points": 15,
+          "detail": "Contains vague term: \"contingency\""
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "2999900% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a630 billion to a 'contingency' fund under the salaries and wages category raises significant red flags due to its vague description and the extreme year-on-year increase of nearly 3 million percent, suggesting potential misuse of funds or lack of transparency. In the Nigerian context, such large contingency amounts have historically been associated with corruption and misappropriation, particularly when lacking detailed justification.",
+      "investigation_leads": [
+        "Review previous years' budget allocations for contingency funds in the same MDA",
+        "Investigate the approval process for this specific budget item",
+        "Conduct interviews with financial officers in the Salaries and Wages department regarding the necessity and usage of this fund"
+      ],
+      "foia_requests": [
+        "Request the detailed breakdown of how the \u20a630 billion contingency fund will be utilized",
+        "Ask for any audit reports related to the Salaries and Wages MDA for the year 2022"
+      ]
+    },
+    {
+      "id": "2fa581257161",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 88,
+      "mda": "SALARIES AND WAGES",
+      "description": "CONTINGENCY",
+      "amount": 30000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "VAGUE_DESCRIPTION",
+          "points": 15,
+          "detail": "Contains vague term: \"contingency\""
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "2999900% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a630 billion for 'contingency' under salaries and wages is highly suspicious due to its vague nature and the extreme year-over-year increase of nearly 3 million percent, indicating potential misappropriation. In Nigeria, such large contingency funds are often exploited for corrupt practices, as seen in previous EFCC cases where funds were diverted from intended purposes.",
+      "investigation_leads": [
+        "Review previous years' contingency allocations for discrepancies",
+        "Investigate the approval process for this budget item",
+        "Interview financial officers within the MDA for insights on fund usage"
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of how the contingency fund was planned to be utilized",
+        "Ask for any audits conducted on the salaries and wages budget for 2022"
+      ]
+    },
+    {
+      "id": "2fa581257161",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 88,
+      "mda": "SALARIES AND WAGES",
+      "description": "CONTINGENCY",
+      "amount": 30000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "VAGUE_DESCRIPTION",
+          "points": 15,
+          "detail": "Contains vague term: \"contingency\""
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "2999900% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a630 billion for 'contingency' under salaries and wages is highly suspicious due to its vague description, which lacks specificity on how the funds will be utilized. Additionally, the extreme year-on-year increase of nearly 3 million percent raises concerns about potential misappropriation or fraudulent activities, as such a drastic change is not typical in budgetary allocations, especially in a sector prone to corruption like Nigeria's public service.",
+      "investigation_leads": [
+        "Review previous years' budget allocations for contingency funds in the salaries and wages category.",
+        "Investigate the approval process and documentation for this specific budget code (22021041).",
+        "Interview personnel within the Ministry of Finance and the Salaries and Wages Commission regarding the rationale for this allocation."
+      ],
+      "foia_requests": [
+        "Request the detailed breakdown of the contingency fund allocation for the year 2022.",
+        "Ask for records of any audits or reviews conducted on the salaries and wages budget for 2022."
+      ]
+    },
+    {
+      "id": "2fa581257161",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 88,
+      "mda": "SALARIES AND WAGES",
+      "description": "CONTINGENCY",
+      "amount": 30000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "VAGUE_DESCRIPTION",
+          "points": 15,
+          "detail": "Contains vague term: \"contingency\""
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "2999900% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a630 billion for 'contingency' under the Salaries and Wages category raises significant red flags due to its vague description and the extreme year-on-year increase of nearly 3 million percent, suggesting potential misallocation or diversion of funds. In Nigeria, similar cases have often been linked to corrupt practices, where large sums are hidden under ambiguous budget lines to facilitate embezzlement.",
+      "investigation_leads": [
+        "Review past expenditures under 'contingency' for the previous years",
+        "Investigate the approval process for this budget item",
+        "Interview staff involved in budget preparation and execution"
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of contingency expenditures for 2022",
+        "Ask for the approval documents and justifications for the \u20a630 billion allocation"
+      ]
+    },
+    {
+      "id": "0a45651c8883",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "LOCAL TRAINING",
+      "description": "CONSTRUCTION / PROVISION OF ELECTRICITY",
+      "amount": 375420000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "4460523% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget item for the construction/provision of electricity at \u20a6375.42 billion is suspicious due to its extraordinarily high amount, which exceeds typical project costs in Nigeria, and the extreme year-over-year increase of over 4 million percent, indicating potential manipulation or misallocation of funds. Additionally, the budget code 2302 has a history of abuse, often linked to inflated contracts and ghost projects, raising further concerns about the legitimacy of this allocation.",
+      "investigation_leads": [
+        "Investigate previous contracts awarded under budget code 2302 for patterns of overpricing.",
+        "Examine the procurement process and contracts related to electricity projects in the past five years.",
+        "Interview officials within the Local Training MDA to assess their knowledge of the project and its necessity."
+      ],
+      "foia_requests": [
+        "Request all procurement documents related to budget code 23020103 for the year 2026.",
+        "Ask for a detailed breakdown of the project costs and the rationale for the extreme budget increase."
+      ]
+    },
+    {
+      "id": "0a45651c8883",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "LOCAL TRAINING",
+      "description": "CONSTRUCTION / PROVISION OF ELECTRICITY",
+      "amount": 375420000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "4460523% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget item for construction/provision of electricity at \u20a6375.42 billion raises significant suspicion due to its excessive amount, which is over 375 times higher than typical allocations for similar projects. The round number indicates a lack of detailed costing, and the extreme year-on-year increase of over 4.4 million percent suggests potential manipulation or misreporting, especially given the historical abuse associated with budget code 2302 in Nigeria.",
+      "investigation_leads": [
+        "Investigate previous contracts awarded under budget code 2302 for discrepancies or irregularities.",
+        "Examine the qualifications and past performance of the contractors involved in similar projects.",
+        "Analyze the procurement process for this budget item to identify any conflicts of interest."
+      ],
+      "foia_requests": [
+        "Request all documents related to the procurement process for the construction/provision of electricity under budget code 23020103.",
+        "Ask for a detailed breakdown of the project costs and justifications for the extreme year-on-year increase."
+      ]
+    },
+    {
+      "id": "0a45651c8883",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "LOCAL TRAINING",
+      "description": "CONSTRUCTION / PROVISION OF ELECTRICITY",
+      "amount": 375420000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "4460523% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "This budget item is suspicious due to the extraordinarily high amount of \u20a6375.42 billion, which is not only a significant increase from previous allocations but also falls under a budget code historically associated with corruption and mismanagement. The round number indicates a lack of detailed cost estimation, raising concerns about the legitimacy of the funding and the potential for inflated contracts or ghost projects.",
+      "investigation_leads": [
+        "Review past contracts awarded under budget code 2302 for discrepancies",
+        "Investigate the involvement of local training agencies in previous electricity projects",
+        "Examine the procurement process for this budget item for compliance with Nigerian public procurement laws"
+      ],
+      "foia_requests": [
+        "Request detailed project proposals and cost breakdowns for the construction/provision of electricity",
+        "Ask for records of all contracts awarded under budget code 2302 in the past five years"
+      ]
+    },
+    {
+      "id": "cc1a09123784",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "description": "CONSTRUCTION / PROVISION OF INFRASTRUCTURE",
+      "amount": 300000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "40399% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "This budget item is suspicious due to the extraordinarily high amount of \u20a6300 billion, which exceeds typical allocations for infrastructure projects in Nigeria. The 40399% increase from the previous year raises concerns about the legitimacy of the budgeting process, suggesting potential manipulation or misallocation of funds, especially given the historical abuse associated with the budget code 2302.",
+      "investigation_leads": [
+        "Review past contracts awarded under budget code 2302",
+        "Investigate the involvement of known contractors with a history of corruption",
+        "Analyze the procurement process and approvals for this budget item"
+      ],
+      "foia_requests": [
+        "Request all contracts and agreements related to budget code 23020118 for the year 2026",
+        "Ask for detailed breakdowns of previous year's expenditures under the same budget code"
+      ]
+    },
+    {
+      "id": "cc1a09123784",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "description": "CONSTRUCTION / PROVISION OF INFRASTRUCTURE",
+      "amount": 300000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "40399% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "This budget item is suspicious due to the extraordinarily high amount of \u20a6300 billion, which is not only a significant increase from previous allocations but also falls under a budget code historically associated with corruption and mismanagement. The round number indicates a lack of detailed planning or justification, raising concerns about potential kickbacks or inflated contracts in the context of Nigeria's notorious issues with public infrastructure projects.",
+      "investigation_leads": [
+        "Investigate the awarding process of contracts related to this budget item.",
+        "Review past projects under budget code 2302 for irregularities or complaints.",
+        "Interview officials involved in the planning and approval stages of this budget allocation."
+      ],
+      "foia_requests": [
+        "Request all documents related to the planning and approval of the \u20a6300 billion infrastructure budget item.",
+        "Ask for detailed breakdowns of previous expenditures under budget code 2302 for the last five years."
+      ]
+    },
+    {
+      "id": "cc1a09123784",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "description": "CONSTRUCTION / PROVISION OF INFRASTRUCTURE",
+      "amount": 300000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "40399% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "This budget item is suspicious due to the extraordinarily high amount of \u20a6300 billion, which far exceeds typical infrastructure budgets in Nigeria, indicating potential overestimation or misallocation of funds. Additionally, the 40399% year-on-year increase raises concerns about the legitimacy of the budgetary process, suggesting possible manipulation or fraudulent activities, especially given that the budget code 2302 has a history of abuse in previous EFCC investigations.",
+      "investigation_leads": [
+        "Examine previous contracts awarded under budget code 2302 for irregularities",
+        "Investigate the procurement process for this infrastructure project",
+        "Identify stakeholders involved in the planning and approval process for potential conflicts of interest"
+      ],
+      "foia_requests": [
+        "Request all documents related to the procurement process for budget code 23020118",
+        "Ask for a detailed breakdown of the costs associated with this infrastructure project and any justifications for the increase from the previous year"
+      ]
+    },
+    {
+      "id": "9f8c90db38ab",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 200000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "13208% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The reported salary amount of \u20a6200 billion is extraordinarily high and raises questions about the legitimacy of the expenditure, especially given the 13208% increase from the previous year, which is indicative of potential inflation of figures or misallocation of funds. Additionally, the lack of detailed description for such a significant amount suggests a lack of transparency, which is often associated with corruption in Nigerian government budgeting.",
+      "investigation_leads": [
+        "Examine payroll records for the MDA to verify actual salary disbursements",
+        "Investigate the personnel count and salary structure to determine if the amount aligns with known employee compensation",
+        "Review previous years' budgets for discrepancies in salary allocations and increases"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the year 2022 under budget code 21010101",
+        "Ask for documentation justifying the 13208% increase in salary allocation compared to the previous year"
+      ]
+    },
+    {
+      "id": "9f8c90db38ab",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 200000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "13208% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The salary budget of \u20a6200 billion represents an unprecedented 13,208% increase from the previous year, which is highly irregular and suggests potential manipulation or misreporting. Additionally, the round figure indicates a lack of detailed budgeting, raising concerns about the legitimacy of the expenditures in a country with a history of payroll fraud and ghost workers.",
+      "investigation_leads": [
+        "Review payroll records for discrepancies in employee numbers",
+        "Investigate previous years' salary budgets for consistency",
+        "Interview current and former employees about salary disbursement processes"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the year 2022",
+        "Ask for the methodology used to calculate the salary budget for 2022"
+      ]
+    },
+    {
+      "id": "9f8c90db38ab",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 200000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "13208% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The salary budget item of \u20a6200 billion is highly suspicious due to its extreme year-on-year increase of 13,208%, which is inconsistent with normal salary adjustments. Additionally, the round number suggests a lack of detailed accounting or justification, raising concerns about potential misallocation or embezzlement of funds, which has been a recurring issue in Nigerian public finance as highlighted by the EFCC's investigations into inflated payrolls.",
+      "investigation_leads": [
+        "Examine payroll records for the previous year to verify actual salary expenditures.",
+        "Investigate the personnel count and salary scales to assess the legitimacy of the increase.",
+        "Interview current and former employees in the Salaries and Wages department for insights on budget preparation."
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the past three years to compare actual salaries paid.",
+        "Ask for documentation justifying the salary budget increase and any related approvals."
+      ]
+    },
+    {
+      "id": "9f8c90db38ab",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 200000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "13208% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The reported salary amount of \u20a6200 billion is extraordinarily high and reflects a 13,208% increase from the previous year, raising concerns about potential payroll fraud or misallocation of funds. The lack of detailed description and the round number suggest that this figure may not be based on actual payroll data, which is often a red flag for corruption in Nigeria, as seen in various EFCC investigations.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to verify actual salary expenditures.",
+        "Investigate the approval process for this budget item to identify any irregularities.",
+        "Interview employees within the Salaries and Wages MDA to gather insights on payroll practices."
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the Salaries and Wages MDA for the year 2021 and 2022.",
+        "Ask for documentation on the justification for the salary increase and the approval process."
+      ]
+    },
+    {
+      "id": "9f8c90db38ab",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 200000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "13208% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The reported salary amount of \u20a6200 billion represents an extraordinary increase of 13208% from the previous year, raising immediate concerns about the legitimacy of such a drastic change in payroll. Additionally, the round number suggests potential manipulation or estimation rather than a detailed accounting of actual salaries, which is common in cases of misappropriation in Nigeria.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to verify the actual salary expenditure.",
+        "Investigate the personnel list to confirm the number of employees and their respective salaries.",
+        "Examine contracts or agreements related to salary adjustments or bonuses within the MDA."
+      ],
+      "foia_requests": [
+        "Request the detailed payroll records for the MDA for the years 2021 and 2022.",
+        "Ask for any audit reports or reviews conducted on the salary budget for the year 2022."
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "9216% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The \u20a6140 billion salary allocation is highly suspicious due to its extreme year-over-year increase of 9216%, which raises questions about the legitimacy of the figures provided. Additionally, the round number suggests a lack of detailed budgeting and planning, common in cases of misappropriation in Nigeria's public sector, where inflated salary figures have been used to siphon funds.",
+      "investigation_leads": [
+        "Review payroll records from the previous year to verify actual salary disbursements.",
+        "Investigate the personnel count and salary scales used to justify this budget amount.",
+        "Examine any contracts or agreements related to salary payments for potential irregularities."
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the MDA for the previous three years.",
+        "Ask for any internal memos or reports justifying the drastic increase in the salary budget."
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2025,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "11102% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget item for salaries at \u20a6140 billion is highly suspicious due to its extreme year-on-year increase of over 11,000%, suggesting potential manipulation or misallocation of funds. Additionally, the round figure indicates a lack of detailed budgeting and planning, which is often associated with corruption in Nigeria, where inflated salary figures have been used to siphon public funds.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to identify discrepancies",
+        "Investigate the list of employees and their actual salaries against the budgeted amount",
+        "Examine contracts or agreements that may justify such a large salary increase"
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of the salary budget for 2025",
+        "Ask for the justification documents for the 11,102% increase in salary budget from the previous year"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 79,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a6140 billion for salaries, particularly with an 8225% increase from the previous year, raises significant concerns about potential misappropriation or inflation of payroll figures. In the Nigerian context, such large and unexplained budgetary increases often correlate with corruption schemes, especially in sectors with minimal oversight like salaries and wages.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to verify actual salary expenditures.",
+        "Investigate the personnel count and salary structure to assess legitimacy of the increase.",
+        "Examine contracts or agreements with third-party payroll service providers, if any."
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the past three years.",
+        "Ask for documentation justifying the 8225% increase in salary allocation."
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a6140 billion for salaries, especially with an 8225% increase from the previous year, raises significant red flags in the Nigerian context, where such drastic fluctuations often indicate potential misappropriation or inflated figures. Additionally, the round number suggests a lack of detailed budgeting, which is common in cases of corruption where funds are siphoned off without proper accountability.",
+      "investigation_leads": [
+        "Review payroll records for the MDA to verify actual employee numbers and salaries",
+        "Investigate previous years' salary allocations for discrepancies",
+        "Interview current and former employees for insights on salary disbursement practices"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the past three years",
+        "Ask for documentation justifying the drastic increase in salary allocation"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The reported salary amount of \u20a6140 billion is suspicious due to its extreme increase of 8225% from the previous year, indicating potential inflation of figures to misappropriate funds. Additionally, the round number suggests it may have been fabricated or estimated rather than based on actual payroll data, which is a common tactic in Nigerian corruption cases.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to verify actual salary expenditures",
+        "Investigate the list of employees and their corresponding salaries to identify discrepancies",
+        "Examine contracts with payroll service providers for any irregularities or inflated charges"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the MDA Salaries and Wages for the past three years",
+        "Ask for the methodology used to calculate the salary budget for 2026"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget item for salaries shows an alarming 8225% increase from the previous year, which is highly unusual and suggests potential misallocation or inflation of figures for personal gain. Additionally, the exact round figure of \u20a6140 billion raises concerns about the accuracy of budgeting processes, as it may indicate a lack of detailed financial planning or an attempt to obscure true expenditures, a common tactic in Nigerian corruption cases.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to identify discrepancies",
+        "Interview employees within the Salaries and Wages MDA to uncover any irregularities",
+        "Examine contracts with payroll service providers for potential kickbacks"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the Salaries and Wages MDA for the past three years",
+        "Ask for the justification documents for the salary budget increase and any related approvals"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a6140 billion for salaries with an 8225% increase from the previous year raises significant red flags, suggesting potential manipulation or misreporting of payroll expenses. In Nigeria, such inflated budget items often correlate with corruption schemes, including ghost workers or misappropriation of funds, particularly in the context of weak oversight mechanisms.",
+      "investigation_leads": [
+        "Review payroll records for discrepancies in employee numbers",
+        "Investigate the history of salary allocations in previous years for anomalies",
+        "Interview current and former employees about the legitimacy of the payroll system"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the past three years",
+        "Ask for documentation justifying the drastic increase in salary allocation"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The flagged salary budget of \u20a6140 billion represents an astronomical increase of 8225% from the previous year, which is highly unusual and raises concerns about potential misallocation or misappropriation of funds. The round number suggests a lack of detailed budgeting, often indicative of corruption schemes where funds are inflated or misreported. In Nigeria, such discrepancies have historically been linked to ghost workers and payroll fraud, particularly in the public sector.",
+      "investigation_leads": [
+        "Review payroll records from the previous years to identify discrepancies",
+        "Investigate the list of employees and verify their existence and employment status",
+        "Examine contracts and agreements related to salary disbursements for potential irregularities"
+      ],
+      "foia_requests": [
+        "Request the detailed payroll records for the last three years",
+        "Ask for documentation justifying the salary increase and the criteria used for its calculation"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget allocation of \u20a6140 billion for salaries, especially with an 8225% increase from the previous year, raises significant red flags in the Nigerian context, where such drastic changes often indicate potential misappropriation or fraudulent reporting. The round number suggests a lack of detailed planning or justification, which is common in cases of corruption where funds are misallocated or siphoned off.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to verify actual salary expenditures.",
+        "Investigate the personnel count and salary scales to assess the legitimacy of the proposed amount.",
+        "Examine contracts or agreements related to salary adjustments or new hires that could justify such an increase."
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the past three years to compare actual expenditures.",
+        "Ask for the justification documents or reports that support the proposed salary budget increase."
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget item for salaries at \u20a6140 billion is highly suspicious due to its extreme year-over-year increase of 8225%, which raises questions about the legitimacy of the figures presented. Additionally, the use of a round number suggests a lack of detailed planning or potential manipulation, as large budget items in Nigeria often correlate with corruption scandals, particularly in the public sector where misappropriation of funds is prevalent.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to verify actual salary expenditures",
+        "Investigate the hiring practices and employee counts within the MDA for discrepancies",
+        "Examine contracts or agreements related to salary payments for potential ghost workers or inflated salaries"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the past three years to compare with the proposed budget",
+        "Ask for documentation justifying the increase in salary budget and any related approvals"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The \u20a6140 billion salary allocation is suspicious due to its excessive size, representing an 8225% increase from the previous year, which is not justifiable without substantial changes in workforce or policy. Additionally, the round figure suggests a lack of detailed budgeting and potential manipulation, which is a common tactic in Nigerian corruption cases.",
+      "investigation_leads": [
+        "Review payroll records for the past three years to identify discrepancies",
+        "Investigate the hiring practices and workforce changes in the relevant MDA",
+        "Examine contracts related to salary administration and any associated third-party services"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the MDA for the past five years",
+        "Ask for justification documents for the salary increase and any related policy changes"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The reported salary amount of \u20a6140 billion represents an extraordinary increase of 8225% from the previous year, which is highly suspicious given Nigeria's historical challenges with inflated payroll figures and ghost workers. Additionally, the round number suggests a lack of detailed budgeting or potential manipulation to obscure actual expenditures, which is a common tactic in corrupt practices within Nigerian government agencies.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to verify actual salary disbursements",
+        "Investigate the personnel list associated with the Salaries and Wages MDA for ghost workers",
+        "Examine contracts or agreements related to salary increases or adjustments in the agency"
+      ],
+      "foia_requests": [
+        "Request the detailed payroll records for the past three years",
+        "Ask for any justifications or reports explaining the 8225% increase in salary allocation"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The \u20a6140 billion salary allocation raises immediate red flags due to its extraordinary size and the 8225% increase from the previous year, which is inconsistent with typical salary adjustments. Additionally, the round number suggests a lack of detailed budgeting, potentially indicating that this figure is a placeholder for misappropriation or inflated claims, especially in a context where the EFCC has previously investigated similar anomalies in salary budgets.",
+      "investigation_leads": [
+        "Review payroll records for the previous year to verify actual salary expenditures",
+        "Interview current and former employees in the Salaries and Wages MDA for insights on salary practices",
+        "Investigate any recent changes in personnel or organizational structure that may justify such an increase"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the past three years",
+        "Ask for any justifications or reports submitted to the Ministry of Finance regarding the salary increase"
+      ]
+    },
+    {
+      "id": "9f20d1eb79f1",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8225% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a6140 billion for salaries, particularly with an 8225% increase from the previous year, raises significant red flags in the context of Nigerian government budgeting, where inflated salary figures have been historically linked to corruption and embezzlement. The round number suggests a lack of detailed budgeting, which is often a tactic used to obscure the true nature of expenditures.",
+      "investigation_leads": [
+        "Investigate the personnel records for the Salaries and Wages MDA to verify actual employee counts and salary scales.",
+        "Examine previous years' budget allocations for salaries to identify discrepancies and patterns of inflation.",
+        "Interview current and former employees within the MDA to uncover any irregularities or mismanagement."
+      ],
+      "foia_requests": [
+        "Request the detailed breakdown of the salary budget for 2026, including employee counts and salary scales.",
+        "Ask for documentation justifying the 8225% increase in salary allocation from the previous year."
+      ]
+    },
+    {
+      "id": "71756324f290",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 134000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "8816% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The \u20a6134 billion salary allocation raises immediate red flags due to its excessive size, particularly given the 8816% increase from the previous year, which is highly unusual and suggests potential manipulation or misreporting. Additionally, the vague description and round number indicate a lack of detailed accounting, which is often a hallmark of corruption in Nigerian government budgets, as seen in various EFCC investigations.",
+      "investigation_leads": [
+        "Review payroll records for the year 2022 to verify actual salary disbursements.",
+        "Investigate the personnel count and salary structure to assess legitimacy of the claimed amount.",
+        "Cross-reference with previous years' salary budgets to identify discrepancies."
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the Salaries and Wages MDA for 2022.",
+        "Ask for the justification documents for the budget increase from the previous year."
+      ]
+    },
+    {
+      "id": "bb1d21c9c4e9",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "description": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 134000000000.0,
+      "year": 2025,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "2331950% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget item for road construction at \u20a6134 billion is highly suspicious due to its extraordinarily large amount, which exceeds typical allocations for such projects in Nigeria. The round number suggests a lack of detailed planning and potential padding of costs, while the extreme year-on-year increase of over 2 million percent raises concerns about the legitimacy of the budgeting process, especially given the historical abuse associated with budget code 2302.",
+      "investigation_leads": [
+        "Review previous contracts awarded under budget code 2302 for discrepancies",
+        "Interview officials involved in the planning and approval process of the budget item",
+        "Analyze the historical performance and completion rates of road projects funded under similar allocations"
+      ],
+      "foia_requests": [
+        "Request detailed project proposals and cost breakdowns for the road construction budget item",
+        "Ask for records of any audits or reviews conducted on past road construction projects under budget code 2302"
+      ]
+    },
+    {
+      "id": "bb1d21c9c4e9",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "description": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 134000000000.0,
+      "year": 2025,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "2331950% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget item for road construction at \u20a6134 billion raises significant red flags due to its exorbitant amount, which is unusually high for road projects in Nigeria. The extreme year-over-year increase of 2,331,950% suggests potential inflation of costs or misallocation of funds, a common tactic in corrupt practices. Additionally, the historical abuse associated with the budget code 2302 indicates a pattern of mismanagement and fraud in similar projects.",
+      "investigation_leads": [
+        "Review contracts awarded for road construction in 2025",
+        "Investigate the procurement process and selection criteria for contractors",
+        "Analyze previous audits of road construction projects under budget code 2302"
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of the \u20a6134 billion allocation for road construction",
+        "Inquire about the criteria used to justify the extreme year-over-year increase in this budget item"
+      ]
+    },
+    {
+      "id": "4169a4ad03c3",
+      "type": "VERY_LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "SALARY",
+      "amount": 120000000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "VERY_LARGE_AMOUNT",
+          "points": 20,
+          "detail": "Amount exceeds \u20a6100B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "7885% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The salary budget of \u20a6120 billion represents an extraordinary increase of 7885% from the previous year, which raises immediate concerns about the legitimacy of the figures and potential misallocation of funds. In Nigeria, such drastic fluctuations in budget items, especially for salaries, have historically been linked to corruption schemes, including ghost workers and inflated payrolls, as seen in various EFCC investigations.",
+      "investigation_leads": [
+        "Examine payroll records for discrepancies or ghost employees",
+        "Investigate the hiring practices and criteria for the positions covered by this salary budget",
+        "Review previous years' salary budgets for comparison and trends"
+      ],
+      "foia_requests": [
+        "Request detailed payroll records for the year 2022 related to this budget item",
+        "Ask for the justification documents that explain the 7885% increase in the salary budget"
+      ]
+    },
+    {
+      "id": "2ce06ac4214d",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "description": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 40500000000.0,
+      "year": 2025,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 15,
+          "detail": "Budget code 2303 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "44965% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a640.5 billion for the rehabilitation and repairs of public schools raises significant concerns due to its excessive amount, which is nearly 45,000% higher than the previous year's budget. This suggests potential inflation of costs or misallocation of funds, especially given that budget code 2303 has a historical pattern of abuse in Nigeria, often linked to ghost projects and inflated contracts.",
+      "investigation_leads": [
+        "Review past contracts awarded under budget code 2303 for discrepancies",
+        "Investigate the contractors involved in previous school rehabilitation projects",
+        "Analyze the previous year's budget allocations for public school repairs to assess consistency"
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of the \u20a640.5 billion allocation and its intended use",
+        "Ask for records of previous expenditures on school repairs under budget code 2303"
+      ]
+    },
+    {
+      "id": "2ce06ac4214d",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "REHABILITATION / REPAIRS OF FIXED ASSETS - GENERAL",
+      "description": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 40500000000.0,
+      "year": 2025,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 15,
+          "detail": "Budget code 2303 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "37827% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget item for rehabilitation and repairs of public schools is suspicious due to its excessive amount of \u20a640.5 billion, which is not only a significant increase from the previous year but also falls under a budget code historically associated with corruption. The round figure suggests a lack of detailed planning and may indicate an intention to misappropriate funds, a common practice in Nigerian public sector projects.",
+      "investigation_leads": [
+        "Investigate previous contracts awarded under budget code 23030106 for irregularities.",
+        "Review audit reports from the Office of the Auditor General regarding past school rehabilitation projects.",
+        "Interview local education officials and contractors involved in previous school repairs."
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of the \u20a640.5 billion allocation and its intended use.",
+        "Ask for records of previous expenditures under budget code 23030106 for the last five years."
+      ]
+    },
+    {
+      "id": "3783132621e2",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "REHABILITATION / REPAIRS OF FIXED ASSETS - GENERAL",
+      "description": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 28350000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 15,
+          "detail": "Budget code 2303 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "80900% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a628.35 billion for the rehabilitation and repairs of public schools raises significant concerns due to its excessive amount, which is over 800% higher than the previous year's budget. This suggests potential inflation of costs or misallocation of funds, especially given that budget code 2303 has a history of abuse in Nigeria, often linked to ghost projects and misappropriation of public funds.",
+      "investigation_leads": [
+        "Review contracts awarded for school repairs in the past five years",
+        "Investigate the procurement process and any associated companies",
+        "Interview local education officials and contractors involved in previous school rehabilitation projects"
+      ],
+      "foia_requests": [
+        "Request detailed expenditure reports for the previous year's school rehabilitation budget",
+        "Ask for documentation on the bidding process and contracts awarded for this budget item"
+      ]
+    },
+    {
+      "id": "3783132621e2",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "REHABILITATION / REPAIRS OF FIXED ASSETS - GENERAL",
+      "description": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 28350000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 15,
+          "detail": "Budget code 2303 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "80900% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "This budget item is suspicious due to the extraordinarily high allocation of \u20a628.35 billion for public school repairs, which reflects an 80900% increase from the previous year, indicating potential inflation of costs or misallocation of funds. The round number suggests a lack of detailed costing, and the historical abuse associated with budget code 2303 raises concerns about possible corruption and mismanagement in the rehabilitation of fixed assets.",
+      "investigation_leads": [
+        "Review past contracts awarded for similar rehabilitation projects to identify patterns of overpricing.",
+        "Investigate the involvement of contractors previously flagged for corruption in education sector projects.",
+        "Examine the procurement process and documentation for this budget item to assess compliance with regulations."
+      ],
+      "foia_requests": [
+        "Request detailed breakdowns of the budget allocation for public school repairs, including project lists and cost estimates.",
+        "Ask for records of any audits conducted on the previous year's budget for public school repairs."
+      ]
+    },
+    {
+      "id": "3783132621e2",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "REHABILITATION / REPAIRS OF FIXED ASSETS - GENERAL",
+      "description": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 28350000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 15,
+          "detail": "Budget code 2303 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "80900% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The budget item for rehabilitation and repairs of public schools is suspicious due to the exorbitant amount of \u20a628.35 billion, which reflects an extreme 80900% increase from the previous year. This suggests potential inflation of costs or misallocation of funds, especially given that the budget code 2303 has a historical pattern of abuse in Nigeria, often linked to corruption cases involving inflated contracts and ghost projects.",
+      "investigation_leads": [
+        "Review contracts awarded for school repairs in previous years under budget code 2303",
+        "Investigate the procurement processes and bidding documents related to this budget item",
+        "Interview officials from the Ministry of Education and contractors involved in past school rehabilitation projects"
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of the budget allocation for public school repairs for the past five years",
+        "Ask for all procurement documents related to budget code 2303 for the year 2026"
+      ]
+    },
+    {
+      "id": "d57b7342e551",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "INTERNATIONAL TRAINING",
+      "description": "REHABILITATION / REPAIRS OF OFFICE BUILDINGS",
+      "amount": 24000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 15,
+          "detail": "Budget code 2303 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "34768% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a624 billion for the rehabilitation and repairs of office buildings raises red flags due to its excessive amount, which is significantly higher than typical expenditures for such projects. The extreme year-on-year increase of 34,768% suggests potential manipulation of budgetary figures, possibly to facilitate misappropriation of funds, especially given that budget code 2303 has a history of abuse in Nigeria.",
+      "investigation_leads": [
+        "Investigate previous contracts awarded for similar rehabilitation projects to identify patterns of overpricing.",
+        "Examine the procurement process and contracts associated with the International Training MDA for irregularities.",
+        "Interview staff from the International Training MDA regarding the necessity and scope of the proposed repairs."
+      ],
+      "foia_requests": [
+        "Request all procurement documents related to budget code 23030121 for the year 2026.",
+        "Ask for a detailed breakdown of the previous year's budget for office repairs to compare against the current allocation."
+      ]
+    },
+    {
+      "id": "d57b7342e551",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "INTERNATIONAL TRAINING",
+      "description": "REHABILITATION / REPAIRS OF OFFICE BUILDINGS",
+      "amount": 24000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 15,
+          "detail": "Budget code 2303 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "34768% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a624 billion for the rehabilitation and repairs of office buildings under the International Training MDA raises red flags due to its excessive amount, which far exceeds typical costs for such projects in Nigeria. Additionally, the 34,768% year-on-year increase is highly suspicious and suggests potential manipulation of budget figures to facilitate corruption, especially given the historical abuse associated with budget code 2303.",
+      "investigation_leads": [
+        "Review previous contracts for office repairs within the MDA to identify discrepancies",
+        "Investigate the contractors involved in similar projects for potential connections to officials",
+        "Examine the procurement process and approvals for this budget item to assess compliance with regulations"
+      ],
+      "foia_requests": [
+        "Request all procurement documents related to the office rehabilitation project",
+        "Ask for a detailed breakdown of the budget allocation and its justification"
+      ]
+    },
+    {
+      "id": "d57b7342e551",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "INTERNATIONAL TRAINING",
+      "description": "REHABILITATION / REPAIRS OF OFFICE BUILDINGS",
+      "amount": 24000000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 15,
+          "detail": "Budget code 2303 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "34768% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The \u20a624 billion allocation for rehabilitation and repairs of office buildings is suspicious due to its excessive amount, which far exceeds typical costs for such projects in Nigeria. The 34,768% increase from the previous year raises concerns about potential inflation of project costs or misallocation of funds, especially given that budget code 2303 has a history of abuse in the Nigerian context, as seen in past EFCC investigations.",
+      "investigation_leads": [
+        "Review previous contracts awarded under budget code 2303",
+        "Investigate the history of expenditures on office building repairs in the International Training MDA",
+        "Interview past employees or contractors involved in similar projects for insights on procurement processes"
+      ],
+      "foia_requests": [
+        "Request all documents related to the procurement process for the rehabilitation of office buildings under budget code 23030121",
+        "Ask for a detailed breakdown of the previous year's budget allocation and expenditures for office repairs"
+      ]
+    },
+    {
+      "id": "897cf37b94f8",
+      "type": "SIGNIFICANT_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 78,
+      "mda": "SALARIES AND WAGES",
+      "description": "PURCHASE OF BUSES",
+      "amount": 1080000000.0,
+      "year": 2025,
+      "risk_factors": [
+        {
+          "factor": "SIGNIFICANT_AMOUNT",
+          "points": 10,
+          "detail": "Amount exceeds \u20a61B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "SHORT_DESCRIPTION",
+          "points": 10,
+          "detail": "Minimal description for large amount"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2301 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "1049% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The purchase of buses under the Salaries and Wages MDA is highly suspicious as it indicates a potential misallocation of funds, given that this budget code is typically associated with personnel costs. The significant increase of 1049% from the previous year, combined with the round number and minimal description, raises concerns about the legitimacy of the expenditure and possible corruption, as similar patterns have been observed in past EFCC investigations.",
+      "investigation_leads": [
+        "Review procurement records for bus purchases in 2025",
+        "Investigate previous expenditures under budget code 23010108",
+        "Interview staff involved in budget planning and execution for 2025"
+      ],
+      "foia_requests": [
+        "Request detailed procurement documents related to the bus purchase",
+        "Ask for the justification and approval process for the budget allocation under code 23010108"
+      ]
+    },
+    {
+      "id": "2b644c732324",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 73,
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "description": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 93800000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "12802% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The allocation of \u20a693.8 billion for road construction raises red flags due to its excessive amount, which far exceeds typical project costs in Nigeria, and the suspiciously round figure indicating potential manipulation. Additionally, the 12802% year-on-year increase is alarming, suggesting possible budget padding or misallocation of funds, particularly in a sector historically plagued by corruption as evidenced by past EFCC investigations.",
+      "investigation_leads": [
+        "Review contracts awarded for road construction in 2026",
+        "Investigate the bidding process and selection criteria for contractors",
+        "Examine previous audits of similar budget codes for patterns of abuse"
+      ],
+      "foia_requests": [
+        "Request detailed breakdown of the \u20a693.8 billion allocation and its intended use",
+        "Ask for records of all contracts awarded under budget code 23020114 for the past five years"
+      ]
+    },
+    {
+      "id": "2b644c732324",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 73,
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "description": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 93800000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "12802% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "This budget item is suspicious due to the exorbitant amount of \u20a693.8 billion for road construction, which raises concerns about inflated costs and potential kickbacks. The extreme year-on-year increase of 12802% from the previous year, combined with the historical abuse associated with budget code 2302, indicates a high likelihood of corruption, particularly in a context where infrastructure projects are often mismanaged or funds misappropriated.",
+      "investigation_leads": [
+        "Review contracts awarded for road construction in 2026",
+        "Investigate the procurement process and bidders for this project",
+        "Examine previous audits of the Ministry of Works and Housing for similar projects"
+      ],
+      "foia_requests": [
+        "Request the detailed breakdown of costs associated with the road construction budget",
+        "Ask for records of all contracts awarded under budget code 23020114 for the past five years"
+      ]
+    },
+    {
+      "id": "2b644c732324",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 73,
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "description": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 93800000000.0,
+      "year": 2026,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2302 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "12802% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "This budget item is suspicious due to its exorbitant amount of \u20a693.8 billion, which is significantly higher than typical road construction costs in Nigeria. The round number indicates a lack of detailed costing, and the extreme year-over-year increase of 12802% raises concerns about potential inflation of project costs, which is a common tactic in corrupt practices. Additionally, the budget code 2302 has a history of misuse, suggesting a pattern of abuse in similar allocations.",
+      "investigation_leads": [
+        "Review past contracts awarded under budget code 2302 for irregularities",
+        "Investigate the awarding process and beneficiaries of road construction contracts in previous years",
+        "Interview local government officials and contractors involved in road projects for insights on procurement processes"
+      ],
+      "foia_requests": [
+        "Request all contracts awarded under budget code 23020114 for the year 2026",
+        "Ask for detailed breakdowns of the projected costs and justifications for the \u20a693.8 billion allocation"
+      ]
+    },
+    {
+      "id": "319d07e9acaf",
+      "type": "LARGE_AMOUNT",
+      "severity": "CRITICAL",
+      "risk_score": 73,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "description": "PURCHASE OF POWER GENERATING SET",
+      "amount": 82030000000.0,
+      "year": 2022,
+      "risk_factors": [
+        {
+          "factor": "LARGE_AMOUNT",
+          "points": 15,
+          "detail": "Amount exceeds \u20a610B"
+        },
+        {
+          "factor": "ROUND_NUMBER",
+          "points": 15,
+          "detail": "Exact round amount suggests estimation, not actual costing"
+        },
+        {
+          "factor": "HIGH_RISK_CODE",
+          "points": 10,
+          "detail": "Budget code 2301 historically prone to abuse"
+        },
+        {
+          "factor": "EXTREME_YOY_INCREASE",
+          "points": 25,
+          "detail": "144681% increase from previous year"
+        }
+      ],
+      "pattern_flags": [],
+      "llm_analysis": "The purchase of a power generating set for \u20a682 billion raises significant red flags due to its extraordinarily high amount, which is over 8 times the average budget for similar projects in Nigeria. The 144681% increase from the previous year suggests possible inflation of costs or fraudulent budgeting practices, particularly in a sector historically plagued by corruption, as evidenced by past EFCC investigations into inflated contracts in the energy sector.",
+      "investigation_leads": [
+        "Investigate the procurement process and contracts awarded for the power generating set.",
+        "Review past audits of the Ministry of Power and related MDAs for similar high-value purchases.",
+        "Interview officials involved in the budget preparation and approval process."
+      ],
+      "foia_requests": [
+        "Request copies of all procurement documents related to the purchase of the power generating set.",
+        "Ask for a detailed breakdown of the budget justifications and cost estimates for this item."
+      ]
+    }
+  ]
+}

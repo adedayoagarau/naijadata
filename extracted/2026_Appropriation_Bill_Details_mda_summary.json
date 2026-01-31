@@ -1,0 +1,522 @@
+{
+  "0101": {
+    "name": "SALARIES AND WAGES",
+    "code": "0101",
+    "personnel": 13777531607527.0,
+    "overhead": 1459556751855.0,
+    "capital": 1582383067568.0,
+    "item_count": 15198
+  },
+  "0205": {
+    "name": "TRAINING - GENERAL",
+    "code": "0205",
+    "personnel": 0,
+    "overhead": 56737944422.0,
+    "capital": 65035666040.0,
+    "item_count": 558
+  },
+  "0501": {
+    "name": "ACQUISITION OF NON TANGIBLE ASSETS",
+    "code": "0501",
+    "personnel": 0,
+    "overhead": 30354921464.0,
+    "capital": 992150066040.0,
+    "item_count": 654
+  },
+  "0201": {
+    "name": "TRAVEL& TRANSPORT - GENERAL",
+    "code": "0201",
+    "personnel": 600270854094.0,
+    "overhead": 89737567254.0,
+    "capital": 581093802911.0,
+    "item_count": 3542
+  },
+  "0203": {
+    "name": "MATERIALS & SUPPLIES - GENERAL",
+    "code": "0203",
+    "personnel": 0,
+    "overhead": 1000477984.0,
+    "capital": 359605859.0,
+    "item_count": 12
+  },
+  "0202": {
+    "name": "UTILITIES - GENERAL",
+    "code": "0202",
+    "personnel": 0,
+    "overhead": 940776868.0,
+    "capital": 1677273545.0,
+    "item_count": 36
+  },
+  "0601": {
+    "name": "SECURITY CHARGES",
+    "code": "0601",
+    "personnel": 0,
+    "overhead": 18782336271.0,
+    "capital": 425279501634.0,
+    "item_count": 788
+  },
+  "0606": {
+    "name": "CLEANING AND FUMIGATION SERVICES",
+    "code": "0606",
+    "personnel": 0,
+    "overhead": 19699773850.0,
+    "capital": 560423270069.0,
+    "item_count": 854
+  },
+  "0405": {
+    "name": "MAINTENANCE OF PLANTS/GENERATORS",
+    "code": "0405",
+    "personnel": 0,
+    "overhead": 21992407845.0,
+    "capital": 49840924373.0,
+    "item_count": 222
+  },
+  "0604": {
+    "name": "RESIDENTIAL RENT",
+    "code": "0604",
+    "personnel": 0,
+    "overhead": 4057563965.0,
+    "capital": 51133590418.0,
+    "item_count": 203
+  },
+  "0001": {
+    "name": "FEDERAL COLLEGE OF WILDLIFE MANAGEMENT - NEW BUSSA",
+    "code": "0001",
+    "personnel": 254651854051.0,
+    "overhead": 6497166975.0,
+    "capital": 316662108524.0,
+    "item_count": 642
+  },
+  "0103": {
+    "name": "MONITORING AND EVALUATION",
+    "code": "0103",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 60197167157.0,
+    "item_count": 28
+  },
+  "0502": {
+    "name": "INTERNATIONAL TRAINING",
+    "code": "0502",
+    "personnel": 0,
+    "overhead": 1326469916.0,
+    "capital": 34659343490.0,
+    "item_count": 138
+  },
+  "0206": {
+    "name": "OTHER SERVICES - GENERAL",
+    "code": "0206",
+    "personnel": 0,
+    "overhead": 10205696677.0,
+    "capital": 373658184693.0,
+    "item_count": 432
+  },
+  "0701": {
+    "name": "FINANCIAL CONSULTING",
+    "code": "0701",
+    "personnel": 0,
+    "overhead": 25691213884.0,
+    "capital": 396414035633.0,
+    "item_count": 855
+  },
+  "0210": {
+    "name": "MISCELLANEOUS",
+    "code": "0210",
+    "personnel": 0,
+    "overhead": 4514840534.0,
+    "capital": 208636373454.0,
+    "item_count": 276
+  },
+  "0703": {
+    "name": "LEGAL SERVICES",
+    "code": "0703",
+    "personnel": 0,
+    "overhead": 7978738024.0,
+    "capital": 45779577794.0,
+    "item_count": 445
+  },
+  "0803": {
+    "name": "PLANT / GENERATOR FUEL COST",
+    "code": "0803",
+    "personnel": 0,
+    "overhead": 25349184425.0,
+    "capital": 374646977558.0,
+    "item_count": 290
+  },
+  "0804": {
+    "name": "AIRCRAFT FUEL COST",
+    "code": "0804",
+    "personnel": 0,
+    "overhead": 17788000413.0,
+    "capital": 71778216357.0,
+    "item_count": 11
+  },
+  "0605": {
+    "name": "SECURITY OPERATIONS",
+    "code": "0605",
+    "personnel": 0,
+    "overhead": 864590384.0,
+    "capital": 35611074567.0,
+    "item_count": 50
+  },
+  "0404": {
+    "name": "MAINTENANCE OF OFFICE / IT EQUIPMENTS",
+    "code": "0404",
+    "personnel": 0,
+    "overhead": 4777953792.0,
+    "capital": 14178334158.0,
+    "item_count": 342
+  },
+  "0407": {
+    "name": "MAINTENANCE OF AIRCRAFTS",
+    "code": "0407",
+    "personnel": 0,
+    "overhead": 51915662420.0,
+    "capital": 3675000000.0,
+    "item_count": 32
+  },
+  "0132": {
+    "name": "PURCHASE OF DEFENCE EQUIPMENT",
+    "code": "0132",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 106999045185.0,
+    "item_count": 3
+  },
+  "0121": {
+    "name": "REHABILITATION / REPAIRS OF OFFICE BUILDINGS",
+    "code": "0121",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 4888315498.0,
+    "item_count": 9
+  },
+  "0402": {
+    "name": "MAINTENANCE OF OFFICE FURNITURE",
+    "code": "0402",
+    "personnel": 0,
+    "overhead": 73379926729.0,
+    "capital": 5145080882536.0,
+    "item_count": 109
+  },
+  "0406": {
+    "name": "OTHER MAINTENANCE SERVICES",
+    "code": "0406",
+    "personnel": 0,
+    "overhead": 60945680633.0,
+    "capital": 198242623425.0,
+    "item_count": 426
+  },
+  "0301": {
+    "name": "REHABILITATION / REPAIRS OF FIXED ASSETS - GENERAL",
+    "code": "0301",
+    "personnel": 0,
+    "overhead": 255200000.0,
+    "capital": 509703599297.0,
+    "item_count": 58
+  },
+  "0207": {
+    "name": "CONSULTING & PROFESSIONAL SERVICES - GENERAL",
+    "code": "0207",
+    "personnel": 0,
+    "overhead": 25736613620.0,
+    "capital": 561058692885.0,
+    "item_count": 1411
+  },
+  "0702": {
+    "name": "INFORMATION TECHNOLOGY CONSULTING",
+    "code": "0702",
+    "personnel": 0,
+    "overhead": 6686972308.0,
+    "capital": 602436375487.0,
+    "item_count": 451
+  },
+  "0208": {
+    "name": "FUEL & LUBRICANTS - GENERAL",
+    "code": "0208",
+    "personnel": 0,
+    "overhead": 10379572753.0,
+    "capital": 572298003628.0,
+    "item_count": 324
+  },
+  "0801": {
+    "name": "MOTOR VEHICLE FUEL COST",
+    "code": "0801",
+    "personnel": 0,
+    "overhead": 6683230496.0,
+    "capital": 241713308054.0,
+    "item_count": 517
+  },
+  "0102": {
+    "name": "CONSTRUCTION / PROVISION OF RESIDENTIAL BUILDINGS",
+    "code": "0102",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 34294835034.0,
+    "item_count": 31
+  },
+  "0603": {
+    "name": "OFFICE RENT",
+    "code": "0603",
+    "personnel": 0,
+    "overhead": 3787074840.0,
+    "capital": 54978312034.0,
+    "item_count": 144
+  },
+  "0403": {
+    "name": "MAINTENANCE OF OFFICE BUILDING / RESIDENTIAL QTRS",
+    "code": "0403",
+    "personnel": 0,
+    "overhead": 52043120718.0,
+    "capital": 8829571770.0,
+    "item_count": 155
+  },
+  "0112": {
+    "name": "PURCHASE OF OFFICE FURNITURE AND FITTINGS",
+    "code": "0112",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 10163920279.0,
+    "item_count": 21
+  },
+  "0709": {
+    "name": "AUDITING OF ACCOUNTS",
+    "code": "0709",
+    "personnel": 0,
+    "overhead": 1103688886.0,
+    "capital": 56253241736.0,
+    "item_count": 159
+  },
+  "0114": {
+    "name": "CONSTRUCTION / PROVISION OF ROADS",
+    "code": "0114",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 4092491501.0,
+    "item_count": 8
+  },
+  "0904": {
+    "name": "OTHER CRF BANK CHARGES",
+    "code": "0904",
+    "personnel": 0,
+    "overhead": 41419563.0,
+    "capital": 2361301332.0,
+    "item_count": 16
+  },
+  "0106": {
+    "name": "CONSTRUCTION / PROVISION OF HOSPITALS / HEALTH CENT",
+    "code": "0106",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 18700278266.0,
+    "item_count": 20
+  },
+  "0113": {
+    "name": "PURCHASE OF COMPUTERS",
+    "code": "0113",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 134176162655.0,
+    "item_count": 4
+  },
+  "0108": {
+    "name": "PURCHASE OF BUSES",
+    "code": "0108",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 225562456036.0,
+    "item_count": 4
+  },
+  "0902": {
+    "name": "INSURANCE PREMIUM",
+    "code": "0902",
+    "personnel": 0,
+    "overhead": 1330845838.0,
+    "capital": 252909195565.0,
+    "item_count": 145
+  },
+  "0607": {
+    "name": "INTEREST - INTERNAL PUBLIC DEBT",
+    "code": "0607",
+    "personnel": 0,
+    "overhead": 15909639681657.0,
+    "capital": 1053266176.0,
+    "item_count": 11
+  },
+  "0104": {
+    "name": "ANNIVASARIES/CELEBRATIONS",
+    "code": "0104",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 89567800.0,
+    "item_count": 3
+  },
+  "0209": {
+    "name": "FINANCIAL CHARGES - GENERAL",
+    "code": "0209",
+    "personnel": 0,
+    "overhead": 13773243022.0,
+    "capital": 143119603028.0,
+    "item_count": 160
+  },
+  "0123": {
+    "name": "PURCHASE OF FIRE FIGHTING EQUIPMENT",
+    "code": "0123",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 3242769077639.0,
+    "item_count": 13
+  },
+  "0118": {
+    "name": "CONSTRUCTION / PROVISION OF INFRASTRUCTURE",
+    "code": "0118",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 8953779451.0,
+    "item_count": 13
+  },
+  "0901": {
+    "name": "BANK CHARGES",
+    "code": "0901",
+    "personnel": 0,
+    "overhead": 1632287334.0,
+    "capital": 15791816668.0,
+    "item_count": 70
+  },
+  "0122": {
+    "name": "PURCHASE OF HEALTH / MEDICAL EQUIPMENT",
+    "code": "0122",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 18059016083.0,
+    "item_count": 21
+  },
+  "0708": {
+    "name": "MEDICAL CONSULTING",
+    "code": "0708",
+    "personnel": 0,
+    "overhead": 956746400.0,
+    "capital": 1412575782.0,
+    "item_count": 58
+  },
+  "0105": {
+    "name": "PURCHASE OF MOTOR VEHICLES",
+    "code": "0105",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 6443148332.0,
+    "item_count": 31
+  },
+  "0107": {
+    "name": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+    "code": "0107",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 2139446475.0,
+    "item_count": 11
+  },
+  "0413": {
+    "name": "MAINTENANCE OF STREET LIGHTS",
+    "code": "0413",
+    "personnel": 0,
+    "overhead": 915676414.0,
+    "capital": 1212801988.0,
+    "item_count": 64
+  },
+  "0411": {
+    "name": "MAINTENANCE OF COMMUNICATION EQUIPMENT",
+    "code": "0411",
+    "personnel": 0,
+    "overhead": 669683580.0,
+    "capital": 191332500.0,
+    "item_count": 61
+  },
+  "0204": {
+    "name": "MAINTENANCE SERVICES - GENERAL",
+    "code": "0204",
+    "personnel": 0,
+    "overhead": 309094699.0,
+    "capital": 0,
+    "item_count": 34
+  },
+  "0401": {
+    "name": "PRESERVATION OF THE ENVIRONMENT - GENERAL",
+    "code": "0401",
+    "personnel": 0,
+    "overhead": 321947000.0,
+    "capital": 29124973832.0,
+    "item_count": 46
+  },
+  "0410": {
+    "name": "MAINTENANCE OF ROADS AND BRIDGES",
+    "code": "0410",
+    "personnel": 0,
+    "overhead": 1042775811.0,
+    "capital": 1524960080.0,
+    "item_count": 81
+  },
+  "0802": {
+    "name": "OTHER TRANSPORT EQUIPMENT FUEL COST",
+    "code": "0802",
+    "personnel": 0,
+    "overhead": 1729717518.0,
+    "capital": 1223659289.0,
+    "item_count": 45
+  },
+  "0806": {
+    "name": "COOKING GAS/FUEL COST",
+    "code": "0806",
+    "personnel": 0,
+    "overhead": 961556196.0,
+    "capital": 1030735349.0,
+    "item_count": 17
+  },
+  "0119": {
+    "name": "PURCHASE OF POWER GENERATING SET",
+    "code": "0119",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 148171637.0,
+    "item_count": 3
+  },
+  "0124": {
+    "name": "PURCHASE OF TEACHING / LEARNING AID EQUIPMENT",
+    "code": "0124",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 13746749848.0,
+    "item_count": 4
+  },
+  "0002": {
+    "name": "INSTITUTE OF CHILD HEALTH",
+    "code": "0002",
+    "personnel": 0,
+    "overhead": 15600781.0,
+    "capital": 0,
+    "item_count": 6
+  },
+  "0004": {
+    "name": "INSTITUTE OF CHILD HEALTH",
+    "code": "0004",
+    "personnel": 0,
+    "overhead": 18600781.0,
+    "capital": 0,
+    "item_count": 12
+  },
+  "0005": {
+    "name": "INSTITUTE OF CHILD HEALTH",
+    "code": "0005",
+    "personnel": 0,
+    "overhead": 14080429.0,
+    "capital": 0,
+    "item_count": 4
+  },
+  "0115": {
+    "name": "PURCHASE OF PHOTOCOPYING MACHINES",
+    "code": "0115",
+    "personnel": 0,
+    "overhead": 0,
+    "capital": 16843726324.0,
+    "item_count": 6
+  }
+}

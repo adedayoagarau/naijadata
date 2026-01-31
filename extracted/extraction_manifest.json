@@ -1,0 +1,130 @@
+{
+  "extraction_date": "2026-01-31T09:21:14.789088",
+  "files": [
+    {
+      "file": "2019_Executive_Budget_Proposal.pdf",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 28100
+    },
+    {
+      "file": "Download.pdf",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 110
+    },
+    {
+      "file": "Signed_2019_Budget_Vol_2.pdf",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 110
+    },
+    {
+      "file": "2021_FGN_Approved_Budget_Details.pdf",
+      "year": 2021,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 28933
+    },
+    {
+      "file": "2022_Appropriation_Amended.pdf",
+      "year": 2022,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 26217
+    },
+    {
+      "file": "Download.pdf",
+      "year": 2022,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 26217
+    },
+    {
+      "file": "MDA_s_Proposed_Budget_Details.pdf",
+      "year": 2022,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 26117
+    },
+    {
+      "file": "MDAs_Approved_2022_Budget_Details.pdf",
+      "year": 2022,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 26139
+    },
+    {
+      "file": "View.pdf",
+      "year": 2022,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 26217
+    },
+    {
+      "file": "2024_Appropriation_Bill.pdf",
+      "year": 2024,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 27091
+    },
+    {
+      "file": "2025_Appropriation_Act_As_Passed.pdf",
+      "year": 2025,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 28099
+    },
+    {
+      "file": "2025_Executive_Proposal.pdf",
+      "year": 2025,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 29858
+    },
+    {
+      "file": "2026_Appropriation_Bill_Details.pdf",
+      "year": 2026,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 30397
+    },
+    {
+      "file": "Download.pdf",
+      "year": 2026,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 30397
+    },
+    {
+      "file": "View.pdf",
+      "year": 2026,
+      "level": "federal",
+      "state": null,
+      "items_extracted": 30397
+    }
+  ],
+  "summary": {
+    "total_files": 15,
+    "total_items": 364399,
+    "years": [
+      2019,
+      2021,
+      2022,
+      2024,
+      2025,
+      2026
+    ],
+    "by_year": {
+      "2019": 28320,
+      "2021": 28933,
+      "2022": 130907,
+      "2024": 27091,
+      "2025": 57957,
+      "2026": 91191
+    }
+  }
+}

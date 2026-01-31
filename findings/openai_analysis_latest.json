@@ -1,0 +1,397 @@
+{
+  "timestamp": "2026-01-31T09:33:32.719397",
+  "model": "gpt-4o-mini",
+  "total_analyzed": 15,
+  "total_tokens": 6905,
+  "results": [
+    {
+      "item_id": "755860fd5799",
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 1303400499.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 75,
+      "risk_level": "HIGH",
+      "anomaly_types": [
+        "GHOST_WORKER_PATTERN",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Personnel costs inconsistent with staffing levels",
+        "High amount for a single salary allocation"
+      ],
+      "explanation": "The salary allocation is significantly high and could indicate ghost workers or inflated personnel costs, especially given the MDA's historical issues.",
+      "recommendation": "Investigators should verify the actual number of staff and compare it to the salary allocation.",
+      "confidence": 0.85,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:32:58.152780",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "bf50ec3452b4",
+      "budget_code": "21020101",
+      "description": "NON REGULAR ALLOWANCES",
+      "amount": 230367950.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 50,
+      "risk_level": "MEDIUM",
+      "anomaly_types": [
+        "ROUND_NUMBER"
+      ],
+      "red_flags": [
+        "Exact figure suggests estimation rather than actual costing"
+      ],
+      "explanation": "The amount for non-regular allowances is a round figure, which raises suspicion about the accuracy of the budgeting process.",
+      "recommendation": "Investigators should seek detailed breakdowns of allowances to ensure they are justified.",
+      "confidence": 0.7,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:32:58.152807",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "903b2a6532c4",
+      "budget_code": "21020201",
+      "description": "NHIS",
+      "amount": 65170025.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 30,
+      "risk_level": "LOW",
+      "anomaly_types": [
+        "NORMAL"
+      ],
+      "red_flags": [],
+      "explanation": "The NHIS allocation appears reasonable and aligns with standard health insurance contributions.",
+      "recommendation": "No immediate action required, but should be monitored in future budgets.",
+      "confidence": 0.9,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:32:58.152811",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "69a296927a63",
+      "budget_code": "21020202",
+      "description": "CONTRIBUTORY PENSION - EMPLOYER'S CONTRIBUTION",
+      "amount": 97755037.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 40,
+      "risk_level": "MEDIUM",
+      "anomaly_types": [
+        "NORMAL"
+      ],
+      "red_flags": [],
+      "explanation": "The contributory pension allocation is within expected ranges, though it should be verified against actual employee contributions.",
+      "recommendation": "Confirm that the employer's contribution aligns with the number of employees and their salaries.",
+      "confidence": 0.75,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:32:58.152813",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "c705ee0dd6dc",
+      "budget_code": "22020201",
+      "description": "ELECTRICITY CHARGES",
+      "amount": 274798446.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 60,
+      "risk_level": "HIGH",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT"
+      ],
+      "red_flags": [
+        "High electricity charges for a personnel-focused MDA"
+      ],
+      "explanation": "The electricity charges are unusually high for an MDA primarily focused on salaries and wages, suggesting possible misallocation.",
+      "recommendation": "Investigators should verify the necessity and justification for such high electricity costs.",
+      "confidence": 0.8,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:32:58.152814",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "42ad12f53da2",
+      "budget_code": "22020202",
+      "description": "TELEPHONE CHARGES",
+      "amount": 23861251.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 75,
+      "risk_level": "HIGH",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Telephone charges for a federal agency appear excessively high",
+        "Spending under 'Salaries and Wages' for overhead costs is unusual"
+      ],
+      "explanation": "The amount allocated for telephone charges is significantly high for a federal agency, especially under the 'Salaries and Wages' MDA, which typically does not cover such overhead expenses.",
+      "recommendation": "Investigators should verify the necessity and justification for this amount and check for any similar allocations in the same MDA.",
+      "confidence": 0.85,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:16.530120",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "11670d4e70e7",
+      "budget_code": "22020203",
+      "description": "INTERNET ACCESS CHARGES",
+      "amount": 67106117.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 80,
+      "risk_level": "HIGH",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Internet access charges are disproportionately high for a federal agency",
+        "Spending under 'Salaries and Wages' for overhead costs is questionable"
+      ],
+      "explanation": "The budget for internet access charges is excessively high, raising concerns about the legitimacy of the expense and whether it aligns with the agency's mandate.",
+      "recommendation": "Investigators should examine the breakdown of internet service costs and compare them with industry standards and similar agencies.",
+      "confidence": 0.9,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:16.530137",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "07d420215fda",
+      "budget_code": "22020205",
+      "description": "WATER RATES",
+      "amount": 65684953.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 70,
+      "risk_level": "HIGH",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Water rates for a federal agency appear excessively high",
+        "Spending under 'Salaries and Wages' for overhead costs is unusual"
+      ],
+      "explanation": "The allocation for water rates is notably high, which is atypical for a federal agency and raises questions about the validity of such expenses.",
+      "recommendation": "Investigators should verify the actual water consumption and rates charged to the agency, and check for any similar allocations.",
+      "confidence": 0.8,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:16.530142",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "64151b16e759",
+      "budget_code": "22020206",
+      "description": "SEWERAGE CHARGES",
+      "amount": 45418735.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 65,
+      "risk_level": "HIGH",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Sewerage charges are disproportionately high for a federal agency",
+        "Spending under 'Salaries and Wages' for overhead costs is questionable"
+      ],
+      "explanation": "The budget for sewerage charges is high, which is concerning for a federal agency and suggests potential misallocation of funds.",
+      "recommendation": "Investigators should check the agency's sewerage service agreements and compare the costs with standard rates.",
+      "confidence": 0.75,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:16.530145",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "31e5773ebd8f",
+      "budget_code": "22020301",
+      "description": "OFFICE STATIONERIES / COMPUTER CONSUMABLES",
+      "amount": 79075135.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 70,
+      "risk_level": "HIGH",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Office stationeries/computer consumables budget appears excessively high",
+        "Spending under 'Salaries and Wages' for overhead costs is unusual"
+      ],
+      "explanation": "The amount allocated for office stationeries and computer consumables is significantly high, raising concerns about potential budget padding or inflated costs.",
+      "recommendation": "Investigators should review the procurement process and compare the costs with standard benchmarks for office supplies.",
+      "confidence": 0.8,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:16.530149",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "fd6868e2a7d7",
+      "budget_code": "22020302",
+      "description": "BOOKS",
+      "amount": 8580741.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 51,
+      "risk_level": "HIGH",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Amount too high for books",
+        "Agency spending on overhead items"
+      ],
+      "explanation": "The amount allocated for books is unusually high for an overhead item, especially for an MDA focused on salaries and wages.",
+      "recommendation": "Investigators should verify the necessity and actual usage of the allocated funds for books.",
+      "confidence": 0.8,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:32.718196",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "68011b54b33a",
+      "budget_code": "22020303",
+      "description": "NEWSPAPERS",
+      "amount": 26432346.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 76,
+      "risk_level": "CRITICAL",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Amount too high for newspapers",
+        "Agency spending on overhead items"
+      ],
+      "explanation": "The allocation for newspapers is excessively high for an overhead expense, raising concerns about the legitimacy of the expenditure.",
+      "recommendation": "Investigators should examine the justification for this expenditure and whether it aligns with the agency's mandate.",
+      "confidence": 0.9,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:32.718207",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "330eea8c3d72",
+      "budget_code": "22020304",
+      "description": "MAGAZINES & PERIODICALS",
+      "amount": 3511909.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 25,
+      "risk_level": "LOW",
+      "anomaly_types": [
+        "NORMAL"
+      ],
+      "red_flags": [],
+      "explanation": "The amount for magazines and periodicals is relatively low and appears reasonable for an overhead item.",
+      "recommendation": "No further investigation needed.",
+      "confidence": 0.95,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:32.718210",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "1115719c565b",
+      "budget_code": "22020305",
+      "description": "PRINTING OF NON SECURITY DOCUMENTS",
+      "amount": 46856410.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 76,
+      "risk_level": "CRITICAL",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Amount too high for printing non-security documents",
+        "Agency spending on overhead items"
+      ],
+      "explanation": "The budget for printing non-security documents is significantly high, suggesting potential budget padding or misallocation.",
+      "recommendation": "Investigators should verify the actual costs and necessity of this printing expenditure.",
+      "confidence": 0.85,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:32.718212",
+      "model_used": "gpt-4o-mini"
+    },
+    {
+      "item_id": "e76e42e76ceb",
+      "budget_code": "22020306",
+      "description": "PRINTING OF SECURITY DOCUMENTS",
+      "amount": 22353517.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "level": "federal",
+      "state": null,
+      "risk_score": 51,
+      "risk_level": "HIGH",
+      "anomaly_types": [
+        "EXCESSIVE_AMOUNT",
+        "HIGH_RISK_MDA"
+      ],
+      "red_flags": [
+        "Amount too high for printing security documents",
+        "Agency spending on overhead items"
+      ],
+      "explanation": "The allocation for printing security documents is high, which could indicate inflated costs or mismanagement of funds.",
+      "recommendation": "Investigators should assess the justification for this expenditure and compare it with similar past allocations.",
+      "confidence": 0.8,
+      "similar_items_concern": null,
+      "historical_pattern": null,
+      "analyzed_at": "2026-01-31T09:33:32.718213",
+      "model_used": "gpt-4o-mini"
+    }
+  ]
+}

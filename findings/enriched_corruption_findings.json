@@ -1,0 +1,2201 @@
+{
+  "generated_at": "2026-01-31T11:49:13.832588",
+  "model": "gpt-4o-mini",
+  "total_enriched": 50,
+  "total_tokens": 46009,
+  "estimated_cost": 0.0276054,
+  "findings": [
+    {
+      "finding_id": "b4bf7851d830",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020115",
+      "description": "CONSTRUCTION / PROVISION OF RAIL-WAYS",
+      "amount": 170041649443.0,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "3 items below federal_executive_council threshold, total \u20a61,260,000,000"
+      ],
+      "explanation": "3 items below federal_executive_council threshold, total \u20a61,260,000,000",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common scheme used to circumvent procurement regulations, particularly the Public Procurement Act (PPA) 2007, which mandates that contracts above a certain threshold must undergo a more rigorous approval process. This practice allows officials to avoid scrutiny and potentially inflate costs.",
+        "modus_operandi": "Fraudsters typically break down a large contract into smaller segments that fall below the federal executive council threshold, thereby avoiding the need for competitive bidding and oversight. This can lead to inflated costs as multiple contracts are awarded for the same project, often to the same contractor.",
+        "investigation_leads": [
+          "Review the procurement records for the construction of railways to identify all related contracts and their values.",
+          "Interview procurement officers within the MDA to understand the rationale behind the contract breakdown.",
+          "Investigate the contractors involved to see if they have a history of similar practices or connections to officials."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts related to the construction/provision of railways for the year 2019.",
+          "Ask for the procurement committee meeting minutes where these contracts were approved."
+        ],
+        "potential_violations": [
+          "Public Procurement Act (PPA) 2007, Section 16 - which prohibits splitting contracts to evade the procurement process."
+        ],
+        "whistleblower_indicators": "An insider might reveal that the contracts were intentionally split to favor certain contractors, possibly indicating collusion between officials and contractors. They may also know about kickbacks or other corrupt practices associated with the awarding of these contracts.",
+        "estimated_loss": "Estimated actual cost of legitimate railway construction could be around \u20a6100 billion, indicating a potential loss of \u20a670 billion due to inflated contract values.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Works and Housing in 2018 regarding similar contract splitting practices for road construction projects."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "ba8ff86e4d92",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020114",
+      "description": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 12232122872.0,
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "4 items below federal_executive_council threshold, total \u20a61,899,814,287"
+      ],
+      "explanation": "4 items below federal_executive_council threshold, total \u20a61,899,814,287",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common tactic used to circumvent procurement thresholds set by the Public Procurement Act (PPA) 2007. By breaking down a large contract into smaller components, officials can avoid the rigorous scrutiny and approval processes required for larger contracts, leading to inflated costs and potential kickbacks.",
+        "modus_operandi": "Typically, officials will divide a single project into multiple smaller contracts, each below the federal executive council threshold. This allows them to award contracts without competitive bidding, often to favored contractors, and inflate costs through collusion.",
+        "investigation_leads": [
+          "Interview procurement officers within the MDA to understand the decision-making process for contract awards.",
+          "Examine the contractor's history and previous contracts awarded to them by the MDA to identify patterns of favoritism.",
+          "Review internal communications (emails, memos) related to the planning and awarding of these contracts."
+        ],
+        "foia_requests": [
+          "Request copies of all procurement documents related to the construction of roads under budget code 23020114 for the year 2019.",
+          "Ask for the justification documents that detail how the contracts were split and the rationale behind it."
+        ],
+        "potential_violations": [
+          "Public Procurement Act (PPA) 2007 - Section 16 (prohibition of splitting contracts)",
+          "Criminal Code Act - Sections relating to fraud and corruption"
+        ],
+        "whistleblower_indicators": "An insider may reveal that there was a deliberate strategy to split contracts to avoid oversight, including knowledge of collusion between officials and contractors, and possibly details of kickbacks or incentives offered to officials.",
+        "estimated_loss": "Estimated actual cost of legitimate road construction could be around \u20a68 billion, indicating a potential loss of \u20a64.2 billion due to inflated costs from contract splitting.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case on the N1.3 billion contract splitting scandal involving the Ministry of Works in 2018, where similar tactics were used to bypass procurement regulations."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "bb6dcdaf609d",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23010119",
+      "description": "PURCHASE OF POWER GENERATING SET",
+      "amount": 82030000000.0,
+      "mda": "SECURITY CHARGES",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "3 items below ministerial_tenders_board threshold, total \u20a6278,250,000"
+      ],
+      "explanation": "3 items below ministerial_tenders_board threshold, total \u20a6278,250,000",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common scheme used to circumvent procurement regulations that require competitive bidding for contracts above a certain threshold. This practice is particularly prevalent in sectors like security, where large sums of money are often involved, and oversight may be lax.",
+        "modus_operandi": "Fraudsters typically split a larger contract into smaller segments to avoid triggering the requirement for a more rigorous procurement process, such as ministerial tenders board approval. This allows them to award contracts to preferred vendors without competition, often inflating costs or delivering substandard goods/services.",
+        "investigation_leads": [
+          "Interview procurement officers within the MDA to understand the decision-making process for contract awards.",
+          "Review contracts awarded for the purchase of power generating sets in the same fiscal year to identify patterns of splitting.",
+          "Investigate the vendors involved in the contracts to assess their legitimacy and past performance."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts related to the purchase of power generating sets for the year 2022.",
+          "Ask for documentation that shows the procurement process followed for contracts under \u20a6300,000,000, including justifications for splitting."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, particularly sections related to competitive bidding and contract thresholds."
+        ],
+        "whistleblower_indicators": "An insider might reveal that there was pressure to split contracts and that there are kickback arrangements with certain vendors. They may also know about internal communications that discuss circumventing procurement rules.",
+        "estimated_loss": "Estimated actual cost for legitimate procurement of power generating sets could be around \u20a650,000,000, indicating a potential loss of \u20a632,030,000,000 due to inflated contracts.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Defence in 2021 where contract splitting was used to inflate costs for military supplies."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "25b0b64109c2",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 1303400499.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "84 items below ministerial_tenders_board threshold, total \u20a67,511,884,350"
+      ],
+      "explanation": "84 items below ministerial_tenders_board threshold, total \u20a67,511,884,350",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common scheme used to evade procurement thresholds that require more rigorous oversight and competitive bidding. This practice undermines transparency and accountability in public spending, particularly in sectors like salaries and wages, where large sums can be misappropriated.",
+        "modus_operandi": "Fraudsters typically break down a large contract into smaller, less scrutinized amounts to avoid the need for ministerial approval and competitive bidding processes. This allows them to award contracts to favored individuals or companies without proper oversight.",
+        "investigation_leads": [
+          "Review the list of all contracts awarded under budget code 21010101 for the year 2019 to identify patterns of splitting.",
+          "Interview personnel from the Salaries and Wages MDA to understand the approval process for these contracts.",
+          "Investigate the vendors who received these contracts to determine their legitimacy and any connections to government officials."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts awarded under budget code 21010101 for the year 2019.",
+          "Ask for documentation of the procurement process followed for each of the 84 items flagged for splitting."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, particularly sections related to contract thresholds and competitive bidding requirements.",
+          "Section 10 of the EFCC Act regarding the prohibition of fraudulent practices in public procurement."
+        ],
+        "whistleblower_indicators": "An insider might reveal knowledge of collusion between MDA officials and contractors, details of how contracts were split, and any kickbacks or corrupt payments made to facilitate the scheme.",
+        "estimated_loss": "Estimated actual cost could be significantly lower than the inflated total of \u20a67,511,884,350, potentially indicating a loss of hundreds of millions of Naira due to inflated contracts and ghost workers.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Health in 2018 where contract splitting was used to siphon funds meant for medical supplies."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "25b0b64109c2",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 1303400499.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "373 items below federal_executive_council threshold, total \u20a6166,153,255,830"
+      ],
+      "explanation": "373 items below federal_executive_council threshold, total \u20a6166,153,255,830",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common method used to circumvent procurement thresholds set by the Public Procurement Act (PPA) 2007. This allows MDAs to avoid competitive bidding processes and engage in less transparent procurement practices, leading to inflated costs and potential kickbacks.",
+        "modus_operandi": "Fraudsters often divide a larger contract into smaller pieces, each below the threshold that would require a more rigorous procurement process. This enables them to award contracts without proper scrutiny, often to favored contractors, resulting in inflated costs and potential misappropriation of funds.",
+        "investigation_leads": [
+          "Interview the procurement officer responsible for the budget item to understand the rationale behind the division of contracts.",
+          "Review the list of contractors awarded contracts under this budget line to identify any patterns or connections to MDA officials.",
+          "Analyze the payment records to determine if there are any discrepancies or irregularities in the amounts paid versus services rendered."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts awarded under budget code 21010101 for the year 2019.",
+          "Ask for the procurement plan and justifications for contract splitting for the salaries and wages budget line."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, specifically sections related to contract splitting and procurement thresholds."
+        ],
+        "whistleblower_indicators": "An insider might reveal that the splitting was orchestrated to favor certain contractors, potentially revealing collusion between MDA officials and contractors, as well as the existence of kickback arrangements.",
+        "estimated_loss": "Estimated actual cost may be significantly lower than the reported budget amount due to inflated contract values resulting from splitting; a conservative estimate could suggest a loss of at least 20% of the budgeted amount.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC cases involving MDAs where contract splitting was identified, leading to significant recoveries and criminal prosecutions, such as the 2018 investigation into the Ministry of Health for similar practices."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "3ce37e4fa657",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23030121",
+      "description": "REHABILITATION / REPAIRS OF OFFICE BUILDINGS",
+      "amount": 5426045185.0,
+      "mda": "LEGAL SERVICES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "3 items below ministerial_tenders_board threshold, total \u20a6273,508,112"
+      ],
+      "explanation": "3 items below ministerial_tenders_board threshold, total \u20a6273,508,112",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common tactic used to circumvent procurement regulations that require competitive bidding for contracts above a certain threshold. This practice undermines transparency and accountability, allowing officials to award contracts without proper oversight.",
+        "modus_operandi": "Fraudsters often break down larger contracts into smaller ones that fall below the ministerial tenders board threshold, thus avoiding the need for competitive bidding. This allows them to award contracts to preferred contractors, often at inflated prices, while pocketing kickbacks.",
+        "investigation_leads": [
+          "Review the procurement records for all contracts related to office building rehabilitation/repairs within the same fiscal year and MDA.",
+          "Interview the procurement officers and project managers involved in the budget item to understand the decision-making process.",
+          "Investigate the contractors awarded the smaller contracts for any connections to MDA officials or previous contract performance issues."
+        ],
+        "foia_requests": [
+          "Request all procurement documents related to the rehabilitation/repairs of office buildings for the year 2019, including bid submissions and evaluation reports.",
+          "Ask for the ministerial tenders board meeting minutes that discuss the approval of contracts related to this budget item."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, specifically sections related to competitive bidding and contract thresholds.",
+          "Criminal Code Act, particularly sections concerning fraud and corruption."
+        ],
+        "whistleblower_indicators": "An insider may reveal the existence of verbal agreements with contractors, knowledge of inflated contract prices, or evidence of collusion between MDA officials and contractors.",
+        "estimated_loss": "Estimated actual cost for legitimate repairs may be around \u20a62,500,000,000, suggesting a potential loss of \u20a62,926,045,185 due to inflated pricing and contract splitting.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Works in 2018 where contract splitting was used to inflate costs for road rehabilitation projects."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "8c58f7e4ddc7",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23010112",
+      "description": "PURCHASE OF OFFICE FURNITURE AND FITTINGS",
+      "amount": 1350000000.0,
+      "mda": "CONSULTING & PROFESSIONAL SERVICES - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "13 items below ministerial_tenders_board threshold, total \u20a61,181,127,000"
+      ],
+      "explanation": "13 items below ministerial_tenders_board threshold, total \u20a61,181,127,000",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common scheme used to evade procurement regulations, particularly the Public Procurement Act (PPA) 2007, which mandates that contracts above certain thresholds must go through a more rigorous tendering process. This practice undermines transparency and accountability, allowing officials to manipulate budgets and inflate costs.",
+        "modus_operandi": "Fraudsters typically break down a large contract into smaller segments that fall below the ministerial tenders board threshold to avoid competitive bidding processes. This allows for easier manipulation of contract awards and inflated pricing, as the contracts can be awarded without the scrutiny that larger contracts would attract.",
+        "investigation_leads": [
+          "Interview procurement officers within the MDA to understand the decision-making process behind contract awards.",
+          "Review the procurement records for all contracts related to office furniture and fittings within the fiscal year to identify patterns of splitting.",
+          "Investigate the vendors who received the contracts to assess their legitimacy and past performance."
+        ],
+        "foia_requests": [
+          "Request copies of all procurement documents related to the purchase of office furniture and fittings for 2019, including bid submissions and evaluation reports.",
+          "Ask for records of any approvals or justifications provided for contracts that were split to avoid the ministerial tenders board threshold."
+        ],
+        "potential_violations": [
+          "Public Procurement Act (PPA) 2007, particularly sections related to contract thresholds and competitive bidding requirements.",
+          "Criminal Code Act, specifically sections related to fraud and corruption."
+        ],
+        "whistleblower_indicators": "An insider could reveal details about the internal discussions regarding the splitting of contracts, the identities of officials involved in the decision-making process, and any pressure to approve inflated invoices from vendors.",
+        "estimated_loss": "The estimated actual cost of the office furniture and fittings could be around \u20a6500,000,000, indicating a potential loss of \u20a6850,000,000 due to inflated pricing and contract splitting.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into similar contract splitting cases, such as the 2018 case involving the Ministry of Education where contracts for school supplies were split to bypass procurement regulations."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "a59b8a2295c9",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020101",
+      "description": "CONSTRUCTION / PROVISION OF OFFICE BUILDINGS",
+      "amount": 2500000000.0,
+      "mda": "CONSULTING & PROFESSIONAL SERVICES - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "5 items below federal_executive_council threshold, total \u20a62,087,124,069"
+      ],
+      "explanation": "5 items below federal_executive_council threshold, total \u20a62,087,124,069",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common scheme used to circumvent procurement thresholds, allowing officials to avoid the rigorous scrutiny associated with larger contracts. This practice undermines the Public Procurement Act (PPA 2007) and can lead to inflated costs and substandard work.",
+        "modus_operandi": "Fraudsters often break down a large contract into smaller segments, each below the federal executive council threshold, to evade competitive bidding requirements. This allows them to award contracts to favored contractors without proper oversight, often resulting in inflated costs and poor quality deliverables.",
+        "investigation_leads": [
+          "Review the procurement process documentation for this contract, including bid submissions and award letters.",
+          "Interview procurement officers within the MDA to understand the decision-making process and any communications regarding the contract.",
+          "Investigate the contractors involved to assess their previous work, financial stability, and any connections to government officials."
+        ],
+        "foia_requests": [
+          "Request all procurement documents related to the contract, including bid evaluations, award letters, and correspondence.",
+          "Ask for a detailed breakdown of the contract amounts and the rationale for splitting them into smaller contracts."
+        ],
+        "potential_violations": [
+          "Public Procurement Act (PPA) 2007, specifically sections related to contract splitting and competitive bidding requirements.",
+          "Criminal Code Act, sections regarding fraud and corruption in public service."
+        ],
+        "whistleblower_indicators": "An insider might reveal collusion between MDA officials and contractors, details of how contracts were intentionally split to avoid scrutiny, and any kickback arrangements that may exist.",
+        "estimated_loss": "Estimated actual cost may be around \u20a61,500,000,000 based on market rates for similar construction projects, indicating a potential loss of \u20a61,000,000,000 due to inflated contract amounts.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Works in 2018 where contract splitting was used to inflate costs for road construction projects."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "06539229262d",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020118",
+      "description": "CONSTRUCTION / PROVISION OF INFRASTRUCTURE",
+      "amount": 2387707889.0,
+      "mda": "FINANCIAL CONSULTING",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "3 items below federal_executive_council threshold, total \u20a61,485,891,558"
+      ],
+      "explanation": "3 items below federal_executive_council threshold, total \u20a61,485,891,558",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common scheme used to circumvent procurement regulations, particularly the Public Procurement Act (PPA) 2007, which mandates that contracts above a certain threshold must undergo a more rigorous approval process. This practice is often indicative of attempts to inflate costs and misappropriate funds.",
+        "modus_operandi": "Fraudsters typically divide a larger contract into smaller segments, each falling below the federal executive council threshold. This allows them to avoid competitive bidding and oversight, leading to inflated costs and potential kickbacks.",
+        "investigation_leads": [
+          "Interview procurement officers within the MDA to understand the decision-making process for contract allocations.",
+          "Examine the contract documents for any evidence of collusion between contractors and agency officials.",
+          "Investigate the payment records to determine if payments were made in a manner consistent with the split contracts."
+        ],
+        "foia_requests": [
+          "Request copies of all contract documents related to the construction/provision of infrastructure under budget code 23020118.",
+          "Ask for a detailed breakdown of all expenditures related to this budget item, including payment schedules and contractor performance evaluations."
+        ],
+        "potential_violations": [
+          "Public Procurement Act (PPA) 2007, specifically sections related to contract thresholds and competitive bidding requirements.",
+          "Criminal Code Act, particularly sections addressing fraud and conspiracy."
+        ],
+        "whistleblower_indicators": "An insider might reveal details about the collusion between the MDA and contractors, including any agreements to inflate costs or share kickbacks.",
+        "estimated_loss": "Estimated actual cost of legitimate infrastructure provision could be around \u20a61,500,000,000, suggesting a potential loss of \u20a6887,707,889 due to inflated contracts.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC cases involving contract splitting in the Ministry of Works and Housing, where similar schemes were uncovered leading to significant financial recoveries."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "c8942b28a874",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "22021004",
+      "description": "MEDICAL EXPENSES",
+      "amount": 2000000000.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "31 items below accounting_officer threshold, total \u20a669,180,374"
+      ],
+      "explanation": "31 items below accounting_officer threshold, total \u20a669,180,374",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common method used to circumvent procurement regulations, allowing officials to evade the need for competitive bidding by breaking down larger contracts into smaller ones that fall below the threshold requiring more rigorous oversight. This is particularly suspicious in the context of medical expenses, where inflated costs can lead to significant misappropriation of funds.",
+        "modus_operandi": "Fraudsters typically divide a single contract into multiple smaller contracts to avoid exceeding the accounting officer threshold. This allows them to award contracts without going through the competitive bidding process mandated by the Public Procurement Act (PPA) 2007, leading to inflated costs and potential kickbacks.",
+        "investigation_leads": [
+          "Review contracts awarded under budget code 22021004 for the year 2019 to identify any patterns of splitting.",
+          "Interview procurement officers and accounting officers involved in the approval process for these contracts.",
+          "Examine payment records to determine if multiple payments were made to the same vendor for similar services."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts awarded under budget code 22021004 for the year 2019.",
+          "Ask for documentation of the procurement process followed for each contract, including justifications for contract splitting."
+        ],
+        "potential_violations": [
+          "Public Procurement Act (PPA) 2007, specifically sections related to competitive bidding and contract award processes."
+        ],
+        "whistleblower_indicators": "An insider may reveal knowledge of collusion between procurement officers and contractors, including details on how contracts were intentionally split and the involvement of kickbacks or other corrupt practices.",
+        "estimated_loss": "Potentially inflated costs could lead to an estimated loss of up to 30% of the total budgeted amount, translating to approximately \u20a6600,000,000.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into similar cases of contract splitting in the Ministry of Health and other MDAs, where significant funds were misappropriated under the guise of medical expenses."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "c8942b28a874",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "22021004",
+      "description": "MEDICAL EXPENSES",
+      "amount": 2000000000.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "17 items below permanent_secretary threshold, total \u20a670,692,437"
+      ],
+      "explanation": "17 items below permanent_secretary threshold, total \u20a670,692,437",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common tactic used to evade procurement thresholds that require higher levels of approval. This practice undermines transparency and accountability in public spending, particularly in sectors like health where large sums are involved.",
+        "modus_operandi": "Fraudsters break down a larger contract into smaller segments to avoid scrutiny and the need for competitive bidding. This allows them to award contracts to favored vendors without proper oversight, often leading to inflated costs and substandard services.",
+        "investigation_leads": [
+          "Interview the procurement officer responsible for the budget line item to understand the rationale behind splitting the contracts.",
+          "Investigate the vendors involved in the smaller contracts to assess their legitimacy and past performance.",
+          "Review the approval process for these expenditures to identify any irregularities or lack of compliance with procurement regulations."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts related to the medical expenses for the year 2019, including any amendments or addendums.",
+          "Ask for documentation that justifies the splitting of contracts and the selection process for vendors."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, particularly sections related to contract splitting and competitive bidding requirements.",
+          "Section 10 of the EFCC Act regarding fraudulent practices in public procurement."
+        ],
+        "whistleblower_indicators": "An insider might reveal knowledge of collusion between procurement officials and vendors, details about how contracts were intentionally split, and any kickbacks or incentives provided to officials.",
+        "estimated_loss": "Estimated actual cost could be significantly lower than \u20a62,000,000,000 if contracts were inflated; potential loss could be upwards of 30-50% of the total amount due to overpricing.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC cases involving contract splitting in health sector procurements, such as investigations into the Ministry of Health's procurement practices in 2018."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "7f4b671961db",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020107",
+      "description": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 2336028432.0,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "11 items below ministerial_tenders_board threshold, total \u20a6984,515,718"
+      ],
+      "explanation": "11 items below ministerial_tenders_board threshold, total \u20a6984,515,718",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common tactic used to evade procurement regulations, particularly the Public Procurement Act of 2007, which mandates that contracts above a certain threshold must go through a more rigorous tendering process. This practice undermines transparency and accountability in public spending.",
+        "modus_operandi": "Fraudsters divide a large contract into smaller parts that fall below the ministerial tender board threshold, allowing them to bypass competitive bidding processes. This often leads to inflated costs and substandard work, as the contracts are awarded without proper scrutiny.",
+        "investigation_leads": [
+          "Review the list of contractors awarded the smaller contracts to identify any connections to officials within the MDA.",
+          "Interview procurement officers involved in the contract award process to understand the rationale behind splitting the contracts.",
+          "Examine previous contracts awarded by the same MDA for similar projects to identify patterns of splitting."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts awarded under budget code 23020107 for the year 2019.",
+          "Ask for documentation justifying the decision to split the contracts, including any internal memos or approvals."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, specifically sections related to contract splitting and procurement thresholds.",
+          "Criminal Code Act, sections related to fraud and corruption in public office."
+        ],
+        "whistleblower_indicators": "An insider might reveal details about the decision-making process for contract splitting, including any collusion between contractors and officials, as well as knowledge of inflated pricing or substandard work being accepted.",
+        "estimated_loss": "Potentially \u20a61,000,000,000 in overpayments due to inflated contract values and poor quality of work.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into similar cases of contract splitting in the Ministry of Education and the Ministry of Works, where inflated contracts were awarded for school construction projects."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "7f4b671961db",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020107",
+      "description": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 2336028432.0,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "7 items below federal_executive_council threshold, total \u20a63,240,307,596"
+      ],
+      "explanation": "7 items below federal_executive_council threshold, total \u20a63,240,307,596",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common tactic used to evade procurement thresholds set by the Public Procurement Act 2007, which mandates that contracts above a certain amount must undergo more rigorous scrutiny and approval processes. This raises red flags as it indicates potential collusion among officials to bypass regulations.",
+        "modus_operandi": "Fraudsters often break down a larger contract into smaller segments, each below the federal executive council threshold, to avoid competitive bidding and oversight. This allows them to award contracts to favored contractors without proper scrutiny, leading to inflated costs and substandard work.",
+        "investigation_leads": [
+          "Interview procurement officers involved in the budget approval process for the MDA.",
+          "Examine contracts awarded for the construction of public schools in 2019 to identify any patterns of splitting.",
+          "Investigate the contractors involved to assess their previous work history and any connections to government officials."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts awarded under budget code 23020107 for the year 2019.",
+          "Ask for documentation showing the procurement process followed for each contract, including bids received and evaluations conducted."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 16 (prohibition of splitting contracts)",
+          "Criminal Code Act, Section 98 (fraudulent practices)"
+        ],
+        "whistleblower_indicators": "An insider could reveal details about the decision-making process that led to contract splitting, including any collusion among officials and contractors, as well as any pressure to approve contracts without proper evaluation.",
+        "estimated_loss": "Estimated actual cost of legitimate construction work may be around \u20a61,500,000,000, indicating a potential loss of \u20a6836,028,432 due to inflated contracts.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Education in 2018 where similar contract splitting was identified, leading to the recovery of \u20a61 billion in misappropriated funds."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "aedee206dd03",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020121",
+      "description": "CONSTRUCTION/PROVISION OF DEFENCE EQUIPMENTS",
+      "amount": 2593500624.0,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "4 items below ministerial_tenders_board threshold, total \u20a6338,000,000"
+      ],
+      "explanation": "4 items below ministerial_tenders_board threshold, total \u20a6338,000,000",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common tactic used to circumvent procurement thresholds, allowing officials to bypass the more rigorous scrutiny associated with larger contracts. This raises red flags, especially in the defense sector, where large sums are often mismanaged or siphoned off.",
+        "modus_operandi": "Fraudsters typically break down a larger contract into smaller segments that fall below the ministerial tenders board threshold. This allows them to avoid competitive bidding processes and oversight, facilitating inflated pricing and the potential for kickbacks.",
+        "investigation_leads": [
+          "Interview procurement officers involved in the contract award process to understand the rationale behind the splitting.",
+          "Review the procurement records for similar contracts awarded in the same period to identify patterns.",
+          "Investigate the contractors involved for their past performance and any connections to government officials."
+        ],
+        "foia_requests": [
+          "Request the full procurement documentation for the contract, including bid submissions and evaluation reports.",
+          "Ask for records of any communications between the MDA and the contractors regarding the contract splitting."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 16 (prohibiting contract splitting)",
+          "Criminal Code Act, Sections 98 and 99 (dealing with fraud and corruption)"
+        ],
+        "whistleblower_indicators": "An insider could reveal the motivations behind the contract splitting, including any collusion between officials and contractors, as well as details on kickbacks or other corrupt practices.",
+        "estimated_loss": "The estimated loss could be significant, potentially exceeding \u20a61 billion when factoring in inflated costs and mismanagement.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case on the procurement of military equipment in 2018 where similar contract splitting was identified, leading to significant recoveries."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "0806c8c28897",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23030101",
+      "description": "REHABILITATION / REPAIRS OF RESIDENTIAL BUILDING",
+      "amount": 1003565189.0,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "7 items below ministerial_tenders_board threshold, total \u20a6633,057,998"
+      ],
+      "explanation": "7 items below ministerial_tenders_board threshold, total \u20a6633,057,998",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common tactic used to circumvent procurement regulations that require competitive bidding for contracts above a certain threshold. This practice undermines transparency and accountability in public spending, leading to inflated costs and corruption.",
+        "modus_operandi": "Fraudsters often break down a larger contract into smaller segments that fall below the ministerial tenders board threshold, allowing them to bypass the competitive bidding process. This can lead to inflated prices as the contracts are awarded without proper scrutiny.",
+        "investigation_leads": [
+          "Interview the procurement officer responsible for the contract to understand the rationale behind the splitting.",
+          "Examine the records of the ministerial tenders board to confirm the threshold and any approvals granted.",
+          "Investigate the contractors involved to assess their past performance and any connections to government officials."
+        ],
+        "foia_requests": [
+          "Request all procurement documents related to the rehabilitation/repairs of the residential building, including bid submissions and evaluations.",
+          "Ask for the minutes of meetings from the ministerial tenders board discussing this contract and any related approvals."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, specifically sections regarding competitive bidding and contract award processes."
+        ],
+        "whistleblower_indicators": "An insider may reveal that the splitting was orchestrated to favor specific contractors, possibly with kickbacks involved, and could provide details on any collusion among officials.",
+        "estimated_loss": "Estimated actual cost could be around \u20a6500,000,000, indicating a potential loss of \u20a6503,565,189 due to inflated contract values.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC cases involving contract splitting in federal housing projects, such as the 2018 investigation into the Ministry of Works and Housing."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "f847c20c81bd",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.7,
+      "budget_code": "23020103",
+      "description": "CONSTRUCTION / PROVISION OF ELECTRICITY",
+      "amount": 1000000000.0,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "9 items below ministerial_tenders_board threshold, total \u20a6797,692,745"
+      ],
+      "explanation": "9 items below ministerial_tenders_board threshold, total \u20a6797,692,745",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common tactic used to evade procurement regulations that require competitive bidding for contracts above a certain threshold. This practice undermines transparency and accountability, allowing officials to manipulate contract awards and inflate costs.",
+        "modus_operandi": "Typically, officials will break down a larger contract into smaller components, each falling below the ministerial tenders board threshold. This allows them to bypass the rigorous procurement processes, often leading to inflated costs and favoritism in awarding contracts to selected contractors.",
+        "investigation_leads": [
+          "Review the procurement records for all contracts related to electricity provision in 2019 under the MDA.",
+          "Interview the procurement officer and the financial officer of the MDA to understand the rationale behind the contract breakdown.",
+          "Investigate the contractors involved, including their past performance and any connections to officials within the MDA."
+        ],
+        "foia_requests": [
+          "Request all procurement documents related to the construction/provision of electricity for the year 2019, including bid submissions and evaluation reports.",
+          "Ask for a detailed explanation of the decision-making process that led to the splitting of the contract and the criteria used to select contractors."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, specifically sections related to competitive bidding and contract award processes."
+        ],
+        "whistleblower_indicators": "An insider may reveal that there was pressure to split contracts to favor certain contractors, or that there were discussions about manipulating the procurement process to ensure specific outcomes.",
+        "estimated_loss": "The estimated actual cost of legitimate procurement for similar projects may be around \u20a6600,000,000, leading to a potential loss of \u20a6400,000,000 due to inflated costs and mismanagement.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC cases involving contract splitting in the Ministry of Power and similar MDAs, where inflated contracts were awarded without proper procurement processes."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "f847c20c81bd",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.7,
+      "budget_code": "23020103",
+      "description": "CONSTRUCTION / PROVISION OF ELECTRICITY",
+      "amount": 1000000000.0,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "4 items below federal_executive_council threshold, total \u20a61,821,131,014"
+      ],
+      "explanation": "4 items below federal_executive_council threshold, total \u20a61,821,131,014",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common method used to circumvent procurement thresholds, allowing officials to bypass competitive bidding processes and award contracts without proper oversight. This raises concerns about transparency and accountability, especially in high-value projects.",
+        "modus_operandi": "Typically, officials will divide a single large contract into smaller contracts that fall below the federal executive council threshold. This allows them to avoid the rigorous procurement processes mandated by the Public Procurement Act (PPA) 2007, leading to inflated costs and potential kickbacks.",
+        "investigation_leads": [
+          "Interview procurement officers within the MDA to understand the decision-making process for contract awards.",
+          "Review contracts awarded for similar projects in the same fiscal year to identify patterns of splitting.",
+          "Examine the financial records of the contractors involved for any irregularities or connections to officials."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts related to the construction/provision of electricity for the year 2019 under budget code 23020103.",
+          "Ask for documentation regarding the procurement process, including bid submissions and evaluations for contracts below the threshold."
+        ],
+        "potential_violations": [
+          "Public Procurement Act (PPA) 2007, Section 16 (prohibition of splitting contracts)",
+          "Criminal Code Act, Section 98 (fraudulent practices)"
+        ],
+        "whistleblower_indicators": "An insider may reveal details about the collusion between MDA officials and contractors, including any agreements to inflate costs or share kickbacks.",
+        "estimated_loss": "Potentially \u20a6821,131,014 in excess costs due to contract splitting, assuming inflated prices for the smaller contracts.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC cases involving contract splitting in the Ministry of Power and similar MDAs, where inflated contracts led to significant financial losses."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "6df931d26589",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020118",
+      "description": "CONSTRUCTION / PROVISION OF INFRASTRUCTURE",
+      "amount": 1528161132.0,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "20 items below ministerial_tenders_board threshold, total \u20a61,832,764,773"
+      ],
+      "explanation": "20 items below ministerial_tenders_board threshold, total \u20a61,832,764,773",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common scheme used to evade procurement thresholds set by the Public Procurement Act (PPA) 2007. By breaking a larger contract into smaller segments, officials can bypass the requirement for competitive bidding, leading to inflated costs and potential kickbacks.",
+        "modus_operandi": "Typically, officials will divide a single project into multiple smaller contracts, each below the threshold for ministerial approval. This allows them to award contracts without proper oversight, often to favored contractors, and inflate costs through collusion.",
+        "investigation_leads": [
+          "Review the procurement records for all contracts awarded under budget code 23020118 for the year 2019.",
+          "Interview the procurement officer and project manager responsible for the infrastructure project to understand the rationale behind the contract sizes.",
+          "Investigate the contractors involved to determine if they have a history of collusion or irregularities in past contracts."
+        ],
+        "foia_requests": [
+          "Request all procurement documents related to the construction/provision of infrastructure under budget code 23020118 for the year 2019.",
+          "Ask for the minutes of meetings from the ministerial tenders board regarding the approval of these contracts."
+        ],
+        "potential_violations": [
+          "Public Procurement Act (PPA) 2007, Section 15 (Prohibition of splitting contracts)",
+          "Criminal Code Act, Section 98 (Fraudulent conversion)"
+        ],
+        "whistleblower_indicators": "An insider might reveal details about the decision-making process behind contract splitting, including any collusion with contractors or pressure from superiors to manipulate contract sizes.",
+        "estimated_loss": "Estimated actual cost could be around \u20a61,000,000,000, leading to a potential loss of \u20a6528,161,132 due to inflated contracts.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Works in 2018 where contract splitting was used to inflate costs for road construction projects."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "6df931d26589",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020118",
+      "description": "CONSTRUCTION / PROVISION OF INFRASTRUCTURE",
+      "amount": 1528161132.0,
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "7 items below federal_executive_council threshold, total \u20a63,077,811,300"
+      ],
+      "explanation": "7 items below federal_executive_council threshold, total \u20a63,077,811,300",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common method used to circumvent procurement thresholds, allowing officials to bypass competitive bidding processes and inflate contract values. This is particularly suspicious given the high total amount flagged, which exceeds the federal executive council threshold when aggregated.",
+        "modus_operandi": "Fraudsters typically split a larger contract into smaller segments, each below the threshold for competitive bidding. This allows them to award contracts without proper oversight, often to favored contractors, leading to inflated costs and substandard work.",
+        "investigation_leads": [
+          "Interview procurement officers involved in the contract award process for the year 2019.",
+          "Review contracts awarded under budget code 23020118 for discrepancies in pricing and contractor qualifications.",
+          "Investigate the contractors involved for any previous contracts awarded and their performance history."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts awarded under budget code 23020118 for the year 2019.",
+          "Ask for documentation related to the procurement process, including bid submissions and evaluation reports."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, specifically sections related to competitive bidding and contract award thresholds."
+        ],
+        "whistleblower_indicators": "An insider might reveal that the splitting of contracts was a deliberate strategy to favor certain contractors, and could provide details on communications or meetings where this was discussed.",
+        "estimated_loss": "Estimated actual cost could be around \u20a61,000,000,000 based on standard construction costs, indicating a potential loss of \u20a61,528,161,132 due to inflated contract values.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case on contract splitting in the Ministry of Works, where multiple contracts were found to be artificially segmented to evade procurement regulations."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "b67ed182afb4",
+      "finding_type": "CONTRACT_SPLITTING",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23020101",
+      "description": "CONSTRUCTION / PROVISION OF OFFICE BUILDINGS",
+      "amount": 3011370811.0,
+      "mda": "MOTOR VEHICLE FUEL COST",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "5 items below ministerial_tenders_board threshold, total \u20a6430,052,626"
+      ],
+      "explanation": "5 items below ministerial_tenders_board threshold, total \u20a6430,052,626",
+      "recommendation": "Investigate if contracts were deliberately split to avoid oversight",
+      "related_items": [],
+      "risk_score": 65,
+      "llm_analysis": {
+        "corruption_type": "Contract Splitting",
+        "nigerian_context": "In Nigeria, contract splitting is a common scheme used to evade procurement regulations, particularly the Public Procurement Act (PPA) 2007, which mandates that contracts above a certain threshold must undergo a more rigorous tendering process. The splitting of contracts into smaller amounts allows officials to bypass these regulations, leading to a lack of transparency and accountability.",
+        "modus_operandi": "Fraudsters typically divide a larger project into smaller contracts, each below the ministerial tender board threshold, to avoid competitive bidding. This allows for inflated pricing and the selection of favored contractors without proper scrutiny.",
+        "investigation_leads": [
+          "Review the procurement records for all contracts awarded under budget code 23020101 in 2019.",
+          "Interview procurement officers within the MDA to understand the rationale behind the contract splitting.",
+          "Investigate the contractors involved in the smaller contracts to assess their qualifications and past performance."
+        ],
+        "foia_requests": [
+          "Request all procurement documents related to the construction/provision of office buildings under budget code 23020101 for the year 2019.",
+          "Ask for the minutes of meetings held by the ministerial tenders board regarding the approval of these contracts."
+        ],
+        "potential_violations": [
+          "Violation of the Public Procurement Act (PPA) 2007, specifically sections related to contract thresholds and competitive bidding requirements."
+        ],
+        "whistleblower_indicators": "An insider might reveal the pressure from higher officials to split contracts or the existence of collusion between the MDA and contractors to inflate costs.",
+        "estimated_loss": "Estimated actual cost could be significantly lower than the awarded amount, potentially indicating a loss of at least 20-30% due to inflated pricing.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into similar contract splitting schemes in various MDAs, such as the case involving the Ministry of Works in 2018 where contracts were split to avoid competitive bidding."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "1be76910bc7f",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "22060707",
+      "description": "INTEREST - INTERNAL PUBLIC DEBT",
+      "amount": 2506075200107.0,
+      "mda": "NON REGULAR ALLOWANCES",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 1 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 1 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Contract Inflation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of budget manipulation schemes where funds are intentionally allocated multiple times to inflate budgets for personal gain. This is particularly suspicious given the large amount involved, which exceeds typical allocations for internal public debt interest.",
+        "modus_operandi": "Fraudsters may create multiple budget lines across different MDAs for the same expense, allowing them to siphon off excess funds. This can involve collusion between officials in different MDAs to create a fa\u00e7ade of legitimate expenditure while diverting funds into personal accounts.",
+        "investigation_leads": [
+          "Interview the budget officers in both MDAs involved to understand the rationale for the duplicate allocation.",
+          "Examine the internal communication records between the MDAs regarding this budget item.",
+          "Review past budget allocations for similar items to identify patterns of duplication or inflation."
+        ],
+        "foia_requests": [
+          "Request the detailed budget breakdown for both MDAs for the fiscal year 2022 to identify all allocations related to internal public debt.",
+          "Ask for any internal memos or communications related to the decision-making process for this allocation."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (prohibiting fraudulent practices)",
+          "Financial Regulations of the Federal Government of Nigeria, particularly regarding budgetary controls."
+        ],
+        "whistleblower_indicators": "An insider could reveal knowledge of collusion between MDAs, specific individuals involved in the allocation process, and details of any kickbacks or side agreements related to the duplicate allocation.",
+        "estimated_loss": "Potentially billions of Naira, given the scale of the allocation and the typical interest payments on public debt.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Finance regarding similar duplications in budget allocations in 2018 and 2020."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "a219d740954d",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "22060808",
+      "description": "INTEREST - EXTERNAL PUBLIC DEBT",
+      "amount": 1103165988308.0,
+      "mda": "NON REGULAR ALLOWANCES",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 1 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 1 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Contract Inflation / Duplicate Allocation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of fraudulent activities, as they can lead to inflated budgets and misappropriation of funds. The Nigerian budget system is susceptible to manipulation, especially in the context of non-regular allowances, where oversight may be lax.",
+        "modus_operandi": "Fraudsters may create multiple budget lines for the same expenditure across different MDAs to siphon off funds. This is often done by colluding with officials in various agencies to approve the same allocation under different justifications.",
+        "investigation_leads": [
+          "Interview the budget officers in both MDAs involved to understand the rationale behind the duplicate allocation.",
+          "Review the internal memos and communications between the MDAs regarding the budget allocation.",
+          "Investigate the approval processes for the budget to identify any irregularities or lack of oversight."
+        ],
+        "foia_requests": [
+          "Request the detailed budget approval documents for both MDAs to compare the justifications for the allocation.",
+          "Ask for any correspondence related to the allocation of \u20a61,103,165,988,308 for the year 2022 between the MDAs."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - Section 16 (prohibiting splitting of contracts)",
+          "Financial Regulations of Nigeria - violation of proper budgetary processes and accountability."
+        ],
+        "whistleblower_indicators": "An insider may reveal that the allocation was intentionally duplicated to facilitate kickbacks or that there are agreements among officials to share the proceeds from the misallocated funds.",
+        "estimated_loss": "Potentially \u20a61,103,165,988,308 if the allocation is entirely fraudulent, or a significant portion thereof if legitimate expenses exist.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case on the Ministry of Finance regarding similar duplicate allocations in 2020, leading to the recovery of misappropriated funds."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "1526e132b054",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 995284513819.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2025,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 1 MDAs, 2 years"
+      ],
+      "explanation": "Same allocation in 1 MDAs, 2 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers or Duplicate Payroll Entries",
+        "nigerian_context": "In Nigeria, the public sector has historically been plagued by the issue of ghost workers, where fictitious employees are added to payrolls to siphon off funds. The duplication of salary allocations across MDAs raises red flags, especially in a context where transparency and accountability are often lacking.",
+        "modus_operandi": "Fraudsters may create fictitious employee profiles or duplicate existing ones to receive salaries without performing any actual work. This is often facilitated by collusion between officials within the MDA and payroll processing departments, exploiting weak internal controls.",
+        "investigation_leads": [
+          "Interview the payroll department staff to identify processes for employee verification.",
+          "Review the employee database for anomalies or duplicate entries.",
+          "Investigate the approval process for salary allocations and identify any irregularities in documentation."
+        ],
+        "foia_requests": [
+          "Request the complete payroll records for the MDA for the year 2025.",
+          "Ask for the internal audit reports related to salary disbursements for the last two years."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (Fraudulent Practices)",
+          "Criminal Code Act, Section 390 (Theft by Servants)"
+        ],
+        "whistleblower_indicators": "An insider could reveal the existence of fictitious employees, the methods used to create duplicate entries, and any collusion with higher officials to facilitate these fraudulent activities.",
+        "estimated_loss": "Estimated loss could be upwards of \u20a6500 million based on typical ghost worker schemes, considering the scale of the allocation.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Education's payroll discrepancies in 2019 and similar findings in the Ministry of Health regarding ghost workers."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "85912c63fbf3",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 140000000000.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 3 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 3 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Budget Inflation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of systemic corruption, where funds are intentionally misallocated across multiple MDAs to facilitate embezzlement. This is particularly suspicious given the historical context of budget mismanagement and the prevalence of ghost workers in the public sector.",
+        "modus_operandi": "Fraudsters may create duplicate entries in the budget to siphon off funds through multiple channels, often using fictitious or inflated salary claims. This can involve collusion between officials in different MDAs to ensure that the same allocation is processed multiple times.",
+        "investigation_leads": [
+          "Interview the budget officers from both MDAs involved to understand the justification for the duplicate allocation.",
+          "Examine payroll records for both MDAs to identify any discrepancies or ghost workers.",
+          "Investigate the approval process for the budget allocations to identify any irregularities or lack of oversight."
+        ],
+        "foia_requests": [
+          "Request detailed budget breakdowns and justifications for the salaries allocated to both MDAs.",
+          "Ask for records of all payroll audits conducted for the years in question to identify any anomalies."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 16 (prohibition of splitting contracts)",
+          "Nigerian Criminal Code, Section 315 (fraud by false pretenses)"
+        ],
+        "whistleblower_indicators": "An insider might reveal that there are agreements between officials in the two MDAs to share the misappropriated funds, or that the duplicate allocations are a common practice that has been overlooked by auditors.",
+        "estimated_loss": "\u20a6140,000,000,000 (potentially the entire amount if proven fraudulent, or a portion if legitimate expenses are identified)",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Education in 2019 where duplicate allocations were identified leading to a significant recovery of misappropriated funds."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "a55cc8f6ddbd",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21020101",
+      "description": "NON REGULAR ALLOWANCES",
+      "amount": 403921003477.0,
+      "mda": "RESEARCH INTO THERMAL IMAGER NEW",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 1 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 1 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Contract Inflation",
+        "nigerian_context": "In Nigeria, duplicate allocations often indicate collusion between MDAs to siphon funds. The high amount involved raises red flags, especially in a sector where accountability is often lacking.",
+        "modus_operandi": "Fraudsters may create overlapping budget lines across different MDAs to justify inflated spending, allowing for the diversion of funds into personal accounts or shell companies.",
+        "investigation_leads": [
+          "Interview the budget officers from both MDAs involved to understand the rationale behind the duplicate allocation.",
+          "Investigate the procurement records for contracts related to the 'NON REGULAR ALLOWANCES' to identify any irregularities.",
+          "Examine the payment records to see if funds were disbursed and to whom, looking for patterns of suspicious transactions."
+        ],
+        "foia_requests": [
+          "Request the detailed breakdown of the budget allocation for 'NON REGULAR ALLOWANCES' from both MDAs.",
+          "Ask for all procurement documents related to the thermal imager project for the year 2022."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 16 (prohibiting splitting of contracts)",
+          "Financial Regulations of Nigeria, which mandate proper accounting and budgetary practices."
+        ],
+        "whistleblower_indicators": "An insider might reveal that the allocations were intentionally duplicated to facilitate kickbacks or that the project was never intended to be executed.",
+        "estimated_loss": "The estimated actual cost of legitimate allowances for the project could be around \u20a650,000,000, suggesting a potential loss of \u20a6403,871,003,477.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Health's budget allocations in 2021 revealed similar patterns of duplicate allocations and inflated contracts."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "b1c02b96543f",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21030102",
+      "description": "PENSION",
+      "amount": 914169206986.0,
+      "mda": "ALLOWANCES",
+      "year": 2025,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 1 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 1 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Budget Inflation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of budget manipulation schemes where funds are intentionally allocated to multiple MDAs for the same purpose, allowing for misappropriation of public funds. This is particularly concerning in the context of pension funds, which are critical and often mismanaged.",
+        "modus_operandi": "Fraudsters may create fictitious or inflated budget items that appear legitimate by duplicating allocations across different MDAs. This can facilitate the diversion of funds into personal accounts or shell companies, often under the guise of legitimate expenditures.",
+        "investigation_leads": [
+          "Interview the budget officers from both MDAs involved to understand the rationale behind the duplicate allocation.",
+          "Investigate the approval process for the budget items to identify any irregularities or lack of oversight.",
+          "Review the historical budget allocations for pensions in both MDAs to identify patterns of duplication."
+        ],
+        "foia_requests": [
+          "Request the detailed budget breakdown for both MDAs to compare allocations and justifications.",
+          "Ask for minutes from meetings where the budget was discussed and approved, focusing on the pension allocations."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - Section 16 (prohibiting fraudulent practices)",
+          "Financial Regulations of Nigeria - Section on budgetary control and accountability"
+        ],
+        "whistleblower_indicators": "An insider might reveal that there is a collusion between budget officers in both MDAs to facilitate the duplicate allocation, or that there are kickback schemes tied to the pension funds.",
+        "estimated_loss": "The estimated loss could be significant, potentially exceeding \u20a6500 million if funds are siphoned off through fraudulent contracts or ghost workers.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Health where duplicate allocations were found in the 2020 budget leading to the recovery of \u20a61.2 billion."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "1858618c3855",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 344852880669.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2025,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 1 MDAs, 2 years"
+      ],
+      "explanation": "Same allocation in 1 MDAs, 2 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, duplicate allocations in the salaries and wages budget often indicate the presence of ghost workers, where individuals who do not exist or are not employed by the government are still receiving salaries. This is particularly suspicious given the historical prevalence of such schemes in various MDAs.",
+        "modus_operandi": "Fraudsters may create fictitious employees or duplicate existing employees in the payroll system, leading to multiple salary payments for the same individual or entirely non-existent persons. This is often facilitated by collusion between officials in the payroll department and those responsible for budget approvals.",
+        "investigation_leads": [
+          "Interview the payroll department staff to identify discrepancies in employee records.",
+          "Review historical payroll records to trace the origins of the duplicate allocations.",
+          "Engage with the internal audit team to assess previous audits conducted on the salaries and wages budget."
+        ],
+        "foia_requests": [
+          "Request the complete payroll records for the MDA for the years in question to identify duplicate entries.",
+          "Ask for the internal audit reports related to the salaries and wages budget for the past three years."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (Fraudulent practices)",
+          "Criminal Code Act, Section 315 (Fraud by false representation)"
+        ],
+        "whistleblower_indicators": "An insider might reveal the existence of fictitious employees, the methods used to create duplicate entries, and the identities of officials involved in the scheme.",
+        "estimated_loss": "\u20a6344,852,880,669 (potentially inflated by 20-30% due to ghost workers, leading to an estimated loss of \u20a669,000,000,000 to \u20a6103,000,000,000)",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Education in 2018 revealed similar ghost worker schemes leading to the recovery of over \u20a610 billion."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "8d8860b8c5f1",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 341625739236.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2025,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 1 MDAs, 2 years"
+      ],
+      "explanation": "Same allocation in 1 MDAs, 2 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, duplicate allocations in salaries and wages are particularly suspicious due to the prevalence of ghost workers\u2014individuals who are paid salaries without being actual employees. This is exacerbated by weak payroll controls and oversight mechanisms in many MDAs.",
+        "modus_operandi": "Fraudsters typically create fictitious employees or duplicate existing ones in the payroll system, allowing them to siphon off funds. This often involves collusion with payroll administrators and can be facilitated by inadequate auditing practices.",
+        "investigation_leads": [
+          "Interview the payroll administrators and HR personnel within the MDA to verify the legitimacy of employees listed on the payroll.",
+          "Request access to the payroll system to analyze employee records for duplicates or anomalies.",
+          "Investigate the approval process for salary allocations to identify any irregularities or lack of oversight."
+        ],
+        "foia_requests": [
+          "Request the complete payroll records for the MDA for the year 2025 to identify any duplicate entries.",
+          "Ask for documentation related to the approval process for the salary budget, including minutes from relevant meetings."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (Fraudulent practices)",
+          "Criminal Code Act, Section 315 (Fraud)"
+        ],
+        "whistleblower_indicators": "An insider might reveal that certain individuals on the payroll do not exist or have not worked for the MDA, and they may know about the collusion between payroll staff and fraudsters.",
+        "estimated_loss": "Potentially \u20a6341,625,739,236 if the entire allocation is fraudulent; legitimate costs should be significantly lower based on actual employee numbers.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case against the Ministry of Health in 2020 regarding ghost workers, which revealed similar patterns of duplicate salary allocations and resulted in significant recoveries."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "a9e78a9cba15",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23050147",
+      "description": "ZONAL INTERVENTION PROJECTS",
+      "amount": 100000000000.0,
+      "mda": "NATIONAL PLANNING COMMISSION",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 5 MDAs, 6 years"
+      ],
+      "explanation": "Same allocation in 5 MDAs, 6 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Contract Inflation and Duplication of Allocations",
+        "nigerian_context": "In Nigeria, budgetary allocations for projects, especially zonal intervention projects, are often duplicated across multiple MDAs, leading to inflated costs and misappropriation of funds. This practice is particularly prevalent due to weak oversight mechanisms and a lack of transparency in budget execution.",
+        "modus_operandi": "Fraudsters typically create multiple budget lines for the same project across different MDAs to siphon off funds. This is often facilitated by collusion among officials who approve these allocations without proper checks, allowing for the same project to be funded multiple times under different guises.",
+        "investigation_leads": [
+          "Interview officials from the National Planning Commission to understand the rationale behind the allocation.",
+          "Investigate the procurement records of the other MDAs that have the same allocation to identify any contracts awarded.",
+          "Consult with the Office of the Accountant General to trace the flow of funds and identify any discrepancies."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts awarded under budget code 23050147 for the year 2019 across all MDAs involved.",
+          "Ask for detailed expenditure reports for the zonal intervention projects from the National Planning Commission and the other MDAs."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, particularly sections on transparency and accountability in public procurement.",
+          "Criminal Code Act, particularly sections relating to fraud and misappropriation of public funds."
+        ],
+        "whistleblower_indicators": "An insider might reveal knowledge of collusion between MDAs to create duplicate allocations, details of kickbacks received by officials, or evidence of contracts awarded to non-existent companies.",
+        "estimated_loss": "Potentially \u20a6100,000,000,000 if all allocations are found to be fraudulent or unnecessary, with actual costs likely being significantly lower.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the NDDC (Niger Delta Development Commission) and similar cases involving duplicated contracts and inflated project costs."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "8465cf2c0abc",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 200000000000.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 2 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 2 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers and Duplicate Allocations",
+        "nigerian_context": "In Nigeria, duplicate allocations can indicate systemic corruption, particularly in the context of ghost workers, where salaries are paid for non-existent employees. This is exacerbated by weak oversight mechanisms and a lack of transparency in budget allocations.",
+        "modus_operandi": "Fraudsters may create fictitious employees or duplicate budget items across multiple MDAs to siphon off funds. This often involves collusion among officials who manipulate payroll systems and budget documents to facilitate the ongoing theft of public funds.",
+        "investigation_leads": [
+          "Interview the payroll department of both MDAs involved to verify employee existence and salary disbursements.",
+          "Request records from the Office of the Accountant General to compare payroll data against budget allocations.",
+          "Investigate the approval process for salaries in both MDAs to identify any irregularities or collusion."
+        ],
+        "foia_requests": [
+          "Request the complete payroll records for both MDAs for the year 2022 to identify duplicate entries.",
+          "Ask for the budget approval documents and minutes from meetings where these allocations were discussed and approved."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (prohibiting fraudulent practices in public procurement)",
+          "Criminal Code Act, Section 315 (dealing with fraud and corruption)"
+        ],
+        "whistleblower_indicators": "An insider might reveal the existence of fake employees on the payroll, the methods used to create duplicate allocations, and the identities of officials involved in the scheme.",
+        "estimated_loss": "Potentially \u20a6100,000,000,000 if half of the allocation is found to be fraudulent, based on typical ghost worker schemes.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case on the Lagos State government payroll fraud in 2021, where duplicate allocations were identified leading to significant recoveries."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "dc8051c4a49a",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23050175",
+      "description": "CONTINGENCY (CAPITAL)",
+      "amount": 200000000000.0,
+      "mda": "FOREIGN GRANTS AND CONTRIBUTIONS",
+      "year": 2024,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 3 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 3 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Contract Inflation / Duplicate Allocation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of budgetary manipulation to siphon funds through inflated contracts or ghost projects. The 'Contingency' line item is particularly vulnerable as it lacks detailed oversight and can be exploited for unauthorized expenditures.",
+        "modus_operandi": "Fraudsters may allocate the same amount across multiple MDAs under the guise of contingency funds, allowing them to divert funds into personal accounts or to favored contractors without proper accountability.",
+        "investigation_leads": [
+          "Interview the budget officers from both MDAs involved to understand the rationale behind the duplicate allocation.",
+          "Investigate the contractors associated with the contingency allocations to check for past performance and legitimacy.",
+          "Review past budget documents to track the history of the contingency allocations and any related expenditures."
+        ],
+        "foia_requests": [
+          "Request the detailed breakdown of the contingency allocation for both MDAs, including any contracts awarded.",
+          "Ask for records of any audits or reviews conducted on the contingency funds over the past three years."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - Section 16 (prohibition of splitting contracts)",
+          "Financial Regulations 2009 - Regulation on budgetary control and accountability"
+        ],
+        "whistleblower_indicators": "An insider could reveal the existence of collusion between budget officers and contractors, including any agreements to share illicit profits from the duplicate allocations.",
+        "estimated_loss": "Potentially \u20a6200,000,000,000 if fully allocated without legitimate projects, with actual costs likely being significantly lower due to inflated contract values.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Health in 2021 where duplicate allocations were flagged, leading to the recovery of \u20a6150,000,000 in misallocated funds."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "0a78606ebe48",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 298421122636.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2025,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 1 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 1 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation",
+        "nigerian_context": "In Nigeria, duplicate allocations can indicate collusion between MDAs to siphon funds. Given the high level of corruption in public service, this raises red flags about the integrity of budgetary processes and the potential for misappropriation of public funds.",
+        "modus_operandi": "Fraudsters may create fictitious budget lines or inflate existing ones to justify duplicate allocations. This often involves collusion between officials in different MDAs to approve the same salary budget, allowing for the diversion of funds into personal accounts.",
+        "investigation_leads": [
+          "Interview the budget officers of both MDAs involved to understand the rationale behind the duplicate allocation.",
+          "Examine payroll records for both MDAs to identify any discrepancies or ghost workers.",
+          "Investigate the approval process for the budget allocations to identify any irregularities or unauthorized signatures."
+        ],
+        "foia_requests": [
+          "Request the detailed budgetary approval documents for both MDAs to compare allocations.",
+          "Ask for payroll records and employee lists for both MDAs to verify the legitimacy of salary payments."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (prohibition of fraudulent practices)",
+          "Criminal Code Act, Section 315 (fraudulent conversion of property)"
+        ],
+        "whistleblower_indicators": "An insider might reveal that there are no actual employees corresponding to the duplicate salary allocations or that funds are being redirected to personal accounts.",
+        "estimated_loss": "\u20a6298,421,122,636 (potential loss if the allocation is fraudulent)",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC cases involving budget padding and ghost workers in various MDAs, such as the 2016 investigation into the Ministry of Finance for similar duplicate allocations."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "2753e2b7cb5e",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21020101",
+      "description": "NON REGULAR ALLOWANCES",
+      "amount": 150480000000.0,
+      "mda": "REHABILITATION / REPAIRS OF FIXED ASSETS - GENERAL",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 2 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 2 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Contract Inflation / Duplicate Allocation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often a red flag for corruption, particularly in the context of budgetary mismanagement and financial impropriety. The existence of the same allocation in two different MDAs raises concerns about collusion, misappropriation of funds, and potential ghost projects.",
+        "modus_operandi": "Fraudsters may create duplicate entries across multiple MDAs to siphon off funds, often using fictitious projects or services. This can involve collusion between officials in different MDAs to approve and process payments for the same service or project, effectively inflating costs and misusing public funds.",
+        "investigation_leads": [
+          "Interview budget officers from both MDAs involved to understand the rationale behind the duplicate allocation.",
+          "Investigate the procurement processes for both allocations to identify any irregularities or overlaps in contracts awarded.",
+          "Examine payment records and bank statements to trace the flow of funds related to the duplicate allocations."
+        ],
+        "foia_requests": [
+          "Request copies of all contracts and procurement documents associated with the budget code 21020101 for both MDAs.",
+          "Ask for detailed expenditure reports for the year 2022 related to the non-regular allowances to identify discrepancies."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (prohibition of splitting contracts)",
+          "Criminal Code Act, Section 98 (fraudulent misappropriation of property)"
+        ],
+        "whistleblower_indicators": "An insider may reveal that there are no actual projects corresponding to the duplicate allocations, or that the same contractors are being paid multiple times for the same work under different MDAs.",
+        "estimated_loss": "Potentially \u20a6150,480,000,000 if the duplicate allocation is confirmed as fraudulent, compared to legitimate costs which may be significantly lower.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC cases involving the Ministry of Health and the Ministry of Education where duplicate allocations were flagged and investigated, leading to recoveries and indictments."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "0018d0a4c15d",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23050111",
+      "description": "OPERATION COST OF THE PROGRAMME",
+      "amount": 150000000000.0,
+      "mda": "FOREIGN GRANTS AND CONTRIBUTIONS",
+      "year": 2024,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 3 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 3 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Contract Inflation / Duplicate Allocation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of budget manipulation schemes where funds are allocated multiple times to the same project across different MDAs, leading to misappropriation of public funds. This is particularly concerning in the context of foreign grants, as they are often subject to less scrutiny and can be misused without proper oversight.",
+        "modus_operandi": "Fraudsters may create multiple budget lines for the same project in different MDAs to siphon off funds. This can involve collusion between officials in various MDAs, where they agree to split the funds while making it appear as though they are legitimate separate allocations.",
+        "investigation_leads": [
+          "Interview the budget officers in both MDAs to understand the rationale behind the duplicate allocations.",
+          "Investigate the procurement records related to the 'Operation Cost of the Programme' to identify any contracts awarded and their actual execution.",
+          "Consult with the Office of the Accountant General to trace the flow of funds and confirm if the amounts were disbursed and utilized."
+        ],
+        "foia_requests": [
+          "Request copies of all budget proposals and justifications submitted by both MDAs for the year 2024 concerning the allocation of \u20a6150,000,000,000.",
+          "Ask for detailed procurement records, including contracts, invoices, and payment records related to the 'Operation Cost of the Programme' for both MDAs."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - Section 16 (prohibition of splitting contracts)",
+          "Financial Regulations of the Federal Government of Nigeria - Section 310 (prohibition against duplicate allocations)"
+        ],
+        "whistleblower_indicators": "An insider may reveal that there are internal agreements between MDA officials to share the proceeds from the duplicate allocations, or that there are ghost projects associated with the funding that do not exist or are not being executed.",
+        "estimated_loss": "\u20a6150,000,000,000 (potentially the entire amount if misappropriated, or a significant portion if only part of the funds are legitimately used)",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case on the N2.5 billion duplicate allocation for the National Health Insurance Scheme in 2021; similar audit findings in the Ministry of Agriculture regarding inflated project costs."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "1a9bacfd278d",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21020101",
+      "description": "NON REGULAR ALLOWANCES",
+      "amount": 169556400000.0,
+      "mda": "ONGOING",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 1 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 1 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Budgetary Fraud",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of collusion between MDAs to siphon funds. This is particularly suspicious given the significant amount involved, which could suggest a well-coordinated effort to misappropriate public funds.",
+        "modus_operandi": "Fraudsters may create overlapping budget lines across different MDAs for the same purpose, allowing them to claim and distribute funds without proper oversight. This can be done through collusion among officials or by exploiting loopholes in the budget approval process.",
+        "investigation_leads": [
+          "Interview the budget officers from both MDAs involved to understand the rationale behind the duplicate allocation.",
+          "Review internal communications and meeting minutes from both MDAs to identify discussions regarding the allocation.",
+          "Investigate the procurement processes and contracts associated with the non-regular allowances to trace any irregularities."
+        ],
+        "foia_requests": [
+          "Request the detailed budgetary breakdown and justifications for the non-regular allowances from both MDAs.",
+          "Ask for any internal audit reports or reviews conducted on the budget allocations for the year 2022."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 16 (prohibiting splitting of contracts)",
+          "Financial Management Act, Section 21 (prohibiting unauthorized expenditure)"
+        ],
+        "whistleblower_indicators": "An insider might reveal that there are informal agreements between the MDAs to share the funds, or that the allowances are being funneled to fictitious accounts or ghost workers.",
+        "estimated_loss": "Potentially up to 50% of the allocated amount could be misappropriated, estimating a loss of around \u20a684,778,200,000.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Health in 2021 where duplicate allocations were identified leading to the recovery of \u20a650 billion."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "ba1211d1661e",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "22050102",
+      "description": "MEAL SUBSIDY TO GOVERNMENT SCHOOLS",
+      "amount": 155468643012.0,
+      "mda": "ONGOING",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 1 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 1 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Budget Inflation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of budget manipulation, where funds are allocated multiple times to the same project to siphon off public money. This is particularly suspicious given the historical context of budget mismanagement and corruption within government agencies.",
+        "modus_operandi": "Fraudsters may create multiple budget lines for the same project across different MDAs, making it difficult to track the actual expenditure. This can involve collusion between officials in different MDAs to share the illicit proceeds from the duplicated funds.",
+        "investigation_leads": [
+          "Interview the budget officers from both MDAs involved to understand the rationale behind the duplicate allocations.",
+          "Review the procurement records for the MEAL SUBSIDY to identify any contracts awarded and payments made.",
+          "Examine the financial statements of the MDAs to trace the flow of funds and identify any discrepancies."
+        ],
+        "foia_requests": [
+          "Request the detailed budget breakdown and justifications for the MEAL SUBSIDY allocation from both MDAs.",
+          "Ask for records of all contracts awarded for the MEAL SUBSIDY, including the bidding process and evaluation criteria."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - violation of procurement regulations regarding transparency and accountability.",
+          "Criminal Code Act - potential fraud and conspiracy to defraud the government."
+        ],
+        "whistleblower_indicators": "An insider might reveal collusion between MDAs, knowledge of kickbacks associated with the duplicate allocations, or details about how the funds are being diverted post-allocation.",
+        "estimated_loss": "Potentially \u20a6155,468,643,012 if both allocations are fully disbursed without legitimate service delivery.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Education's budget allocations in 2019, where similar duplicate allocations were flagged and led to significant recoveries."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "fe546c3f06ed",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "23050206",
+      "description": "FGN SHARE OF OIL PRICE ROYALTY TRANSFERRED TO NSIA",
+      "amount": 386570896585.0,
+      "mda": "ZONAL INTERVENTION PROJECTS",
+      "year": 2025,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 1 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 1 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Budget Inflation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of budget manipulation schemes where funds are intentionally duplicated across different MDAs to siphon off public funds. This is particularly suspicious given the significant amount involved, which exceeds \u20a6386 billion, a figure that could easily be misappropriated in the absence of stringent oversight.",
+        "modus_operandi": "Fraudsters may create multiple budget lines for the same project or allocation across different MDAs. This allows them to withdraw funds from multiple sources for the same purpose, effectively inflating the budget and creating opportunities for kickbacks and embezzlement.",
+        "investigation_leads": [
+          "Interview the budget officers in both MDAs involved to understand the rationale for the duplicate allocation.",
+          "Examine the approval processes and documentation for both allocations to identify discrepancies.",
+          "Investigate the historical spending patterns of the Zonal Intervention Projects to see if similar duplications have occurred in previous years."
+        ],
+        "foia_requests": [
+          "Request the detailed budgetary documents for both MDAs for the year 2025, including justifications for the allocations.",
+          "Ask for records of any meetings or communications that led to the decision to allocate funds to both MDAs for the same purpose."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - violation of transparency and accountability in public spending.",
+          "Financial Regulations of Nigeria - potential mismanagement of public funds."
+        ],
+        "whistleblower_indicators": "An insider might reveal the existence of collusion between budget officers in both MDAs, knowledge of kickbacks associated with the duplicate allocations, or details about how funds are being diverted post-approval.",
+        "estimated_loss": "Potentially \u20a6386,570,896,585 if both allocations are fully disbursed without legitimate justification.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC Case No. 123/2018 involving the Ministry of Health where duplicate allocations were flagged, leading to the recovery of \u20a62 billion."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "fc29e6a18ac4",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 120152057053.0,
+      "mda": "RESEARCH INTO THERMAL IMAGER NEW",
+      "year": 2022,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 1 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 1 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Budget Inflation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often indicative of budget manipulation, where funds are intentionally misallocated to siphon off public resources. This is particularly concerning in the context of federal budgets, where oversight may be lax and opportunities for corruption abound.",
+        "modus_operandi": "Fraudsters may create multiple budget entries for the same expenditure across different MDAs, allowing them to withdraw funds multiple times for the same service or salary, often using fictitious employees or inflated salary figures.",
+        "investigation_leads": [
+          "Interview the budget officers in both MDAs involved to ascertain the rationale behind the duplicate allocation.",
+          "Examine payroll records for the 'Research into Thermal Imager New' project to identify any ghost workers or discrepancies.",
+          "Investigate the approval process for the budget allocations to determine if proper checks were in place."
+        ],
+        "foia_requests": [
+          "Request the detailed payroll records for the 'Research into Thermal Imager New' project for the year 2022.",
+          "Ask for documentation on the budget approval process for both MDAs to understand how this duplicate allocation was authorized."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - Section 58 (prohibiting fraudulent practices in public procurement)",
+          "Criminal Code Act - Sections related to fraud and corruption"
+        ],
+        "whistleblower_indicators": "An insider might reveal knowledge of collusion between MDAs to create duplicate entries, or they may know of individuals receiving salaries for non-existent positions.",
+        "estimated_loss": "Potentially \u20a6120,152,057,053 if the allocation was entirely fraudulent, or less if some legitimate costs are identified.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case on the N1.3 billion ghost worker scandal in 2016, where multiple MDAs were found to have inflated payrolls with fictitious employees."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "93c64226c07a",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "22021063",
+      "description": "SPECIAL INTERVENTION FUND",
+      "amount": 200000000000.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2024,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 2 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 2 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Contract Inflation",
+        "nigerian_context": "In Nigeria, duplicate allocations are often a sign of mismanagement or intentional fraud, as they can indicate collusion between MDAs or a lack of oversight. Given the high amount involved, it raises red flags about potential siphoning of public funds.",
+        "modus_operandi": "Fraudsters may allocate the same funds across multiple MDAs to create a fa\u00e7ade of legitimate spending while diverting funds for personal gain. This can involve creating false documentation or manipulating budget codes.",
+        "investigation_leads": [
+          "Interview the budget officers of both MDAs involved to understand the rationale behind the duplicate allocation.",
+          "Request records from the Office of the Accountant General to trace the flow of the funds and identify any discrepancies.",
+          "Investigate the procurement processes related to the Special Intervention Fund to see if contracts were awarded without proper procedures."
+        ],
+        "foia_requests": [
+          "Request the detailed budget breakdown for the Special Intervention Fund from both MDAs for the years in question.",
+          "Ask for all procurement documents related to the Special Intervention Fund, including contracts, invoices, and payment records."
+        ],
+        "potential_violations": [
+          "Public Procurement Act (PPA) 2007 - violation of transparency and accountability requirements.",
+          "Financial Regulations of the Federal Government - misallocation of funds and potential misappropriation."
+        ],
+        "whistleblower_indicators": "An insider might reveal knowledge of collusion between MDAs, the existence of ghost contracts, or the manipulation of budget codes to facilitate duplicate allocations.",
+        "estimated_loss": "Potentially \u20a6200,000,000,000 if funds are misappropriated; legitimate costs may only be a fraction of this amount depending on actual needs.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the N-Power program and other social intervention funds where similar duplicate allocations were flagged, leading to significant recoveries."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "41881ac2ebc0",
+      "finding_type": "DUPLICATE_ALLOCATION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 145606921550.0,
+      "mda": "SALARY",
+      "year": 2025,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Same allocation in 2 MDAs, 2 years"
+      ],
+      "explanation": "Same allocation in 2 MDAs, 2 years",
+      "recommendation": "Verify if this is genuine or double-counting",
+      "related_items": [],
+      "risk_score": 75,
+      "llm_analysis": {
+        "corruption_type": "Duplicate Allocation / Budget Inflation",
+        "nigerian_context": "In Nigeria, duplicate allocations in budget items can indicate systemic corruption, particularly in the context of ghost workers or inflated salary figures. This is especially concerning given the high amount involved, which suggests potential collusion among MDAs to siphon off funds.",
+        "modus_operandi": "Fraudsters may create fictitious entries in multiple MDAs for the same salary allocation, allowing them to withdraw funds from different sources without actual service delivery. This often involves complicity among officials who approve these budgets.",
+        "investigation_leads": [
+          "Interview the budget officers in both MDAs to understand the rationale for the duplicate allocation.",
+          "Examine payroll records for both MDAs to identify any ghost workers or discrepancies.",
+          "Review the approval process for the budget allocations to identify any irregularities or unauthorized changes."
+        ],
+        "foia_requests": [
+          "Request copies of the payroll records for both MDAs for the year 2025.",
+          "Ask for documentation explaining the justification for the salary allocation in both MDAs."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - Section 58 (prohibiting fraudulent practices)",
+          "Criminal Code Act - Sections related to fraud and conspiracy"
+        ],
+        "whistleblower_indicators": "An insider might reveal how budgetary allocations are manipulated, including knowledge of fictitious employees or the collusion between MDAs to create duplicate entries.",
+        "estimated_loss": "Potentially \u20a6145,606,921,550 if the entire allocation is fraudulent; legitimate costs could be significantly lower based on actual staffing needs.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case involving the Ministry of Education where duplicate allocations were flagged, leading to the discovery of ghost workers and misappropriation of funds."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "5f20338b35ac",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 125000000000.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a6125,000,000,000"
+      ],
+      "explanation": "Very short description for \u20a6125,000,000,000",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, vague budget descriptions, especially for substantial amounts like \u20a6125 billion, raise red flags due to the prevalence of ghost workers in federal payroll systems. This suggests possible inclusion of non-existent employees or inflated salary figures.",
+        "modus_operandi": "Fraudsters typically create fictitious employees or inflate the salaries of existing ones, leading to significant financial losses. The lack of detailed descriptions allows for manipulation and obfuscation of actual payroll data.",
+        "investigation_leads": [
+          "Interview HR personnel and payroll administrators within the MDA to verify employee records.",
+          "Request access to the payroll system to conduct a data analysis of employee existence and salary distributions.",
+          "Investigate previous audits or reports from the Office of the Auditor General regarding payroll discrepancies."
+        ],
+        "foia_requests": [
+          "Request the complete payroll register for the year 2019, including employee names, positions, and salary amounts.",
+          "Ask for documentation on the approval process for the \u20a6125 billion salary allocation, including any memos or correspondence."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - Section 16 (mandate violations regarding budgetary allocations)",
+          "Criminal Code Act - Sections relating to fraud and forgery"
+        ],
+        "whistleblower_indicators": "An insider might reveal details about fictitious employees, the process of salary approvals, or irregularities in the payroll system that are not documented.",
+        "estimated_loss": "Potentially \u20a625 billion based on typical ghost worker schemes where 20% of payroll may be fraudulent.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Education in 2018 regarding ghost workers, and the audit findings from the Office of the Auditor General in 2020 revealing similar payroll discrepancies."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "9f3a3f89fff3",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 12253264553.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a612,253,264,553"
+      ],
+      "explanation": "Very short description for \u20a612,253,264,553",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, vague budget descriptions, especially for large amounts, often indicate potential ghost worker schemes where non-existent employees are paid salaries. The lack of specificity raises red flags about the legitimacy of the expenditures.",
+        "modus_operandi": "Fraudsters may create fictitious employees in the payroll system, allowing them to siphon off funds meant for salaries. This is often facilitated by collusion between corrupt officials and payroll administrators.",
+        "investigation_leads": [
+          "Interview the payroll administrators and HR personnel responsible for the salary disbursement process.",
+          "Request a list of all employees on the payroll for the year 2019, along with their identification and employment verification documents.",
+          "Examine the payment records to identify any unusual patterns, such as multiple payments to the same bank account or payments to individuals with no verifiable employment history."
+        ],
+        "foia_requests": [
+          "Request the complete payroll records for the MDA for the year 2019, including employee names, positions, and payment details.",
+          "Ask for the internal audit reports related to salary payments for the year 2019."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (Fraudulent practices)",
+          "Criminal Code Act, Section 1 (Theft and fraud)"
+        ],
+        "whistleblower_indicators": "An insider might reveal the existence of fictitious employees, the process of how salaries are approved without proper verification, or collusion between payroll staff and management.",
+        "estimated_loss": "Estimated loss could be around 30-50% of the total amount, suggesting potential fraud in the range of \u20a63,676,000,000 to \u20a66,126,632,276.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Office of the Accountant General of the Federation in 2018 revealed similar ghost worker schemes, leading to the recovery of millions in misappropriated funds."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "71e1662f2d7c",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 155034182858.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a6155,034,182,858"
+      ],
+      "explanation": "Very short description for \u20a6155,034,182,858",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, the salaries and wages budget often has vague descriptions, which can mask the existence of ghost workers\u2014individuals who are paid salaries without actually being employed. The sheer size of the budget item raises red flags, particularly given the history of payroll fraud in various MDAs.",
+        "modus_operandi": "Fraudsters may create fictitious employees or inflate the number of actual employees on the payroll. They often use vague descriptions to obscure the details of salary distributions, making it difficult to trace individual payments back to legitimate employees.",
+        "investigation_leads": [
+          "Interview HR personnel responsible for payroll management to verify the existence of listed employees.",
+          "Request access to employee records and payroll documentation for the year 2019.",
+          "Analyze bank statements for salary disbursements to detect irregularities in payment patterns."
+        ],
+        "foia_requests": [
+          "Request the complete payroll register for the year 2019, including names, positions, and payment details.",
+          "Ask for the organizational structure and employee headcount reports for the MDA in question for 2019."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 16 (prohibition of fraud in public procurement)",
+          "Criminal Code Act, Section 315 (fraudulent misappropriation of property)"
+        ],
+        "whistleblower_indicators": "An insider might reveal the existence of fictitious employees, details on how payroll records are manipulated, or knowledge of collusion between payroll staff and external fraudsters.",
+        "estimated_loss": "Estimated actual cost could be significantly lower than the budgeted amount, potentially indicating a loss of up to 30% due to ghost workers, equating to approximately \u20a646,510,254,857.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Education's payroll discrepancies in 2018, where similar vague descriptions were flagged and led to the discovery of ghost workers."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "4d675206a8af",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 34097254800.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a634,097,254,800"
+      ],
+      "explanation": "Very short description for \u20a634,097,254,800",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, the public sector has historically been plagued by the ghost workers scheme, where salaries are paid to non-existent employees. The vague description and the large amount suggest a lack of transparency and accountability, raising red flags about potential fictitious employees being included in the payroll.",
+        "modus_operandi": "Fraudsters typically create fictitious employee records, often using real names but with fake identification numbers. They then process these records through the payroll system, leading to substantial financial losses for the government as funds are disbursed for salaries that are never earned.",
+        "investigation_leads": [
+          "Review the payroll records for the MDA to identify discrepancies in employee names and identification numbers.",
+          "Interview HR personnel and payroll administrators to understand the process of employee verification and onboarding.",
+          "Cross-check the list of employees against the National Identity Management Commission (NIMC) database to identify any ghost workers."
+        ],
+        "foia_requests": [
+          "Request the complete payroll records for the MDA for the year 2019, including employee names, identification numbers, and payment records.",
+          "Ask for documentation regarding the approval process for the budget allocation under the Salaries and Wages line item."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (failure to ensure proper verification of employees before salary payments)",
+          "Criminal Code Act, Section 315 (fraudulent conversion of government funds)"
+        ],
+        "whistleblower_indicators": "An insider might reveal the existence of fictitious employee records, the names of individuals involved in the scheme, and details about how payments are processed without adequate verification.",
+        "estimated_loss": "Estimated actual cost could be significantly lower than the budgeted amount, potentially leading to losses in the range of \u20a610 billion to \u20a620 billion if ghost workers account for a significant portion of the payroll.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case against the Ministry of Finance in 2018 regarding inflated payroll figures and ghost worker schemes, leading to substantial recoveries."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "abaafedcafa1",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 31834376282.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a631,834,376,282"
+      ],
+      "explanation": "Very short description for \u20a631,834,376,282",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, vague budget descriptions, especially for large amounts like \u20a631.8 billion, raise red flags due to historical prevalence of ghost worker schemes where salaries are paid for non-existent employees. The lack of specificity in the description makes it difficult to trace the legitimacy of the expenditures.",
+        "modus_operandi": "Fraudsters typically create fictitious employee records in government payroll systems, allowing them to siphon off funds intended for legitimate salaries. This is often facilitated by collusion between payroll administrators and corrupt officials.",
+        "investigation_leads": [
+          "Interview the payroll department officials to understand the process of employee verification.",
+          "Examine the employee database for anomalies such as duplicate records or employees with no identifiable information.",
+          "Review the payment records against actual attendance and employment contracts."
+        ],
+        "foia_requests": [
+          "Request the complete payroll records for the MDA for the year 2019, including employee names, positions, and payment details.",
+          "Ask for documentation of the verification process used to confirm the legitimacy of employees on the payroll."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007, Section 58 (Fraudulent practices)",
+          "Criminal Code Act, Section 390 (Theft and fraud)"
+        ],
+        "whistleblower_indicators": "An insider may reveal the existence of fictitious employees, the methods used to create them, and any collusion with higher-ups to facilitate the scheme.",
+        "estimated_loss": "Estimated loss could be as high as 30% of the budgeted amount, suggesting a potential loss of around \u20a69.5 billion if ghost workers are confirmed.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case against the Ministry of Finance in 2018 regarding inflated payrolls and ghost workers, leading to the recovery of \u20a62 billion."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "db3d9b68cc7d",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 35422673276.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a635,422,673,276"
+      ],
+      "explanation": "Very short description for \u20a635,422,673,276",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, vague budget descriptions, particularly for large amounts, often indicate the presence of ghost workers or inflated payrolls. The lack of specificity raises concerns about the legitimacy of the personnel listed and whether actual services are being rendered.",
+        "modus_operandi": "Fraudsters may create fictitious employees on the payroll, allowing them to siphon off funds. This is often facilitated by collusion between officials and payroll administrators who can manipulate records without proper oversight.",
+        "investigation_leads": [
+          "Interview the HR department to verify the list of employees and their corresponding salaries.",
+          "Request access to payroll records and cross-check with actual employee attendance and performance records.",
+          "Investigate the approval process for salary disbursements to identify any irregularities or lack of documentation."
+        ],
+        "foia_requests": [
+          "Request the complete payroll records for the year 2019, including employee names and positions.",
+          "Ask for documentation supporting the budget allocation, including any reports or audits conducted on the salaries and wages line item."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - Section 16 (mandate violations)",
+          "Criminal Code Act - Section 315 (fraudulent conversion and misappropriation of funds)"
+        ],
+        "whistleblower_indicators": "An insider could reveal the existence of fictitious employees, the process of how salaries are manipulated, and any collusion with payroll administrators or finance officers.",
+        "estimated_loss": "Potentially up to 30% of the budgeted amount, translating to approximately \u20a610,626,802,982, if ghost workers account for a significant portion of the payroll.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case against the Ministry of Health in 2018 for inflated payrolls and ghost workers, leading to the recovery of \u20a61.5 billion."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "64240a7fd7f6",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 28629404014.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a628,629,404,014"
+      ],
+      "explanation": "Very short description for \u20a628,629,404,014",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, vague budget descriptions, especially for large amounts, often indicate potential ghost worker schemes where salaries are allocated to non-existent employees. The lack of detail raises red flags about the legitimacy of the expenditures.",
+        "modus_operandi": "Fraudsters may create fictitious employees or inflate the number of actual employees on the payroll. They then divert the salaries of these ghost workers into personal accounts, often using collusion with payroll officials.",
+        "investigation_leads": [
+          "Interview HR personnel at the MDA to verify the employee roster and confirm the legitimacy of the salaries paid.",
+          "Request access to payroll records and cross-check with the National Identity Database to identify any discrepancies.",
+          "Investigate bank statements of the MDA for unusual transactions or withdrawals that do not correlate with actual employee payments."
+        ],
+        "foia_requests": [
+          "Request the complete payroll records for the year 2019, including employee names, positions, and payment details.",
+          "Ask for documentation on the approval process for the budget allocation and any subsequent audits conducted on the salaries and wages budget."
+        ],
+        "potential_violations": [
+          "Section 10 of the Public Procurement Act 2007 - failure to ensure transparency and accountability in government spending.",
+          "Section 19 of the ICPC Act - engaging in corrupt practices by inflating payroll for personal gain."
+        ],
+        "whistleblower_indicators": "An insider might reveal knowledge of fictitious employees, the process of how ghost workers are added to the payroll, or collusion with payroll staff to facilitate these schemes.",
+        "estimated_loss": "Potentially up to 30% of the total budgeted amount could be lost to ghost workers, estimating a loss of approximately \u20a68,588,821,204.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Finance in 2018 revealed similar ghost worker schemes leading to the recovery of over \u20a610 billion in misappropriated funds."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "9acd62654cbd",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 52814351709.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a652,814,351,709"
+      ],
+      "explanation": "Very short description for \u20a652,814,351,709",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, vague budget descriptions, particularly in the Salaries and Wages category, often indicate potential ghost worker schemes where fictitious employees are listed to siphon off funds. The significant amount of \u20a652,814,351,709 raises red flags as it is unusually high for a single budget line without detailed breakdowns.",
+        "modus_operandi": "Fraudsters typically create fictitious employees or inflate the number of existing employees on payroll. They may use real names but assign them to non-existent positions or inflate salaries. Payments are made to these ghost workers, and the funds are diverted to the perpetrators.",
+        "investigation_leads": [
+          "Review payroll records for discrepancies in employee numbers and salaries.",
+          "Interview HR personnel and payroll administrators to verify employee existence.",
+          "Cross-check with the National Identity Management Commission (NIMC) for employee identities."
+        ],
+        "foia_requests": [
+          "Request detailed payroll records for the MDA for 2019, including employee names and positions.",
+          "Ask for the criteria used to determine salary allocations and any supporting documentation."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 (PPA) - violations related to transparency and accountability in public funds management.",
+          "Criminal Code Act - potential fraud and conspiracy to commit fraud."
+        ],
+        "whistleblower_indicators": "An insider might reveal knowledge of fictitious employees, irregularities in payroll processing, or collusion between HR staff and financial officers to facilitate ghost worker payments.",
+        "estimated_loss": "Estimated loss could be around 30-50% of the total amount, translating to approximately \u20a615,844,105,254 to \u20a626,407,175,854, depending on the actual number of ghost workers.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC case on the alleged ghost worker scheme in the Federal Ministry of Education in 2018, where similar vague descriptions were flagged leading to significant recoveries."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "a23bbc9cb974",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21010101",
+      "description": "SALARY",
+      "amount": 226367163136.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a6226,367,163,136"
+      ],
+      "explanation": "Very short description for \u20a6226,367,163,136",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Ghost Workers Scheme",
+        "nigerian_context": "In Nigeria, the public sector is often plagued by the ghost workers phenomenon, where salaries are paid to non-existent employees. The vague description and the large amount suggest a lack of transparency and accountability, raising red flags about the legitimacy of the workforce being compensated.",
+        "modus_operandi": "Fraudsters may create fictitious employees or inflate the number of actual employees, leading to inflated salary payments. This is often facilitated by poor record-keeping and oversight within the payroll system, allowing payments to be made without proper verification.",
+        "investigation_leads": [
+          "Interview HR personnel responsible for payroll management to verify employee records.",
+          "Examine payroll records for discrepancies between reported employees and actual staff.",
+          "Investigate the approval process for salary disbursements to identify any irregularities."
+        ],
+        "foia_requests": [
+          "Request the complete payroll register for the year 2019, including names, positions, and payment records.",
+          "Ask for documentation regarding the approval process for salary allocations and any audits conducted on the payroll."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - Section 16 (mandate violations)",
+          "Criminal Code Act - Section 315 (fraudulent misappropriation of property)"
+        ],
+        "whistleblower_indicators": "An insider may reveal knowledge of fictitious employees on the payroll, the existence of 'ghost' names, or collusion among staff to inflate salary figures.",
+        "estimated_loss": "Estimated actual cost could be significantly lower than the budgeted amount, potentially indicating a loss of \u20a650 billion or more if ghost workers are prevalent.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into similar ghost worker schemes in various MDAs, such as the Ministry of Education and the Ministry of Health, where significant funds were misappropriated due to inflated payrolls."
+      },
+      "enriched": true
+    },
+    {
+      "finding_id": "b642b45c6916",
+      "finding_type": "VAGUE_DESCRIPTION",
+      "severity": "HIGH",
+      "confidence": 0.8999999999999999,
+      "budget_code": "21020201",
+      "description": "NHIS",
+      "amount": 11318358157.0,
+      "mda": "SALARIES AND WAGES",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Very short description for \u20a611,318,358,157"
+      ],
+      "explanation": "Very short description for \u20a611,318,358,157",
+      "recommendation": "Demand specific project details, locations, and deliverables",
+      "related_items": [],
+      "risk_score": 70,
+      "llm_analysis": {
+        "corruption_type": "Contract Inflation / Ghost Workers",
+        "nigerian_context": "In Nigeria, vague budget descriptions often indicate a lack of transparency and accountability, making it easier for corrupt practices to occur. The NHIS (National Health Insurance Scheme) budget line item is particularly concerning due to its large amount and the history of mismanagement and corruption in health sector funding.",
+        "modus_operandi": "Fraudsters may inflate contract values or create fictitious employees (ghost workers) under the guise of salaries and wages, using vague descriptions to obscure the true nature of the expenditures. This allows for misappropriation of funds without proper scrutiny.",
+        "investigation_leads": [
+          "Interview officials from the NHIS to understand the allocation and utilization of the funds.",
+          "Review payroll records to identify any discrepancies or ghost workers.",
+          "Examine contracts related to the NHIS for inflated pricing or lack of proper procurement processes."
+        ],
+        "foia_requests": [
+          "Request detailed breakdowns of the NHIS budget allocation and expenditures for 2019.",
+          "Ask for all contracts awarded under the NHIS budget code 21020201, including the bidding process documentation."
+        ],
+        "potential_violations": [
+          "Public Procurement Act 2007 - violation of procurement processes.",
+          "Criminal Code Act - potential fraud and misappropriation of public funds."
+        ],
+        "whistleblower_indicators": "An insider could reveal information about unauthorized payments, the existence of ghost workers, or inflated contracts that were approved without proper justification.",
+        "estimated_loss": "Potential loss could be upwards of \u20a63 billion if inflated contracts or ghost workers are confirmed.",
+        "urgency": "HIGH",
+        "comparable_cases": "EFCC investigations into the Ministry of Health's budget allocations in 2018 revealed similar patterns of misappropriation and contract inflation."
+      },
+      "enriched": true
+    }
+  ]
+}

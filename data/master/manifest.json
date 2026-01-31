@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-01-30T11:01:53.287573",
+  "source_file": "extracted/master_budget_data.json",
+  "total_items": 364399,
+  "total_amount": 360980156117398.0,
+  "total_formatted": "\u20a6360.98T",
+  "years_covered": [
+    2019,
+    2021,
+    2022,
+    2024,
+    2025,
+    2026
+  ],
+  "contractors_found": 1,
+  "top_contractors": [
+    "GALAXY BACKBONE LIMITED"
+  ],
+  "folder_structure": {
+    "federal/": "Federal budget by year",
+    "states/": "State budgets by state and year",
+    "contractors/": "All contractors with allocations",
+    "aggregations/": "Summary data by MDA, sector, budget code",
+    "master/": "Complete dataset with all items"
+  }
+}

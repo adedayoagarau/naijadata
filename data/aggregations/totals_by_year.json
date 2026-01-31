@@ -1,0 +1,40 @@
+{
+  "years": [
+    {
+      "year": 2019,
+      "total": 8443897801396.0,
+      "total_formatted": "\u20a68.44T",
+      "item_count": 28320
+    },
+    {
+      "year": 2021,
+      "total": 11605524733841.0,
+      "total_formatted": "\u20a611.61T",
+      "item_count": 28933
+    },
+    {
+      "year": 2022,
+      "total": 70173908361491.0,
+      "total_formatted": "\u20a670.17T",
+      "item_count": 130907
+    },
+    {
+      "year": 2024,
+      "total": 23595860756080.0,
+      "total_formatted": "\u20a623.60T",
+      "item_count": 27091
+    },
+    {
+      "year": 2025,
+      "total": 93676486738912.0,
+      "total_formatted": "\u20a693.68T",
+      "item_count": 57957
+    },
+    {
+      "year": 2026,
+      "total": 153484477725678.0,
+      "total_formatted": "\u20a6153.48T",
+      "item_count": 91191
+    }
+  ]
+}

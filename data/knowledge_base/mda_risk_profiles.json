@@ -1,0 +1,1932 @@
+{
+  "mdas": {
+    "SALARIES AND WAGES": {
+      "total_flagged": 7556,
+      "total_amount_flagged": 125937540161614.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "HIGH_YOY_INCREASE",
+        "ELECTION_YEAR_CAPITAL",
+        "NOTABLE_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026,
+        2022,
+        2025,
+        2024,
+        2019
+      ]
+    },
+    "LOCAL TRAINING": {
+      "total_flagged": 408,
+      "total_amount_flagged": 2951510486928.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "HIGH_YOY_INCREASE",
+        "VAGUE_DESCRIPTION",
+        "NOTABLE_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026,
+        2022,
+        2025
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL": {
+      "total_flagged": 510,
+      "total_amount_flagged": 8933786513596.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "ELECTION_YEAR_CAPITAL",
+        "HIGH_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022,
+        2019,
+        2024,
+        2021
+      ]
+    },
+    "PURCHASE OF FIXED ASSETS - GENERAL": {
+      "total_flagged": 1540,
+      "total_amount_flagged": 19760061956522.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "VERY_LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "HIGH_YOY_INCREASE",
+        "ELECTION_YEAR_CAPITAL",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2022,
+        2026,
+        2019,
+        2024
+      ]
+    },
+    "REHABILITATION / REPAIRS OF FIXED ASSETS - GENERAL": {
+      "total_flagged": 280,
+      "total_amount_flagged": 5347941351076.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "NOTABLE_YOY_INCREASE",
+        "HIGH_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2026,
+        2022
+      ]
+    },
+    "INTERNATIONAL TRAINING": {
+      "total_flagged": 24,
+      "total_amount_flagged": 205295650000.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025
+      ]
+    },
+    "TRAVEL& TRANSPORT - GENERAL": {
+      "total_flagged": 492,
+      "total_amount_flagged": 1031710211076.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION",
+        "HIGH_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2022,
+        2025,
+        2026
+      ]
+    },
+    "CONSULTING & PROFESSIONAL SERVICES - GENERAL": {
+      "total_flagged": 420,
+      "total_amount_flagged": 4731744900726.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "VERY_LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "ELECTION_YEAR_CAPITAL",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2025,
+        2026,
+        2019
+      ]
+    },
+    "SECURITY CHARGES": {
+      "total_flagged": 346,
+      "total_amount_flagged": 1644735708986.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "NOTABLE_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "HIGH_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2026,
+        2022,
+        2024
+      ]
+    },
+    "FINANCIAL CONSULTING": {
+      "total_flagged": 402,
+      "total_amount_flagged": 4212066274766.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "VERY_LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "ELECTION_YEAR_CAPITAL",
+        "VAGUE_DESCRIPTION",
+        "HIGH_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022,
+        2019
+      ]
+    },
+    "OTHER SERVICES - GENERAL": {
+      "total_flagged": 364,
+      "total_amount_flagged": 2474155904214.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "VERY_LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "HIGH_YOY_INCREASE",
+        "NOTABLE_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022,
+        2024
+      ]
+    },
+    "FUEL & LUBRICANTS - GENERAL": {
+      "total_flagged": 456,
+      "total_amount_flagged": 1833406650428.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VERY_LARGE_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2026,
+        2022
+      ]
+    },
+    "LEGAL SERVICES": {
+      "total_flagged": 244,
+      "total_amount_flagged": 1766920119662.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "VERY_LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "HIGH_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2026,
+        2021,
+        2022
+      ]
+    },
+    "FINANCIAL CHARGES - GENERAL": {
+      "total_flagged": 132,
+      "total_amount_flagged": 916565020136.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "ELECTION_YEAR_CAPITAL",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022,
+        2019,
+        2024
+      ]
+    },
+    "PURCHASE OF HEALTH / MEDICAL EQUIPMENT": {
+      "total_flagged": 58,
+      "total_amount_flagged": 75399564658.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SHORT_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022
+      ]
+    },
+    "MOTOR VEHICLE FUEL COST": {
+      "total_flagged": 304,
+      "total_amount_flagged": 1372464364914.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION",
+        "HIGH_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022
+      ]
+    },
+    "MISCELLANEOUS": {
+      "total_flagged": 286,
+      "total_amount_flagged": 6426838540160.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "LARGE_AMOUNT",
+        "NOTABLE_YOY_INCREASE",
+        "SHORT_DESCRIPTION",
+        "ELECTION_YEAR_CAPITAL"
+      ],
+      "years_flagged": [
+        2025,
+        2026,
+        2022,
+        2019,
+        2024
+      ]
+    },
+    "FOREIGN GRANTS AND CONTRIBUTIONS": {
+      "total_flagged": 46,
+      "total_amount_flagged": 6748315323232.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "LARGE_AMOUNT",
+        "VAGUE_DESCRIPTION",
+        "NOTABLE_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2024
+      ]
+    },
+    "INFORMATION TECHNOLOGY CONSULTING": {
+      "total_flagged": 278,
+      "total_amount_flagged": 4600616479802.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "ELECTION_YEAR_CAPITAL",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2022,
+        2025,
+        2019
+      ]
+    },
+    "CLEANING AND FUMIGATION SERVICES": {
+      "total_flagged": 360,
+      "total_amount_flagged": 3688020581554.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "HIGH_YOY_INCREASE",
+        "VAGUE_DESCRIPTION",
+        "NOTABLE_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022
+      ]
+    },
+    "TRAINING - GENERAL": {
+      "total_flagged": 332,
+      "total_amount_flagged": 645616477536.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SHORT_DESCRIPTION",
+        "LARGE_AMOUNT",
+        "HIGH_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022
+      ]
+    },
+    "OFFICE RENT": {
+      "total_flagged": 72,
+      "total_amount_flagged": 423662862018.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2022,
+        2025
+      ]
+    },
+    "INTERNET ACCESS CHARGES": {
+      "total_flagged": 34,
+      "total_amount_flagged": 51039666676.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "INSURANCE PREMIUM": {
+      "total_flagged": 108,
+      "total_amount_flagged": 1289713555656.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "ELECTION_YEAR_CAPITAL",
+        "SHORT_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2019,
+        2026,
+        2022
+      ]
+    },
+    "SECURITY OPERATIONS": {
+      "total_flagged": 52,
+      "total_amount_flagged": 149345880036.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2026
+      ]
+    },
+    "PLANT / GENERATOR FUEL COST": {
+      "total_flagged": 254,
+      "total_amount_flagged": 3267944390834.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "LARGE_AMOUNT",
+        "NOTABLE_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF OFFICE BUILDINGS": {
+      "total_flagged": 54,
+      "total_amount_flagged": 586365270222.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2026,
+        2022,
+        2025
+      ]
+    },
+    "BANK CHARGES": {
+      "total_flagged": 96,
+      "total_amount_flagged": 176416167562.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SHORT_DESCRIPTION",
+        "LARGE_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2022,
+        2024,
+        2026
+      ]
+    },
+    "MAINTENANCE OF ROADS AND BRIDGES": {
+      "total_flagged": 52,
+      "total_amount_flagged": 25820045048.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_RISK_CODE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2022,
+        2026
+      ]
+    },
+    "MAINTENANCE OF OFFICE BUILDING / RESIDENTIAL QTRS": {
+      "total_flagged": 96,
+      "total_amount_flagged": 521534441986.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION",
+        "VERY_LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2026,
+        2022,
+        2021,
+        2025
+      ]
+    },
+    "PURCHASE OF COMPUTERS": {
+      "total_flagged": 32,
+      "total_amount_flagged": 1243193729298.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2025,
+        2022,
+        2026,
+        2021
+      ]
+    },
+    "PURCHASE OF FIRE FIGHTING EQUIPMENT": {
+      "total_flagged": 20,
+      "total_amount_flagged": 19224437645116.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "HIGH_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "NOTABLE_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT"
+      ],
+      "years_flagged": [
+        2026,
+        2025
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF AGRICULTURAL FACILITIES": {
+      "total_flagged": 6,
+      "total_amount_flagged": 373485661156.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "PRINTING OF NON SECURITY DOCUMENTS": {
+      "total_flagged": 60,
+      "total_amount_flagged": 660050574934.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "SIGNIFICANT_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "CONTRIBUTORY PENSION - EMPLOYER": {
+      "total_flagged": 112,
+      "total_amount_flagged": 864869508214.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2025
+      ]
+    },
+    "TRANSMISSION COMPANY OF NIGERIA\nCODE LINE ITEM AMOU": {
+      "total_flagged": 6,
+      "total_amount_flagged": 812503670658.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "ELECTION_YEAR_CAPITAL"
+      ],
+      "years_flagged": [
+        2022,
+        2025,
+        2019
+      ]
+    },
+    "UNIFORMS & OTHER CLOTHING": {
+      "total_flagged": 16,
+      "total_amount_flagged": 144714460504.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "BOOKS": {
+      "total_flagged": 50,
+      "total_amount_flagged": 436718026092.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "ALLOWANCES": {
+      "total_flagged": 542,
+      "total_amount_flagged": 5872925731648.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "VERY_LARGE_AMOUNT",
+        "HIGH_RISK_CODE"
+      ],
+      "years_flagged": [
+        2025,
+        2026,
+        2022
+      ]
+    },
+    "NATIONAL POWER TRAINING INSTITUTE\nCODE LINE ITEM AM": {
+      "total_flagged": 36,
+      "total_amount_flagged": 54755600000.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_MDA",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "ELECTION_YEAR_CAPITAL",
+        "HIGH_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2025,
+        2019,
+        2022,
+        2026
+      ]
+    },
+    "ACQUISITION OF NON TANGIBLE ASSETS": {
+      "total_flagged": 64,
+      "total_amount_flagged": 3684172866376.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2026,
+        2025
+      ]
+    },
+    "EMPLOYEE COMPENSATION ACT - EMPLOYEES COMPENSATION": {
+      "total_flagged": 4,
+      "total_amount_flagged": 60000000000.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION",
+        "SHORT_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2021
+      ]
+    },
+    "PURCHASE OF POWER GENERATING SET": {
+      "total_flagged": 10,
+      "total_amount_flagged": 74406986326.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "HIGH_RISK_MDA",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2022
+      ]
+    },
+    "ZONAL INTERVENTION PROJECTS": {
+      "total_flagged": 2,
+      "total_amount_flagged": 400000000000.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "NATIONAL PLANNING COMMISSION": {
+      "total_flagged": 6,
+      "total_amount_flagged": 520000000000.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "ELECTION_YEAR_CAPITAL",
+        "LARGE_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2019
+      ]
+    },
+    "TEACHING AIDS / INSTRUCTION MATERIALS": {
+      "total_flagged": 4,
+      "total_amount_flagged": 114609317708.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF WATER FACILITIES": {
+      "total_flagged": 4,
+      "total_amount_flagged": 106378400956.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "PURCHASE OF SECURITY EQUIPMENT": {
+      "total_flagged": 18,
+      "total_amount_flagged": 102296655580.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "WATER RATES": {
+      "total_flagged": 22,
+      "total_amount_flagged": 300132022584.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_RISK_CODE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF RESIDENTIAL BUILDINGS": {
+      "total_flagged": 18,
+      "total_amount_flagged": 534976377526.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "VERY_LARGE_AMOUNT",
+        "ELECTION_YEAR_CAPITAL",
+        "SIGNIFICANT_AMOUNT"
+      ],
+      "years_flagged": [
+        2025,
+        2019,
+        2026
+      ]
+    },
+    "OTHER MAINTENANCE SERVICES": {
+      "total_flagged": 230,
+      "total_amount_flagged": 611028858018.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SHORT_DESCRIPTION",
+        "SIGNIFICANT_AMOUNT",
+        "VAGUE_DESCRIPTION",
+        "ROUND_NUMBER"
+      ],
+      "years_flagged": [
+        2026,
+        2022,
+        2025
+      ]
+    },
+    "STAFF LOANS & ADVANCES": {
+      "total_flagged": 14,
+      "total_amount_flagged": 296745096376.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "LOCAL TRAVEL & TRANSPORT": {
+      "total_flagged": 240,
+      "total_amount_flagged": 237160957090.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "NEWSPAPERS": {
+      "total_flagged": 84,
+      "total_amount_flagged": 79584890178.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "MAINTENANCE OF PLANTS/GENERATORS": {
+      "total_flagged": 258,
+      "total_amount_flagged": 648759253674.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "VAGUE_DESCRIPTION",
+        "ROUND_NUMBER",
+        "SHORT_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022
+      ]
+    },
+    "OTHER TRANSPORT EQUIPMENT FUEL COST": {
+      "total_flagged": 54,
+      "total_amount_flagged": 130800599396.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2022
+      ]
+    },
+    "UTILITIES - GENERAL": {
+      "total_flagged": 102,
+      "total_amount_flagged": 513439213520.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2025
+      ]
+    },
+    "AUDITING OF ACCOUNTS": {
+      "total_flagged": 24,
+      "total_amount_flagged": 243837727864.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2026
+      ]
+    },
+    "ONGOING": {
+      "total_flagged": 136,
+      "total_amount_flagged": 1593515249000.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "SIGNIFICANT_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "ELECTRICITY CHARGES": {
+      "total_flagged": 148,
+      "total_amount_flagged": 515484079408.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "SIGNIFICANT_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2025
+      ]
+    },
+    "REHABILITATION / REPAIRS OF OFFICE BUILDINGS": {
+      "total_flagged": 20,
+      "total_amount_flagged": 20228719696.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_RISK_CODE"
+      ],
+      "years_flagged": [
+        2025,
+        2026,
+        2022
+      ]
+    },
+    "SUBSIDY TO PUBLIC / PUBLIC INSTITUTIONS": {
+      "total_flagged": 92,
+      "total_amount_flagged": 107491943032.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_RISK_CODE",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2026,
+        2022
+      ]
+    },
+    "MAINTENANCE OF MOTOR VEHICLE / TRANSPORT EQUIPMENT": {
+      "total_flagged": 78,
+      "total_amount_flagged": 157977244098.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "SHORT_DESCRIPTION",
+        "LARGE_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2025,
+        2026
+      ]
+    },
+    "RESEARCH AND DEVELOPMENT": {
+      "total_flagged": 24,
+      "total_amount_flagged": 625506583670.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2022,
+        2025,
+        2026
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF ROADS": {
+      "total_flagged": 12,
+      "total_amount_flagged": 672888830266.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VERY_LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2025,
+        2026
+      ]
+    },
+    "PURCHASE OF OFFICE FURNITURE AND FITTINGS": {
+      "total_flagged": 42,
+      "total_amount_flagged": 372298750532.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022
+      ]
+    },
+    "CROSS RIVER RBDA\nCODE LINE ITEM AMOUNT": {
+      "total_flagged": 4,
+      "total_amount_flagged": 3596000000.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "ELECTION_YEAR_CAPITAL",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2019,
+        2025
+      ]
+    },
+    "MAINTENANCE OF OFFICE FURNITURE": {
+      "total_flagged": 98,
+      "total_amount_flagged": 67480732406.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "HIGH_YOY_INCREASE",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2025,
+        2026
+      ]
+    },
+    "GRANT TO PRIVATE COMPANIES - CURRENT": {
+      "total_flagged": 2,
+      "total_amount_flagged": 1200000000.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "REHABILITATION / REPAIRS OF RESIDENTIAL BUILDING": {
+      "total_flagged": 10,
+      "total_amount_flagged": 7413516776.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "COOKING GAS/FUEL COST": {
+      "total_flagged": 34,
+      "total_amount_flagged": 7024760468.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SHORT_DESCRIPTION",
+        "SIGNIFICANT_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025,
+        2021,
+        2026
+      ]
+    },
+    "DRUGS & MEDICAL SUPPLIES": {
+      "total_flagged": 40,
+      "total_amount_flagged": 3297780582.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "BASIC HEALTH CARE FUND\nCODE LINE ITEM AMOUNT": {
+      "total_flagged": 4,
+      "total_amount_flagged": 1193684490544.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "HIGH_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "INTEREST - INTERNAL PUBLIC DEBT": {
+      "total_flagged": 4,
+      "total_amount_flagged": 1300536459228.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "SHORT_DESCRIPTION",
+        "NOTABLE_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2019,
+        2025
+      ]
+    },
+    "PROCUREMENT & INSTALLATION OF AIR CONDITIONERS ONGO": {
+      "total_flagged": 2,
+      "total_amount_flagged": 400000000000.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "SHORT_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "SALARY": {
+      "total_flagged": 24,
+      "total_amount_flagged": 620379106646.0,
+      "common_issues": [
+        "VERY_LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "SHORT_DESCRIPTION",
+        "SIGNIFICANT_AMOUNT",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_RISK_CODE"
+      ],
+      "years_flagged": [
+        2025,
+        2022
+      ]
+    },
+    "MATERIALS & SUPPLIES - GENERAL": {
+      "total_flagged": 156,
+      "total_amount_flagged": 382628327106.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2024,
+        2022
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF HOSPITALS / HEALTH CENT": {
+      "total_flagged": 12,
+      "total_amount_flagged": 78567516840.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026
+      ]
+    },
+    "CONSTRUCTION OF": {
+      "total_flagged": 2,
+      "total_amount_flagged": 16217188454.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "NATIONAL BOARD FOR ARABIC AND ISLAMIC STUDIES": {
+      "total_flagged": 8,
+      "total_amount_flagged": 47989211700.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025
+      ]
+    },
+    "GRANT TO FOREIGN INTERNATIONAL ORGANIZATIONS": {
+      "total_flagged": 2,
+      "total_amount_flagged": 15262450384.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "MAINTENANCE OF OFFICE / IT EQUIPMENTS": {
+      "total_flagged": 230,
+      "total_amount_flagged": 163972308044.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SHORT_DESCRIPTION",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2022,
+        2025
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF INFRASTRUCTURE": {
+      "total_flagged": 44,
+      "total_amount_flagged": 81795981866.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_RISK_CODE",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2026,
+        2024,
+        2025
+      ]
+    },
+    "REGULAR ALLOWANCES": {
+      "total_flagged": 12,
+      "total_amount_flagged": 35851961970.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "PRESERVATION OF THE ENVIRONMENT - GENERAL": {
+      "total_flagged": 28,
+      "total_amount_flagged": 216805670420.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2026
+      ]
+    },
+    "PURCHASE OF MOTOR VEHICLES": {
+      "total_flagged": 24,
+      "total_amount_flagged": 56529146904.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_RISK_CODE"
+      ],
+      "years_flagged": [
+        2022,
+        2025,
+        2026
+      ]
+    },
+    "MAINTENANCE SERVICES - GENERAL": {
+      "total_flagged": 132,
+      "total_amount_flagged": 43225188186.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2026
+      ]
+    },
+    "OFFICE STATIONERIES / COMPUTER CONSUMABLES": {
+      "total_flagged": 96,
+      "total_amount_flagged": 176985031292.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "SEWERAGE CHARGES": {
+      "total_flagged": 46,
+      "total_amount_flagged": 19806721378.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "SHORT_DESCRIPTION",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF ELECTRICITY": {
+      "total_flagged": 4,
+      "total_amount_flagged": 136303043860.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2022,
+        2025
+      ]
+    },
+    "CONSTRUCTION": {
+      "total_flagged": 6,
+      "total_amount_flagged": 14965317306.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "SOCIAL CONTRIBUTIONS": {
+      "total_flagged": 42,
+      "total_amount_flagged": 105303108262.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_RISK_CODE",
+        "ROUND_NUMBER",
+        "LARGE_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022,
+        2025
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS": {
+      "total_flagged": 2,
+      "total_amount_flagged": 4887425634.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "TELEPHONE CHARGES": {
+      "total_flagged": 70,
+      "total_amount_flagged": 9191616854.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "ROUND_NUMBER",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "INTERNATIONAL TRAVEL & TRANSPORT": {
+      "total_flagged": 36,
+      "total_amount_flagged": 2398810152.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "RESIDENTIAL RENT": {
+      "total_flagged": 6,
+      "total_amount_flagged": 2940000000.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026
+      ]
+    },
+    "BUREAU OF PUBLIC PROCUREMENT": {
+      "total_flagged": 6,
+      "total_amount_flagged": 975129388.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "PURCHASE OF BUSES": {
+      "total_flagged": 6,
+      "total_amount_flagged": 1596000000.0,
+      "common_issues": [
+        "SHORT_DESCRIPTION",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026
+      ]
+    },
+    "NATIONAL UNIVERSITIES COMMISSION SECRETARIAT\nCODE L": {
+      "total_flagged": 6,
+      "total_amount_flagged": 1220000000.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "SHORT_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "MEDICAL CONSULTING": {
+      "total_flagged": 26,
+      "total_amount_flagged": 2004301340.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2026,
+        2025,
+        2022
+      ]
+    },
+    "NATIONAL ANIMAL PRODUCT RESEARCH INSTITUTE- ZARIA\nC": {
+      "total_flagged": 6,
+      "total_amount_flagged": 26617856016.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "NIGERIA INSTITUTE OF LEATHER AND SCIENCE TECHNOLOGY": {
+      "total_flagged": 10,
+      "total_amount_flagged": 65852987722.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "LARGE_AMOUNT"
+      ],
+      "years_flagged": [
+        2025,
+        2026
+      ]
+    },
+    "NIGERIAN INVESTMENT PROMOTION COUNCIL HQTRS\nCODE LI": {
+      "total_flagged": 2,
+      "total_amount_flagged": 300000000.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "LOCAL GRANTS AND CONTRIBUTIONS": {
+      "total_flagged": 2,
+      "total_amount_flagged": 240000000.0,
+      "common_issues": [
+        "ROUND_NUMBER",
+        "SHORT_DESCRIPTION",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "REHABILITATION / REPAIRS - HOSPITAL / HEALTH CENTRE": {
+      "total_flagged": 24,
+      "total_amount_flagged": 181088387214.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "EXTREME_YOY_INCREASE",
+        "HIGH_RISK_CODE"
+      ],
+      "years_flagged": [
+        2022,
+        2026
+      ]
+    },
+    "SOLAR POWER BOREHOLES IN SELECTED COMMUNITIES": {
+      "total_flagged": 4,
+      "total_amount_flagged": 133460949950.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "HIGH_RISK_MDA",
+        "SIGNIFICANT_AMOUNT",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "NIGERIA STORED PRODUCTS RESEARCH": {
+      "total_flagged": 6,
+      "total_amount_flagged": 297757645662.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026
+      ]
+    },
+    "SURVEYING SERVICES": {
+      "total_flagged": 2,
+      "total_amount_flagged": 78338100366.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "HIGH_RISK_CODE",
+        "ELECTION_YEAR_CAPITAL"
+      ],
+      "years_flagged": [
+        2019
+      ]
+    },
+    "EROSION & FLOOD CONTROL": {
+      "total_flagged": 2,
+      "total_amount_flagged": 74555395112.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "RENOVATION AND CONSTRUCTION WORKS AT": {
+      "total_flagged": 8,
+      "total_amount_flagged": 271940178208.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "HIGH_RISK_MDA"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "FEDERAL CO-OPERATIVE COLLEGE- KADUNA\nCODE LINE ITEM": {
+      "total_flagged": 6,
+      "total_amount_flagged": 150614209326.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026
+      ]
+    },
+    "LOSS ON FOREIGN EXCHANGE": {
+      "total_flagged": 2,
+      "total_amount_flagged": 42000000000.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "PURCHASE OF PHOTOCOPYING MACHINES": {
+      "total_flagged": 6,
+      "total_amount_flagged": 99914710878.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026
+      ]
+    },
+    "UPGRADING OF POWER FACILITIES NEW": {
+      "total_flagged": 8,
+      "total_amount_flagged": 105115045944.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "SHORT_DESCRIPTION",
+        "HIGH_RISK_MDA"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "PURCHASE OF AGRICULTURAL EQUIPMENT": {
+      "total_flagged": 6,
+      "total_amount_flagged": 33086704888.0,
+      "common_issues": [
+        "LARGE_AMOUNT",
+        "EXTREME_YOY_INCREASE",
+        "SIGNIFICANT_AMOUNT",
+        "HIGH_RISK_CODE",
+        "HIGH_YOY_INCREASE",
+        "ROUND_NUMBER"
+      ],
+      "years_flagged": [
+        2022,
+        2021
+      ]
+    },
+    "CONSTRUCTION / PROVISION OF FIRE FIGHTING STATIONS": {
+      "total_flagged": 6,
+      "total_amount_flagged": 12000000000.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "MOTOR VEHICLE ADVANCES": {
+      "total_flagged": 2,
+      "total_amount_flagged": 4000000000.0,
+      "common_issues": [
+        "SIGNIFICANT_AMOUNT",
+        "ROUND_NUMBER",
+        "HIGH_RISK_CODE"
+      ],
+      "years_flagged": [
+        2024
+      ]
+    },
+    "REHABILITATION / REPAIRS - HOUSING": {
+      "total_flagged": 6,
+      "total_amount_flagged": 4866668400.0,
+      "common_issues": [
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2026
+      ]
+    },
+    "LAGOS INTERNATIONAL TRADE FAIR COMPLEX MANAGEMENT B": {
+      "total_flagged": 2,
+      "total_amount_flagged": 602558626.0,
+      "common_issues": [
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "NON REGULAR ALLOWANCES": {
+      "total_flagged": 12,
+      "total_amount_flagged": 1416206508.0,
+      "common_issues": [
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE",
+        "VAGUE_DESCRIPTION"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "REHABILITATION / REPAIRS - ROADS": {
+      "total_flagged": 6,
+      "total_amount_flagged": 1069525416.0,
+      "common_issues": [
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2022
+      ]
+    },
+    "NIGERIAN COPYRIGHT COMMISSION\nCODE LINE ITEM AMOUNT": {
+      "total_flagged": 2,
+      "total_amount_flagged": 241140000.0,
+      "common_issues": [
+        "HIGH_RISK_CODE",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2025
+      ]
+    },
+    "INSTITUTE OF CHILD HEALTH": {
+      "total_flagged": 20,
+      "total_amount_flagged": 20880234.0,
+      "common_issues": [
+        "VAGUE_DESCRIPTION",
+        "EXTREME_YOY_INCREASE"
+      ],
+      "years_flagged": [
+        2025,
+        2022
+      ]
+    }
+  }
+}

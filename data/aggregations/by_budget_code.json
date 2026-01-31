@@ -1,0 +1,88 @@
+{
+  "budget_codes": [
+    {
+      "budget_code_prefix": "2206",
+      "total": 107831499105992.0,
+      "total_formatted": "\u20a6107.83T",
+      "item_count": 56
+    },
+    {
+      "budget_code_prefix": "2101",
+      "total": 64909661221407.0,
+      "total_formatted": "\u20a664.91T",
+      "item_count": 8543
+    },
+    {
+      "budget_code_prefix": "2305",
+      "total": 60557342336239.0,
+      "total_formatted": "\u20a660.56T",
+      "item_count": 7860
+    },
+    {
+      "budget_code_prefix": "2302",
+      "total": 42998916597207.0,
+      "total_formatted": "\u20a643.00T",
+      "item_count": 13724
+    },
+    {
+      "budget_code_prefix": "2102",
+      "total": 36320233770909.0,
+      "total_formatted": "\u20a636.32T",
+      "item_count": 28730
+    },
+    {
+      "budget_code_prefix": "2202",
+      "total": 20264790954074.0,
+      "total_formatted": "\u20a620.26T",
+      "item_count": 278011
+    },
+    {
+      "budget_code_prefix": "2301",
+      "total": 8897403890231.0,
+      "total_formatted": "\u20a68.90T",
+      "item_count": 16865
+    },
+    {
+      "budget_code_prefix": "2103",
+      "total": 8505544909805.0,
+      "total_formatted": "\u20a68.51T",
+      "item_count": 37
+    },
+    {
+      "budget_code_prefix": "2303",
+      "total": 8119108231819.0,
+      "total_formatted": "\u20a68.12T",
+      "item_count": 7747
+    },
+    {
+      "budget_code_prefix": "2205",
+      "total": 1396194325310.0,
+      "total_formatted": "\u20a61.40T",
+      "item_count": 1492
+    },
+    {
+      "budget_code_prefix": "2304",
+      "total": 711726910079.0,
+      "total_formatted": "\u20a6711.73B",
+      "item_count": 815
+    },
+    {
+      "budget_code_prefix": "2204",
+      "total": 466011857838.0,
+      "total_formatted": "\u20a6466.01B",
+      "item_count": 332
+    },
+    {
+      "budget_code_prefix": "2201",
+      "total": 1034511097.0,
+      "total_formatted": "\u20a61.03B",
+      "item_count": 117
+    },
+    {
+      "budget_code_prefix": "2203",
+      "total": 687495391.0,
+      "total_formatted": "\u20a6687.50M",
+      "item_count": 70
+    }
+  ]
+}

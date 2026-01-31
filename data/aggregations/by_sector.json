@@ -1,0 +1,59 @@
+{
+  "sectors": [
+    {
+      "sector": "other",
+      "total": 335836363152131.0,
+      "total_formatted": "\u20a6335.84T"
+    },
+    {
+      "sector": "transport",
+      "total": 16824935270913.0,
+      "total_formatted": "\u20a616.82T"
+    },
+    {
+      "sector": "security",
+      "total": 2704569496128.0,
+      "total_formatted": "\u20a62.70T"
+    },
+    {
+      "sector": "health",
+      "total": 2064300044065.0,
+      "total_formatted": "\u20a62.06T"
+    },
+    {
+      "sector": "infrastructure",
+      "total": 1383105408460.0,
+      "total_formatted": "\u20a61.38T"
+    },
+    {
+      "sector": "agriculture",
+      "total": 995000214000.0,
+      "total_formatted": "\u20a6995.00B"
+    },
+    {
+      "sector": "energy",
+      "total": 639842301085.0,
+      "total_formatted": "\u20a6639.84B"
+    },
+    {
+      "sector": "defence",
+      "total": 472142010315.0,
+      "total_formatted": "\u20a6472.14B"
+    },
+    {
+      "sector": "education",
+      "total": 47924327390.0,
+      "total_formatted": "\u20a647.92B"
+    },
+    {
+      "sector": "justice",
+      "total": 6934776763.0,
+      "total_formatted": "\u20a66.93B"
+    },
+    {
+      "sector": "finance",
+      "total": 5039116148.0,
+      "total_formatted": "\u20a65.04B"
+    }
+  ]
+}

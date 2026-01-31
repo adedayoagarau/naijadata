@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-01-31T11:38:31.535731",
+  "count": 1,
+  "total_amount": 40000000.0,
+  "findings": [
+    {
+      "finding_id": "7ebecc96b0fc",
+      "finding_type": "MANDATE_VIOLATION",
+      "severity": "CRITICAL",
+      "confidence": 0.7999999999999999,
+      "budget_code": "23030113",
+      "description": "REHABILITATION / REPAIRS - ROADS",
+      "amount": 40000000.0,
+      "mda": "CONSTRUCTION / PROVISION OF POLICE STATIONS / BARRA",
+      "year": 2019,
+      "state": null,
+      "level": "federal",
+      "detection_method": "rule_based",
+      "evidence": [
+        "Security agency allocated for road"
+      ],
+      "explanation": "Security agency allocated for road",
+      "recommendation": "Review agency mandate. Consider reallocation to appropriate ministry.",
+      "related_items": [],
+      "risk_score": 60
+    }
+  ]
+}

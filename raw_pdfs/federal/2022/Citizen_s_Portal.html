@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nigeria Budget Info</title>
+  <!-- Tell the browser to be responsive to screen width -->
+   <link rel="shortcut icon" href="favicon.ico" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+<!--<script type="text/javascript">
+var count = 120;
+var redirect = "nbinfo/";
+ 
+function countDown(){
+    var timer = document.getElementById("timer");
+    if(count > 0){
+        count--;
+        timer.innerHTML = "This page will redirect in "+count+" seconds.";
+        setTimeout("countDown()", 1000);
+    }else{
+        window.location.href = redirect;
+    }
+}
+</script> -->
+
+<script type="text/javascript">
+var count = 120;
+var redirect = "https://budgetoffice.gov.ng/nbinfo/";
+
+function countDown() {
+    var timer = document.getElementById("timer");
+    if (count > 0) {
+        count--;
+        timer.innerHTML = "This page will redirect in " + count + " seconds.";
+        setTimeout(countDown, 1000);
+    } else {
+        window.location.href = redirect;
+    }
+}
+</script>
+
+  
+</head>
+<body class="hold-transition login-page">
+  
+<div class="login-box">
+  <div class="login-logo">
+   <b>Nigeria</b> Budget Info
+  </div>
+  <!-- /.login-logo -->
+  
+  <div></div>
+ </div>
+<div style="width:560px; height:auto; margin-left:auto; margin-right:auto; margin-bottom:20px;">
+ <iframe width="600" height="350" src="https://www.youtube.com/embed/xgrGhsQXafg" frameborder="0" allowfullscreen></iframe>
+
+</div>
+  
+  <div style="width:33%; margin-left:auto; margin-right:auto;">
+  <div class="tour1"><a href="https://budgetoffice.gov.ng/nbinfo/">Skip</a></div>
+<div class="tour"><span id="timer"><script type="text/javascript">countDown();</script></span></div>
+</div>
+
+
+
+
+
+<!-- /.login-box -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' // optional
+    });
+  });
+</script>
+</body>
+</html>

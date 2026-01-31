@@ -1,0 +1,2597 @@
+{
+  "total_mdas": 432,
+  "mdas": [
+    {
+      "mda": "SALARIES AND WAGES",
+      "total": 105224865241665.0,
+      "total_formatted": "\u20a6105.22T",
+      "item_count": 139804
+    },
+    {
+      "mda": "INTEREST - INTERNAL PUBLIC DEBT",
+      "total": 74786138403850.0,
+      "total_formatted": "\u20a674.79T",
+      "item_count": 70
+    },
+    {
+      "mda": "FOREIGN GRANTS AND CONTRIBUTIONS",
+      "total": 20894505446332.0,
+      "total_formatted": "\u20a620.89T",
+      "item_count": 243
+    },
+    {
+      "mda": "NON REGULAR ALLOWANCES",
+      "total": 15626789625812.0,
+      "total_formatted": "\u20a615.63T",
+      "item_count": 476
+    },
+    {
+      "mda": "PURCHASE OF FIXED ASSETS - GENERAL",
+      "total": 15417683984307.0,
+      "total_formatted": "\u20a615.42T",
+      "item_count": 11439
+    },
+    {
+      "mda": "MAINTENANCE OF MOTOR VEHICLE / TRANSPORT EQUIPMENT",
+      "total": 14627812113673.0,
+      "total_formatted": "\u20a614.63T",
+      "item_count": 1990
+    },
+    {
+      "mda": "ALLOWANCES",
+      "total": 12090853363938.0,
+      "total_formatted": "\u20a612.09T",
+      "item_count": 29234
+    },
+    {
+      "mda": "PURCHASE OF FIRE FIGHTING EQUIPMENT",
+      "total": 11382578527739.0,
+      "total_formatted": "\u20a611.38T",
+      "item_count": 94
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF FIXED ASSETS - GENERAL",
+      "total": 6504330808960.0,
+      "total_formatted": "\u20a66.50T",
+      "item_count": 3811
+    },
+    {
+      "mda": "INSURANCE PREMIUM",
+      "total": 4869231573135.0,
+      "total_formatted": "\u20a64.87T",
+      "item_count": 1548
+    },
+    {
+      "mda": "ACQUISITION OF NON TANGIBLE ASSETS",
+      "total": 4282782776543.0,
+      "total_formatted": "\u20a64.28T",
+      "item_count": 1281
+    },
+    {
+      "mda": "MISCELLANEOUS",
+      "total": 3907351975312.0,
+      "total_formatted": "\u20a63.91T",
+      "item_count": 3398
+    },
+    {
+      "mda": "MAINTENANCE OF OFFICE BUILDING / RESIDENTIAL QTRS",
+      "total": 3688978044491.0,
+      "total_formatted": "\u20a63.69T",
+      "item_count": 1752
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS OF FIXED ASSETS - GENERAL",
+      "total": 3637024350986.0,
+      "total_formatted": "\u20a63.64T",
+      "item_count": 2761
+    },
+    {
+      "mda": "CONSULTING & PROFESSIONAL SERVICES - GENERAL",
+      "total": 3495158546871.0,
+      "total_formatted": "\u20a63.50T",
+      "item_count": 7637
+    },
+    {
+      "mda": "INFORMATION TECHNOLOGY CONSULTING",
+      "total": 3383053152148.0,
+      "total_formatted": "\u20a63.38T",
+      "item_count": 5007
+    },
+    {
+      "mda": "PLANT / GENERATOR FUEL COST",
+      "total": 2894797626481.0,
+      "total_formatted": "\u20a62.89T",
+      "item_count": 3455
+    },
+    {
+      "mda": "FINANCIAL CONSULTING",
+      "total": 2830828350550.0,
+      "total_formatted": "\u20a62.83T",
+      "item_count": 5790
+    },
+    {
+      "mda": "CLEANING AND FUMIGATION SERVICES",
+      "total": 2766113830499.0,
+      "total_formatted": "\u20a62.77T",
+      "item_count": 5597
+    },
+    {
+      "mda": "FUEL & LUBRICANTS - GENERAL",
+      "total": 2536944882879.0,
+      "total_formatted": "\u20a62.54T",
+      "item_count": 4461
+    },
+    {
+      "mda": "RESEARCH INTO THERMAL IMAGER NEW",
+      "total": 2216254690132.0,
+      "total_formatted": "\u20a62.22T",
+      "item_count": 112
+    },
+    {
+      "mda": "LOCAL TRAINING",
+      "total": 2068989322818.0,
+      "total_formatted": "\u20a62.07T",
+      "item_count": 4537
+    },
+    {
+      "mda": "OTHER SERVICES - GENERAL",
+      "total": 1858739591285.0,
+      "total_formatted": "\u20a61.86T",
+      "item_count": 4426
+    },
+    {
+      "mda": "SECURITY CHARGES",
+      "total": 1795310228813.0,
+      "total_formatted": "\u20a61.80T",
+      "item_count": 4697
+    },
+    {
+      "mda": "ZONAL INTERVENTION PROJECTS",
+      "total": 1489330278366.0,
+      "total_formatted": "\u20a61.49T",
+      "item_count": 8
+    },
+    {
+      "mda": "ONGOING",
+      "total": 1463044357925.0,
+      "total_formatted": "\u20a61.46T",
+      "item_count": 1081
+    },
+    {
+      "mda": "EMPLOYEE COMPENSATION ACT - EMPLOYEES COMPENSATION",
+      "total": 1457793493093.0,
+      "total_formatted": "\u20a61.46T",
+      "item_count": 32
+    },
+    {
+      "mda": "BASIC HEALTH CARE FUND\nCODE LINE ITEM AMOUNT",
+      "total": 1457326642727.0,
+      "total_formatted": "\u20a61.46T",
+      "item_count": 13
+    },
+    {
+      "mda": "MOTOR VEHICLE FUEL COST",
+      "total": 1386756257823.0,
+      "total_formatted": "\u20a61.39T",
+      "item_count": 4275
+    },
+    {
+      "mda": "LEGAL SERVICES",
+      "total": 1338172175170.0,
+      "total_formatted": "\u20a61.34T",
+      "item_count": 4877
+    },
+    {
+      "mda": "TRAVEL& TRANSPORT - GENERAL",
+      "total": 1294107880180.0,
+      "total_formatted": "\u20a61.29T",
+      "item_count": 14383
+    },
+    {
+      "mda": "OTHER MAINTENANCE SERVICES",
+      "total": 1121242910010.0,
+      "total_formatted": "\u20a61.12T",
+      "item_count": 2840
+    },
+    {
+      "mda": "MAINTENANCE OF OFFICE / IT EQUIPMENTS",
+      "total": 1013856192140.0,
+      "total_formatted": "\u20a61.01T",
+      "item_count": 3123
+    },
+    {
+      "mda": "TRANSMISSION COMPANY OF NIGERIA\nCODE LINE ITEM AMOU",
+      "total": 987488978490.0,
+      "total_formatted": "\u20a6987.49B",
+      "item_count": 9
+    },
+    {
+      "mda": "TRAINING - GENERAL",
+      "total": 981860104612.0,
+      "total_formatted": "\u20a6981.86B",
+      "item_count": 3917
+    },
+    {
+      "mda": "FINANCIAL CHARGES - GENERAL",
+      "total": 952963547695.0,
+      "total_formatted": "\u20a6952.96B",
+      "item_count": 2709
+    },
+    {
+      "mda": "RESEARCH AND DEVELOPMENT",
+      "total": 826250177508.0,
+      "total_formatted": "\u20a6826.25B",
+      "item_count": 364
+    },
+    {
+      "mda": "PURCHASE OF COMPUTERS",
+      "total": 775942456870.0,
+      "total_formatted": "\u20a6775.94B",
+      "item_count": 202
+    },
+    {
+      "mda": "SALARY",
+      "total": 691686062900.0,
+      "total_formatted": "\u20a6691.69B",
+      "item_count": 1849
+    },
+    {
+      "mda": "PURCHASE OF BUSES",
+      "total": 684896372104.0,
+      "total_formatted": "\u20a6684.90B",
+      "item_count": 61
+    },
+    {
+      "mda": "CONTRIBUTORY PENSION - EMPLOYER",
+      "total": 681318978553.0,
+      "total_formatted": "\u20a6681.32B",
+      "item_count": 3257
+    },
+    {
+      "mda": "MAINTENANCE OF PLANTS/GENERATORS",
+      "total": 664962021838.0,
+      "total_formatted": "\u20a6664.96B",
+      "item_count": 2784
+    },
+    {
+      "mda": "OFFICE STATIONERIES / COMPUTER CONSUMABLES",
+      "total": 615524144402.0,
+      "total_formatted": "\u20a6615.52B",
+      "item_count": 1687
+    },
+    {
+      "mda": "LOCAL TRAVEL & TRANSPORT",
+      "total": 586867211436.0,
+      "total_formatted": "\u20a6586.87B",
+      "item_count": 4417
+    },
+    {
+      "mda": "NATIONAL PLANNING COMMISSION",
+      "total": 575619791292.0,
+      "total_formatted": "\u20a6575.62B",
+      "item_count": 12
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF RESIDENTIAL BUILDINGS",
+      "total": 561102642991.0,
+      "total_formatted": "\u20a6561.10B",
+      "item_count": 148
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF OFFICE BUILDINGS",
+      "total": 461995029993.0,
+      "total_formatted": "\u20a6462.00B",
+      "item_count": 455
+    },
+    {
+      "mda": "PRINTING OF NON SECURITY DOCUMENTS",
+      "total": 437190187689.0,
+      "total_formatted": "\u20a6437.19B",
+      "item_count": 1688
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF ROADS",
+      "total": 432524104029.0,
+      "total_formatted": "\u20a6432.52B",
+      "item_count": 176
+    },
+    {
+      "mda": "RENOVATION AND CONSTRUCTION WORKS AT",
+      "total": 427668370344.0,
+      "total_formatted": "\u20a6427.67B",
+      "item_count": 12
+    },
+    {
+      "mda": "PURCHASE OF DEFENCE EQUIPMENT",
+      "total": 423453487367.0,
+      "total_formatted": "\u20a6423.45B",
+      "item_count": 61
+    },
+    {
+      "mda": "UTILITIES - GENERAL",
+      "total": 403405597877.0,
+      "total_formatted": "\u20a6403.41B",
+      "item_count": 2360
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF WATER FACILITIES",
+      "total": 397867010562.0,
+      "total_formatted": "\u20a6397.87B",
+      "item_count": 182
+    },
+    {
+      "mda": "OFFICE RENT",
+      "total": 388923568916.0,
+      "total_formatted": "\u20a6388.92B",
+      "item_count": 1726
+    },
+    {
+      "mda": "PURCHASE OF OFFICE FURNITURE AND FITTINGS",
+      "total": 384134921085.0,
+      "total_formatted": "\u20a6384.13B",
+      "item_count": 404
+    },
+    {
+      "mda": "MATERIALS & SUPPLIES - GENERAL",
+      "total": 380231974565.0,
+      "total_formatted": "\u20a6380.23B",
+      "item_count": 2627
+    },
+    {
+      "mda": "ELECTRICITY CHARGES",
+      "total": 379647409325.0,
+      "total_formatted": "\u20a6379.65B",
+      "item_count": 2295
+    },
+    {
+      "mda": "AIRCRAFT FUEL COST",
+      "total": 317890540694.0,
+      "total_formatted": "\u20a6317.89B",
+      "item_count": 78
+    },
+    {
+      "mda": "SOLAR POWER BOREHOLES IN SELECTED COMMUNITIES",
+      "total": 305158353066.0,
+      "total_formatted": "\u20a6305.16B",
+      "item_count": 16
+    },
+    {
+      "mda": "STAFF LOANS & ADVANCES",
+      "total": 303338631026.0,
+      "total_formatted": "\u20a6303.34B",
+      "item_count": 134
+    },
+    {
+      "mda": "BOOKS",
+      "total": 297777266849.0,
+      "total_formatted": "\u20a6297.78B",
+      "item_count": 1040
+    },
+    {
+      "mda": "RESIDENTIAL RENT",
+      "total": 277190472196.0,
+      "total_formatted": "\u20a6277.19B",
+      "item_count": 1320
+    },
+    {
+      "mda": "REGULAR ALLOWANCES",
+      "total": 268359550943.0,
+      "total_formatted": "\u20a6268.36B",
+      "item_count": 1680
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF AGRICULTURAL FACILITIES",
+      "total": 267425968776.0,
+      "total_formatted": "\u20a6267.43B",
+      "item_count": 58
+    },
+    {
+      "mda": "INTERNATIONAL TRAINING",
+      "total": 258276872069.0,
+      "total_formatted": "\u20a6258.28B",
+      "item_count": 827
+    },
+    {
+      "mda": "REMOTE COMMUNITIES IN TARABA SOUTH SENATORIAL NEW",
+      "total": 256237952418.0,
+      "total_formatted": "\u20a6256.24B",
+      "item_count": 17
+    },
+    {
+      "mda": "BANK CHARGES",
+      "total": 254030534281.0,
+      "total_formatted": "\u20a6254.03B",
+      "item_count": 1626
+    },
+    {
+      "mda": "NATIONAL UNIVERSITIES COMMISSION SECRETARIAT\nCODE L",
+      "total": 247466392493.0,
+      "total_formatted": "\u20a6247.47B",
+      "item_count": 262
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF INFRASTRUCTURE",
+      "total": 230831595253.0,
+      "total_formatted": "\u20a6230.83B",
+      "item_count": 421
+    },
+    {
+      "mda": "MAINTENANCE SERVICES - GENERAL",
+      "total": 230651511470.0,
+      "total_formatted": "\u20a6230.65B",
+      "item_count": 1797
+    },
+    {
+      "mda": "SUBSIDY TO PUBLIC / PUBLIC INSTITUTIONS",
+      "total": 226157299174.0,
+      "total_formatted": "\u20a6226.16B",
+      "item_count": 3083
+    },
+    {
+      "mda": "PRESERVATION OF THE ENVIRONMENT - GENERAL",
+      "total": 220052398291.0,
+      "total_formatted": "\u20a6220.05B",
+      "item_count": 393
+    },
+    {
+      "mda": "SOCIAL CONTRIBUTIONS",
+      "total": 213595084724.0,
+      "total_formatted": "\u20a6213.60B",
+      "item_count": 1898
+    },
+    {
+      "mda": "SECURITY OPERATIONS",
+      "total": 211258564389.0,
+      "total_formatted": "\u20a6211.26B",
+      "item_count": 429
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF ELECTRICITY",
+      "total": 205222437383.0,
+      "total_formatted": "\u20a6205.22B",
+      "item_count": 121
+    },
+    {
+      "mda": "PROCUREMENT & INSTALLATION OF AIR CONDITIONERS ONGO",
+      "total": 200000000000.0,
+      "total_formatted": "\u20a6200.00B",
+      "item_count": 1
+    },
+    {
+      "mda": "AUDITING OF ACCOUNTS",
+      "total": 199362507075.0,
+      "total_formatted": "\u20a6199.36B",
+      "item_count": 693
+    },
+    {
+      "mda": "WATER RATES",
+      "total": 198540900029.0,
+      "total_formatted": "\u20a6198.54B",
+      "item_count": 1222
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF SPORTING FACILITIES",
+      "total": 198138843303.0,
+      "total_formatted": "\u20a6198.14B",
+      "item_count": 36
+    },
+    {
+      "mda": "PURCHASE OF MOTOR VEHICLES",
+      "total": 195386547200.0,
+      "total_formatted": "\u20a6195.39B",
+      "item_count": 350
+    },
+    {
+      "mda": "OTHER TRANSPORT EQUIPMENT FUEL COST",
+      "total": 192780838121.0,
+      "total_formatted": "\u20a6192.78B",
+      "item_count": 1004
+    },
+    {
+      "mda": "PURCHASE OF VANS",
+      "total": 185920663032.0,
+      "total_formatted": "\u20a6185.92B",
+      "item_count": 127
+    },
+    {
+      "mda": "MAINTENANCE OF AIRCRAFTS",
+      "total": 182617892999.0,
+      "total_formatted": "\u20a6182.62B",
+      "item_count": 154
+    },
+    {
+      "mda": "MAINTENANCE OF OFFICE FURNITURE",
+      "total": 182280689285.0,
+      "total_formatted": "\u20a6182.28B",
+      "item_count": 2006
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS - HOSPITAL / HEALTH CENTRE",
+      "total": 178688384862.0,
+      "total_formatted": "\u20a6178.69B",
+      "item_count": 171
+    },
+    {
+      "mda": "SEWERAGE CHARGES",
+      "total": 170530349737.0,
+      "total_formatted": "\u20a6170.53B",
+      "item_count": 1233
+    },
+    {
+      "mda": "NIGERIA STORED PRODUCTS RESEARCH",
+      "total": 168333360459.0,
+      "total_formatted": "\u20a6168.33B",
+      "item_count": 208
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS - HOUSING",
+      "total": 159010641047.0,
+      "total_formatted": "\u20a6159.01B",
+      "item_count": 36
+    },
+    {
+      "mda": "ARCHITECTURAL SERVICES",
+      "total": 158829955167.0,
+      "total_formatted": "\u20a6158.83B",
+      "item_count": 214
+    },
+    {
+      "mda": "INTERNET ACCESS CHARGES",
+      "total": 151697331168.0,
+      "total_formatted": "\u20a6151.70B",
+      "item_count": 1771
+    },
+    {
+      "mda": "KWACHIRI",
+      "total": 150391249701.0,
+      "total_formatted": "\u20a6150.39B",
+      "item_count": 4
+    },
+    {
+      "mda": "PROCUREMENT OF LEARNING/TEACHING EQUIPMENT NEW",
+      "total": 150368490605.0,
+      "total_formatted": "\u20a6150.37B",
+      "item_count": 25
+    },
+    {
+      "mda": "PURCHASE OF SECURITY EQUIPMENT",
+      "total": 144154675284.0,
+      "total_formatted": "\u20a6144.15B",
+      "item_count": 92
+    },
+    {
+      "mda": "NATIONAL BOARD FOR ARABIC AND ISLAMIC STUDIES",
+      "total": 135742798635.0,
+      "total_formatted": "\u20a6135.74B",
+      "item_count": 306
+    },
+    {
+      "mda": "PURCHASE OF HEALTH / MEDICAL EQUIPMENT",
+      "total": 124652591861.0,
+      "total_formatted": "\u20a6124.65B",
+      "item_count": 294
+    },
+    {
+      "mda": "INTERNATIONAL TRAVEL & TRANSPORT",
+      "total": 123367227503.0,
+      "total_formatted": "\u20a6123.37B",
+      "item_count": 1284
+    },
+    {
+      "mda": "PURCHASE OF TEACHING / LEARNING AID EQUIPMENT",
+      "total": 107708725070.0,
+      "total_formatted": "\u20a6107.71B",
+      "item_count": 194
+    },
+    {
+      "mda": "TEACHING AIDS / INSTRUCTION MATERIALS",
+      "total": 105489164839.0,
+      "total_formatted": "\u20a6105.49B",
+      "item_count": 265
+    },
+    {
+      "mda": "UNIFORMS & OTHER CLOTHING",
+      "total": 105221620723.0,
+      "total_formatted": "\u20a6105.22B",
+      "item_count": 444
+    },
+    {
+      "mda": "NATIONAL POWER TRAINING INSTITUTE\nCODE LINE ITEM AM",
+      "total": 101386282574.0,
+      "total_formatted": "\u20a6101.39B",
+      "item_count": 538
+    },
+    {
+      "mda": "PRINTING OF SECURITY DOCUMENTS",
+      "total": 88339742164.0,
+      "total_formatted": "\u20a688.34B",
+      "item_count": 1210
+    },
+    {
+      "mda": "FEDERAL CO-OPERATIVE COLLEGE- KADUNA\nCODE LINE ITEM",
+      "total": 86738878081.0,
+      "total_formatted": "\u20a686.74B",
+      "item_count": 180
+    },
+    {
+      "mda": "SUPPLY AND INSTALLATION OF SOLAR POWERED STREET LIG",
+      "total": 86192932640.0,
+      "total_formatted": "\u20a686.19B",
+      "item_count": 14
+    },
+    {
+      "mda": "SETTLEMENT OF IGR CONCESSIONS ONGOING",
+      "total": 84631467917.0,
+      "total_formatted": "\u20a684.63B",
+      "item_count": 4
+    },
+    {
+      "mda": "NEWSPAPERS",
+      "total": 80765551041.0,
+      "total_formatted": "\u20a680.77B",
+      "item_count": 1484
+    },
+    {
+      "mda": "COOKING GAS/FUEL COST",
+      "total": 80427701230.0,
+      "total_formatted": "\u20a680.43B",
+      "item_count": 1226
+    },
+    {
+      "mda": "MAGAZINES & PERIODICALS",
+      "total": 77625361730.0,
+      "total_formatted": "\u20a677.63B",
+      "item_count": 1099
+    },
+    {
+      "mda": "TELEPHONE CHARGES",
+      "total": 73018202250.0,
+      "total_formatted": "\u20a673.02B",
+      "item_count": 1651
+    },
+    {
+      "mda": "LOSS ON FOREIGN EXCHANGE",
+      "total": 67564161531.0,
+      "total_formatted": "\u20a667.56B",
+      "item_count": 69
+    },
+    {
+      "mda": "LOCAL GRANTS AND CONTRIBUTIONS",
+      "total": 67509585337.0,
+      "total_formatted": "\u20a667.51B",
+      "item_count": 187
+    },
+    {
+      "mda": "ENGINEERING SERVICES",
+      "total": 66738222853.0,
+      "total_formatted": "\u20a666.74B",
+      "item_count": 158
+    },
+    {
+      "mda": "NIGERIA INSTITUTE OF LEATHER AND SCIENCE TECHNOLOGY",
+      "total": 63907721804.0,
+      "total_formatted": "\u20a663.91B",
+      "item_count": 146
+    },
+    {
+      "mda": "COMPUTER SOFTWARE ACQUISITION",
+      "total": 63108167751.0,
+      "total_formatted": "\u20a663.11B",
+      "item_count": 145
+    },
+    {
+      "mda": "UPGRADING OF POWER FACILITIES NEW",
+      "total": 60895185380.0,
+      "total_formatted": "\u20a660.90B",
+      "item_count": 48
+    },
+    {
+      "mda": "PURCHASE OF AGRICULTURAL EQUIPMENT",
+      "total": 60733448435.0,
+      "total_formatted": "\u20a660.73B",
+      "item_count": 66
+    },
+    {
+      "mda": "EROSION & FLOOD CONTROL",
+      "total": 60637762306.0,
+      "total_formatted": "\u20a660.64B",
+      "item_count": 10
+    },
+    {
+      "mda": "PURCHASE OF POWER GENERATING SET",
+      "total": 59640925568.0,
+      "total_formatted": "\u20a659.64B",
+      "item_count": 168
+    },
+    {
+      "mda": "SURVEYING SERVICES",
+      "total": 56276283675.0,
+      "total_formatted": "\u20a656.28B",
+      "item_count": 112
+    },
+    {
+      "mda": "PURCHASE OF PHOTOCOPYING MACHINES",
+      "total": 55153924900.0,
+      "total_formatted": "\u20a655.15B",
+      "item_count": 97
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF HOSPITALS / HEALTH CENT",
+      "total": 54891410804.0,
+      "total_formatted": "\u20a654.89B",
+      "item_count": 62
+    },
+    {
+      "mda": "MAINTENANCE OF ROADS AND BRIDGES",
+      "total": 52831337636.0,
+      "total_formatted": "\u20a652.83B",
+      "item_count": 1133
+    },
+    {
+      "mda": "DRUGS & MEDICAL SUPPLIES",
+      "total": 51362632197.0,
+      "total_formatted": "\u20a651.36B",
+      "item_count": 1037
+    },
+    {
+      "mda": "DEFENCE INDUSTRIES CORPORATION OF NIGERIA",
+      "total": 48229205568.0,
+      "total_formatted": "\u20a648.23B",
+      "item_count": 427
+    },
+    {
+      "mda": "CONSTRUCTION OF",
+      "total": 45766901261.0,
+      "total_formatted": "\u20a645.77B",
+      "item_count": 149
+    },
+    {
+      "mda": "AND MEDICATED GLASSES FOR CONSTITUENTS OF ETSAKO WE",
+      "total": 45127092996.0,
+      "total_formatted": "\u20a645.13B",
+      "item_count": 35
+    },
+    {
+      "mda": "NATIONAL ANIMAL PRODUCT RESEARCH INSTITUTE- ZARIA\nC",
+      "total": 44583500580.0,
+      "total_formatted": "\u20a644.58B",
+      "item_count": 166
+    },
+    {
+      "mda": "FREE MEDICAL AND SURGICAL OUTREACH IN ANAMBRA STATE",
+      "total": 43369173837.0,
+      "total_formatted": "\u20a643.37B",
+      "item_count": 87
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS OF OFFICE BUILDINGS",
+      "total": 42216994890.0,
+      "total_formatted": "\u20a642.22B",
+      "item_count": 236
+    },
+    {
+      "mda": "FGN PUBLIC AWARENESS PROJECT /PROGRAMME NEW",
+      "total": 39628191620.0,
+      "total_formatted": "\u20a639.63B",
+      "item_count": 36
+    },
+    {
+      "mda": "AND FOR MATERNAL AND CHILDREN DISEASES IN ONITSHA",
+      "total": 38424833277.0,
+      "total_formatted": "\u20a638.42B",
+      "item_count": 30
+    },
+    {
+      "mda": "MEDICAL CONSULTING",
+      "total": 38238196610.0,
+      "total_formatted": "\u20a638.24B",
+      "item_count": 698
+    },
+    {
+      "mda": "CROSS RIVER RBDA\nCODE LINE ITEM AMOUNT",
+      "total": 37980089790.0,
+      "total_formatted": "\u20a637.98B",
+      "item_count": 213
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS - ROADS",
+      "total": 35016712686.0,
+      "total_formatted": "\u20a635.02B",
+      "item_count": 84
+    },
+    {
+      "mda": "ESAN CENTRAL & IGUEBEN CONST EDO STATE",
+      "total": 33286388465.0,
+      "total_formatted": "\u20a633.29B",
+      "item_count": 72
+    },
+    {
+      "mda": "SUSTANANCE OF DILAPIDATED BROADCAST EQUIPMENT NEW",
+      "total": 29770377597.0,
+      "total_formatted": "\u20a629.77B",
+      "item_count": 87
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS OF RESIDENTIAL BUILDING",
+      "total": 29319543194.0,
+      "total_formatted": "\u20a629.32B",
+      "item_count": 286
+    },
+    {
+      "mda": "NIGCOMSAT INTEGRATION OF DIGITAL STRUCTURE ONGOING",
+      "total": 28413227717.0,
+      "total_formatted": "\u20a628.41B",
+      "item_count": 5
+    },
+    {
+      "mda": "AND SOLAR POWERED BOREHOLE FOR RURAL COMMUNITEIS OF",
+      "total": 28232797905.0,
+      "total_formatted": "\u20a628.23B",
+      "item_count": 60
+    },
+    {
+      "mda": "PROVISION OF ELECTRONIC MEDICAL LIBRARY ONGOING",
+      "total": 27328471974.0,
+      "total_formatted": "\u20a627.33B",
+      "item_count": 27
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS - AGRICICULTURAL FACILITIE",
+      "total": 26000821876.0,
+      "total_formatted": "\u20a626.00B",
+      "item_count": 70
+    },
+    {
+      "mda": "RENOVATION OF COMPREHENSIVE HEALTH CENTRE - ZAMKO O",
+      "total": 25123866579.0,
+      "total_formatted": "\u20a625.12B",
+      "item_count": 11
+    },
+    {
+      "mda": "NIGERIAN COPYRIGHT COMMISSION\nCODE LINE ITEM AMOUNT",
+      "total": 24754551983.0,
+      "total_formatted": "\u20a624.75B",
+      "item_count": 356
+    },
+    {
+      "mda": "VEHICLES AND MOTORCYCLES NEW\nERGP",
+      "total": 24643231741.0,
+      "total_formatted": "\u20a624.64B",
+      "item_count": 125
+    },
+    {
+      "mda": "BUREAU OF PUBLIC PROCUREMENT",
+      "total": 24428559983.0,
+      "total_formatted": "\u20a624.43B",
+      "item_count": 523
+    },
+    {
+      "mda": "PURCHASE OF SPORTING / GAMING EQUIPMENT",
+      "total": 24259706528.0,
+      "total_formatted": "\u20a624.26B",
+      "item_count": 16
+    },
+    {
+      "mda": "MONITORING AND EVALUATION",
+      "total": 23903770231.0,
+      "total_formatted": "\u20a623.90B",
+      "item_count": 107
+    },
+    {
+      "mda": "STAKEHOLDERS ENGAGEMENT FOR ARTISANAL AND MARINE NE",
+      "total": 22910630876.0,
+      "total_formatted": "\u20a622.91B",
+      "item_count": 10
+    },
+    {
+      "mda": "PROJECT MONITORING AND EVALUATION ONGOING",
+      "total": 22442040185.0,
+      "total_formatted": "\u20a622.44B",
+      "item_count": 6
+    },
+    {
+      "mda": "FIELD & CAMPING MATERIALS SUPPLIES",
+      "total": 22253359483.0,
+      "total_formatted": "\u20a622.25B",
+      "item_count": 207
+    },
+    {
+      "mda": "CONSTRUCTION",
+      "total": 22168363761.0,
+      "total_formatted": "\u20a622.17B",
+      "item_count": 107
+    },
+    {
+      "mda": "REHABILITATION OF ELECTRICAL SUPPLY AND DISTRIBUTIO",
+      "total": 22113080602.0,
+      "total_formatted": "\u20a622.11B",
+      "item_count": 29
+    },
+    {
+      "mda": "CONSTRUCTION AND FURNISHING OF",
+      "total": 20799795573.0,
+      "total_formatted": "\u20a620.80B",
+      "item_count": 111
+    },
+    {
+      "mda": "PURCHASE OF INDUSTRIAL EQUIPMENT",
+      "total": 19428521092.0,
+      "total_formatted": "\u20a619.43B",
+      "item_count": 88
+    },
+    {
+      "mda": "OTHER CRF BANK CHARGES",
+      "total": 18874451277.0,
+      "total_formatted": "\u20a618.87B",
+      "item_count": 188
+    },
+    {
+      "mda": "SECURITY SERVICES",
+      "total": 17321552509.0,
+      "total_formatted": "\u20a617.32B",
+      "item_count": 116
+    },
+    {
+      "mda": "CONSTRUCTION OF CLASSROOM",
+      "total": 16548964095.0,
+      "total_formatted": "\u20a616.55B",
+      "item_count": 111
+    },
+    {
+      "mda": "UPGRADE OF LABORATORIES NEW",
+      "total": 16251203799.0,
+      "total_formatted": "\u20a616.25B",
+      "item_count": 5
+    },
+    {
+      "mda": "ART CENTRE IN RAFFIA ART AND CRAFT CULTURAL EXPORT",
+      "total": 16122435456.0,
+      "total_formatted": "\u20a616.12B",
+      "item_count": 100
+    },
+    {
+      "mda": "GRANTS IN SOME SELECTED VILLAGES IN DAMBATTA/MAKODA",
+      "total": 16104901374.0,
+      "total_formatted": "\u20a616.10B",
+      "item_count": 105
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "total": 15675604385.0,
+      "total_formatted": "\u20a615.68B",
+      "item_count": 266
+    },
+    {
+      "mda": "AUTOMATED HAND WASHERS",
+      "total": 15199561032.0,
+      "total_formatted": "\u20a615.20B",
+      "item_count": 81
+    },
+    {
+      "mda": "GRANT TO FOREIGN INTERNATIONAL ORGANIZATIONS",
+      "total": 14711534680.0,
+      "total_formatted": "\u20a614.71B",
+      "item_count": 20
+    },
+    {
+      "mda": "NIGERIAN INVESTMENT PROMOTION COUNCIL HQTRS\nCODE LI",
+      "total": 14671754090.0,
+      "total_formatted": "\u20a614.67B",
+      "item_count": 237
+    },
+    {
+      "mda": "CONSTRUCTION OF TOWN HALL IN ODEDE LGA OGUN STATE N",
+      "total": 14395271187.0,
+      "total_formatted": "\u20a614.40B",
+      "item_count": 12
+    },
+    {
+      "mda": "HQTRS\nCODE LINE ITEM AMOUNT",
+      "total": 13596854962.0,
+      "total_formatted": "\u20a613.60B",
+      "item_count": 54
+    },
+    {
+      "mda": "PROVISION OF START UP GRANTS FOR EMERGING NEW",
+      "total": 13523961309.0,
+      "total_formatted": "\u20a613.52B",
+      "item_count": 17
+    },
+    {
+      "mda": "GRANT TO PRIVATE COMPANIES - CURRENT",
+      "total": 13502184924.0,
+      "total_formatted": "\u20a613.50B",
+      "item_count": 29
+    },
+    {
+      "mda": "COMPLECTION OF ADMINSITRATIVE BLOCK NEW",
+      "total": 13373458292.0,
+      "total_formatted": "\u20a613.37B",
+      "item_count": 70
+    },
+    {
+      "mda": "PROCUREMENT OF MEDICAL EQUIPMENTS ONGOING",
+      "total": 12999393258.0,
+      "total_formatted": "\u20a613.00B",
+      "item_count": 29
+    },
+    {
+      "mda": "PROCURE OF",
+      "total": 12941224438.0,
+      "total_formatted": "\u20a612.94B",
+      "item_count": 37
+    },
+    {
+      "mda": "MAINTENANCE OF SEA BOATS",
+      "total": 12887164195.0,
+      "total_formatted": "\u20a612.89B",
+      "item_count": 101
+    },
+    {
+      "mda": "WUCICI",
+      "total": 12843597345.0,
+      "total_formatted": "\u20a612.84B",
+      "item_count": 3
+    },
+    {
+      "mda": "CONSTRUCTION OF OFFICE COMPLEX ONGOING",
+      "total": 12510938816.0,
+      "total_formatted": "\u20a612.51B",
+      "item_count": 79
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF FIRE FIGHTING STATIONS",
+      "total": 12479010000.0,
+      "total_formatted": "\u20a612.48B",
+      "item_count": 21
+    },
+    {
+      "mda": "PROJECT IN BAGWAI LOCAL GOVERNMENT AREA",
+      "total": 11962215186.0,
+      "total_formatted": "\u20a611.96B",
+      "item_count": 60
+    },
+    {
+      "mda": "CONSTRUCTION AND FURNISHING OF PHARMACEUTICAL DEPAR",
+      "total": 11844389733.0,
+      "total_formatted": "\u20a611.84B",
+      "item_count": 12
+    },
+    {
+      "mda": "CONSTRUCTION OF LECTURE THEATER NEW",
+      "total": 11802009956.0,
+      "total_formatted": "\u20a611.80B",
+      "item_count": 27
+    },
+    {
+      "mda": "FEDERAL COLLEGE OF WILDLIFE MANAGEMENT - NEW BUSSA",
+      "total": 11794536476.0,
+      "total_formatted": "\u20a611.79B",
+      "item_count": 334
+    },
+    {
+      "mda": "TECHNOLOGIES FOR EMPOWERMENT IN ALOR TOWN SOUTH LGA",
+      "total": 11401594009.0,
+      "total_formatted": "\u20a611.40B",
+      "item_count": 30
+    },
+    {
+      "mda": "EDE NORTH",
+      "total": 11237057625.0,
+      "total_formatted": "\u20a611.24B",
+      "item_count": 15
+    },
+    {
+      "mda": "RENOVATION OF STUDENT HOSTELS ONGOING",
+      "total": 10935127794.0,
+      "total_formatted": "\u20a610.94B",
+      "item_count": 2
+    },
+    {
+      "mda": "FEDERAL COLLEGE OF ANIMAL HEALTH AND PRODUCTION TEC",
+      "total": 10792358983.0,
+      "total_formatted": "\u20a610.79B",
+      "item_count": 105
+    },
+    {
+      "mda": "PURCHASE OF AIR NAVIGATIONAL EQUIPMENT",
+      "total": 10782657213.0,
+      "total_formatted": "\u20a610.78B",
+      "item_count": 11
+    },
+    {
+      "mda": "MEAL SUBSIDY TO GOVERNMENT SCHOOLS",
+      "total": 10395234211.0,
+      "total_formatted": "\u20a610.40B",
+      "item_count": 202
+    },
+    {
+      "mda": "IBADAN\nCODE LINE ITEM AMOUNT",
+      "total": 10296971524.0,
+      "total_formatted": "\u20a610.30B",
+      "item_count": 114
+    },
+    {
+      "mda": "GRANT TO STATE GOVERNMENTS - CURRENT",
+      "total": 10100000000.0,
+      "total_formatted": "\u20a610.10B",
+      "item_count": 16
+    },
+    {
+      "mda": "NIGERIA INTEGRATED WATER MANAGEMENT COMMISSION\nCODE",
+      "total": 10074384500.0,
+      "total_formatted": "\u20a610.07B",
+      "item_count": 276
+    },
+    {
+      "mda": "MULTIPURPOSE PHARMACY BUILDING AT UNTH ONGOING",
+      "total": 9949709417.0,
+      "total_formatted": "\u20a69.95B",
+      "item_count": 9
+    },
+    {
+      "mda": "NEWS CAMERA",
+      "total": 9918459199.0,
+      "total_formatted": "\u20a69.92B",
+      "item_count": 26
+    },
+    {
+      "mda": "PURCHASE OFCANTEEN / KITCHEN EQUIPMENT",
+      "total": 9759332441.0,
+      "total_formatted": "\u20a69.76B",
+      "item_count": 78
+    },
+    {
+      "mda": "CONSULTANCY",
+      "total": 9749060271.0,
+      "total_formatted": "\u20a69.75B",
+      "item_count": 17
+    },
+    {
+      "mda": "FOOD STUFF / CATERING MATERIALS SUPPLIES",
+      "total": 9395678537.0,
+      "total_formatted": "\u20a69.40B",
+      "item_count": 585
+    },
+    {
+      "mda": "CONSTRUCTION OF SCIENCE LABORATORY AND SUPPLY OF EQ",
+      "total": 9246386284.0,
+      "total_formatted": "\u20a69.25B",
+      "item_count": 56
+    },
+    {
+      "mda": "SUPPLY OF MOTORCYCLES",
+      "total": 9182158579.0,
+      "total_formatted": "\u20a69.18B",
+      "item_count": 13
+    },
+    {
+      "mda": "MAINTENANCE OF STREET LIGHTS",
+      "total": 9142634131.0,
+      "total_formatted": "\u20a69.14B",
+      "item_count": 252
+    },
+    {
+      "mda": "MASS LITERACY COUNCIL\nCODE LINE ITEM AMOUNT",
+      "total": 9058854741.0,
+      "total_formatted": "\u20a69.06B",
+      "item_count": 178
+    },
+    {
+      "mda": "MEDICAL LABORATORY TECHNOLOGY",
+      "total": 8958436521.0,
+      "total_formatted": "\u20a68.96B",
+      "item_count": 81
+    },
+    {
+      "mda": "CONSTRUCTION OF SPORTING FACILITIES AT FUG NEW",
+      "total": 8918996901.0,
+      "total_formatted": "\u20a68.92B",
+      "item_count": 93
+    },
+    {
+      "mda": "PROCUREMENT OF FURNITURE & FITTINGS FOR ADMIN",
+      "total": 8836367839.0,
+      "total_formatted": "\u20a68.84B",
+      "item_count": 63
+    },
+    {
+      "mda": "COMMUNITY HEALTH PRACTITONERS REGISTRATION BOARD\nCO",
+      "total": 8754345760.0,
+      "total_formatted": "\u20a68.75B",
+      "item_count": 297
+    },
+    {
+      "mda": "REMODELLING AND RENOVATION OF NBTE LIASON OFFICE",
+      "total": 8678756313.0,
+      "total_formatted": "\u20a68.68B",
+      "item_count": 24
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF RECREATIONAL FACILITIES",
+      "total": 8495324460.0,
+      "total_formatted": "\u20a68.50B",
+      "item_count": 41
+    },
+    {
+      "mda": "FOREIGN SERVICE",
+      "total": 7851160941.0,
+      "total_formatted": "\u20a67.85B",
+      "item_count": 315
+    },
+    {
+      "mda": "PROCUREMENT OF FURNITURE FOR STUDENTS CENTRE BUILDI",
+      "total": 7603849383.0,
+      "total_formatted": "\u20a67.60B",
+      "item_count": 51
+    },
+    {
+      "mda": "PURCHASE OF FIRE FIGHTING EQUIPMENT NEW",
+      "total": 7544504088.0,
+      "total_formatted": "\u20a67.54B",
+      "item_count": 1
+    },
+    {
+      "mda": "CONSTRUCTION OF BOULDERS ROUN",
+      "total": 7152299108.0,
+      "total_formatted": "\u20a67.15B",
+      "item_count": 96
+    },
+    {
+      "mda": "CONSTRUCTION OF RADIOTHERAPY CENTRE ONGOING",
+      "total": 7080034514.0,
+      "total_formatted": "\u20a67.08B",
+      "item_count": 30
+    },
+    {
+      "mda": "DEVELOPMENT OF FOOD COURT/PATIENTS RELAXATION GUEST",
+      "total": 6934776763.0,
+      "total_formatted": "\u20a66.93B",
+      "item_count": 7
+    },
+    {
+      "mda": "PROVISION OF FERTILIZERS TO FARMERS IN NDS NBULO",
+      "total": 6721328435.0,
+      "total_formatted": "\u20a66.72B",
+      "item_count": 84
+    },
+    {
+      "mda": "SECURITY VOTE",
+      "total": 6554926920.0,
+      "total_formatted": "\u20a66.55B",
+      "item_count": 62
+    },
+    {
+      "mda": "UPGRADING AND PROVISION OF ELECTRICITY AT UNIVERSIT",
+      "total": 6494952831.0,
+      "total_formatted": "\u20a66.49B",
+      "item_count": 14
+    },
+    {
+      "mda": "MOTOR VEHICLE ADVANCES",
+      "total": 6478274783.0,
+      "total_formatted": "\u20a66.48B",
+      "item_count": 52
+    },
+    {
+      "mda": "PROVISION OF IRRIGATION FACILITIES ONGOING",
+      "total": 6478043842.0,
+      "total_formatted": "\u20a66.48B",
+      "item_count": 7
+    },
+    {
+      "mda": "SATELLITE BROADCASTING ACCESS CHARGES",
+      "total": 5701329059.0,
+      "total_formatted": "\u20a65.70B",
+      "item_count": 427
+    },
+    {
+      "mda": "PROVISION OF ELECTRONIC MEDICAL LIBRARY NEW",
+      "total": 5611797744.0,
+      "total_formatted": "\u20a65.61B",
+      "item_count": 3
+    },
+    {
+      "mda": "CONSTRUCTION OF SOLAR POWER ONGOING",
+      "total": 5598565547.0,
+      "total_formatted": "\u20a65.60B",
+      "item_count": 106
+    },
+    {
+      "mda": "RENOVATION OF EMERGENCY BLOCK NEW",
+      "total": 5551980140.0,
+      "total_formatted": "\u20a65.55B",
+      "item_count": 106
+    },
+    {
+      "mda": "LAND USE CHARGES",
+      "total": 5528487237.0,
+      "total_formatted": "\u20a65.53B",
+      "item_count": 108
+    },
+    {
+      "mda": "CONSTRUCTION OF NDA INDOOR SPORTS PAVILLION NEW",
+      "total": 5417710607.0,
+      "total_formatted": "\u20a65.42B",
+      "item_count": 26
+    },
+    {
+      "mda": "PURCHASE OF LIBRARY BOOKS & EQUIPMENT",
+      "total": 5326838595.0,
+      "total_formatted": "\u20a65.33B",
+      "item_count": 40
+    },
+    {
+      "mda": "COMMUNITIES IN OHAJI/ EGBEMA/OGUTA/ ORU WEST FEDERA",
+      "total": 5293475006.0,
+      "total_formatted": "\u20a65.29B",
+      "item_count": 21
+    },
+    {
+      "mda": "PROCUREMENT OF SON LABORATORY TESTING EQUIPMENT ONG",
+      "total": 5083980022.0,
+      "total_formatted": "\u20a65.08B",
+      "item_count": 7
+    },
+    {
+      "mda": "BUDGET PREPARATION",
+      "total": 5039116148.0,
+      "total_formatted": "\u20a65.04B",
+      "item_count": 225
+    },
+    {
+      "mda": "PIPPING TO TWO THEATRE SUITES",
+      "total": 4968321247.0,
+      "total_formatted": "\u20a64.97B",
+      "item_count": 17
+    },
+    {
+      "mda": "RENOVATION OF VETRINARY CLINIC IN GASHUA",
+      "total": 4944048840.0,
+      "total_formatted": "\u20a64.94B",
+      "item_count": 15
+    },
+    {
+      "mda": "SUPPLY OF BOOKS AND OTHER SCHOOL MATERIALS TO",
+      "total": 4841701675.0,
+      "total_formatted": "\u20a64.84B",
+      "item_count": 5
+    },
+    {
+      "mda": "PURCHASE OF UTILITY VEHICLES ONGOING",
+      "total": 4667536386.0,
+      "total_formatted": "\u20a64.67B",
+      "item_count": 15
+    },
+    {
+      "mda": "OGEANI",
+      "total": 4652909293.0,
+      "total_formatted": "\u20a64.65B",
+      "item_count": 22
+    },
+    {
+      "mda": "CONSTRUCTION AND EQUIPPING OF TRAUMA CENTRE",
+      "total": 4574639252.0,
+      "total_formatted": "\u20a64.57B",
+      "item_count": 19
+    },
+    {
+      "mda": "PURCHASE OF TRUCKS",
+      "total": 4553466335.0,
+      "total_formatted": "\u20a64.55B",
+      "item_count": 27
+    },
+    {
+      "mda": "CONDITIONAL GRANTS SOCIAL SAFETY NETS",
+      "total": 4538832859.0,
+      "total_formatted": "\u20a64.54B",
+      "item_count": 20
+    },
+    {
+      "mda": "LAGOS INTERNATIONAL TRADE FAIR COMPLEX MANAGEMENT B",
+      "total": 4538189800.0,
+      "total_formatted": "\u20a64.54B",
+      "item_count": 266
+    },
+    {
+      "mda": "PROCUREMENT OF COLLEGE UTILITY VEHICLES AND SCHOOL",
+      "total": 4456624110.0,
+      "total_formatted": "\u20a64.46B",
+      "item_count": 84
+    },
+    {
+      "mda": "PROVISION OF LAPTOPS FOR HAK SELECTED BENEFICIARIES",
+      "total": 4402988091.0,
+      "total_formatted": "\u20a64.40B",
+      "item_count": 3
+    },
+    {
+      "mda": "SADAUNA LGA IN GASHAKA /KURMI AND SADAUNA FEDERAL N",
+      "total": 4399311844.0,
+      "total_formatted": "\u20a64.40B",
+      "item_count": 124
+    },
+    {
+      "mda": "EXTENSION OF IRRIGATION CHANNELS FOR DRY SEASON FAR",
+      "total": 4292699462.0,
+      "total_formatted": "\u20a64.29B",
+      "item_count": 15
+    },
+    {
+      "mda": "INSTITUTE OF CHILD HEALTH",
+      "total": 4196050952.0,
+      "total_formatted": "\u20a64.20B",
+      "item_count": 313
+    },
+    {
+      "mda": "SUMAILA TOWN",
+      "total": 4151798890.0,
+      "total_formatted": "\u20a64.15B",
+      "item_count": 11
+    },
+    {
+      "mda": "FEDERAL COLLEGE OF FRESH WATER FISHERIES - BAGA\nCOD",
+      "total": 4083489111.0,
+      "total_formatted": "\u20a64.08B",
+      "item_count": 111
+    },
+    {
+      "mda": "WITH ACCESSORIES TO KAURU FEDERAL CONSTITUENCY",
+      "total": 4060309616.0,
+      "total_formatted": "\u20a64.06B",
+      "item_count": 30
+    },
+    {
+      "mda": "CONSTRUCTION OF LIBRARY BULDING PHASE I NEW",
+      "total": 4024836409.0,
+      "total_formatted": "\u20a64.02B",
+      "item_count": 104
+    },
+    {
+      "mda": "UPGRADE OF SAFE TOWER",
+      "total": 4009882311.0,
+      "total_formatted": "\u20a64.01B",
+      "item_count": 20
+    },
+    {
+      "mda": "MONITORING AND EVALUATION OF CAPITAL PROJECTS NATIO",
+      "total": 3998794840.0,
+      "total_formatted": "\u20a64.00B",
+      "item_count": 26
+    },
+    {
+      "mda": "REGISTERS",
+      "total": 3995241500.0,
+      "total_formatted": "\u20a64.00B",
+      "item_count": 18
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF POLICE STATIONS / BARRA",
+      "total": 3820851061.0,
+      "total_formatted": "\u20a63.82B",
+      "item_count": 11
+    },
+    {
+      "mda": "DEVELOPMENT OF HIGH YIELDING HEAT TOLERANT AND GOOD",
+      "total": 3767233334.0,
+      "total_formatted": "\u20a63.77B",
+      "item_count": 4
+    },
+    {
+      "mda": "SCHOOL IN UGHELLI NORTH/ UGHELLI SOUTH/UDU FEDERAL",
+      "total": 3731793314.0,
+      "total_formatted": "\u20a63.73B",
+      "item_count": 4
+    },
+    {
+      "mda": "PROCUREMENT OF THEATRE AND WARD CONSUMABLES ONGOING",
+      "total": 3693669033.0,
+      "total_formatted": "\u20a63.69B",
+      "item_count": 7
+    },
+    {
+      "mda": "CONSTRUCTION OF CULVERTS ACROSS YOBE NORTH SENATORI",
+      "total": 3594808980.0,
+      "total_formatted": "\u20a63.59B",
+      "item_count": 16
+    },
+    {
+      "mda": "PROVISION OF SOLAR STREET LIGHTS IN GINDIRI TOWN NE",
+      "total": 3505340949.0,
+      "total_formatted": "\u20a63.51B",
+      "item_count": 57
+    },
+    {
+      "mda": "CONSTRUCTION OF TRAUMA CENTRE ONGOING",
+      "total": 3490594712.0,
+      "total_formatted": "\u20a63.49B",
+      "item_count": 12
+    },
+    {
+      "mda": "NATIONAL FILM AND VEDIO CENSOR BOARD\nCODE LINE ITEM",
+      "total": 3274578967.0,
+      "total_formatted": "\u20a63.27B",
+      "item_count": 99
+    },
+    {
+      "mda": "BAIL LGA IN TARABA CENTRAL SENATORIAL DISTRICT",
+      "total": 3224358785.0,
+      "total_formatted": "\u20a63.22B",
+      "item_count": 24
+    },
+    {
+      "mda": "CAPACITY DEVELOPMENT OF SELECTED DIGITAL NEW",
+      "total": 3217275586.0,
+      "total_formatted": "\u20a63.22B",
+      "item_count": 22
+    },
+    {
+      "mda": "NATIONAL WAR MUSEUMM -UMUAHIA\nCODE LINE ITEM AMOUNT",
+      "total": 3209171736.0,
+      "total_formatted": "\u20a63.21B",
+      "item_count": 199
+    },
+    {
+      "mda": "FEDERAL COLLEGE OF ANIMAL HEALTH AND PRODUCTION\nTEC",
+      "total": 3205091299.0,
+      "total_formatted": "\u20a63.21B",
+      "item_count": 19
+    },
+    {
+      "mda": "CONSTRUCTION OF LABORATORIES NEW",
+      "total": 3163363660.0,
+      "total_formatted": "\u20a63.16B",
+      "item_count": 13
+    },
+    {
+      "mda": "ACCOUNTING SOFTWARE FOR TANGIBLE ASSETS MANAGEMENT",
+      "total": 3100506969.0,
+      "total_formatted": "\u20a63.10B",
+      "item_count": 9
+    },
+    {
+      "mda": "CONSTRUCTION OF A MODERN COMMUNITY HALL IN IBADAN N",
+      "total": 3086207332.0,
+      "total_formatted": "\u20a63.09B",
+      "item_count": 16
+    },
+    {
+      "mda": "ACQUISITION ACROSS KONTAGORA",
+      "total": 3072552408.0,
+      "total_formatted": "\u20a63.07B",
+      "item_count": 49
+    },
+    {
+      "mda": "UMUIZUO ROAD UMOUKRIKA IN IMO STATE",
+      "total": 3053038900.0,
+      "total_formatted": "\u20a63.05B",
+      "item_count": 1
+    },
+    {
+      "mda": "SUPPLY OF N",
+      "total": 3027350408.0,
+      "total_formatted": "\u20a63.03B",
+      "item_count": 6
+    },
+    {
+      "mda": "DESIGN/CONSTRUCTION OF MAKURDI RIVER PORT FACILITIE",
+      "total": 3007328545.0,
+      "total_formatted": "\u20a63.01B",
+      "item_count": 21
+    },
+    {
+      "mda": "EFFECTS OF DRUG ABUSE IN AGUATA FEDERAL CONSTITUENC",
+      "total": 3003512419.0,
+      "total_formatted": "\u20a63.00B",
+      "item_count": 95
+    },
+    {
+      "mda": "CAPACITY BUILDING FOR TOURISM DEVELOPMENT IN THE ON",
+      "total": 2951110914.0,
+      "total_formatted": "\u20a62.95B",
+      "item_count": 4
+    },
+    {
+      "mda": "EAST/ATUKUNMOSA WEST/ILESHA EAST/ILESHA WEST FEDERA",
+      "total": 2948863551.0,
+      "total_formatted": "\u20a62.95B",
+      "item_count": 57
+    },
+    {
+      "mda": "CHROMITE EXPLORATION ONGOING",
+      "total": 2904938720.0,
+      "total_formatted": "\u20a62.90B",
+      "item_count": 136
+    },
+    {
+      "mda": "BUILDING AND EQUIPING OF MUSEUM IN OKA ONGOING",
+      "total": 2787037334.0,
+      "total_formatted": "\u20a62.79B",
+      "item_count": 16
+    },
+    {
+      "mda": "SKILLS",
+      "total": 2746309312.0,
+      "total_formatted": "\u20a62.75B",
+      "item_count": 34
+    },
+    {
+      "mda": "NIGERIA MINING CADASTRE OFFICE & CENTRES\nCODE LINE",
+      "total": 2734566149.0,
+      "total_formatted": "\u20a62.73B",
+      "item_count": 204
+    },
+    {
+      "mda": "THE NEW SENIOR SECONDARY EDUCATION CURRICULUM IN NE",
+      "total": 2633162296.0,
+      "total_formatted": "\u20a62.63B",
+      "item_count": 20
+    },
+    {
+      "mda": "PERIMETER FENCING AND CONSTRUCTION OF QUARTERS AND",
+      "total": 2585965643.0,
+      "total_formatted": "\u20a62.59B",
+      "item_count": 22
+    },
+    {
+      "mda": "MAINTENANCE OF COMMUNICATION EQUIPMENT",
+      "total": 2583048240.0,
+      "total_formatted": "\u20a62.58B",
+      "item_count": 183
+    },
+    {
+      "mda": "RENOVATION OF MATERNITY WARD AT GENERAL HOSPITAL DI",
+      "total": 2578165040.0,
+      "total_formatted": "\u20a62.58B",
+      "item_count": 4
+    },
+    {
+      "mda": "MODERN FARMING TECHNOLOGY IN ABADAM/ GUZAMALA",
+      "total": 2568906902.0,
+      "total_formatted": "\u20a62.57B",
+      "item_count": 63
+    },
+    {
+      "mda": "SUPPLY AND EQUIPPING OF HEALTH CENTRE IN OHURU NEW",
+      "total": 2567381035.0,
+      "total_formatted": "\u20a62.57B",
+      "item_count": 3
+    },
+    {
+      "mda": "PURCHASE OF CHANCERY NEW",
+      "total": 2538901352.0,
+      "total_formatted": "\u20a62.54B",
+      "item_count": 37
+    },
+    {
+      "mda": "SOLAR POWERED BOREHOLES AT ISUKWUATO/UMUNNEOCHI FED",
+      "total": 2531966316.0,
+      "total_formatted": "\u20a62.53B",
+      "item_count": 37
+    },
+    {
+      "mda": "NURSE TUTOR TRAINNING KADUNA\nCODE LINE ITEM AMOUNT",
+      "total": 2528679031.0,
+      "total_formatted": "\u20a62.53B",
+      "item_count": 194
+    },
+    {
+      "mda": "SCHOOL",
+      "total": 2517058463.0,
+      "total_formatted": "\u20a62.52B",
+      "item_count": 65
+    },
+    {
+      "mda": "IBADAN\nCODE PROJECT NAME TYPE AMOUNT\nCONSTRUCTION O",
+      "total": 2512458059.0,
+      "total_formatted": "\u20a62.51B",
+      "item_count": 7
+    },
+    {
+      "mda": "PURCHASE AND INSTALLATION OF ALL-IN-ONE SOLAR STREE",
+      "total": 2508811742.0,
+      "total_formatted": "\u20a62.51B",
+      "item_count": 1
+    },
+    {
+      "mda": "MARKET RESEARCH ON COMPARATIVE ADVANTAGES",
+      "total": 2496782703.0,
+      "total_formatted": "\u20a62.50B",
+      "item_count": 96
+    },
+    {
+      "mda": "SUPPLY OF TRACTORS TO COOPERAVTIVE GROUPS FOR ONGOI",
+      "total": 2473892927.0,
+      "total_formatted": "\u20a62.47B",
+      "item_count": 25
+    },
+    {
+      "mda": "PURCHASE OF COMPUTER PRINTERS",
+      "total": 2388672217.0,
+      "total_formatted": "\u20a62.39B",
+      "item_count": 29
+    },
+    {
+      "mda": "CONSTRUCTION OF RURAL ACCESS ROAD FOR AGRICULTURE N",
+      "total": 2370600580.0,
+      "total_formatted": "\u20a62.37B",
+      "item_count": 1
+    },
+    {
+      "mda": "CONSTRUCTION OF PERIMETER FENCE MAIN CAMPUS ONGOING",
+      "total": 2306799162.0,
+      "total_formatted": "\u20a62.31B",
+      "item_count": 81
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS - AIR NAVIGATIONAL EQUIPME",
+      "total": 2294085159.0,
+      "total_formatted": "\u20a62.29B",
+      "item_count": 2
+    },
+    {
+      "mda": "SDG TRACKING NEW",
+      "total": 2210580998.0,
+      "total_formatted": "\u20a62.21B",
+      "item_count": 21
+    },
+    {
+      "mda": "SKILL ACQUISITION AND ENTREPRENEURSHIP DEVELOPMENT",
+      "total": 2172714128.0,
+      "total_formatted": "\u20a62.17B",
+      "item_count": 18
+    },
+    {
+      "mda": "RENOVATION AND EQUIPPING OF COLLEGE LABORATORIES NE",
+      "total": 2137833222.0,
+      "total_formatted": "\u20a62.14B",
+      "item_count": 81
+    },
+    {
+      "mda": "AND PROVISION AND INSTALLATION OF SOLAR POWERED STR",
+      "total": 2105979972.0,
+      "total_formatted": "\u20a62.11B",
+      "item_count": 75
+    },
+    {
+      "mda": "PROCUREMENT OF AMBULANCE NEW",
+      "total": 2029317870.0,
+      "total_formatted": "\u20a62.03B",
+      "item_count": 81
+    },
+    {
+      "mda": "RESTRUCTURING/RECAPITALISATION OF NIPOST",
+      "total": 1980266472.0,
+      "total_formatted": "\u20a61.98B",
+      "item_count": 87
+    },
+    {
+      "mda": "ALEX EKWUEME/IGWE UGOCHUKWU ROAD ONGOING",
+      "total": 1966401696.0,
+      "total_formatted": "\u20a61.97B",
+      "item_count": 5
+    },
+    {
+      "mda": "CONSTRUCTION OF OFFICE BLOCK IN FCE PANKSHIN",
+      "total": 1964978245.0,
+      "total_formatted": "\u20a61.96B",
+      "item_count": 25
+    },
+    {
+      "mda": "COMPUTERIZATION/NETWORKING OF ACCOUNTS DEPARTMENT O",
+      "total": 1902120614.0,
+      "total_formatted": "\u20a61.90B",
+      "item_count": 17
+    },
+    {
+      "mda": "RENOVATION OF",
+      "total": 1895287735.0,
+      "total_formatted": "\u20a61.90B",
+      "item_count": 138
+    },
+    {
+      "mda": "EDUCATIONAL CHARTS TO SELECTED SCHOOLS OF PLATEAU N",
+      "total": 1803052528.0,
+      "total_formatted": "\u20a61.80B",
+      "item_count": 2
+    },
+    {
+      "mda": "ESTABLISHMENT/INSTALLATION OF ELECTRONIC MEDICAL RE",
+      "total": 1692727988.0,
+      "total_formatted": "\u20a61.69B",
+      "item_count": 18
+    },
+    {
+      "mda": "CREATION OF NATIONAL ASSET REGISTER",
+      "total": 1692090224.0,
+      "total_formatted": "\u20a61.69B",
+      "item_count": 4
+    },
+    {
+      "mda": "RENOVATION OF HOME ECONOMICS LABORATORY NEW",
+      "total": 1684604694.0,
+      "total_formatted": "\u20a61.68B",
+      "item_count": 72
+    },
+    {
+      "mda": "CONSTRUCTION OF MODULAR THEATRE ONGOING",
+      "total": 1630573644.0,
+      "total_formatted": "\u20a61.63B",
+      "item_count": 48
+    },
+    {
+      "mda": "EQUIPMENT FOR NEW BIOTECHNOLOGY RESEARCH LABORATORY",
+      "total": 1609985334.0,
+      "total_formatted": "\u20a61.61B",
+      "item_count": 25
+    },
+    {
+      "mda": "EMPOWERMENT/POVERTY ALLEVIATION THROUGH NEW",
+      "total": 1558996973.0,
+      "total_formatted": "\u20a61.56B",
+      "item_count": 18
+    },
+    {
+      "mda": "AT COMMUNITY HIGHER ISLAMIC COLLEGE GADAKA AND MALU",
+      "total": 1497624201.0,
+      "total_formatted": "\u20a61.50B",
+      "item_count": 33
+    },
+    {
+      "mda": "CONSTRUCTION AND FURNISHING OF INDOOR SPORTS COMPLE",
+      "total": 1487998813.0,
+      "total_formatted": "\u20a61.49B",
+      "item_count": 31
+    },
+    {
+      "mda": "FASD AUDIT ONGOING",
+      "total": 1461456413.0,
+      "total_formatted": "\u20a61.46B",
+      "item_count": 30
+    },
+    {
+      "mda": "PURCHASE / ACQUISITION OF LAND",
+      "total": 1420800000.0,
+      "total_formatted": "\u20a61.42B",
+      "item_count": 16
+    },
+    {
+      "mda": "SUPPLY OF EMPOWERMENT MATERIALS FOR VARIOUS NEW",
+      "total": 1415694705.0,
+      "total_formatted": "\u20a61.42B",
+      "item_count": 25
+    },
+    {
+      "mda": "COVID",
+      "total": 1396488025.0,
+      "total_formatted": "\u20a61.40B",
+      "item_count": 31
+    },
+    {
+      "mda": "COMPLETE RENOVATION OF",
+      "total": 1378087517.0,
+      "total_formatted": "\u20a61.38B",
+      "item_count": 122
+    },
+    {
+      "mda": "WORLD SOIL DAY SENSITIZATION AND ADVOCACY ON SOIL P",
+      "total": 1373390219.0,
+      "total_formatted": "\u20a61.37B",
+      "item_count": 23
+    },
+    {
+      "mda": "MAINTENANCE OF SPORTING EQUIPMENT",
+      "total": 1314797655.0,
+      "total_formatted": "\u20a61.31B",
+      "item_count": 31
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF PRISONS",
+      "total": 1289498614.0,
+      "total_formatted": "\u20a61.29B",
+      "item_count": 14
+    },
+    {
+      "mda": "COMPLETION OF MINI STADIUM IN KWAYA AND SHANI NEW",
+      "total": 1288181104.0,
+      "total_formatted": "\u20a61.29B",
+      "item_count": 12
+    },
+    {
+      "mda": "PROJECTORS",
+      "total": 1248849810.0,
+      "total_formatted": "\u20a61.25B",
+      "item_count": 75
+    },
+    {
+      "mda": "IDUMEMALUA IRUEKPAN AND OTHER LOCATIONS IN EDO NEW",
+      "total": 1240453815.0,
+      "total_formatted": "\u20a61.24B",
+      "item_count": 1
+    },
+    {
+      "mda": "SUPPLY OF FERTILIZER IN SOBA FEDERAL CONSTITUENCY",
+      "total": 1221745237.0,
+      "total_formatted": "\u20a61.22B",
+      "item_count": 27
+    },
+    {
+      "mda": "KAZAURE ROAD TO ZAZZAU IN SABON GARI FEDERAL CONSTI",
+      "total": 1207485189.0,
+      "total_formatted": "\u20a61.21B",
+      "item_count": 42
+    },
+    {
+      "mda": "CONSTRUCTION OF MEDICAL WARD II NEW",
+      "total": 1198691448.0,
+      "total_formatted": "\u20a61.20B",
+      "item_count": 21
+    },
+    {
+      "mda": "NATIONAL SENIOR CITIZENS CENTRE\nCODE LINE ITEM AMOU",
+      "total": 1187648882.0,
+      "total_formatted": "\u20a61.19B",
+      "item_count": 79
+    },
+    {
+      "mda": "MATERIALS FOR TRAINING AND SKILLS AQUCITION IN BROA",
+      "total": 1177823535.0,
+      "total_formatted": "\u20a61.18B",
+      "item_count": 23
+    },
+    {
+      "mda": "AQUACULTURE VALUE CHAIN IN IBEJU-LEKKI LOCAL GOVERN",
+      "total": 1171788493.0,
+      "total_formatted": "\u20a61.17B",
+      "item_count": 21
+    },
+    {
+      "mda": "MBAYEM",
+      "total": 1151477905.0,
+      "total_formatted": "\u20a61.15B",
+      "item_count": 83
+    },
+    {
+      "mda": "OF PLASTIC WASTE INTO INTER-LUCKING TILES FOR THE U",
+      "total": 1135729944.0,
+      "total_formatted": "\u20a61.14B",
+      "item_count": 15
+    },
+    {
+      "mda": "COLLEGE TOWN HALL WATER SCHEME NEW",
+      "total": 1130995733.0,
+      "total_formatted": "\u20a61.13B",
+      "item_count": 24
+    },
+    {
+      "mda": "CASHEW NUTS PROCESSING AND PACKAGING FOR EXPORT IN",
+      "total": 1107139579.0,
+      "total_formatted": "\u20a61.11B",
+      "item_count": 5
+    },
+    {
+      "mda": "PROCUREMENT OF CLASSROOMS FURNITURE NEW",
+      "total": 1045410336.0,
+      "total_formatted": "\u20a61.05B",
+      "item_count": 105
+    },
+    {
+      "mda": "GASSOL LGA IN TARABA CENTRAL SENATORIAL DISTRICT",
+      "total": 1038893660.0,
+      "total_formatted": "\u20a61.04B",
+      "item_count": 15
+    },
+    {
+      "mda": "COOPERATORS COMMUNITIES IN OYO NORTH SENATORIAL DIS",
+      "total": 1032439184.0,
+      "total_formatted": "\u20a61.03B",
+      "item_count": 16
+    },
+    {
+      "mda": "SOLAR POWER MINIGRID IN KEBBI SOUTH SENATORIAL DIST",
+      "total": 1027599698.0,
+      "total_formatted": "\u20a61.03B",
+      "item_count": 6
+    },
+    {
+      "mda": "CONSTRUCTION OF OUTDOOR KITCHEN FOR STUDENTS NEW",
+      "total": 1013451682.0,
+      "total_formatted": "\u20a61.01B",
+      "item_count": 25
+    },
+    {
+      "mda": "ENTREPRENEURIAL SKILLS IN WARRI FEDERAL CONSTITUENC",
+      "total": 966918517.0,
+      "total_formatted": "\u20a6966.92M",
+      "item_count": 11
+    },
+    {
+      "mda": "PURCHASE OF OFFICE BUILDING ONGOING",
+      "total": 963700361.0,
+      "total_formatted": "\u20a6963.70M",
+      "item_count": 28
+    },
+    {
+      "mda": "TO SELECT PLACES IN IBARAPA CENTRAL/ IBARAPA NORTH",
+      "total": 929139432.0,
+      "total_formatted": "\u20a6929.14M",
+      "item_count": 14
+    },
+    {
+      "mda": "COMMUNITIES OF SOUTH EAST",
+      "total": 905427301.0,
+      "total_formatted": "\u20a6905.43M",
+      "item_count": 4
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS - ELECTRICITY",
+      "total": 860475302.0,
+      "total_formatted": "\u20a6860.48M",
+      "item_count": 27
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS - LIBRARIES",
+      "total": 847618287.0,
+      "total_formatted": "\u20a6847.62M",
+      "item_count": 87
+    },
+    {
+      "mda": "OFFICES IN DADIN KOWA TOWN",
+      "total": 840079179.0,
+      "total_formatted": "\u20a6840.08M",
+      "item_count": 6
+    },
+    {
+      "mda": "RECONSTRUCTION AND EXPANSION OF",
+      "total": 805994697.0,
+      "total_formatted": "\u20a6805.99M",
+      "item_count": 29
+    },
+    {
+      "mda": "CALIPHATE RESEARCH GRANT AND EDUCATIONAL PROGRAMMES",
+      "total": 794640054.0,
+      "total_formatted": "\u20a6794.64M",
+      "item_count": 32
+    },
+    {
+      "mda": "CONSTRUCTION OF SPORT PAVILION ONGOING",
+      "total": 770932926.0,
+      "total_formatted": "\u20a6770.93M",
+      "item_count": 105
+    },
+    {
+      "mda": "ONGOING CONSTRUCTION/ UPGRADING OF MEDICAL CENTRE O",
+      "total": 764232586.0,
+      "total_formatted": "\u20a6764.23M",
+      "item_count": 38
+    },
+    {
+      "mda": "RENOVATION OF AUDITORIUM ONGOING",
+      "total": 760990344.0,
+      "total_formatted": "\u20a6760.99M",
+      "item_count": 6
+    },
+    {
+      "mda": "OVER TIME PAYMENTS",
+      "total": 758315474.0,
+      "total_formatted": "\u20a6758.32M",
+      "item_count": 35
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "total": 756291848.0,
+      "total_formatted": "\u20a6756.29M",
+      "item_count": 7
+    },
+    {
+      "mda": "OFFICE EQUIPMENT ONGOING",
+      "total": 746741808.0,
+      "total_formatted": "\u20a6746.74M",
+      "item_count": 26
+    },
+    {
+      "mda": "CONSTRUCTION / PROVISION OF HOUSING",
+      "total": 740326389.0,
+      "total_formatted": "\u20a6740.33M",
+      "item_count": 51
+    },
+    {
+      "mda": "WITHIN AND AROUND SELECTED COMMUNITIES IN NASARAWA",
+      "total": 733406040.0,
+      "total_formatted": "\u20a6733.41M",
+      "item_count": 18
+    },
+    {
+      "mda": "PROVISION OF STUDENTS AND STAFF FURNITURES NEW",
+      "total": 701381928.0,
+      "total_formatted": "\u20a6701.38M",
+      "item_count": 96
+    },
+    {
+      "mda": "AUDITING OF FEDERATION ACCOUNT",
+      "total": 695160673.0,
+      "total_formatted": "\u20a6695.16M",
+      "item_count": 22
+    },
+    {
+      "mda": "TRAINING AND START-UP FOR YOUTH AND WOMEN IN NEW",
+      "total": 690674243.0,
+      "total_formatted": "\u20a6690.67M",
+      "item_count": 8
+    },
+    {
+      "mda": "SENATORIAL DISTRICT",
+      "total": 648104272.0,
+      "total_formatted": "\u20a6648.10M",
+      "item_count": 4
+    },
+    {
+      "mda": "GOVERNANCE/INSTITUTIONAL REFORM",
+      "total": 624658890.0,
+      "total_formatted": "\u20a6624.66M",
+      "item_count": 6
+    },
+    {
+      "mda": "CLEANING & FUMIGATION SERVICES",
+      "total": 624579360.0,
+      "total_formatted": "\u20a6624.58M",
+      "item_count": 72
+    },
+    {
+      "mda": "AFTER SHENDAM HOTEL NEAR EIGHT MAN QUARTERS",
+      "total": 608287645.0,
+      "total_formatted": "\u20a6608.29M",
+      "item_count": 14
+    },
+    {
+      "mda": "CONSTRUCTION AND PROVISION OF ICT NETWORK EQUIPMENT",
+      "total": 602415575.0,
+      "total_formatted": "\u20a6602.42M",
+      "item_count": 100
+    },
+    {
+      "mda": "SPECIAL INTEVENTION/CAPITAL EXIGENCIES -\nNATIONAL P",
+      "total": 602262711.0,
+      "total_formatted": "\u20a6602.26M",
+      "item_count": 18
+    },
+    {
+      "mda": "PROVISION OF SOLAR POWERED STREET/SECURITY LIGHT NE",
+      "total": 546259927.0,
+      "total_formatted": "\u20a6546.26M",
+      "item_count": 34
+    },
+    {
+      "mda": "SOFTWARE CHARGES / LICENCE RENEWAL",
+      "total": 542586480.0,
+      "total_formatted": "\u20a6542.59M",
+      "item_count": 48
+    },
+    {
+      "mda": "LIGHT LEATHER MANUFACTURE CENTRE",
+      "total": 524782625.0,
+      "total_formatted": "\u20a6524.78M",
+      "item_count": 18
+    },
+    {
+      "mda": "MAINTENANCE OF MARKET / PUBLIC PLACES",
+      "total": 523980214.0,
+      "total_formatted": "\u20a6523.98M",
+      "item_count": 99
+    },
+    {
+      "mda": "BAGS MAKING IN SABON GARI FEDERAL CONSTITUENCY",
+      "total": 515601089.0,
+      "total_formatted": "\u20a6515.60M",
+      "item_count": 23
+    },
+    {
+      "mda": "TO SELECTED RURAL AREAS COMMUNITIES OF INDUSTRIAL B",
+      "total": 513659860.0,
+      "total_formatted": "\u20a6513.66M",
+      "item_count": 1
+    },
+    {
+      "mda": "ANNIVASARIES/CELEBRATIONS",
+      "total": 510927772.0,
+      "total_formatted": "\u20a6510.93M",
+      "item_count": 16
+    },
+    {
+      "mda": "WILDLIFE CONSERVATION",
+      "total": 507434692.0,
+      "total_formatted": "\u20a6507.43M",
+      "item_count": 3
+    },
+    {
+      "mda": "GOVERNANCE AND INSTITUTIONAL REFORMS NEW",
+      "total": 496650402.0,
+      "total_formatted": "\u20a6496.65M",
+      "item_count": 15
+    },
+    {
+      "mda": "SPECIAL INTERVENTION SDG",
+      "total": 477768073.0,
+      "total_formatted": "\u20a6477.77M",
+      "item_count": 18
+    },
+    {
+      "mda": "LEASED COMMUNICATION LINES",
+      "total": 475268577.0,
+      "total_formatted": "\u20a6475.27M",
+      "item_count": 39
+    },
+    {
+      "mda": "PROVISION OF SOLAR POWERED BOREHOLES IN BORNO AND G",
+      "total": 473341015.0,
+      "total_formatted": "\u20a6473.34M",
+      "item_count": 17
+    },
+    {
+      "mda": "SOUTH SENATORIAL DISTRICT NEW",
+      "total": 470711999.0,
+      "total_formatted": "\u20a6470.71M",
+      "item_count": 32
+    },
+    {
+      "mda": "RENOVATION OF OFFICE NEW BUILDING AT MABUSHI NEW",
+      "total": 469121956.0,
+      "total_formatted": "\u20a6469.12M",
+      "item_count": 24
+    },
+    {
+      "mda": "CONTINUATION OF PERIMETER FENCING ONGOING",
+      "total": 467901762.0,
+      "total_formatted": "\u20a6467.90M",
+      "item_count": 33
+    },
+    {
+      "mda": "REHABILITATION / REPAIRS - DEFENCE EQUIPMENTS",
+      "total": 459317380.0,
+      "total_formatted": "\u20a6459.32M",
+      "item_count": 3
+    },
+    {
+      "mda": "TRAINING AND EMPOWERMENT OF FARMERS ON FISH FARMING",
+      "total": 454883622.0,
+      "total_formatted": "\u20a6454.88M",
+      "item_count": 7
+    },
+    {
+      "mda": "HEAVY LEATHER MANUFACTURE CENTRE",
+      "total": 417521932.0,
+      "total_formatted": "\u20a6417.52M",
+      "item_count": 17
+    },
+    {
+      "mda": "PROCUREMENT OF LABORATORY/WORKSHOP CONSUMABLES ONGO",
+      "total": 413088055.0,
+      "total_formatted": "\u20a6413.09M",
+      "item_count": 27
+    },
+    {
+      "mda": "REACTIVATION OF ISIOKPO IRRIGATION FARM NEW",
+      "total": 398368257.0,
+      "total_formatted": "\u20a6398.37M",
+      "item_count": 5
+    },
+    {
+      "mda": "PROVISION OF CLEAN WATER ACCESS FOR VARIOUS NEW",
+      "total": 396737213.0,
+      "total_formatted": "\u20a6396.74M",
+      "item_count": 4
+    },
+    {
+      "mda": "CONSTRUCTION OF PERIMETER FENCING ONGOING",
+      "total": 387132322.0,
+      "total_formatted": "\u20a6387.13M",
+      "item_count": 23
+    },
+    {
+      "mda": "CONSTRUCTION OF BOREHOLE AT AHIA ORIE IBERE IN IKWU",
+      "total": 385622342.0,
+      "total_formatted": "\u20a6385.62M",
+      "item_count": 1
+    },
+    {
+      "mda": "RESEARCH AND DEVELOPMENT ONGOING",
+      "total": 378875419.0,
+      "total_formatted": "\u20a6378.88M",
+      "item_count": 19
+    },
+    {
+      "mda": "REHABILITATION OF",
+      "total": 377055962.0,
+      "total_formatted": "\u20a6377.06M",
+      "item_count": 28
+    },
+    {
+      "mda": "PROCUREMENT OF UTILITY VEHICLE NEW",
+      "total": 369812742.0,
+      "total_formatted": "\u20a6369.81M",
+      "item_count": 87
+    },
+    {
+      "mda": "PROVISION OF INTELLIGENT SURVEILLANCE SYSTEM NEW",
+      "total": 357615289.0,
+      "total_formatted": "\u20a6357.62M",
+      "item_count": 20
+    },
+    {
+      "mda": "MASS PRODUCTION OF YAM AND PLANTAIN SEEDLINGS FOR F",
+      "total": 351944118.0,
+      "total_formatted": "\u20a6351.94M",
+      "item_count": 24
+    },
+    {
+      "mda": "CONSTRUCTION OF COUNCIL HEAD OFFICE COMPLEX",
+      "total": 345889876.0,
+      "total_formatted": "\u20a6345.89M",
+      "item_count": 7
+    },
+    {
+      "mda": "TECHNOLOGY BUSINESS INCUBATOR CENTRE - AGEGE\nCODE L",
+      "total": 334712375.0,
+      "total_formatted": "\u20a6334.71M",
+      "item_count": 63
+    },
+    {
+      "mda": "PREVENTIVE KITS IN SCHOOLS IN RIMI LOCAL GOVERNMENT",
+      "total": 319164506.0,
+      "total_formatted": "\u20a6319.16M",
+      "item_count": 3
+    },
+    {
+      "mda": "COMPLETION OF",
+      "total": 306615221.0,
+      "total_formatted": "\u20a6306.62M",
+      "item_count": 39
+    },
+    {
+      "mda": "IMMUNIZATION OF CATTLE AGAINST COMMON DISEASES IN P",
+      "total": 299700372.0,
+      "total_formatted": "\u20a6299.70M",
+      "item_count": 23
+    },
+    {
+      "mda": "THREAT MANAGEMENT",
+      "total": 288302911.0,
+      "total_formatted": "\u20a6288.30M",
+      "item_count": 21
+    },
+    {
+      "mda": "COMPLETION OF MBANAGU EROSION CONTROL AT OTOLO NNEW",
+      "total": 280807016.0,
+      "total_formatted": "\u20a6280.81M",
+      "item_count": 24
+    },
+    {
+      "mda": "RENOVATION OF PARK MUSEUM NEW",
+      "total": 278020437.0,
+      "total_formatted": "\u20a6278.02M",
+      "item_count": 35
+    },
+    {
+      "mda": "FISH SEED FOR BIOENTRENEURSHIP\nERGP",
+      "total": 277001447.0,
+      "total_formatted": "\u20a6277.00M",
+      "item_count": 13
+    },
+    {
+      "mda": "CONSTRUCTION OF MODULAR THEATRE NEW",
+      "total": 273163179.0,
+      "total_formatted": "\u20a6273.16M",
+      "item_count": 22
+    },
+    {
+      "mda": "RENOVATION AND FURNISHING OF E-LIBRARY NEW",
+      "total": 270646824.0,
+      "total_formatted": "\u20a6270.65M",
+      "item_count": 23
+    },
+    {
+      "mda": "TECHNOLOGY BUSINESS INCUBATOR CENTRE - ILORIN\nCODE",
+      "total": 268429006.0,
+      "total_formatted": "\u20a6268.43M",
+      "item_count": 91
+    },
+    {
+      "mda": "PROVISION OF OFFICIAL VEHICLE NEW",
+      "total": 266529056.0,
+      "total_formatted": "\u20a6266.53M",
+      "item_count": 33
+    },
+    {
+      "mda": "FURNISHING AND EQUIPING OF OFFICES IN THE COMMISSIO",
+      "total": 261945761.0,
+      "total_formatted": "\u20a6261.95M",
+      "item_count": 5
+    },
+    {
+      "mda": "REHABILITATION OF SIX BLOCK OF BOYS HOSTELS NEW",
+      "total": 260728420.0,
+      "total_formatted": "\u20a6260.73M",
+      "item_count": 30
+    },
+    {
+      "mda": "CONSTRUCTION OF SPORT PAVILION NEW",
+      "total": 242555677.0,
+      "total_formatted": "\u20a6242.56M",
+      "item_count": 26
+    },
+    {
+      "mda": "REHABILITATION OF SIX BLOCK OF BOYS HOSTELS ONGOING",
+      "total": 227639844.0,
+      "total_formatted": "\u20a6227.64M",
+      "item_count": 30
+    },
+    {
+      "mda": "SUPPLY OF",
+      "total": 206863700.0,
+      "total_formatted": "\u20a6206.86M",
+      "item_count": 5
+    },
+    {
+      "mda": "IT AUTOMATION AND WEB PORTAL MAINTENANCE ONGOING",
+      "total": 190713204.0,
+      "total_formatted": "\u20a6190.71M",
+      "item_count": 44
+    },
+    {
+      "mda": "EFFLUENT & POLLUTION MONITORING CENTRE",
+      "total": 188590509.0,
+      "total_formatted": "\u20a6188.59M",
+      "item_count": 9
+    },
+    {
+      "mda": "PROCUREMENT OF SPRCIALGEN GENOMIC REAGENTS FOR SEQU",
+      "total": 188084365.0,
+      "total_formatted": "\u20a6188.08M",
+      "item_count": 11
+    },
+    {
+      "mda": "REHABILITATION/OVERHAUL OF TWO HILUX VAN AND A BUS",
+      "total": 185796267.0,
+      "total_formatted": "\u20a6185.80M",
+      "item_count": 29
+    },
+    {
+      "mda": "OVERLAYING OF THE ENTRANCE",
+      "total": 175621019.0,
+      "total_formatted": "\u20a6175.62M",
+      "item_count": 28
+    },
+    {
+      "mda": "RAW HIDES & SKIN IMPROVEMENT CENTRE",
+      "total": 175271173.0,
+      "total_formatted": "\u20a6175.27M",
+      "item_count": 7
+    },
+    {
+      "mda": "CONSTRUCTION OF SURCON LAND JAHI NEW",
+      "total": 165550134.0,
+      "total_formatted": "\u20a6165.55M",
+      "item_count": 5
+    },
+    {
+      "mda": "CONSTRUCTION OF ONE BLOCK OF",
+      "total": 161786946.0,
+      "total_formatted": "\u20a6161.79M",
+      "item_count": 25
+    },
+    {
+      "mda": "PROVISION OF",
+      "total": 157450000.0,
+      "total_formatted": "\u20a6157.45M",
+      "item_count": 27
+    },
+    {
+      "mda": "SOCIAL BENEFITS",
+      "total": 157000000.0,
+      "total_formatted": "\u20a6157.00M",
+      "item_count": 25
+    },
+    {
+      "mda": "EXECUTIVE COUNCIL",
+      "total": 156267853.0,
+      "total_formatted": "\u20a6156.27M",
+      "item_count": 19
+    },
+    {
+      "mda": "SOUTH-EAST REGIONAL LEATHER RESEARCH & DEVELOPMENT",
+      "total": 155000000.0,
+      "total_formatted": "\u20a6155.00M",
+      "item_count": 1
+    },
+    {
+      "mda": "CONSTRUCTION OF COMMUNITY RESORT CENTRE IN NORTH CE",
+      "total": 143144163.0,
+      "total_formatted": "\u20a6143.14M",
+      "item_count": 12
+    },
+    {
+      "mda": "CONSTRUCTION OF SPORT PAVILLION NEW",
+      "total": 139943438.0,
+      "total_formatted": "\u20a6139.94M",
+      "item_count": 35
+    },
+    {
+      "mda": "PROVISION OF STANDARD ELECTRIFICATION LINES ONGOING",
+      "total": 132210369.0,
+      "total_formatted": "\u20a6132.21M",
+      "item_count": 30
+    },
+    {
+      "mda": "SOUTH-WEST REGIONAL CLUSTER RESEARCH & DEVELOPMENT",
+      "total": 121000000.0,
+      "total_formatted": "\u20a6121.00M",
+      "item_count": 3
+    },
+    {
+      "mda": "COMPLEXION OF MULTIPURPOSE HALL ONGOING",
+      "total": 116541098.0,
+      "total_formatted": "\u20a6116.54M",
+      "item_count": 34
+    },
+    {
+      "mda": "REHABILITATION OF SPORTING FACILITIES ONGOING",
+      "total": 115816336.0,
+      "total_formatted": "\u20a6115.82M",
+      "item_count": 99
+    },
+    {
+      "mda": "TECHNOLOGY BUSINESS INCUBATOR CENTRE - UYO\nCODE LIN",
+      "total": 103335006.0,
+      "total_formatted": "\u20a6103.34M",
+      "item_count": 35
+    },
+    {
+      "mda": "RENOVATION OF A BLOCK OF",
+      "total": 102853148.0,
+      "total_formatted": "\u20a6102.85M",
+      "item_count": 34
+    },
+    {
+      "mda": "TECHNOLOGY BUSINESS INCUBATOR CENTRE - YENEGOA\nCODE",
+      "total": 93863447.0,
+      "total_formatted": "\u20a693.86M",
+      "item_count": 32
+    },
+    {
+      "mda": "SECURITY PERIMETER FENCING",
+      "total": 72507372.0,
+      "total_formatted": "\u20a672.51M",
+      "item_count": 19
+    },
+    {
+      "mda": "NATIONAL DISABILITY SUMMIT NEW",
+      "total": 61496643.0,
+      "total_formatted": "\u20a661.50M",
+      "item_count": 22
+    },
+    {
+      "mda": "CORRESPONDENCE ADVANCES",
+      "total": 50212868.0,
+      "total_formatted": "\u20a650.21M",
+      "item_count": 4
+    },
+    {
+      "mda": "SOUTH-SOUTH REGIONAL WARD BASE LEATHER RESEARCH & D",
+      "total": 40000000.0,
+      "total_formatted": "\u20a640.00M",
+      "item_count": 2
+    },
+    {
+      "mda": "REHABILITATION OF GATE",
+      "total": 29260334.0,
+      "total_formatted": "\u20a629.26M",
+      "item_count": 25
+    },
+    {
+      "mda": "VIABILITY GAP FUND - PPP",
+      "total": 11687040.0,
+      "total_formatted": "\u20a611.69M",
+      "item_count": 3
+    }
+  ]
+}

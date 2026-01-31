@@ -1,0 +1,913 @@
+{
+  "generated_at": "2026-01-31T10:09:02.895330",
+  "total_states": 37,
+  "by_risk_level": {
+    "CRITICAL": 1,
+    "HIGH": 2,
+    "MEDIUM": 12,
+    "LOW": 22
+  },
+  "states": [
+    {
+      "state": "Rivers",
+      "region": "South South",
+      "budget_2025": 1480000000000.0,
+      "budget_2026": 0,
+      "status_2026": "NOT YET PRESENTED",
+      "yoy_change_pct": 0,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 52,
+      "risk_level": "CRITICAL",
+      "risk_factors": [
+        {
+          "factor": "NO_2026_BUDGET",
+          "points": 25,
+          "detail": "2026 budget not yet presented or pending"
+        },
+        {
+          "factor": "HIGH_RISK_STATE",
+          "points": 15,
+          "detail": "State has history of budget/governance issues"
+        },
+        {
+          "factor": "POLITICAL_INSTABILITY",
+          "points": 20,
+          "detail": "Political issues noted: Political situation - Governor Fubara has not yet presented 2026 budget"
+        }
+      ],
+      "llm_analysis": "Rivers State's budget situation raises significant concerns due to the absence of a 2026 budget and a complete lack of capital and education spending allocations. The stagnation in budget figures coupled with a history of governance issues suggests potential mismanagement and a lack of transparency.",
+      "red_flags": [
+        "NO_2026_BUDGET",
+        "HIGH_RISK_STATE",
+        "POLITICAL_INSTABILITY"
+      ],
+      "investigation_leads": [
+        "Investigate the reasons for the absence of the 2026 budget presentation",
+        "Request documentation on previous budget allocations and expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Akwa Ibom",
+      "region": "South South",
+      "budget_2025": 955000000000.0,
+      "budget_2026": 1584000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 65.86387434554973,
+      "capital_ratio": 73.7,
+      "education_pct": 2.27,
+      "risk_score": 42,
+      "risk_level": "HIGH",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "65.9% budget increase"
+        },
+        {
+          "factor": "CRITICAL_LOW_EDUCATION",
+          "points": 25,
+          "detail": "Education at 2.3% (critically below 15% UN threshold)"
+        },
+        {
+          "factor": "HIGH_RISK_STATE",
+          "points": 15,
+          "detail": "State has history of budget/governance issues"
+        }
+      ],
+      "llm_analysis": "Akwa Ibom's budget for 2026 shows a concerning 65.9% year-over-year increase, which raises red flags for potential budget padding or unrealistic projections. Additionally, the education spending is alarmingly low at 2.3%, significantly below the UN recommended threshold, indicating a neglect of essential services.",
+      "red_flags": [
+        "NOTABLE_YOY_INCREASE",
+        "CRITICAL_LOW_EDUCATION",
+        "HIGH_RISK_STATE"
+      ],
+      "investigation_leads": [
+        "Investigate the rationale behind the significant budget increase",
+        "Request detailed breakdowns of capital and recurrent expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Imo",
+      "region": "South East",
+      "budget_2025": 807000000000.0,
+      "budget_2026": 1400000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 73.4820322180917,
+      "capital_ratio": 0,
+      "education_pct": 4.24,
+      "risk_score": 42,
+      "risk_level": "HIGH",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "73.5% budget increase"
+        },
+        {
+          "factor": "CRITICAL_LOW_EDUCATION",
+          "points": 25,
+          "detail": "Education at 4.2% (critically below 15% UN threshold)"
+        },
+        {
+          "factor": "HIGH_RISK_STATE",
+          "points": 15,
+          "detail": "State has history of budget/governance issues"
+        }
+      ],
+      "llm_analysis": "Imo State's budget for 2026 shows a concerning 73.5% increase, which raises red flags for potential budget padding or unrealistic projections. Additionally, the capital expenditure ratio is alarmingly at 0.0%, indicating a lack of investment in infrastructure or development, while education spending is critically low at 4.2%, far below the UN recommended threshold.",
+      "red_flags": [
+        "NOTABLE_YOY_INCREASE",
+        "CRITICAL_LOW_EDUCATION",
+        "HIGH_RISK_STATE"
+      ],
+      "investigation_leads": [
+        "Examine the rationale behind the budget increase",
+        "Request detailed breakdown of budget allocations and expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Zamfara",
+      "region": "North West",
+      "budget_2025": 420000000000.0,
+      "budget_2026": 0,
+      "status_2026": "PENDING",
+      "yoy_change_pct": 0,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 17,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "NO_2026_BUDGET",
+          "points": 25,
+          "detail": "2026 budget not yet presented or pending"
+        }
+      ],
+      "llm_analysis": "Zamfara's budget situation raises significant concerns, particularly with the absence of a 2026 budget and a complete lack of capital and education spending. The stagnant Year-over-Year change of 0.0% suggests a lack of fiscal planning and potential mismanagement, which could hinder development and governance in the state.",
+      "red_flags": [
+        "NO_2026_BUDGET",
+        "0.0% Education Spending"
+      ],
+      "investigation_leads": [
+        "Investigate the reasons for the absence of the 2026 budget",
+        "Request documentation on budget planning and allocation for education and capital projects"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Adamawa",
+      "region": "North East",
+      "budget_2025": 374900000000.0,
+      "budget_2026": 0,
+      "status_2026": "PENDING",
+      "yoy_change_pct": 0,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 17,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "NO_2026_BUDGET",
+          "points": 25,
+          "detail": "2026 budget not yet presented or pending"
+        }
+      ],
+      "llm_analysis": "Adamawa's budget situation raises significant concerns, particularly with the absence of a 2026 budget and a complete lack of capital and education spending. This stagnation suggests potential mismanagement or a lack of fiscal planning, which could hinder development and governance in the state.",
+      "red_flags": [
+        "NO_2026_BUDGET",
+        "0% Education Spending"
+      ],
+      "investigation_leads": [
+        "Investigate the reasons for the absence of the 2026 budget",
+        "Request documentation on previous budget allocations and expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Borno",
+      "region": "North East",
+      "budget_2025": 615860000000.0,
+      "budget_2026": 0,
+      "status_2026": "NOT YET PRESENTED",
+      "yoy_change_pct": 0,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 17,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "NO_2026_BUDGET",
+          "points": 25,
+          "detail": "2026 budget not yet presented or pending"
+        }
+      ],
+      "llm_analysis": "Borno's budget situation raises significant concerns, particularly with the absence of a 2026 budget and alarming indicators of zero capital and education spending. This lack of financial planning and investment in critical sectors suggests potential mismanagement and governance issues, especially given the state's history of conflict and instability.",
+      "red_flags": [
+        "NO_2026_BUDGET",
+        "Capital Ratio of 0.0%",
+        "Education Spending of 0.0%"
+      ],
+      "investigation_leads": [
+        "Investigate the reasons for the absence of the 2026 budget",
+        "Request documentation on previous budget allocations and expenditures",
+        "Examine the state's financial management practices"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "FCT Abuja",
+      "region": "North Central",
+      "budget_2025": 1780000000000.0,
+      "budget_2026": 0,
+      "status_2026": "PENDING",
+      "yoy_change_pct": 0,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 17,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "NO_2026_BUDGET",
+          "points": 25,
+          "detail": "2026 budget not yet presented or pending"
+        }
+      ],
+      "llm_analysis": "The FCT Abuja's budget situation raises significant concerns due to the absence of a 2026 budget and the alarming 0% allocation for both capital projects and education spending. This suggests potential mismanagement and a lack of strategic planning, which could hinder development and governance.",
+      "red_flags": [
+        "NO_2026_BUDGET",
+        "ZERO_CAPITAL_RATIO",
+        "ZERO_EDUCATION_SPENDING"
+      ],
+      "investigation_leads": [
+        "Investigate the reasons for the lack of a 2026 budget",
+        "Request documents related to budget planning and approvals for 2025 and 2026"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Cross River",
+      "region": "South South",
+      "budget_2025": 384540000000.0,
+      "budget_2026": 961000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 149.90898216050346,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 12,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "HIGH_YOY_INCREASE",
+          "points": 20,
+          "detail": "149.9% budget increase (suspicious)"
+        }
+      ],
+      "llm_analysis": "Cross River's budget for 2026 shows an alarming 149.9% increase compared to 2025, which raises concerns about potential budget padding or unrealistic projections. Additionally, the absence of capital expenditure and education spending indicates severe misallocation of resources, which could lead to governance issues and corruption risks.",
+      "red_flags": [
+        "HIGH_YOY_INCREASE",
+        "0.0% Capital Ratio",
+        "0.0% Education Spending"
+      ],
+      "investigation_leads": [
+        "Investigate the rationale behind the budget increase",
+        "Request detailed breakdown of budget allocations and expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Ebonyi",
+      "region": "South East",
+      "budget_2025": 383600000000.0,
+      "budget_2026": 884870000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 130.67518248175182,
+      "capital_ratio": 84.7,
+      "education_pct": 0,
+      "risk_score": 12,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "HIGH_YOY_INCREASE",
+          "points": 20,
+          "detail": "130.7% budget increase (suspicious)"
+        }
+      ],
+      "llm_analysis": "Ebonyi's budget for 2026 shows an alarming 130.7% increase compared to 2025, which raises concerns about potential budget padding or unrealistic revenue projections. Additionally, the capital expenditure ratio of 84.7% is unusually high and the complete absence of education spending is a significant governance issue, indicating a neglect of critical social services.",
+      "red_flags": [
+        "HIGH_YOY_INCREASE",
+        "0.0% education spending"
+      ],
+      "investigation_leads": [
+        "Examine revenue projections and sources for realism",
+        "Request detailed breakdown of capital expenditures and their justifications"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Kano",
+      "region": "North West",
+      "budget_2025": 719760000000.0,
+      "budget_2026": 1477000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 105.20729131932866,
+      "capital_ratio": 63.3,
+      "education_pct": 30.0,
+      "risk_score": 13,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "HIGH_YOY_INCREASE",
+          "points": 20,
+          "detail": "105.2% budget increase (suspicious)"
+        }
+      ],
+      "llm_analysis": "Kano's budget for 2026 shows an alarming 105.2% increase compared to the previous year, which raises concerns about potential budget padding or unrealistic projections. While the capital ratio is healthy at 63.3% and education spending exceeds the UN recommendation at 30%, the drastic increase in budget size warrants further scrutiny.",
+      "red_flags": [
+        "HIGH_YOY_INCREASE",
+        "Potential budget padding or unrealistic projections"
+      ],
+      "investigation_leads": [
+        "Examine the detailed budget breakdown for inflated line items",
+        "Request documentation on projected revenue sources and expenditure justifications"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Kebbi",
+      "region": "North West",
+      "budget_2025": 293900000000.0,
+      "budget_2026": 642930000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 118.75808097992515,
+      "capital_ratio": 0,
+      "education_pct": 16.0,
+      "risk_score": 12,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "HIGH_YOY_INCREASE",
+          "points": 20,
+          "detail": "118.8% budget increase (suspicious)"
+        }
+      ],
+      "llm_analysis": "Kebbi's 2026 budget reflects an alarming 118.8% increase from the previous year, which raises concerns about potential budget padding or unrealistic financial projections. Additionally, the absence of capital expenditure indicates a lack of investment in infrastructure and development, which could hinder economic growth.",
+      "red_flags": [
+        "HIGH_YOY_INCREASE",
+        "0.0% Capital Ratio"
+      ],
+      "investigation_leads": [
+        "Investigate the rationale behind the budget increase",
+        "Request detailed breakdown of budget allocations and past expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Jigawa",
+      "region": "North West",
+      "budget_2025": 372900000000.0,
+      "budget_2026": 901840000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 141.84499865915797,
+      "capital_ratio": 0,
+      "education_pct": 26.0,
+      "risk_score": 12,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "HIGH_YOY_INCREASE",
+          "points": 20,
+          "detail": "141.8% budget increase (suspicious)"
+        }
+      ],
+      "llm_analysis": "Jigawa's budget for 2026 shows an alarming 141.8% increase from the previous year, which raises concerns about potential budget padding or unrealistic revenue projections. Additionally, the absence of capital expenditure indicates a lack of investment in infrastructure, which is critical for the state's development.",
+      "red_flags": [
+        "HIGH_YOY_INCREASE",
+        "0.0% Capital Ratio"
+      ],
+      "investigation_leads": [
+        "Investigate the sources of revenue projections",
+        "Request detailed breakdown of budget allocations and expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Bauchi",
+      "region": "North East",
+      "budget_2025": 397500000000.0,
+      "budget_2026": 878000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 120.88050314465409,
+      "capital_ratio": 0,
+      "education_pct": 15.0,
+      "risk_score": 12,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "HIGH_YOY_INCREASE",
+          "points": 20,
+          "detail": "120.9% budget increase (suspicious)"
+        }
+      ],
+      "llm_analysis": "Bauchi State's budget for 2026 shows an alarming year-over-year increase of 120.9%, which raises concerns about potential budget padding or unrealistic projections. Additionally, the absence of capital expenditure indicates a lack of investment in infrastructure, which could hinder economic growth and development.",
+      "red_flags": [
+        "HIGH_YOY_INCREASE",
+        "0.0% Capital Ratio"
+      ],
+      "investigation_leads": [
+        "Investigate the rationale behind the budget increase",
+        "Request detailed breakdown of budget allocations and expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Taraba",
+      "region": "North East",
+      "budget_2025": 268300000000.0,
+      "budget_2026": 650000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 142.2661200149087,
+      "capital_ratio": 0,
+      "education_pct": 20.0,
+      "risk_score": 12,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "HIGH_YOY_INCREASE",
+          "points": 20,
+          "detail": "142.3% budget increase (suspicious)"
+        }
+      ],
+      "llm_analysis": "Taraba's budget for 2026 shows an alarming 142.3% increase compared to 2025, raising concerns about potential budget padding or unrealistic projections. Additionally, the absence of capital expenditure indicates a lack of investment in infrastructure, which could hinder development and raise governance issues.",
+      "red_flags": [
+        "HIGH_YOY_INCREASE",
+        "0.0% Capital Ratio"
+      ],
+      "investigation_leads": [
+        "Investigate the rationale behind the budget increase",
+        "Request detailed budget breakdown and expenditure reports"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Kwara",
+      "region": "North Central",
+      "budget_2025": 306700000000.0,
+      "budget_2026": 644000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 109.97717639387024,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 12,
+      "risk_level": "MEDIUM",
+      "risk_factors": [
+        {
+          "factor": "HIGH_YOY_INCREASE",
+          "points": 20,
+          "detail": "110.0% budget increase (suspicious)"
+        }
+      ],
+      "llm_analysis": "Kwara's budget for 2026 shows an alarming 110% increase compared to 2025, which raises concerns about potential budget padding or unrealistic projections. Additionally, the absence of capital expenditure and education spending indicates a lack of investment in critical infrastructure and human capital development, which could signal mismanagement or prioritization issues.",
+      "red_flags": [
+        "HIGH_YOY_INCREASE",
+        "0.0% Capital Ratio",
+        "0.0% Education Spending"
+      ],
+      "investigation_leads": [
+        "Investigate the rationale behind the budget increase",
+        "Request detailed breakdown of budget allocations and spending plans"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Ogun",
+      "region": "South West",
+      "budget_2025": 1054000000000.0,
+      "budget_2026": 1669000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 58.34914611005693,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "58.3% budget increase"
+        }
+      ],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Osun",
+      "region": "South West",
+      "budget_2025": 427750000000.0,
+      "budget_2026": 723400000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 69.11747516072472,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "69.1% budget increase"
+        }
+      ],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Delta",
+      "region": "South South",
+      "budget_2025": 936000000000.0,
+      "budget_2026": 1729000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 84.72222222222221,
+      "capital_ratio": 62.75,
+      "education_pct": 0,
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "84.7% budget increase"
+        }
+      ],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Bayelsa",
+      "region": "South South",
+      "budget_2025": 582700000000.0,
+      "budget_2026": 1010000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 73.3310451347177,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "73.3% budget increase"
+        }
+      ],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Enugu",
+      "region": "South East",
+      "budget_2025": 971000000000.0,
+      "budget_2026": 1620000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 66.83831101956746,
+      "capital_ratio": 80.0,
+      "education_pct": 30.0,
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "66.8% budget increase"
+        }
+      ],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Katsina",
+      "region": "North West",
+      "budget_2025": 548700000000.00006,
+      "budget_2026": 897000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 63.477310005467444,
+      "capital_ratio": 0,
+      "education_pct": 17.4,
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "63.5% budget increase"
+        }
+      ],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Yobe",
+      "region": "North East",
+      "budget_2025": 268700000000.0,
+      "budget_2026": 515000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 91.66356531447711,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "91.7% budget increase"
+        }
+      ],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Plateau",
+      "region": "North Central",
+      "budget_2025": 433300000000.0,
+      "budget_2026": 817510000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 88.67066697438266,
+      "capital_ratio": 61.3,
+      "education_pct": 0,
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "88.7% budget increase"
+        }
+      ],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Nasarawa",
+      "region": "North Central",
+      "budget_2025": 318400000000.0,
+      "budget_2026": 545200000000.00006,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 71.23115577889449,
+      "capital_ratio": 0,
+      "education_pct": 17.0,
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "71.2% budget increase"
+        }
+      ],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Lagos",
+      "region": "South West",
+      "budget_2025": 3366000000000.0,
+      "budget_2026": 4445000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 32.05585264408794,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Oyo",
+      "region": "South West",
+      "budget_2025": 678000000000.0,
+      "budget_2026": 892000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 31.563421828908556,
+      "capital_ratio": 0,
+      "education_pct": 17.4,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Ondo",
+      "region": "South West",
+      "budget_2025": 698660000000.0,
+      "budget_2026": 524409999999.99994,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": -24.940600578249803,
+      "capital_ratio": 57.9,
+      "education_pct": 15.0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Ekiti",
+      "region": "South West",
+      "budget_2025": 375790000000.0,
+      "budget_2026": 415370000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 10.532478245828788,
+      "capital_ratio": 47.0,
+      "education_pct": 0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Edo",
+      "region": "South South",
+      "budget_2025": 675220000000.0,
+      "budget_2026": 939850000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 39.191670862829895,
+      "capital_ratio": 67.8,
+      "education_pct": 0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Abia",
+      "region": "South East",
+      "budget_2025": 750200000000.0,
+      "budget_2026": 1016000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 35.430551852839244,
+      "capital_ratio": 82.0,
+      "education_pct": 20.0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Anambra",
+      "region": "South East",
+      "budget_2025": 607000000000.0,
+      "budget_2026": 766370000000.0,
+      "status_2026": "PASSED",
+      "yoy_change_pct": 26.255354200988467,
+      "capital_ratio": 0,
+      "education_pct": 30.0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Kaduna",
+      "region": "North West",
+      "budget_2025": 790000000000.0,
+      "budget_2026": 985900000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 24.79746835443038,
+      "capital_ratio": 70.9,
+      "education_pct": 25.0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Sokoto",
+      "region": "North West",
+      "budget_2025": 526880000000.0,
+      "budget_2026": 758700000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 43.998633464925604,
+      "capital_ratio": 72.0,
+      "education_pct": 0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Gombe",
+      "region": "North East",
+      "budget_2025": 246200000000.0,
+      "budget_2026": 0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 0,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Niger",
+      "region": "North Central",
+      "budget_2025": 1560000000000.0,
+      "budget_2026": 0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 0,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Kogi",
+      "region": "North Central",
+      "budget_2025": 582400000000.0,
+      "budget_2026": 820490000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 40.88083791208791,
+      "capital_ratio": 0,
+      "education_pct": 18.0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    },
+    {
+      "state": "Benue",
+      "region": "North Central",
+      "budget_2025": 550110000000.0,
+      "budget_2026": 0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 0,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "risk_factors": [],
+      "llm_analysis": null,
+      "red_flags": [],
+      "investigation_leads": [],
+      "enriched_by_llm": false
+    }
+  ]
+}

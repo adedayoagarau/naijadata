@@ -1,0 +1,1423 @@
+{
+  "source": "2026_Appropriation_Bill_Details.pdf",
+  "total_anomalies": 177,
+  "total_flagged_amount": 86031974135.0,
+  "anomalies": [
+    {
+      "mda": "STATE HOUSE OPERATIONS - PRESIDENT\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 79671849.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "LOW",
+      "page": 9
+    },
+    {
+      "mda": "ECONOMIC AND FINANCIAL CRIMES COMMISSION",
+      "item": "SATELLITE BROADCASTING ACCESS CHARGES",
+      "amount": 55443185.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "LOW",
+      "page": 26
+    },
+    {
+      "mda": "ECONOMIC AND FINANCIAL CRIMES COMMISSION",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 170532038.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "MEDIUM",
+      "page": 26
+    },
+    {
+      "mda": "NATIONAL AGRICULTURAL LAND DEVELOPMENT AUTHORITY",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 175000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 42
+    },
+    {
+      "mda": "MINISTRY OF DEFENCE - MOD HQTRS\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 54600000.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "LOW",
+      "page": 55
+    },
+    {
+      "mda": "MINISTRY OF DEFENCE - MOD HQTRS\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF HOSPITALS / HEALTH CENTRES",
+      "amount": 609000000.0,
+      "reason": "'hospital' should be under health, medical",
+      "severity": "HIGH",
+      "page": 56
+    },
+    {
+      "mda": "MINISTRY OF DEFENCE - MOD HQTRS\nCODE LINE ITEM AMOUNT",
+      "item": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 456395869.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 56
+    },
+    {
+      "mda": "DEFENCE HEADQUARTERS\nCODE LINE ITEM AMOUNT",
+      "item": "SATELLITE BROADCASTING ACCESS CHARGES",
+      "amount": 226197275.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 61
+    },
+    {
+      "mda": "DEFENCE HEADQUARTERS\nCODE LINE ITEM AMOUNT",
+      "item": "WATER RATES",
+      "amount": 143005680.0,
+      "reason": "SECURITY agency with 'water' expenditure",
+      "severity": "MEDIUM",
+      "page": 61
+    },
+    {
+      "mda": "NIGERIAN ARMY\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF HOSPITALS / HEALTH CENTRES",
+      "amount": 2916156898.0,
+      "reason": "'hospital' should be under health, medical",
+      "severity": "HIGH",
+      "page": 68
+    },
+    {
+      "mda": "NIGERIAN ARMY\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 3721156898.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "HIGH",
+      "page": 68
+    },
+    {
+      "mda": "NIGERIAN ARMY\nCODE LINE ITEM AMOUNT",
+      "item": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 140000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 68
+    },
+    {
+      "mda": "NIGERIAN ARMY\nCODE LINE ITEM AMOUNT",
+      "item": "REHABILITATION / REPAIRS - ROADS",
+      "amount": 1283109035.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "HIGH",
+      "page": 68
+    },
+    {
+      "mda": "NIGERIAN NAVY\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 3640000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "HIGH",
+      "page": 71
+    },
+    {
+      "mda": "NIGERIAN NAVY\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 1766639197.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "HIGH",
+      "page": 71
+    },
+    {
+      "mda": "NIGERIAN AIRFORCE\nCODE LINE ITEM AMOUNT",
+      "item": "SATELLITE BROADCASTING ACCESS CHARGES",
+      "amount": 627517308.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "HIGH",
+      "page": 78
+    },
+    {
+      "mda": "NIGERIAN AIRFORCE\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 50493656.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "LOW",
+      "page": 78
+    },
+    {
+      "mda": "NIGERIAN DEFENCE ACADEMY",
+      "item": "WATER RATES",
+      "amount": 176279792.0,
+      "reason": "SECURITY agency with 'water' expenditure",
+      "severity": "MEDIUM",
+      "page": 88
+    },
+    {
+      "mda": "NIGERIAN DEFENCE ACADEMY",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 551698784.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "HIGH",
+      "page": 88
+    },
+    {
+      "mda": "NIGERIAN DEFENCE ACADEMY",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 420000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 89
+    },
+    {
+      "mda": "NATIONAL DEFENCE COLLEGE\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF HOSPITALS / HEALTH CENTRES",
+      "amount": 105000000.0,
+      "reason": "'hospital' should be under health, medical",
+      "severity": "MEDIUM",
+      "page": 92
+    },
+    {
+      "mda": "NATIONAL DEFENCE COLLEGE\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 245000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 92
+    },
+    {
+      "mda": "COMMAND AND STAFF COLLEGE",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 343035000.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 97
+    },
+    {
+      "mda": "DEFENCE INDUSTRIES CORPORATION OF NIGERIA",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 180576375.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 103
+    },
+    {
+      "mda": "DEFENCE INTELLIGENCE AGENCY\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 123611465.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "MEDIUM",
+      "page": 108
+    },
+    {
+      "mda": "DEFENCE INTELLIGENCE AGENCY\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 1707936454.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "HIGH",
+      "page": 109
+    },
+    {
+      "mda": "DEFENCE MISSIONS\nCODE LINE ITEM AMOUNT",
+      "item": "WATER RATES",
+      "amount": 690231279.0,
+      "reason": "SECURITY agency with 'water' expenditure",
+      "severity": "HIGH",
+      "page": 112
+    },
+    {
+      "mda": "DEFENCE MISSIONS\nCODE LINE ITEM AMOUNT",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 1201700930.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "HIGH",
+      "page": 112
+    },
+    {
+      "mda": "DEFENCE SPACE ADMINISTRATION\nCODE LINE ITEM AMOUNT",
+      "item": "SATELLITE BROADCASTING ACCESS CHARGES",
+      "amount": 422501552.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 114
+    },
+    {
+      "mda": "MILITARY PENSION BOARD\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 179699508.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 120
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 80767257.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 149
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 54175150.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 151
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 55934027.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 153
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 88284595.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 156
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 58449613.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 158
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 78858287.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 160
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 64042213.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 162
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 84152442.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 164
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 71707018.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 166
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 73781763.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 168
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 77565621.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 171
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 65202189.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 173
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 97067190.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 175
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 70966566.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 177
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 254600762.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 179
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 82837629.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 181
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 130441124.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 183
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 83307970.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 185
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 79903908.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 187
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 107848036.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 189
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 91832029.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 191
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 101654025.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 193
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 93816229.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 195
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 92622127.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 197
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 82127499.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 199
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 98443012.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 201
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 66319996.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 205
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 88786488.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 207
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 100454417.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 209
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 95416459.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 211
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 90769832.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 213
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 84729626.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 215
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 68067993.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 217
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 155482643.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 219
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 61980164.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 222
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 87133368.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 224
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 62208790.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 226
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 147503599.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 228
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 61282704.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 230
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 103644846.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 232
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 84494520.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 234
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 53403140.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 236
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 64371359.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 239
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 90318594.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 241
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 107448703.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 243
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 123168809.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 245
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 67953075.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 247
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 103068303.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 249
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 137144359.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 251
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 81174210.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 253
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 146397205.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 255
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 61344946.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 258
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 109227997.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 260
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 87662316.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 262
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 67219478.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 264
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 174315007.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 266
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 80700305.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 268
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 117282044.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 270
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 85641633.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 272
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 100401376.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 274
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 98431917.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 277
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 73870624.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 279
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 80834102.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 281
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 112771279.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 283
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 76555491.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 285
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 58725490.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 287
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 88574298.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 289
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 130051574.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 291
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 95434188.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 293
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 115551721.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 296
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 127662770.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 298
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 95334952.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 302
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 79723307.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 304
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 74114919.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 306
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 68670037.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 308
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 110554321.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 310
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 62890814.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 312
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 99987239.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 314
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 84426109.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 316
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 107194404.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 318
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 99819765.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 320
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 89700579.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 322
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 95383670.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 324
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 105575506.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 326
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 72573620.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 328
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 106280350.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 330
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 98797214.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 332
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 123039571.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 334
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 118148724.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 336
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 188243687.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 338
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 116111972.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 340
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 103168661.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 342
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 83181990.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 344
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 88096641.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 346
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 107948388.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 348
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 186783563.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 350
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 112847575.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 352
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 144433275.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 355
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 61897895.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 357
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 97922194.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 359
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 83007480.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 361
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 125136543.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 363
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 76615926.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 365
+    },
+    {
+      "mda": "CONSOLATE GENERAL FRANKFURT",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 87747412.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 367
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 61841073.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 369
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 83884743.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 374
+    },
+    {
+      "mda": "FOREIGN MISSION",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 89906491.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 376
+    },
+    {
+      "mda": "NIGERIAN TELEVISION AUTHORITY\nCODE LINE ITEM AMOUNT",
+      "item": "SATELLITE BROADCASTING ACCESS CHARGES",
+      "amount": 400000000.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 382
+    },
+    {
+      "mda": "NIGERIA CORRECTIONAL SERVICE\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 1168307243.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "HIGH",
+      "page": 410
+    },
+    {
+      "mda": "NIGERIA IMMIGRATION SERVICE\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 110347553.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "MEDIUM",
+      "page": 413
+    },
+    {
+      "mda": "NIGERIA SECURITY AND CIVIL DEFENCE CORPS\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF HOSPITALS / HEALTH CENTRES",
+      "amount": 151179676.0,
+      "reason": "'hospital' should be under health, medical",
+      "severity": "MEDIUM",
+      "page": 419
+    },
+    {
+      "mda": "NIGERIA SECURITY AND CIVIL DEFENCE CORPS\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 1138221451.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "HIGH",
+      "page": 419
+    },
+    {
+      "mda": "NIGERIA SECURITY AND CIVIL DEFENCE CORPS\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 126472576.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 419
+    },
+    {
+      "mda": "FEDERAL FIRE SERVICE\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 128558976.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "MEDIUM",
+      "page": 424
+    },
+    {
+      "mda": "FEDERAL TRAINING CENTRE",
+      "item": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 73801153.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 439
+    },
+    {
+      "mda": "FEDERAL TRAINING CENTRE",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 81192047.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 440
+    },
+    {
+      "mda": "PUBLIC SERVICE INSTITUTE OF NIGERIA",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 175000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 451
+    },
+    {
+      "mda": "NIGERIA POLICE ACADEMY WUDIL",
+      "item": "MEAL SUBSIDY TO GOVERNMENT SCHOOLS",
+      "amount": 5900000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "HIGH",
+      "page": 477
+    },
+    {
+      "mda": "POLICE FORMATIONS AND COMMANDS\nCODE LINE ITEM AMOUNT",
+      "item": "WATER RATES",
+      "amount": 137229199.0,
+      "reason": "SECURITY agency with 'water' expenditure",
+      "severity": "MEDIUM",
+      "page": 479
+    },
+    {
+      "mda": "POLICE FORMATIONS AND COMMANDS\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 483980998.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "MEDIUM",
+      "page": 479
+    },
+    {
+      "mda": "NATIONAL INSTITUTE FOR SECURITY STUDIES\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 126000000.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 500
+    },
+    {
+      "mda": "NATIONAL INTELLIGENCE AGENCY\nCODE LINE ITEM AMOUNT",
+      "item": "SATELLITE BROADCASTING ACCESS CHARGES",
+      "amount": 127673071.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 504
+    },
+    {
+      "mda": "NATIONAL INTELLIGENCE AGENCY\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 183999764.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "MEDIUM",
+      "page": 504
+    },
+    {
+      "mda": "NATIONAL INTELLIGENCE AGENCY\nCODE LINE ITEM AMOUNT",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 157415610.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 505
+    },
+    {
+      "mda": "NATIONAL INTELLIGENCE AGENCY\nCODE LINE ITEM AMOUNT",
+      "item": "REHABILITATION / REPAIRS - HOSPITAL / HEALTH CENTRES",
+      "amount": 31104141419.0,
+      "reason": "'hospital' should be under health, medical",
+      "severity": "HIGH",
+      "page": 506
+    },
+    {
+      "mda": "NATIONAL INTELLIGENCE AGENCY PENSION BOARD\nCODE LINE ITEM AMOUNT",
+      "item": "REHABILITATION / REPAIRS - HOSPITAL / HEALTH CENTRES",
+      "amount": 305074148.0,
+      "reason": "'hospital' should be under health, medical",
+      "severity": "MEDIUM",
+      "page": 508
+    },
+    {
+      "mda": "NATIONAL CENTRE FOR CONTROL OF SMALL ARMS AND LIGHT WEAPONS\nCODE LINE ITEM AMOUNT",
+      "item": "SATELLITE BROADCASTING ACCESS CHARGES",
+      "amount": 53208139.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "LOW",
+      "page": 513
+    },
+    {
+      "mda": "NATIONAL CENTRE FOR CONTROL OF SMALL ARMS AND LIGHT WEAPONS\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 65182460.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "LOW",
+      "page": 513
+    },
+    {
+      "mda": "FEDERAL ROAD SAFETY COMMISSION\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 320000000.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "MEDIUM",
+      "page": 542
+    },
+    {
+      "mda": "FEDERAL ROAD SAFETY COMMISSION ACADEMY\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 250000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 546
+    },
+    {
+      "mda": "FEDERAL ROAD SAFETY COMMISSION COMMAND AND STAFF COLLEGE\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 470000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 549
+    },
+    {
+      "mda": "FEDERAL ROAD SAFETY COMMISSION INSPECTORATE TRAINING SCHOOL\nCODE LINE ITEM AMOUNT",
+      "item": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 257000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 552
+    },
+    {
+      "mda": "BORDER COMMUNITIES DEVELOPMENT AGENCY",
+      "item": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 320250000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 583
+    },
+    {
+      "mda": "FEDERAL MINISTRY OF AGRICULTURE AND FOOD SECURITY - HQTRS\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 2514893597.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "HIGH",
+      "page": 621
+    },
+    {
+      "mda": "NATIONAL ROOT CROPS RESEARCH INSTITUTE- UMUDIKE\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 284900000.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 651
+    },
+    {
+      "mda": "FEDERAL UNIVERSITY OF AGRICULTURE",
+      "item": "REHABILITATION / REPAIRS - ROADS",
+      "amount": 70117460.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "LOW",
+      "page": 668
+    },
+    {
+      "mda": "FEDERAL UNIVERSITY OF AGRICULTURE",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 224000000.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 671
+    },
+    {
+      "mda": "FEDERAL CO-OPERATIVE COLLEGE- KADUNA\nCODE LINE ITEM AMOUNT",
+      "item": "REHABILITATION / REPAIRS - PUBLIC SCHOOLS",
+      "amount": 317100000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 726
+    },
+    {
+      "mda": "FEDERAL COLLEGE OF LAND RESOURCES TECHNOLOGY",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 56000000.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "LOW",
+      "page": 767
+    },
+    {
+      "mda": "FEDERAL MINISTRY OF FINANCE - HQTRS\nCODE LINE ITEM AMOUNT",
+      "item": "DRUGS & MEDICAL SUPPLIES",
+      "amount": 52000000.0,
+      "reason": "'drugs' should be under health, medical, pharmaceutical",
+      "severity": "LOW",
+      "page": 822
+    },
+    {
+      "mda": "LAGOS INTERNATIONAL TRADE FAIR COMPLEX MANAGEMENT BOARD\nCODE LINE ITEM AMOUNT",
+      "item": "REHABILITATION / REPAIRS - ROADS",
+      "amount": 210530554.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 857
+    },
+    {
+      "mda": "NIGERIA TRADE OFFICE",
+      "item": "FOREIGN SERVICE SCHOOL FEES PAYMENT",
+      "amount": 73360000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "LOW",
+      "page": 885
+    },
+    {
+      "mda": "INDUSTRIAL ARBITRATION PANEL\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF HOSPITALS / HEALTH CENTRES",
+      "amount": 280000000.0,
+      "reason": "'hospital' should be under health, medical",
+      "severity": "MEDIUM",
+      "page": 898
+    },
+    {
+      "mda": "INDUSTRIAL ARBITRATION PANEL\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF PUBLIC SCHOOLS",
+      "amount": 420000000.0,
+      "reason": "'school' should be under education, ubec, universal basic",
+      "severity": "MEDIUM",
+      "page": 898
+    },
+    {
+      "mda": "INDUSTRIAL ARBITRATION PANEL\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 245000000.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "MEDIUM",
+      "page": 898
+    },
+    {
+      "mda": "MICHAEL IMODU INSTITUTE OF LABOUR STUDIES\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 1785000000.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "HIGH",
+      "page": 902
+    },
+    {
+      "mda": "NIGERIAN BUILDING AND ROAD RESEARCH INSTITUTE - LAGOS\nCODE LINE ITEM AMOUNT",
+      "item": "CONSTRUCTION / PROVISION OF ROADS",
+      "amount": 3036286365.0,
+      "reason": "'road' should be under works, transport, highway",
+      "severity": "HIGH",
+      "page": 982
+    }
+  ]
+}

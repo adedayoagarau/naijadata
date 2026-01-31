@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-01-30T11:01:50.344841",
+  "total_contractors": 1,
+  "total_allocated": 51200000000.0,
+  "contractors": [
+    {
+      "name": "GALAXY BACKBONE LIMITED",
+      "total_allocated": 51200000000.0,
+      "total_formatted": "\u20a651.20B",
+      "project_count": 6,
+      "years_active": [
+        2022,
+        2024,
+        2025,
+        2026
+      ],
+      "mdas_worked_with": [
+        "FOREIGN GRANTS AND CONTRIBUTIONS",
+        "ACQUISITION OF NON TANGIBLE ASSETS"
+      ],
+      "sample_projects": [
+        {
+          "year": 2022,
+          "mda": "ACQUISITION OF NON TANGIBLE ASSETS",
+          "description": "PAYMENT TO GALAXY BACKBONE LIMITED FOR COMMON SERVICES DELIVERED TO MDA",
+          "amount": 5600000000.0
+        },
+        {
+          "year": 2024,
+          "mda": "FOREIGN GRANTS AND CONTRIBUTIONS",
+          "description": "PAYMENT TO GALAXY BACKBONE LIMITED FOR COMMON SERVICES DELIVERED TO MDA",
+          "amount": 5600000000.0
+        },
+        {
+          "year": 2025,
+          "mda": "FOREIGN GRANTS AND CONTRIBUTIONS",
+          "description": "PAYMENT TO GALAXY BACKBONE LIMITED FOR COMMON SERVICES DELIVERED TO MDA",
+          "amount": 10000000000.0
+        },
+        {
+          "year": 2026,
+          "mda": "FOREIGN GRANTS AND CONTRIBUTIONS",
+          "description": "PAYMENT TO GALAXY BACKBONE LIMITED FOR COMMON SERVICES DELIVERED TO MDA",
+          "amount": 10000000000.0
+        },
+        {
+          "year": 2026,
+          "mda": "FOREIGN GRANTS AND CONTRIBUTIONS",
+          "description": "PAYMENT TO GALAXY BACKBONE LIMITED FOR COMMON SERVICES DELIVERED TO MDA",
+          "amount": 10000000000.0
+        }
+      ]
+    }
+  ]
+}

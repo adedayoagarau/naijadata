@@ -14,6 +14,11 @@ lxml>=5.0.0
 # Progress Display
 tqdm>=4.66.0
 
+# AI/API Integration
+python-dotenv>=1.0.0
+aiohttp>=3.9.0
+openai>=1.0.0
+
 # Optional: OCR for scanned PDFs
 # pytesseract>=0.3.10
 # pillow>=10.0.0

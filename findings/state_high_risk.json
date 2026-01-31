@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-01-31T10:09:02.896805",
+  "count": 3,
+  "states": [
+    {
+      "state": "Rivers",
+      "region": "South South",
+      "budget_2025": 1480000000000.0,
+      "budget_2026": 0,
+      "status_2026": "NOT YET PRESENTED",
+      "yoy_change_pct": 0,
+      "capital_ratio": 0,
+      "education_pct": 0,
+      "risk_score": 52,
+      "risk_level": "CRITICAL",
+      "risk_factors": [
+        {
+          "factor": "NO_2026_BUDGET",
+          "points": 25,
+          "detail": "2026 budget not yet presented or pending"
+        },
+        {
+          "factor": "HIGH_RISK_STATE",
+          "points": 15,
+          "detail": "State has history of budget/governance issues"
+        },
+        {
+          "factor": "POLITICAL_INSTABILITY",
+          "points": 20,
+          "detail": "Political issues noted: Political situation - Governor Fubara has not yet presented 2026 budget"
+        }
+      ],
+      "llm_analysis": "Rivers State's budget situation raises significant concerns due to the absence of a 2026 budget and a complete lack of capital and education spending allocations. The stagnation in budget figures coupled with a history of governance issues suggests potential mismanagement and a lack of transparency.",
+      "red_flags": [
+        "NO_2026_BUDGET",
+        "HIGH_RISK_STATE",
+        "POLITICAL_INSTABILITY"
+      ],
+      "investigation_leads": [
+        "Investigate the reasons for the absence of the 2026 budget presentation",
+        "Request documentation on previous budget allocations and expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Akwa Ibom",
+      "region": "South South",
+      "budget_2025": 955000000000.0,
+      "budget_2026": 1584000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 65.86387434554973,
+      "capital_ratio": 73.7,
+      "education_pct": 2.27,
+      "risk_score": 42,
+      "risk_level": "HIGH",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "65.9% budget increase"
+        },
+        {
+          "factor": "CRITICAL_LOW_EDUCATION",
+          "points": 25,
+          "detail": "Education at 2.3% (critically below 15% UN threshold)"
+        },
+        {
+          "factor": "HIGH_RISK_STATE",
+          "points": 15,
+          "detail": "State has history of budget/governance issues"
+        }
+      ],
+      "llm_analysis": "Akwa Ibom's budget for 2026 shows a concerning 65.9% year-over-year increase, which raises red flags for potential budget padding or unrealistic projections. Additionally, the education spending is alarmingly low at 2.3%, significantly below the UN recommended threshold, indicating a neglect of essential services.",
+      "red_flags": [
+        "NOTABLE_YOY_INCREASE",
+        "CRITICAL_LOW_EDUCATION",
+        "HIGH_RISK_STATE"
+      ],
+      "investigation_leads": [
+        "Investigate the rationale behind the significant budget increase",
+        "Request detailed breakdowns of capital and recurrent expenditures"
+      ],
+      "enriched_by_llm": true
+    },
+    {
+      "state": "Imo",
+      "region": "South East",
+      "budget_2025": 807000000000.0,
+      "budget_2026": 1400000000000.0,
+      "status_2026": "SIGNED",
+      "yoy_change_pct": 73.4820322180917,
+      "capital_ratio": 0,
+      "education_pct": 4.24,
+      "risk_score": 42,
+      "risk_level": "HIGH",
+      "risk_factors": [
+        {
+          "factor": "NOTABLE_YOY_INCREASE",
+          "points": 10,
+          "detail": "73.5% budget increase"
+        },
+        {
+          "factor": "CRITICAL_LOW_EDUCATION",
+          "points": 25,
+          "detail": "Education at 4.2% (critically below 15% UN threshold)"
+        },
+        {
+          "factor": "HIGH_RISK_STATE",
+          "points": 15,
+          "detail": "State has history of budget/governance issues"
+        }
+      ],
+      "llm_analysis": "Imo State's budget for 2026 shows a concerning 73.5% increase, which raises red flags for potential budget padding or unrealistic projections. Additionally, the capital expenditure ratio is alarmingly at 0.0%, indicating a lack of investment in infrastructure or development, while education spending is critically low at 4.2%, far below the UN recommended threshold.",
+      "red_flags": [
+        "NOTABLE_YOY_INCREASE",
+        "CRITICAL_LOW_EDUCATION",
+        "HIGH_RISK_STATE"
+      ],
+      "investigation_leads": [
+        "Examine the rationale behind the budget increase",
+        "Request detailed breakdown of budget allocations and expenditures"
+      ],
+      "enriched_by_llm": true
+    }
+  ]
+}

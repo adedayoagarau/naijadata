@@ -1,0 +1,12 @@
+[
+  {
+    "type": "api_error",
+    "status": 401,
+    "error": "{\"error\":{\"message\":\"Invalid Authentication\",\"type\":\"invalid_authentication_error\"}}"
+  },
+  {
+    "type": "api_error",
+    "status": 401,
+    "error": "{\"error\":{\"message\":\"Invalid Authentication\",\"type\":\"invalid_authentication_error\"}}"
+  }
+]
