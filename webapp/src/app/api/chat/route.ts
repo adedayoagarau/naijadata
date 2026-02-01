@@ -109,15 +109,15 @@ function loadBudgetData(): BudgetData[] {
 }
 
 // Load findings from multiple sources
+// CANONICAL PATH - See WORKTREE.md for data structure
 function loadFindings(): Finding[] {
   const paths = [
-    // Primary: risk-scored findings
-    path.join(process.cwd(), "..", "data", "risk_scored", "all_items_scored.json"),
-    path.join(process.cwd(), "..", "findings", "all_findings.json"),
-    // Webapp curated findings
+    // PRIMARY: Consolidated findings (single source of truth)
+    path.join(process.cwd(), "..", "findings", "consolidated.json"),
+    // FALLBACKS (legacy files)
+    path.join(process.cwd(), "..", "findings", "webapp_curated_findings.json"),
     path.join(process.cwd(), "..", "findings", "webapp_findings.json"),
-    path.join(process.cwd(), "..", "findings", "all_scored.json"),
-    // Fallback
+    // Local fallback
     path.join(process.cwd(), "data", "findings.json"),
   ];
 
