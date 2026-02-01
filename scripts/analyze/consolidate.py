@@ -214,13 +214,59 @@ def main():
     print(f"  Unique findings: {len(unique)}")
     print(f"  Duplicates removed: {len(normalized) - len(unique)}")
 
-    # Sort by severity then amount
+    # Add jurisdiction field and ensure no "Unknown" entities
+    print("\nCategorizing by jurisdiction...")
+    for finding in unique:
+        # Set jurisdiction: State name or "Federal"
+        finding["jurisdiction"] = finding.get("state") or "Federal"
+
+        # Ensure entity is never empty or "Unknown"
+        if not finding.get("entity") or finding["entity"].lower() == "unknown":
+            if finding.get("state"):
+                finding["entity"] = f"{finding['state']} Budget Item"
+            else:
+                finding["entity"] = finding.get("type", "").replace("_", " ").title() or "Federal Budget Item"
+
+        # Add category based on type
+        type_to_category = {
+            "MANDATE_VIOLATION": "Governance",
+            "YOY_VARIANCE": "Year-over-Year",
+            "YOY_SPIKE": "Year-over-Year",
+            "ROUND_NUMBER": "Accounting",
+            "CROSS_MDA_OUTLIER": "Comparative",
+            "PADDING_INDICATOR": "Procurement",
+            "BENFORD_VIOLATION": "Statistical",
+            "DUPLICATE_ALLOCATION": "Duplication",
+            "CATEGORY_TOTAL": "Aggregate",
+            "VAGUE_ALLOCATION": "Transparency",
+            "MISPLACED_LUXURY": "Priority",
+            "VEHICLE_PADDING": "Procurement",
+            "TRAVEL_ABUSE": "Travel",
+        }
+        finding["category"] = type_to_category.get(finding.get("type", ""), "Other")
+
+    # Sort by: Jurisdiction → Category → Severity → Amount (descending)
     severity_order = {"CRITICAL": 0, "HIGH": 1, "MEDIUM": 2, "LOW": 3}
-    unique.sort(key=lambda x: (severity_order.get(x["severity"], 4), -x["amount"]))
+    unique.sort(key=lambda x: (
+        0 if x["jurisdiction"] == "Federal" else 1,  # Federal first
+        x["category"],
+        severity_order.get(x["severity"], 4),
+        -x["amount"]
+    ))
 
     # Reassign IDs
     for i, finding in enumerate(unique, 1):
         finding["id"] = str(i)
+
+    # Build categorized view
+    by_jurisdiction = {}
+    for finding in unique:
+        jur = finding["jurisdiction"]
+        if jur not in by_jurisdiction:
+            by_jurisdiction[jur] = {"total": 0, "amount": 0, "findings": []}
+        by_jurisdiction[jur]["total"] += 1
+        by_jurisdiction[jur]["amount"] += finding["amount"]
+        by_jurisdiction[jur]["findings"].append(finding["id"])
 
     # Calculate summary
     summary = {
@@ -233,6 +279,8 @@ def main():
         "years": sorted(list(set(f["year"] for f in unique))),
         "states": sorted(list(set(f.get("state") for f in unique if f.get("state")))),
         "types": sorted(list(set(f["type"] for f in unique))),
+        "categories": sorted(list(set(f["category"] for f in unique))),
+        "by_jurisdiction": by_jurisdiction,
     }
 
     # Archive existing file
@@ -245,6 +293,11 @@ def main():
         "summary": summary,
         "findings": unique,
     }
+
+    # Print jurisdiction breakdown
+    print("\nBy Jurisdiction:")
+    for jur, data in sorted(by_jurisdiction.items(), key=lambda x: -x[1]["amount"]):
+        print(f"  {jur}: {data['total']} findings, ₦{data['amount']:,.0f}")
 
     FINDINGS_DIR.mkdir(exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:

@@ -18,6 +18,7 @@ interface Finding {
   severity: string;
   year: number;
   type: string;
+  state?: string;
   change_percentage?: number;
   amount_2025?: number;
 }
@@ -58,6 +59,7 @@ export default function ComparePage() {
   const [loading, setLoading] = useState(true);
   const [sortBy, setSortBy] = useState<"percentage" | "amount">("percentage");
   const [showIncreases, setShowIncreases] = useState(true);
+  const [stateFilter, setStateFilter] = useState<string>("ALL");
 
   useEffect(() => {
     const loadData = async () => {
@@ -76,6 +78,9 @@ export default function ComparePage() {
     loadData();
   }, []);
 
+  // Get unique states for filter
+  const states = [...new Set(findings.map((f) => f.state).filter(Boolean))].sort() as string[];
+
   // Filter for YoY changes or high-value findings (for comparison potential)
   const yoyFindings = findings
     .filter(
@@ -86,8 +91,15 @@ export default function ComparePage() {
         f.amount_2025 ||
         f.year === 2026 // Include all 2026 findings for potential comparison
     )
+    .filter((f) => {
+      if (stateFilter === "ALL") return true;
+      if (stateFilter === "FEDERAL") return !f.state;
+      return f.state === stateFilter;
+    })
     .map((f) => ({
       ...f,
+      // Ensure entity is never "Unknown"
+      entity: f.entity || f.type?.replace(/_/g, " ") || "Budget Item",
       // Estimate change if not provided (assume 20% increase as baseline for display)
       change_percentage: f.change_percentage || (f.amount_2025 ? ((f.amount - f.amount_2025) / f.amount_2025) * 100 : 15),
     }));
@@ -190,6 +202,18 @@ export default function ComparePage() {
         </div>
 
         <select
+          value={stateFilter}
+          onChange={(e) => setStateFilter(e.target.value)}
+          className="bg-transparent border border-gray-600 text-white text-xs px-3 py-2 rounded"
+        >
+          <option value="ALL">All Jurisdictions</option>
+          <option value="FEDERAL">Federal</option>
+          {states.map((s) => (
+            <option key={s} value={s}>{s}</option>
+          ))}
+        </select>
+
+        <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value as "percentage" | "amount")}
           className="bg-transparent border border-gray-600 text-white text-xs px-3 py-2 rounded"
@@ -197,6 +221,8 @@ export default function ComparePage() {
           <option value="percentage">Sort by % Change</option>
           <option value="amount">Sort by Amount</option>
         </select>
+
+        <span className="text-gray-500 text-xs ml-auto">{displayFindings.length} results</span>
       </div>
 
       {/* Content */}

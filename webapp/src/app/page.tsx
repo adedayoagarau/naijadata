@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import FindingsSlider from "@/components/FindingsSlider";
 
 // Nigerian Budget Findings - will be fetched from API
 interface Finding {
@@ -523,23 +524,18 @@ export default function Home() {
             {/* Filter Bar */}
             <FindingsFilter findings={findings} onFilterChange={handleFilterChange} />
 
+            {/* Featured Findings Slider */}
+            {criticalFindings.length > 0 && (
+              <div className="border-b border-c-border">
+                <FindingsSlider
+                  findings={criticalFindings.slice(0, 10)}
+                  onSelectFinding={setSelectedFinding}
+                />
+              </div>
+            )}
+
             {/* Budget Grid */}
             <main className="grid grid-cols-2 md:grid-cols-4 auto-rows-[minmax(120px,auto)] md:auto-rows-[minmax(140px,auto)] overflow-y-auto bg-c-black gap-[1.5px] flex-1">
-            {/* Hero Block - Priority Investigation */}
-            {criticalFindings.length > 0 && (
-              <BudgetBlock
-                label="Priority Investigation"
-                value={criticalFindings[0]?.entity || "Federal Budget<br />2026"}
-                meta={{
-                  left: `${criticalFindings.length} CRITICAL`,
-                  right: formatAmount(totalFlagged) + " FLAGGED",
-                }}
-                bgColor="red"
-                span={2}
-                row={2}
-                onClick={() => setSelectedFinding(criticalFindings[0])}
-              />
-            )}
 
             {/* Dynamic blocks from filtered findings */}
             {filteredFindings.slice(0, 20).map((finding, idx) => {
@@ -552,14 +548,19 @@ export default function Home() {
               ];
               const spans = [1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 3];
 
+              // Get display name - never show "Unknown"
+              const displayEntity = finding.entity ||
+                finding.type?.replace(/_/g, " ") ||
+                (finding.state ? `${finding.state} Budget Item` : "Federal Budget Item");
+
               return (
                 <BudgetBlock
                   key={finding.id || idx}
-                  label={finding.type?.replace(/_/g, " ") || "Finding"}
+                  label={`${finding.state || "Federal"} • ${finding.type?.replace(/_/g, " ") || "Finding"}`}
                   value={
-                    finding.entity?.length > 30
-                      ? finding.entity.substring(0, 30) + "..."
-                      : finding.entity || "Unknown"
+                    displayEntity.length > 30
+                      ? displayEntity.substring(0, 30) + "..."
+                      : displayEntity
                   }
                   meta={
                     finding.amount
