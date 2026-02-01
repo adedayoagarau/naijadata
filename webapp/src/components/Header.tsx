@@ -1,40 +1,56 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-export function Header() {
-  const [time, setTime] = useState("");
+interface HeaderProps {
+  findingsCount?: number;
+}
 
-  useEffect(() => {
-    const updateClock = () => {
-      const now = new Date();
-      const hours = String(now.getHours()).padStart(2, "0");
-      const minutes = String(now.getMinutes()).padStart(2, "0");
-      setTime(`${hours}:${minutes}`);
-    };
+export function Header({ findingsCount }: HeaderProps) {
+  const pathname = usePathname();
+  const today = new Date();
+  const dateStr = `${String(today.getMonth() + 1).padStart(2, "0")}.${String(
+    today.getDate()
+  ).padStart(2, "0")}.${String(today.getFullYear()).slice(-2)}`;
 
-    updateClock();
-    const interval = setInterval(updateClock, 1000);
-    return () => clearInterval(interval);
-  }, []);
+  const navItems = [
+    { href: "/red-flags", label: findingsCount ? `RED FLAGS (${findingsCount})` : "RED FLAGS" },
+    { href: "/compare", label: "COMPARE" },
+    { href: "/explore", label: "EXPLORE" },
+    { href: "/impact", label: "IMPACT" },
+    { href: "/about", label: "ABOUT" },
+  ];
 
   return (
-    <header className="p-4 border-b border-gray-800 bg-[#050505] sticky top-0 z-40">
-      <div className="flex justify-between items-center">
-        <div className="flex items-baseline gap-1">
-          <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
-            Decide<span className="text-[#25D366]">9ja</span>
-          </h1>
-          <span className="text-[10px] text-gray-600 hidden md:inline">Budget Transparency</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="text-xs text-gray-600 hidden sm:inline">Federal Republic of Nigeria</span>
-          <div className="flex items-center gap-2 text-xs text-gray-500">
-            <span className="w-2 h-2 bg-[#25D366] rounded-full animate-pulse" />
-            <span className="font-mono">{time || "--:--"}</span>
-          </div>
-        </div>
-      </div>
+    <header className="bg-c-black text-gray-500 px-4 md:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 font-display text-xs tracking-wide border-b border-c-border flex-shrink-0">
+      <Link
+        href="/"
+        className="text-white font-normal text-xs tracking-[0.2em] uppercase hover:text-gray-300 transition-colors"
+      >
+        Decide9ja // Budget Transparency DB
+      </Link>
+      <nav className="flex gap-4 md:gap-16 text-[10px] md:text-xs">
+        {navItems.map((item) => {
+          const isActive =
+            pathname === item.href ||
+            (item.href !== "/" && pathname.startsWith(item.href));
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`transition-colors ${
+                isActive ? "text-white" : "text-gray-500 hover:text-white"
+              }`}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
+        <span className="text-gray-600">{dateStr}</span>
+      </nav>
     </header>
   );
 }
+
+export default Header;

@@ -54,8 +54,14 @@ const Header = ({ findingsCount }: { findingsCount: number }) => {
         <a href="/red-flags" className="text-gray-500 hover:text-white transition-colors">
           RED FLAGS ({findingsCount})
         </a>
+        <a href="/compare" className="text-gray-500 hover:text-white transition-colors">
+          COMPARE
+        </a>
         <a href="/explore" className="text-gray-500 hover:text-white transition-colors">
           EXPLORE
+        </a>
+        <a href="/impact" className="text-gray-500 hover:text-white transition-colors">
+          IMPACT
         </a>
         <a href="/about" className="text-gray-500 hover:text-white transition-colors">
           ABOUT

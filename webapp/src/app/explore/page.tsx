@@ -106,7 +106,7 @@ export default function ExplorePage() {
 
   return (
     <div
-      className="min-h-screen bg-c-black"
+      className="min-h-screen bg-c-black pb-20 md:pb-0"
       style={{
         "--c-red": "#D6453A",
         "--c-blue": "#164678",
@@ -127,8 +127,14 @@ export default function ExplorePage() {
           <Link href="/red-flags" className="text-gray-500 hover:text-white transition-colors">
             RED FLAGS ({findings.length})
           </Link>
+          <Link href="/compare" className="text-gray-500 hover:text-white transition-colors">
+            COMPARE
+          </Link>
           <Link href="/explore" className="text-white transition-colors">
             EXPLORE
+          </Link>
+          <Link href="/impact" className="text-gray-500 hover:text-white transition-colors">
+            IMPACT
           </Link>
           <Link href="/about" className="text-gray-500 hover:text-white transition-colors">
             ABOUT
