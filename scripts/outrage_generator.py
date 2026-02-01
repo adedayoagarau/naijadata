@@ -78,34 +78,62 @@ def load_json(path: Path) -> Optional[dict]:
     return None
 
 
+def extract_items_from_data(data) -> List[dict]:
+    """Extract items from various data structures"""
+    items = []
+    if isinstance(data, list):
+        items.extend(data)
+    elif isinstance(data, dict):
+        # Try various keys that might contain items
+        for key in ["items", "findings", "budget_items", "data", "records"]:
+            if key in data:
+                val = data[key]
+                if isinstance(val, list):
+                    items.extend(val)
+                    break
+        # If no items found, maybe the dict itself has item-like values
+        if not items and "mdas" in data:
+            for mda_data in data.get("mdas", {}).values():
+                if isinstance(mda_data, dict) and "items" in mda_data:
+                    items.extend(mda_data["items"])
+    return items
+
+
 def load_all_budget_items() -> List[dict]:
     """Load all budget items from various sources"""
     items = []
 
-    # Try master file first
-    master = load_json(DATA_DIR / "master" / "all_items.json")
-    if master:
-        if isinstance(master, list):
-            items.extend(master)
-        elif isinstance(master, dict) and "items" in master:
-            items.extend(master["items"])
+    # Priority order for finding data files
+    data_files = [
+        # Findings folder (your actual data)
+        OUTPUT_DIR / "webapp_curated_findings.json",
+        OUTPUT_DIR / "webapp_consolidated.json",
+        OUTPUT_DIR / "webapp_findings.json",
+        OUTPUT_DIR / "master_intelligence_report.json",
+        OUTPUT_DIR / "all_findings.json",
+        # Data folder alternatives
+        DATA_DIR / "master" / "all_items.json",
+        DATA_DIR / "risk_scored" / "all_items_scored.json",
+        # Extracted folder
+        EXTRACTED_DIR / "master_budget_data.json",
+    ]
 
-    # Try extracted master
-    extracted = load_json(EXTRACTED_DIR / "master_budget_data.json")
-    if extracted:
-        if isinstance(extracted, list):
-            items.extend(extracted)
-        elif isinstance(extracted, dict) and "items" in extracted:
-            items.extend(extracted["items"])
+    for path in data_files:
+        print(f"Checking: {path}")
+        data = load_json(path)
+        if data:
+            extracted = extract_items_from_data(data)
+            if extracted:
+                print(f"  ✓ Found {len(extracted)} items")
+                items.extend(extracted)
 
-    # Try individual year files
+    # Also try individual year files in extracted
     for year in range(2019, 2027):
         year_file = load_json(EXTRACTED_DIR / f"budget_{year}.json")
         if year_file:
-            if isinstance(year_file, list):
-                items.extend(year_file)
-            elif isinstance(year_file, dict) and "items" in year_file:
-                items.extend(year_file["items"])
+            extracted = extract_items_from_data(year_file)
+            if extracted:
+                items.extend(extracted)
 
     # Try federal year folders
     federal_dir = DATA_DIR / "federal"
@@ -114,10 +142,9 @@ def load_all_budget_items() -> List[dict]:
             if year_dir.is_dir():
                 budget_file = load_json(year_dir / "budget_items.json")
                 if budget_file:
-                    if isinstance(budget_file, list):
-                        items.extend(budget_file)
-                    elif isinstance(budget_file, dict) and "items" in budget_file:
-                        items.extend(budget_file["items"])
+                    extracted = extract_items_from_data(budget_file)
+                    if extracted:
+                        items.extend(extracted)
 
     print(f"Loaded {len(items)} total budget items")
     return items

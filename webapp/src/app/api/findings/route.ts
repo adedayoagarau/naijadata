@@ -17,17 +17,24 @@ interface Finding {
   analyzer?: string;
 }
 
-// Path to findings database from forensic auditor
+// Path to findings database - ordered by preference
 const FINDINGS_PATHS = [
-  // Primary: risk-scored findings (largest dataset)
-  path.join(process.cwd(), "..", "data", "risk_scored", "all_items_scored.json"),
-  path.join(process.cwd(), "..", "findings", "all_findings.json"),
-  // Webapp curated findings
+  // Curated webapp findings (best quality)
+  path.join(process.cwd(), "..", "findings", "webapp_curated_findings.json"),
+  // Consolidated findings
+  path.join(process.cwd(), "..", "findings", "webapp_consolidated.json"),
+  // Basic webapp findings
   path.join(process.cwd(), "..", "findings", "webapp_findings.json"),
+  // Outrage generator output
+  path.join(process.cwd(), "..", "findings", "outrage_findings.json"),
+  // All scored findings
   path.join(process.cwd(), "..", "findings", "all_scored.json"),
-  // Fallbacks
+  // Risk-scored data
+  path.join(process.cwd(), "..", "data", "risk_scored", "all_items_scored.json"),
+  // All findings
+  path.join(process.cwd(), "..", "findings", "all_findings.json"),
+  // Local fallback
   path.join(process.cwd(), "data", "findings.json"),
-  path.join(process.cwd(), "..", "skills", "budget-forensic-auditor", "findings", "webapp_findings.json"),
 ];
 
 // Demo findings for when no data file exists
