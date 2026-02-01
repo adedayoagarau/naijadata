@@ -76,6 +76,15 @@ export default function FindingPage() {
     }
   }, [params.id]);
 
+  // Update document title when finding loads
+  useEffect(() => {
+    if (finding) {
+      document.title = `${finding.entity} | Decide9ja`;
+    } else if (!loading) {
+      document.title = "Finding Not Found | Decide9ja";
+    }
+  }, [finding, loading]);
+
   if (loading) {
     return (
       <div className="min-h-screen bg-[#050505] flex items-center justify-center">

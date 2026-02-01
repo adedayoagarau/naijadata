@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 interface Finding {
@@ -43,6 +44,7 @@ const severityBorder = {
 };
 
 export default function RedFlagsPage() {
+  const searchParams = useSearchParams();
   const [findings, setFindings] = useState<Finding[]>([]);
   const [filteredFindings, setFilteredFindings] = useState<Finding[]>([]);
   const [loading, setLoading] = useState(true);
@@ -51,6 +53,21 @@ export default function RedFlagsPage() {
   const [state, setState] = useState<string>("ALL");
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState<string>("severity");
+
+  // Read filters from URL params on mount
+  useEffect(() => {
+    const urlSearch = searchParams.get("search");
+    const urlSeverity = searchParams.get("severity");
+    const urlYear = searchParams.get("year");
+    const urlState = searchParams.get("state");
+    const urlSort = searchParams.get("sort");
+
+    if (urlSearch) setSearch(urlSearch);
+    if (urlSeverity) setSeverity(urlSeverity.toUpperCase());
+    if (urlYear) setYear(urlYear);
+    if (urlState) setState(urlState);
+    if (urlSort) setSortBy(urlSort);
+  }, [searchParams]);
 
   useEffect(() => {
     const loadFindings = async () => {

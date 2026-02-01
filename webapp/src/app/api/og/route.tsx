@@ -3,16 +3,25 @@ import { NextRequest } from "next/server";
 
 export const runtime = "edge";
 
-// Format amount in Naira
+// Load Inter font which has good Unicode support including ₦
+const interBold = fetch(
+  new URL("https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYAZ9hjp18.ttf")
+).then((res) => res.arrayBuffer());
+
+const interRegular = fetch(
+  new URL("https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hjp18.ttf")
+).then((res) => res.arrayBuffer());
+
+// Format amount in Naira - use NGN as fallback for better font compatibility
 function formatNaira(amount: number): string {
   if (amount >= 1_000_000_000_000) {
-    return `₦${(amount / 1_000_000_000_000).toFixed(1)}T`;
+    return `N${(amount / 1_000_000_000_000).toFixed(1)}T`;
   } else if (amount >= 1_000_000_000) {
-    return `₦${(amount / 1_000_000_000).toFixed(1)}B`;
+    return `N${(amount / 1_000_000_000).toFixed(1)}B`;
   } else if (amount >= 1_000_000) {
-    return `₦${(amount / 1_000_000).toFixed(1)}M`;
+    return `N${(amount / 1_000_000).toFixed(1)}M`;
   }
-  return `₦${amount.toLocaleString()}`;
+  return `N${amount.toLocaleString()}`;
 }
 
 // Color mapping for severity
@@ -205,6 +214,20 @@ export async function GET(request: NextRequest) {
     {
       width: 1200,
       height: 630,
+      fonts: [
+        {
+          name: "Inter",
+          data: await interRegular,
+          weight: 400,
+          style: "normal",
+        },
+        {
+          name: "Inter",
+          data: await interBold,
+          weight: 700,
+          style: "normal",
+        },
+      ],
     }
   );
 }

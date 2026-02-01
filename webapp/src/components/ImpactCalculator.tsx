@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 // What Nigerian money can build
 const IMPACT_BENCHMARKS = {
@@ -122,8 +123,21 @@ export default function ImpactCalculator({
   maxItems = 6,
   title = "What Could This Build?",
 }: ImpactCalculatorProps) {
+  const searchParams = useSearchParams();
   const [amount, setAmount] = useState(initialAmount || 0);
   const [inputValue, setInputValue] = useState(initialAmount ? formatAmount(initialAmount) : "");
+
+  // Read amount from URL params on mount
+  useEffect(() => {
+    const urlAmount = searchParams.get("amount");
+    if (urlAmount) {
+      const parsedAmount = parseFloat(urlAmount);
+      if (!isNaN(parsedAmount) && parsedAmount > 0) {
+        setAmount(parsedAmount);
+        setInputValue(formatAmount(parsedAmount));
+      }
+    }
+  }, [searchParams]);
 
   const parseInput = (value: string) => {
     // Remove ₦ and commas

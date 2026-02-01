@@ -491,9 +491,15 @@ export default function Home() {
     setFilteredFindings(filtered);
   }, []);
 
-  const criticalFindings = findings.filter((f) => f.severity === "CRITICAL");
-  const highFindings = findings.filter((f) => f.severity === "HIGH");
-  const totalFlagged = findings.reduce((sum, f) => sum + (f.amount || 0), 0);
+  // Stats for filtered findings
+  const filteredCritical = filteredFindings.filter((f) => f.severity === "CRITICAL");
+  const filteredHigh = filteredFindings.filter((f) => f.severity === "HIGH");
+
+  // For slider - use top filtered findings (critical first, then high)
+  const sliderFindings = [
+    ...filteredCritical,
+    ...filteredHigh,
+  ].slice(0, 10);
 
   return (
     <div
@@ -518,17 +524,17 @@ export default function Home() {
         <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px] overflow-hidden lg:overflow-hidden">
           {/* Main Content Area */}
           <div className="flex flex-col overflow-hidden border-r border-c-border">
-            {/* Stats Bar */}
-            <StatsBar findings={findings} />
+            {/* Stats Bar - shows filtered stats */}
+            <StatsBar findings={filteredFindings} />
 
             {/* Filter Bar */}
             <FindingsFilter findings={findings} onFilterChange={handleFilterChange} />
 
-            {/* Featured Findings Slider */}
-            {criticalFindings.length > 0 && (
+            {/* Featured Findings Slider - respects filters */}
+            {sliderFindings.length > 0 && (
               <div className="border-b border-c-border">
                 <FindingsSlider
-                  findings={criticalFindings.slice(0, 10)}
+                  findings={sliderFindings}
                   onSelectFinding={setSelectedFinding}
                 />
               </div>
@@ -587,12 +593,12 @@ export default function Home() {
             <BudgetBlock
               label="High Risk MDAs"
               value={
-                highFindings.length > 0
-                  ? highFindings[0]?.entity?.split(" ").slice(0, 3).join(" ") ||
+                filteredHigh.length > 0
+                  ? filteredHigh[0]?.entity?.split(" ").slice(0, 3).join(" ") ||
                     "Various"
                   : "Under Review"
               }
-              meta={`${highFindings.length} FLAGGED`}
+              meta={`${filteredHigh.length} FLAGGED`}
               bgColor="blue"
             />
 
