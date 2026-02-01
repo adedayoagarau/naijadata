@@ -81,15 +81,15 @@ export default function ComparePage() {
   // Get unique states for filter
   const states = [...new Set(findings.map((f) => f.state).filter(Boolean))].sort() as string[];
 
-  // Filter for YoY changes or high-value findings (for comparison potential)
+  // Only show findings with ACTUAL YoY comparison data
   const yoyFindings = findings
     .filter(
       (f) =>
+        // Must have actual comparison data - either change_percentage or amount_2025
+        (f.change_percentage !== undefined && f.change_percentage !== null) ||
+        (f.amount_2025 !== undefined && f.amount_2025 > 0) ||
         f.type === "YOY_VARIANCE" ||
-        f.type === "YOY_SPIKE" ||
-        f.change_percentage ||
-        f.amount_2025 ||
-        f.year === 2026 // Include all 2026 findings for potential comparison
+        f.type === "YOY_SPIKE"
     )
     .filter((f) => {
       if (stateFilter === "ALL") return true;
@@ -97,21 +97,19 @@ export default function ComparePage() {
       return f.state === stateFilter;
     })
     .map((f) => {
-      // Calculate actual change percentage
+      // Calculate change percentage from actual data
       let calculatedChange = f.change_percentage;
-      if (!calculatedChange && f.amount_2025 && f.amount_2025 > 0) {
+      if ((calculatedChange === undefined || calculatedChange === null) && f.amount_2025 && f.amount_2025 > 0) {
         // Real calculation: (new - old) / old * 100
         calculatedChange = ((f.amount - f.amount_2025) / f.amount_2025) * 100;
-      } else if (!calculatedChange) {
-        // If no 2025 data, we'll display amount/2 as estimate, so change is 100%
-        calculatedChange = 100;
       }
 
       return {
         ...f,
-        // Ensure entity is never "Unknown"
         entity: f.entity || f.type?.replace(/_/g, " ") || "Budget Item",
-        change_percentage: calculatedChange,
+        change_percentage: calculatedChange || 0,
+        // Keep the actual amount_2025 - don't fabricate it
+        amount_2025: f.amount_2025,
       };
     });
 
@@ -131,10 +129,10 @@ export default function ComparePage() {
   const today = new Date();
   const dateStr = `${String(today.getMonth() + 1).padStart(2, "0")}.${String(today.getDate()).padStart(2, "0")}.${String(today.getFullYear()).slice(-2)}`;
 
-  // Calculate totals for increases
+  // Calculate totals for increases - only from actual data
   const totalIncrease = sortedFindings
-    .filter((f) => (f.change_percentage || 0) > 0)
-    .reduce((sum, f) => sum + (f.amount - (f.amount_2025 || f.amount / 2)), 0);
+    .filter((f) => (f.change_percentage || 0) > 0 && f.amount_2025 && f.amount_2025 > 0)
+    .reduce((sum, f) => sum + (f.amount - f.amount_2025!), 0);
 
   return (
     <div
@@ -248,8 +246,10 @@ export default function ComparePage() {
         ) : (
           <div className="space-y-4">
             {displayFindings.map((finding) => {
-              const changeAmt = finding.amount - (finding.amount_2025 || finding.amount / 2);
-              const impact = calculateImpact(Math.abs(changeAmt));
+              // Only calculate change if we have actual 2025 data
+              const has2025Data = finding.amount_2025 && finding.amount_2025 > 0;
+              const changeAmt = has2025Data ? finding.amount - finding.amount_2025 : 0;
+              const impact = calculateImpact(Math.abs(has2025Data ? changeAmt : finding.amount));
               const isIncrease = (finding.change_percentage || 0) > 0;
 
               return (
@@ -271,29 +271,40 @@ export default function ComparePage() {
 
                       <h3 className="text-white text-lg md:text-xl font-medium mb-2">{finding.entity}</h3>
 
-                      {/* Year comparison */}
-                      <div className="flex items-center gap-4 text-sm mb-3">
-                        <div>
-                          <span className="text-gray-500">2025:</span>{" "}
-                          <span className="text-white">{formatAmount(finding.amount_2025 || finding.amount / 2)}</span>
+                      {/* Year comparison - only show if we have actual data */}
+                      {has2025Data ? (
+                        <div className="flex items-center gap-4 text-sm mb-3">
+                          <div>
+                            <span className="text-gray-500">2025:</span>{" "}
+                            <span className="text-white">{formatAmount(finding.amount_2025!)}</span>
+                          </div>
+                          <span className="text-gray-600">→</span>
+                          <div>
+                            <span className="text-gray-500">2026:</span>{" "}
+                            <span className="text-white font-bold">{formatAmount(finding.amount)}</span>
+                          </div>
                         </div>
-                        <span className="text-gray-600">→</span>
-                        <div>
-                          <span className="text-gray-500">2026:</span>{" "}
+                      ) : (
+                        <div className="text-sm mb-3">
+                          <span className="text-gray-500">2026 Amount:</span>{" "}
                           <span className="text-white font-bold">{formatAmount(finding.amount)}</span>
                         </div>
-                      </div>
+                      )}
 
-                      {/* Change amount */}
-                      <div className={`text-lg font-bold ${isIncrease ? "text-[#D6453A]" : "text-[#487A3A]"}`}>
-                        {isIncrease ? "+" : ""}
-                        {formatAmount(changeAmt)}
-                      </div>
+                      {/* Change amount - only show if we have actual comparison */}
+                      {has2025Data && (
+                        <div className={`text-lg font-bold ${isIncrease ? "text-[#D6453A]" : "text-[#487A3A]"}`}>
+                          {isIncrease ? "+" : ""}
+                          {formatAmount(changeAmt)}
+                        </div>
+                      )}
                     </div>
 
                     {/* Right: Impact */}
                     <div className="lg:w-64 bg-[#0a0a0a] p-4 rounded">
-                      <div className="text-xs text-gray-500 mb-2 font-mono">WHAT THIS COULD BUILD:</div>
+                      <div className="text-xs text-gray-500 mb-2 font-mono">
+                        {has2025Data ? "WHAT THE CHANGE COULD BUILD:" : "WHAT THIS COULD BUILD:"}
+                      </div>
                       <div className="space-y-1">
                         {impact.slice(0, 3).map((item) => (
                           <div key={item.key} className="flex justify-between text-sm">
@@ -309,7 +320,9 @@ export default function ComparePage() {
                   <div className="mt-4 pt-4 border-t border-[#222] flex gap-2">
                     <button
                       onClick={() => {
-                        const text = `🚨 ${finding.entity}: ${Math.abs(finding.change_percentage || 0).toFixed(0)}% ${isIncrease ? "INCREASE" : "decrease"}!\n\n2025: ${formatAmount(finding.amount_2025 || finding.amount / 2)}\n2026: ${formatAmount(finding.amount)}\n\nChange: ${isIncrease ? "+" : ""}${formatAmount(changeAmt)}\n\n#Decide9ja #BudgetTransparency`;
+                        const text = has2025Data
+                          ? `🚨 ${finding.entity}: ${Math.abs(finding.change_percentage || 0).toFixed(0)}% ${isIncrease ? "INCREASE" : "decrease"}!\n\n2025: ${formatAmount(finding.amount_2025!)}\n2026: ${formatAmount(finding.amount)}\n\nChange: ${isIncrease ? "+" : ""}${formatAmount(changeAmt)}\n\n#Decide9ja #BudgetTransparency`
+                          : `🚨 ${finding.entity}: ${formatAmount(finding.amount)} (${Math.abs(finding.change_percentage || 0).toFixed(0)}% YoY)\n\n#Decide9ja #BudgetTransparency`;
                         window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, "_blank");
                       }}
                       className="px-3 py-1 bg-c-black border border-gray-600 text-white text-xs hover:bg-[#111]"
@@ -318,7 +331,9 @@ export default function ComparePage() {
                     </button>
                     <button
                       onClick={() => {
-                        const text = `🚨 *BUDGET ALERT*\n\n*${finding.entity}*\n${Math.abs(finding.change_percentage || 0).toFixed(0)}% ${isIncrease ? "INCREASE" : "decrease"}\n\n2025: ${formatAmount(finding.amount_2025 || finding.amount / 2)}\n2026: ${formatAmount(finding.amount)}\n\n_Source: Decide9ja_`;
+                        const text = has2025Data
+                          ? `🚨 *BUDGET ALERT*\n\n*${finding.entity}*\n${Math.abs(finding.change_percentage || 0).toFixed(0)}% ${isIncrease ? "INCREASE" : "decrease"}\n\n2025: ${formatAmount(finding.amount_2025!)}\n2026: ${formatAmount(finding.amount)}\n\n_Source: Decide9ja_`
+                          : `🚨 *BUDGET ALERT*\n\n*${finding.entity}*\n${formatAmount(finding.amount)} (${Math.abs(finding.change_percentage || 0).toFixed(0)}% YoY)\n\n_Source: Decide9ja_`;
                         window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank");
                       }}
                       className="px-3 py-1 bg-[#25D366] text-white text-xs hover:brightness-90"
