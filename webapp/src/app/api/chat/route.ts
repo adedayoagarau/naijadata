@@ -572,7 +572,7 @@ export async function POST(request: NextRequest) {
     // If tools enabled, use agentic approach
     if (useTools) {
       let response = await anthropic.messages.create({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-3-5-haiku-20241022",
         max_tokens: 2000,
         system: getAgentSystemPrompt(),
         tools: AGENT_TOOLS,
@@ -607,7 +607,7 @@ export async function POST(request: NextRequest) {
         });
 
         response = await anthropic.messages.create({
-          model: "claude-sonnet-4-20250514",
+          model: "claude-3-5-haiku-20241022",
           max_tokens: 2000,
           system: getAgentSystemPrompt(),
           tools: AGENT_TOOLS,
@@ -639,7 +639,7 @@ export async function POST(request: NextRequest) {
     } else {
       // Simple RAG mode (no tools)
       const response = await anthropic.messages.create({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-3-5-haiku-20241022",
         max_tokens: 1500,
         system: getBudgetContext(),
         messages: formattedMessages,
