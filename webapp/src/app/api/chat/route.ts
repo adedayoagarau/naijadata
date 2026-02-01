@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import Anthropic from "@anthropic-ai/sdk";
+import OpenAI from "openai";
 import fs from "fs";
 import path from "path";
 
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 // === TOOL IMPLEMENTATIONS ===
@@ -346,89 +346,106 @@ function generateBreakdown(params: { entity: string; year?: number; by?: string 
 }
 
 // Process tool calls
-function processToolCall(toolName: string, toolInput: Record<string, unknown>): unknown {
+function processToolCall(toolName: string, toolInput: Record<string, unknown>): string {
+  let result: unknown;
   switch (toolName) {
-    case "query_budget": return queryBudget(toolInput as Parameters<typeof queryBudget>[0]);
-    case "calculate": return calculate(toolInput as Parameters<typeof calculate>[0]);
-    case "get_context": return getContext(toolInput as Parameters<typeof getContext>[0]);
-    case "search_findings": return searchFindings(toolInput as Parameters<typeof searchFindings>[0]);
-    case "generate_breakdown": return generateBreakdown(toolInput as Parameters<typeof generateBreakdown>[0]);
-    default: return { error: `Unknown tool: ${toolName}` };
+    case "query_budget": result = queryBudget(toolInput as Parameters<typeof queryBudget>[0]); break;
+    case "calculate": result = calculate(toolInput as Parameters<typeof calculate>[0]); break;
+    case "get_context": result = getContext(toolInput as Parameters<typeof getContext>[0]); break;
+    case "search_findings": result = searchFindings(toolInput as Parameters<typeof searchFindings>[0]); break;
+    case "generate_breakdown": result = generateBreakdown(toolInput as Parameters<typeof generateBreakdown>[0]); break;
+    default: result = { error: `Unknown tool: ${toolName}` };
   }
+  return JSON.stringify(result);
 }
 
-// Tool definitions for Claude
-const AGENT_TOOLS: Anthropic.Tool[] = [
+// Tool definitions for OpenAI
+const OPENAI_TOOLS: OpenAI.Chat.Completions.ChatCompletionTool[] = [
   {
-    name: "query_budget",
-    description: "Query the Nigerian budget database. Filter by year, state, MDA, budget code prefix, or amount range.",
-    input_schema: {
-      type: "object" as const,
-      properties: {
-        year: { type: "number", description: "Budget year (e.g., 2024, 2025, 2026)" },
-        state: { type: "string", description: "State name (e.g., Lagos, Osun) or 'federal'" },
-        mda: { type: "string", description: "Ministry/Department/Agency name or partial match" },
-        budget_code: { type: "string", description: "Budget code prefix (e.g., '2205' for consultancy)" },
-        min_amount: { type: "number", description: "Minimum amount in Naira" },
-        max_amount: { type: "number", description: "Maximum amount in Naira" },
-        limit: { type: "number", description: "Maximum results (default 20)" },
-      },
-    },
-  },
-  {
-    name: "calculate",
-    description: "Calculate sum, average, median, min, max, count, or stats on budget data.",
-    input_schema: {
-      type: "object" as const,
-      properties: {
-        operation: { type: "string", enum: ["sum", "average", "mean", "median", "min", "max", "count", "stats"] },
-        values: { type: "array", items: { type: "number" }, description: "Numbers to calculate on" },
-        query: {
-          type: "object",
-          properties: { year: { type: "number" }, state: { type: "string" }, mda: { type: "string" }, budget_code: { type: "string" } },
-          description: "Query to get values from budget data",
+    type: "function",
+    function: {
+      name: "query_budget",
+      description: "Query the Nigerian budget database. Filter by year, state, MDA, budget code prefix, or amount range.",
+      parameters: {
+        type: "object",
+        properties: {
+          year: { type: "number", description: "Budget year (e.g., 2024, 2025, 2026)" },
+          state: { type: "string", description: "State name (e.g., Lagos, Osun) or 'federal'" },
+          mda: { type: "string", description: "Ministry/Department/Agency name or partial match" },
+          budget_code: { type: "string", description: "Budget code prefix (e.g., '2205' for consultancy)" },
+          min_amount: { type: "number", description: "Minimum amount in Naira" },
+          max_amount: { type: "number", description: "Maximum amount in Naira" },
+          limit: { type: "number", description: "Maximum results (default 20)" },
         },
       },
-      required: ["operation"],
     },
   },
   {
-    name: "get_context",
-    description: "Get contextual knowledge about budget codes, MDA mandates, benchmarks, population, or corruption patterns.",
-    input_schema: {
-      type: "object" as const,
-      properties: {
-        topic: { type: "string", description: "Topic: 'budget codes', 'mda mandates', 'benchmarks', 'population', 'corruption patterns', or 'all'" },
-      },
-      required: ["topic"],
-    },
-  },
-  {
-    name: "search_findings",
-    description: "Search analyzed findings/anomalies by severity, type, state, amount, or text.",
-    input_schema: {
-      type: "object" as const,
-      properties: {
-        query: { type: "string", description: "Text to search in descriptions" },
-        severity: { type: "string", enum: ["CRITICAL", "HIGH", "MEDIUM", "LOW"] },
-        type: { type: "string", description: "Finding type (e.g., 'MANDATE_VIOLATION')" },
-        state: { type: "string", description: "State name" },
-        min_amount: { type: "number", description: "Minimum amount in Naira" },
-        limit: { type: "number", description: "Max results (default 10)" },
+    type: "function",
+    function: {
+      name: "calculate",
+      description: "Calculate sum, average, median, min, max, count, or stats on budget data.",
+      parameters: {
+        type: "object",
+        properties: {
+          operation: { type: "string", enum: ["sum", "average", "mean", "median", "min", "max", "count", "stats"] },
+          values: { type: "array", items: { type: "number" }, description: "Numbers to calculate on" },
+          query: {
+            type: "object",
+            properties: { year: { type: "number" }, state: { type: "string" }, mda: { type: "string" }, budget_code: { type: "string" } },
+            description: "Query to get values from budget data",
+          },
+        },
+        required: ["operation"],
       },
     },
   },
   {
-    name: "generate_breakdown",
-    description: "Generate detailed breakdown of budget allocations for an entity.",
-    input_schema: {
-      type: "object" as const,
-      properties: {
-        entity: { type: "string", description: "MDA or entity name to analyze" },
-        year: { type: "number", description: "Specific year" },
-        by: { type: "string", enum: ["category", "code"], description: "Breakdown by category or budget code" },
+    type: "function",
+    function: {
+      name: "get_context",
+      description: "Get contextual knowledge about budget codes, MDA mandates, benchmarks, population, or corruption patterns.",
+      parameters: {
+        type: "object",
+        properties: {
+          topic: { type: "string", description: "Topic: 'budget codes', 'mda mandates', 'benchmarks', 'population', 'corruption patterns', or 'all'" },
+        },
+        required: ["topic"],
       },
-      required: ["entity"],
+    },
+  },
+  {
+    type: "function",
+    function: {
+      name: "search_findings",
+      description: "Search analyzed findings/anomalies by severity, type, state, amount, or text.",
+      parameters: {
+        type: "object",
+        properties: {
+          query: { type: "string", description: "Text to search in descriptions" },
+          severity: { type: "string", enum: ["CRITICAL", "HIGH", "MEDIUM", "LOW"] },
+          type: { type: "string", description: "Finding type (e.g., 'MANDATE_VIOLATION')" },
+          state: { type: "string", description: "State name" },
+          min_amount: { type: "number", description: "Minimum amount in Naira" },
+          limit: { type: "number", description: "Max results (default 10)" },
+        },
+      },
+    },
+  },
+  {
+    type: "function",
+    function: {
+      name: "generate_breakdown",
+      description: "Generate detailed breakdown of budget allocations for an entity.",
+      parameters: {
+        type: "object",
+        properties: {
+          entity: { type: "string", description: "MDA or entity name to analyze" },
+          year: { type: "number", description: "Specific year" },
+          by: { type: "string", enum: ["category", "code"], description: "Breakdown by category or budget code" },
+        },
+        required: ["entity"],
+      },
     },
   },
 ];
@@ -437,8 +454,6 @@ const AGENT_TOOLS: Anthropic.Tool[] = [
 function buildBudgetContext(): string {
   const budgetData = loadBudgetData();
   const findings = loadFindings();
-  const benchmarks = loadContext("benchmarks.json") as Record<string, unknown> | null;
-  const population = loadContext("population.json") as Record<string, unknown> | null;
 
   // Build dynamic summary from loaded data
   let dataSummary = "";
@@ -557,69 +572,67 @@ export async function POST(request: NextRequest) {
   try {
     const { message, history, useTools = true } = await request.json();
 
-    // Build conversation messages
-    const formattedMessages: Anthropic.MessageParam[] = [
+    // Build conversation messages for OpenAI
+    const messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
+      {
+        role: "system",
+        content: getAgentSystemPrompt(),
+      },
       ...history.slice(-8).map((msg: { role: string; content: string }) => ({
         role: msg.role as "user" | "assistant",
         content: msg.content,
       })),
       {
-        role: "user" as const,
+        role: "user",
         content: message,
       },
     ];
 
-    // If tools enabled, use agentic approach
+    // If tools enabled, use function calling
     if (useTools) {
-      let response = await anthropic.messages.create({
-        model: "claude-3-5-haiku-20241022",
+      let response = await openai.chat.completions.create({
+        model: "gpt-4o-mini",
         max_tokens: 2000,
-        system: getAgentSystemPrompt(),
-        tools: AGENT_TOOLS,
-        messages: formattedMessages,
+        messages,
+        tools: OPENAI_TOOLS,
+        tool_choice: "auto",
       });
 
       // Process tool calls in a loop
       let iterations = 0;
       const maxIterations = 5;
 
-      while (response.stop_reason === "tool_use" && iterations < maxIterations) {
+      while (response.choices[0]?.message?.tool_calls && iterations < maxIterations) {
         iterations++;
 
-        const toolUseBlocks = response.content.filter(
-          (block): block is Anthropic.ToolUseBlock => block.type === "tool_use"
-        );
+        const assistantMessage = response.choices[0].message;
+        messages.push(assistantMessage);
 
-        const toolResults: Anthropic.ToolResultBlockParam[] = toolUseBlocks.map((toolUse) => ({
-          type: "tool_result" as const,
-          tool_use_id: toolUse.id,
-          content: JSON.stringify(processToolCall(toolUse.name, toolUse.input as Record<string, unknown>)),
-        }));
+        // Process each tool call
+        for (const toolCall of assistantMessage.tool_calls) {
+          const toolName = toolCall.function.name;
+          const toolInput = JSON.parse(toolCall.function.arguments);
+          const toolResult = processToolCall(toolName, toolInput);
+
+          messages.push({
+            role: "tool",
+            tool_call_id: toolCall.id,
+            content: toolResult,
+          });
+        }
 
         // Continue with tool results
-        formattedMessages.push({
-          role: "assistant" as const,
-          content: response.content,
-        });
-        formattedMessages.push({
-          role: "user" as const,
-          content: toolResults,
-        });
-
-        response = await anthropic.messages.create({
-          model: "claude-3-5-haiku-20241022",
+        response = await openai.chat.completions.create({
+          model: "gpt-4o-mini",
           max_tokens: 2000,
-          system: getAgentSystemPrompt(),
-          tools: AGENT_TOOLS,
-          messages: formattedMessages,
+          messages,
+          tools: OPENAI_TOOLS,
+          tool_choice: "auto",
         });
       }
 
       // Extract final text
-      const textBlocks = response.content.filter(
-        (block): block is Anthropic.TextBlock => block.type === "text"
-      );
-      const responseText = textBlocks.map((b) => b.text).join("\n");
+      const responseText = response.choices[0]?.message?.content || "I could not generate a response.";
 
       // Extract key data for card generation
       const amountMatch = responseText.match(/₦[\d.,]+\s*(billion|million|trillion|[BMT])/gi);
@@ -637,16 +650,14 @@ export async function POST(request: NextRequest) {
         usage: response.usage,
       });
     } else {
-      // Simple RAG mode (no tools)
-      const response = await anthropic.messages.create({
-        model: "claude-3-5-haiku-20241022",
+      // Simple mode (no tools)
+      const response = await openai.chat.completions.create({
+        model: "gpt-4o-mini",
         max_tokens: 1500,
-        system: getBudgetContext(),
-        messages: formattedMessages,
+        messages,
       });
 
-      const textContent = response.content.find((c) => c.type === "text");
-      const responseText = textContent ? textContent.text : "I could not generate a response.";
+      const responseText = response.choices[0]?.message?.content || "I could not generate a response.";
 
       const amountMatch = responseText.match(/₦[\d.,]+\s*(billion|million|trillion)/gi);
       const ratioMatch = responseText.match(/(\d+\.?\d*)\s*[xX]\s*(MORE|TIMES|more|times)/i) ||
