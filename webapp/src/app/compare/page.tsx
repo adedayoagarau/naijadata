@@ -96,13 +96,24 @@ export default function ComparePage() {
       if (stateFilter === "FEDERAL") return !f.state;
       return f.state === stateFilter;
     })
-    .map((f) => ({
-      ...f,
-      // Ensure entity is never "Unknown"
-      entity: f.entity || f.type?.replace(/_/g, " ") || "Budget Item",
-      // Estimate change if not provided (assume 20% increase as baseline for display)
-      change_percentage: f.change_percentage || (f.amount_2025 ? ((f.amount - f.amount_2025) / f.amount_2025) * 100 : 15),
-    }));
+    .map((f) => {
+      // Calculate actual change percentage
+      let calculatedChange = f.change_percentage;
+      if (!calculatedChange && f.amount_2025 && f.amount_2025 > 0) {
+        // Real calculation: (new - old) / old * 100
+        calculatedChange = ((f.amount - f.amount_2025) / f.amount_2025) * 100;
+      } else if (!calculatedChange) {
+        // If no 2025 data, we'll display amount/2 as estimate, so change is 100%
+        calculatedChange = 100;
+      }
+
+      return {
+        ...f,
+        // Ensure entity is never "Unknown"
+        entity: f.entity || f.type?.replace(/_/g, " ") || "Budget Item",
+        change_percentage: calculatedChange,
+      };
+    });
 
   // Sort
   const sortedFindings = [...yoyFindings].sort((a, b) => {
