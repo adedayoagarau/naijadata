@@ -16,18 +16,30 @@ interface Finding {
   risk_factors?: string[];
 }
 
-// Load findings from files
+// Load findings from files - same paths as main findings API
 function loadFindings(): Finding[] {
   const paths = [
+    // Risk-scored data (preferred)
+    path.join(process.cwd(), "..", "data", "risk_scored", "all_items_scored.json"),
+    // All findings
+    path.join(process.cwd(), "..", "findings", "all_findings.json"),
+    // Webapp findings
     path.join(process.cwd(), "..", "findings", "webapp_findings.json"),
+    // Local data folder
     path.join(process.cwd(), "data", "findings.json"),
   ];
 
   for (const p of paths) {
     try {
       if (fs.existsSync(p)) {
+        console.log(`Loading findings from: ${p}`);
         const data = JSON.parse(fs.readFileSync(p, "utf-8"));
-        return data.findings || data.items || data;
+        const items = data.findings || data.items || data;
+        // Ensure each item has an ID
+        return items.map((item: Finding, idx: number) => ({
+          ...item,
+          id: item.id || `finding-${idx}`,
+        }));
       }
     } catch (e) {
       console.error(`Failed to load ${p}:`, e);
