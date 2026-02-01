@@ -16,16 +16,17 @@ interface Finding {
   risk_factors?: string[];
 }
 
-// Load findings from files - same paths as main findings API
+// CANONICAL PATH - See WORKTREE.md for data structure
+// Must match paths in ../route.ts
 function loadFindings(): Finding[] {
   const paths = [
-    // Risk-scored data (preferred)
-    path.join(process.cwd(), "..", "data", "risk_scored", "all_items_scored.json"),
-    // All findings
-    path.join(process.cwd(), "..", "findings", "all_findings.json"),
-    // Webapp findings
+    // PRIMARY: Consolidated findings
+    path.join(process.cwd(), "..", "findings", "consolidated.json"),
+    // FALLBACKS (legacy)
+    path.join(process.cwd(), "..", "findings", "webapp_curated_findings.json"),
+    path.join(process.cwd(), "..", "findings", "webapp_consolidated.json"),
     path.join(process.cwd(), "..", "findings", "webapp_findings.json"),
-    // Local data folder
+    // Local fallback
     path.join(process.cwd(), "data", "findings.json"),
   ];
 
